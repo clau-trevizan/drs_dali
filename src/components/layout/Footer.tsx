@@ -47,9 +47,9 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
   return (
     <footer ref={ref} className="text-primary-foreground relative footer-responsive" style={{ minHeight: 'auto', marginBottom: '125px' }}>
       {/* Background SVG decoration - First - Hidden on mobile via CSS */}
-      <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 1273 959" 
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1273 959"
         fill="none"
         className="absolute pointer-events-none hidden lg:block footer-bg-svg"
         preserveAspectRatio="xMinYMax meet"
@@ -57,18 +57,18 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
           width: 'calc(100% - 60px)',
           left: '30px',
           right: '30px',
-          top: '-125px',
+          top: '-124px',
           objectFit: 'cover',
           zIndex: 0
         }}
       >
-        <path d="M204.701 71.8607L204.697 33.7254C204.697 15.0983 189.613 -0.000149428 171.005 -0.000147801L37.1559 -0.0001361C16.6381 -0.000134306 9.24062e-06 16.6506 1.10365e-05 37.1936L0.000567384 815.775C0.000569039 834.715 15.3341 850.065 34.2546 850.065L58.6095 850.065C76.6173 850.065 91.2118 864.678 91.2118 882.699L91.2118 924.191C91.2118 942.967 106.416 958.192 125.179 958.192L1235.84 958.191C1256.36 958.191 1273 941.54 1273 920.997L1273 141.148C1273 121.01 1256.69 104.686 1236.57 104.686L397.173 104.687L237.495 104.687C219.384 104.687 204.701 89.989 204.701 71.8607Z" fill="#274B41"/>
+        <path fill="#274b41" d="M204.7,71.86v-38.14C204.7,15.1,189.61,0,171,0H37.16C16.64,0,0,16.65,0,37.19v778.58c0,18.94,15.33,34.29,34.25,34.29h24.35c18.01,0,32.6,14.61,32.6,32.63v41.49c0,18.78,15.2,34,33.97,34h1147.82V141.15c0-20.14-16.31-36.46-36.43-36.46H397.17s-159.68,0-159.68,0c-18.11,0-32.79-14.7-32.79-32.83Z"/>
       </svg>
 
       {/* Background SVG decoration - Second - Hidden on mobile via CSS */}
-      <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 1273 959" 
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1273 959"
         fill="none"
         className="absolute pointer-events-none hidden lg:block footer-bg-svg"
         preserveAspectRatio="xMinYMax meet"
@@ -85,21 +85,21 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
           marginBottom: '-53px'
         }}
       >
-        <path d="M204.701 71.8607L204.697 33.7254C204.697 15.0983 189.613 -0.000149428 171.005 -0.000147801L37.1559 -0.0001361C16.6381 -0.000134306 9.24062e-06 16.6506 1.10365e-05 37.1936L0.000567384 815.775C0.000569039 834.715 15.3341 850.065 34.2546 850.065L58.6095 850.065C76.6173 850.065 91.2118 864.678 91.2118 882.699L91.2118 924.191C91.2118 942.967 106.416 958.192 125.179 958.192L1235.84 958.191C1256.36 958.191 1273 941.54 1273 920.997L1273 141.148C1273 121.01 1256.69 104.686 1236.57 104.686L397.173 104.687L237.495 104.687C219.384 104.687 204.701 89.989 204.701 71.8607Z" fill="#274B41"/>
+        <path fill="#274b41" d="M204.7,71.86v-38.14C204.7,15.1,189.61,0,171,0H37.16C16.64,0,0,16.65,0,37.19v778.58c0,18.94,15.33,34.29,34.25,34.29h24.35c18.01,0,32.6,14.61,32.6,32.63v41.49c0,18.78,15.2,34,33.97,34h1147.82V141.15c0-20.14-16.31-36.46-36.43-36.46H397.17s-159.68,0-159.68,0c-18.11,0-32.79-14.7-32.79-32.83Z"/>
       </svg>
 
       {/* Mobile background with two images */}
-      <div 
-        className="absolute inset-0 lg:hidden" 
-        style={{ 
-          backgroundColor: '#274B41', 
-          zIndex: 0 
+      <div
+        className="absolute inset-0 lg:hidden"
+        style={{
+          backgroundColor: '#274B41',
+          zIndex: 0
         }}
       >
         {/* Top background image */}
-        <div 
+        <div
           className="footer-bg-mobile-top"
-          style={{ 
+          style={{
             position: 'absolute',
             top: 0,
             left: 0,
@@ -112,9 +112,9 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
           }}
         ></div>
         {/* Bottom background image */}
-        <div 
+        <div
           className="footer-bg-mobile-bottom"
-          style={{ 
+          style={{
             position: 'absolute',
             bottom: 0,
             left: 0,
@@ -133,15 +133,15 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
           <div className="col-span-12 lg:col-start-3 lg:col-span-9">
             {/* CTA Section - Hidden on mobile */}
             <div className="mb-12 hidden lg:block">
-              <h2 
+              <h2
                 className="font-black mb-6 max-w-md"
                 style={{ fontSize: '35px', lineHeight: '40px' }}
               >
                 Conectamos sua necessidade<br />
                 com a solução ideal.
               </h2>
-              <Link 
-                to="/contato" 
+              <Link
+                to="/contato"
                 className="drs-btn flex items-center gap-2"
                 style={{ backgroundColor: '#15AF97' }}
               >
@@ -151,18 +151,18 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                 Fale com nossa equipe de vendas
               </Link>
             </div>
-            
+
             {/* Mobile CTA title and button */}
             <div className="mb-8 lg:hidden">
-              <h2 
+              <h2
                 className="font-black max-w-md mb-6"
                 style={{ fontSize: '28px', lineHeight: '34px' }}
               >
                 Conectamos sua necessidade<br />
                 com a solução ideal.
               </h2>
-              <Link 
-                to="/contato" 
+              <Link
+                to="/contato"
                 className="drs-btn flex items-center gap-2"
                 style={{ backgroundColor: '#15AF97' }}
               >
@@ -177,12 +177,12 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
             <div className="hidden lg:grid lg:grid-cols-12 gap-8 mb-12" style={{ marginBottom: 0 }}>
               {/* Column 1: DRS Group (3 cols) */}
               <div className="lg:col-span-3">
-            <span 
+            <span
               className="inline-block px-4 rounded-full text-black"
-              style={{ 
-                backgroundColor: '#F39325', 
-                fontSize: '14px', 
-                fontWeight: 400, 
+              style={{
+                backgroundColor: '#F39325',
+                fontSize: '14px',
+                fontWeight: 400,
                 lineHeight: '40px',
                 marginBottom: '16px'
               }}
@@ -244,16 +244,16 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
               ))}
             </ul>
               </div>
-              
+
               {/* Column 2: Contato + Endereços + Copyright (5 cols) */}
               <div className="lg:col-span-5">
                 {/* Contato */}
-                <span 
+                <span
                   className="inline-block px-4 rounded-full text-black"
-                  style={{ 
-                    backgroundColor: '#F39325', 
-                    fontSize: '14px', 
-                    fontWeight: 400, 
+                  style={{
+                    backgroundColor: '#F39325',
+                    fontSize: '14px',
+                    fontWeight: 400,
                     lineHeight: '40px',
                     marginBottom: '16px'
                   }}
@@ -285,12 +285,12 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
 
                 {/* Endereços */}
                 <div className="mt-6">
-                  <span 
+                  <span
                     className="inline-block px-4 rounded-full text-black"
-                    style={{ 
-                      backgroundColor: '#F39325', 
-                      fontSize: '14px', 
-                      fontWeight: 400, 
+                    style={{
+                      backgroundColor: '#F39325',
+                      fontSize: '14px',
+                      fontWeight: 400,
                       lineHeight: '40px',
                       marginBottom: '16px'
                     }}
@@ -317,12 +317,12 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
               {/* Column 3: Comunidade + Siga-nos (4 cols) */}
               <div className="lg:col-span-4">
                 {/* Comunidade */}
-                <span 
+                <span
                   className="inline-block px-4 rounded-full text-black"
-                  style={{ 
-                    backgroundColor: '#F39325', 
-                    fontSize: '14px', 
-                    fontWeight: 400, 
+                  style={{
+                    backgroundColor: '#F39325',
+                    fontSize: '14px',
+                    fontWeight: 400,
                     lineHeight: '40px',
                     marginBottom: '16px'
                   }}
@@ -347,12 +347,12 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
 
                 {/* Siga-nos */}
                 <div className="mt-6">
-                  <span 
+                  <span
                     className="inline-block px-4 rounded-full text-black"
-                    style={{ 
-                      backgroundColor: '#F39325', 
-                      fontSize: '14px', 
-                      fontWeight: 400, 
+                    style={{
+                      backgroundColor: '#F39325',
+                      fontSize: '14px',
+                      fontWeight: 400,
                       lineHeight: '40px',
                       marginBottom: '16px'
                     }}
@@ -384,12 +384,12 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
         <div className="lg:hidden grid grid-cols-1 gap-6 mb-8">
           {/* 1. Contato */}
           <div>
-            <span 
+            <span
               className="inline-block px-4 rounded-full text-black"
-              style={{ 
-                backgroundColor: '#F39325', 
-                fontSize: '14px', 
-                fontWeight: 400, 
+              style={{
+                backgroundColor: '#F39325',
+                fontSize: '14px',
+                fontWeight: 400,
                 lineHeight: '40px',
                 marginBottom: '16px'
               }}
@@ -422,12 +422,12 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
 
           {/* 2. Endereços */}
           <div>
-            <span 
+            <span
               className="inline-block px-4 rounded-full text-black"
-              style={{ 
-                backgroundColor: '#F39325', 
-                fontSize: '14px', 
-                fontWeight: 400, 
+              style={{
+                backgroundColor: '#F39325',
+                fontSize: '14px',
+                fontWeight: 400,
                 lineHeight: '40px',
                 marginBottom: '16px'
               }}
@@ -447,12 +447,12 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
 
           {/* 3. DRS Group */}
           <div>
-            <span 
+            <span
               className="inline-block px-4 rounded-full text-black"
-              style={{ 
-                backgroundColor: '#F39325', 
-                fontSize: '14px', 
-                fontWeight: 400, 
+              style={{
+                backgroundColor: '#F39325',
+                fontSize: '14px',
+                fontWeight: 400,
                 lineHeight: '40px',
                 marginBottom: '16px'
               }}
@@ -476,12 +476,12 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
 
           {/* 4. Comunidade */}
           <div>
-            <span 
+            <span
               className="inline-block px-4 rounded-full text-black"
-              style={{ 
-                backgroundColor: '#F39325', 
-                fontSize: '14px', 
-                fontWeight: 400, 
+              style={{
+                backgroundColor: '#F39325',
+                fontSize: '14px',
+                fontWeight: 400,
                 lineHeight: '40px',
                 marginBottom: '16px'
               }}
@@ -507,12 +507,12 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
 
           {/* 5. Siga-nos */}
           <div>
-            <span 
+            <span
               className="inline-block px-4 rounded-full text-black"
-              style={{ 
-                backgroundColor: '#F39325', 
-                fontSize: '14px', 
-                fontWeight: 400, 
+              style={{
+                backgroundColor: '#F39325',
+                fontSize: '14px',
+                fontWeight: 400,
                 lineHeight: '40px',
                 marginBottom: '16px'
               }}

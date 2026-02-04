@@ -71,10 +71,10 @@ export default function Solucoes() {
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-start-3 lg:col-span-7" style={{ marginBottom: '6.5rem' }}>
               <div className="flex flex-col gap-4 md:gap-6 mb-8 md:mb-12">
-                <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[1.5]" style={{ color: '#274B41', fontWeight: 400 }}>
+              <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[1.5]" style={{ color: '#000', fontWeight: 400 }}>
                   Nossas soluções oferecem infraestrutura validada, rastreabilidade em tempo real e um cuidado verdadeiramente humanizado para apoiar projetos críticos, estudos clínicos e entregas domiciliares para pacientes.
                 </p>
-                <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[1.5]" style={{ color: '#274B41', fontWeight: 400 }}>
+                <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[1.5]" style={{ color: '#000', fontWeight: 400 }}>
                   Nosso trabalho se organiza em três áreas complementares, integradas por um propósito comum — oferecer inteligência, confiança e cuidado para que cada entrega faça diferença na vida de quem mais importa: o paciente.
                 </p>
               </div>

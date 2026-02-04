@@ -4,17 +4,15 @@ export default function PoliticaPrivacidade() {
   return (
     <Layout>
       {/* Section 1: Hero */}
-      <section style={{ padding: '6rem 4rem' }} className="bg-background">
+      <section className="politica-section1 bg-background">
         <div className="drs-container">
           <div 
-            className="rounded-[24px] lg:rounded-[40px]"
+            className="politica-green-box rounded-[24px] lg:rounded-[40px]"
             style={{ 
               backgroundColor: '#69C0AC',
               backgroundImage: 'url(/images/topo_pp.png)',
               backgroundPosition: 'top left',
               backgroundRepeat: 'no-repeat',
-              backgroundSize: '150px',
-              padding: '6rem 4rem'
             }}
           >
             <div className="grid grid-cols-12">
@@ -37,7 +35,7 @@ export default function PoliticaPrivacidade() {
       </section>
 
       {/* Section 2: Content */}
-      <section className="py-8 lg:py-20 bg-white">
+      <section className="politica-section2 bg-white">
         <div className="drs-container">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-start-2 lg:col-span-10">

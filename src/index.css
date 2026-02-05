@@ -927,7 +927,7 @@ html, body {
   .bg-footer-desktop {
     margin-bottom: 50px;
     background-size: calc(100% - 60px);
-    background-repeat: no-repeat, repeat-y, no-repeat;
+    background-repeat: no-repeat;
     padding-top: 140px;
     background-image: url('/images/top-rodape.svg'), url('/images/bottom-rodape.svg');
     background-position: top center, bottom center;

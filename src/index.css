@@ -923,6 +923,17 @@ html, body {
     background-color: #fff !important;
   }
 }
+@media (min-width: 1024px) {
+  .bg-footer-desktop {
+    margin-bottom: 50px;
+    background-size: calc(100% - 60px);
+    background-repeat: no-repeat, repeat-y, no-repeat;
+    padding-top: 140px;
+    background-image: url('/images/top-rodape.svg'), url('/images/rodape-verde.svg'), url('/images/bottom-rodape.svg');
+    background-position: top center, center center, bottom center;
+    padding-bottom: 50px;
+  }
+}
 @media (max-width: 1023px) {
   .mobile-padding {
     padding: 5rem 1rem 3rem 2rem !important;

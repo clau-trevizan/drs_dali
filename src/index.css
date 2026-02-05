@@ -20,50 +20,50 @@ text.botao {
     --drs-orange: 35 91% 55%;
     --drs-orange-light: 35 91% 65%;
     --drs-green-light: 160 50% 95%;
-    
+
     /* Background colors */
     --background: 0 0% 100%;
     --foreground: 210 20% 20%;
-    
+
     /* Card colors */
     --card: 0 0% 100%;
     --card-foreground: 210 20% 20%;
-    
+
     /* Popover colors */
     --popover: 0 0% 100%;
     --popover-foreground: 210 20% 20%;
-    
+
     /* Primary - DRS Teal */
     --primary: 175 79% 26%;
     --primary-foreground: 0 0% 100%;
-    
+
     /* Secondary - DRS Orange */
     --secondary: 35 91% 55%;
     --secondary-foreground: 0 0% 100%;
-    
+
     /* Button Dark Green */
     --button-bg: 160 30% 22%;
     --button-foreground: 0 0% 100%;
-    
+
     /* Muted colors */
     --muted: 210 20% 96%;
     --muted-foreground: 210 10% 45%;
-    
+
     /* Accent colors */
     --accent: 160 50% 95%;
     --accent-foreground: 175 79% 26%;
-    
+
     /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    
+
     /* Border and input */
     --border: 210 20% 90%;
     --input: 210 20% 90%;
     --ring: 175 79% 26%;
-    
+
     --radius: 0.75rem;
-    
+
     /* Sidebar */
     --sidebar-background: 175 79% 26%;
     --sidebar-foreground: 0 0% 100%;
@@ -80,16 +80,16 @@ text.botao {
   * {
     @apply border-border;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: "arial", sans-serif;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: "arial", sans-serif;
     font-weight: 700;
@@ -102,45 +102,45 @@ text.botao {
     font-weight: 900;
     font-family: "arial", sans-serif;
   }
-  
+
   text.titulo1 {
     font-weight: 900;
     font-family: "arial", sans-serif;
   }
-  
+
   text.titulo2 {
     font-weight: 900;
     font-family: "arial", sans-serif;
   }
-  
+
   svg text.botao {
     font-weight: 400;
   }
-  
+
   text.corrido {
     font-weight: 400;
     font-family: "arial", sans-serif;
   }
-  
+
   /* DRS Custom Card Styles */
   .drs-card {
     @apply bg-white rounded-2xl shadow-lg overflow-hidden;
   }
-  
+
   .drs-card-teal {
     @apply bg-primary text-primary-foreground rounded-2xl p-6;
     border-radius: 1.5rem 1.5rem 0 1.5rem;
   }
-  
+
   .drs-card-orange {
     @apply bg-secondary text-secondary-foreground rounded-2xl p-6;
   }
-  
+
   .drs-card-cutout {
     @apply bg-white rounded-2xl p-6 relative;
     border-radius: 1.5rem 0 1.5rem 1.5rem;
   }
-  
+
   /* DRS Button Styles */
   .drs-btn {
     background: hsl(var(--button-bg));
@@ -153,120 +153,120 @@ text.botao {
     width: fit-content !important;
     @apply inline-flex items-center gap-2 transition-all hover:opacity-90;
   }
-  
+
   /* Policy page title styling */
   .policy-title {
     font-weight: 900 !important;
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-  
+
   .drs-btn-uppercase {
     @apply uppercase;
   }
-  
+
   /* Swiper Navigation Arrows */
   .drs360-swiper .swiper-button-next,
   .drs360-swiper .swiper-button-prev {
     @apply w-12 h-12 bg-white rounded-full shadow-lg;
   }
-  
+
   .drs360-swiper .swiper-button-next::after,
   .drs360-swiper .swiper-button-prev::after {
     @apply text-lg font-bold;
     color: hsl(var(--secondary));
   }
-  
+
   .drs-btn-primary {
     @apply drs-btn;
   }
-  
+
   .drs-btn-secondary {
     @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-full font-semibold inline-flex items-center gap-2 transition-all hover:bg-secondary/90;
   }
-  
+
   .drs-btn-outline {
     @apply border-2 border-primary text-primary px-6 py-3 rounded-full font-semibold inline-flex items-center gap-2 transition-all hover:bg-primary hover:text-primary-foreground;
   }
-  
+
   /* DRS Tag/Badge */
   .drs-tag {
     @apply inline-block px-4 py-1.5 rounded-full text-sm font-medium border;
   }
-  
+
   .drs-tag-teal {
     @apply bg-primary text-primary-foreground border-primary;
     background: #69C0AC;
     margin-left: 10%;
   }
-  
+
   .drs-tag-outline {
     @apply bg-transparent text-foreground border-foreground/30;
   }
-  
+
   /* Hero section background */
   .drs-hero-bg {
     @apply relative;
     background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--drs-teal-dark)) 100%);
   }
-  
+
   /* Section backgrounds */
   .drs-section-teal {
     @apply bg-primary text-primary-foreground py-16;
   }
-  
+
   .drs-section-light {
     @apply bg-accent py-16;
   }
-  
+
   /* Grid container */
   .drs-container {
     @apply mx-auto px-4 sm:px-6 lg:px-8;
     max-width: 90%;
   }
-  
+
   /* Custom shapes */
   .drs-shape-orange {
     @apply w-16 h-16 bg-secondary rounded-lg;
   }
-  
+
   .drs-shape-teal {
     @apply w-16 h-16 bg-primary rounded-lg;
   }
-  
+
   /* Footer wave */
   .drs-footer-wave {
     clip-path: ellipse(100% 100% at 50% 100%);
     @apply bg-primary;
   }
-  
+
   /* Header nav styles */
   header nav {
     position: relative;
     align-items: start !important;
   }
-  
+
   header .hidden nav {
     padding-left: inherit;
   }
-  
+
   header.scrolled .hidden nav {
     padding-left: 0 !important;
   }
-  
+
   header nav img {
     height: 100px !important;
     top: 1rem;
     position: absolute;
     transition: .4s;
   }
-  
+
   header.scrolled nav img {
     height: auto;
     top: auto;
     position: inherit;
   }
-  
+
   /* Inner white container for desktop header */
   .inner-white {
     display: flex;
@@ -317,7 +317,7 @@ header nav nav {
   .carousel-container-offset {
     margin-left: -50px;
   }
-  
+
   .carousel-container-offset .swiper-slide {
     padding: 6rem;
   }
@@ -349,7 +349,7 @@ header nav .navigation-viewport-wrapper div {
   .text-balance {
     text-wrap: balance;
   }
-  
+
   /* Floating animation */
   @keyframes float {
     0%, 100% {
@@ -359,28 +359,28 @@ header nav .navigation-viewport-wrapper div {
       transform: translateY(-10px);
     }
   }
-  
+
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
-  
+
   /* Custom border radius for DRS cards */
   .rounded-drs-tl {
     border-radius: 1.5rem 1.5rem 0 1.5rem;
   }
-  
+
   .rounded-drs-tr {
     border-radius: 1.5rem 1.5rem 1.5rem 0;
   }
-  
+
   .rounded-drs-bl {
     border-radius: 1.5rem 0 1.5rem 1.5rem;
   }
-  
+
   .rounded-drs-br {
     border-radius: 0 1.5rem 1.5rem 1.5rem;
   }
-  
+
   /* Contato form placeholder color */
   .contato-input::placeholder {
     color: #15AF97;
@@ -477,7 +477,7 @@ footer {
   .home-section2-grid {
     margin-top: -200px;
   }
-  
+
   .lg\:rounded-\[32px\] {
     border-radius: 32px;
     padding: 10rem 5rem !important;
@@ -504,8 +504,8 @@ footer {
 }
 
 /* ============================================
-   RESPONSIVE STYLES FOR SCREENS < 1024px
-   ============================================ */
+RESPONSIVE STYLES FOR SCREENS < 1024px
+============================================ */
 
 /* Tablet and Mobile (< 1024px) */
 @media (max-width: 1023px) {
@@ -514,43 +514,43 @@ footer {
     font-size: 30px !important;
     line-height: 30px !important;
   }
-  
+
   p {
     font-size: 18px !important;
     line-height: normal !important;
   }
-  
+
   h2, .section-title {
     font-size: 24px !important;
     line-height: normal !important;
   }
-  
+
   svg text.botao {
     font-size: 16px !important;
   }
-  
+
   text.botao2 {
     font-weight: 400;
     font-family: "arial", sans-serif;
     font-size: 20px !important;
   }
-  
+
   /* DRS 360 page specific styling */
   .drs360-page svg text.botao {
     font-size: 20px !important;
     font-family: "arial", sans-serif;
   }
-  
+
   h3 {
     font-size: 30px !important;
     line-height: 30px !important;
   }
-  
+
   text.corrido {
     font-size: 18px;
     transform: translate(-25px, -5px);
   }
-  
+
   /* Buttons styling for mobile */
   .drs-btn {
     padding: 10px 20px !important;
@@ -558,46 +558,46 @@ footer {
     min-height: 48px;
     width: fit-content;
   }
-  
+
   /* Global container adjustments */
   .drs-container {
     max-width: 95%;
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  
+
   /* Section padding reduction */
   section {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
   }
-  
+
   section[style*="padding-bottom: 12rem"] {
     padding-bottom: 4rem !important;
   }
-  
+
   /* SVG blocks - Ensure they scale properly */
   svg[viewBox] {
     max-width: 100%;
     height: auto;
   }
-  
+
   /* Footer adjustments */
   footer {
     min-height: auto !important;
     margin-bottom: 40px;
   }
-  
+
   footer .grid {
     gap: 2rem;
   }
-  
+
   /* Carousel adjustments */
   .swiper {
     width: 100% !important;
     padding: 0 10px !important;
   }
-  
+
   /* Orange CTA sections */
   .cta-orange-section,
   div[style*="borderRadius: '50px'"],
@@ -605,44 +605,44 @@ footer {
     border-radius: 24px !important;
     padding: 1.5rem !important;
   }
-  
+
   /* DRS 360 "Acesse agora" section styles for mobile */
   .drs360-access-border-box {
     border-radius: 24px 24px 0 0 !important;
     padding: 2rem 0 !important;
   }
-  
+
   .drs360-access-green-box {
     margin-left: 0 !important;
     border-radius: 24px !important;
     background-size: 50px !important;
     margin-top: -25px !important;
   }
-  
+
   /* Contato page section 3 green box mobile styles */
   .contato-green-box {
     padding-top: 6rem !important;
   }
-  
+
   .contato-green-box h2 {
     line-height: 24px !important;
   }
-  
+
   /* World Map - Scrollable on smaller screens */
   .world-map-container {
     overflow-x: auto;
   }
-  
+
   /* Hide stair effect on mobile */
   .stair-offset {
     margin-top: 0 !important;
   }
-  
+
   /* Ensure grids stack on mobile */
   .grid-cols-12 {
     grid-template-columns: 1fr !important;
   }
-  
+
   .lg\:col-span-4,
   .lg\:col-span-5,
   .lg\:col-span-6,
@@ -651,17 +651,17 @@ footer {
   .lg\:col-span-10 {
     grid-column: span 1 !important;
   }
-  
+
   .lg\:col-start-2 {
     grid-column-start: 1 !important;
   }
-  
+
   /* Green info boxes - padding adjustments */
   div[style*="padding: '10rem 6rem 3rem 6rem'"],
   div[style*="padding: 10rem 6rem 3rem 6rem"] {
     padding: 2rem !important;
   }
-  
+
   /* Form containers */
   div[style*="padding: '4rem 4rem 0 4rem'"],
   div[style*="padding: 4rem 4rem 0 4rem"] {
@@ -676,37 +676,37 @@ footer {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
   }
-  
+
   /* Container tighter */
   .drs-container {
     max-width: 100%;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
-  
+
   /* Footer grid - Single column */
   footer .grid {
     grid-template-columns: 1fr !important;
   }
-  
+
   /* Decorative floating elements - keep visible but smaller */
   .animate-float {
     width: 80px !important;
     right: 0 !important;
   }
-  
+
   /* Buttons adjustments */
   .drs-btn {
     width: 100%;
     justify-content: center;
     text-align: center;
   }
-  
+
   /* Hero boxes padding */
   .lg\:p-\[5\.5rem\] {
     padding: 1.5rem !important;
   }
-  
+
   /* Tags/labels */
   span[style*="padding: '0px 20px'"],
   span[style*="padding: '3px 30px'"],
@@ -715,28 +715,28 @@ footer {
     font-size: 14px !important;
     padding: 2px 12px !important;
   }
-  
+
   /* Orange CTA section */
   div[style*="padding: '70px'"],
   div[style*="padding: 70px"] {
     padding: 1.5rem !important;
   }
-  
+
   /* DRS 360 section adjustments */
   div[style*="padding: '3rem 4rem'"],
   div[style*="padding: 3rem 4rem"] {
     padding: 1.5rem !important;
   }
-  
+
   /* Footer min-height */
   footer {
     min-height: auto !important;
   }
-  
+
   footer svg[viewBox="0 0 1273 959"] {
     display: none;
   }
-  
+
   footer {
     background-color: #274B41;
     padding-top: 2rem;
@@ -750,18 +750,18 @@ footer {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-  
+
   /* Buttons even more compact */
   .drs-btn {
     padding: 10px 16px !important;
     font-size: 14px !important;
   }
-  
+
   /* Form inputs - Prevents zoom on iOS */
   input, textarea {
     font-size: 16px !important;
   }
-  
+
   /* Modal adjustments */
   [role="dialog"] {
     max-width: 95vw !important;
@@ -775,7 +775,7 @@ footer {
     left: 0 !important;
     width: 230px !important;
   }
-  
+
   /* Parent container positioning - viewport wrapper */
   .navigation-viewport-wrapper {
     left: 125px !important;
@@ -793,12 +793,12 @@ html, body {
   .politica-section1 {
     padding: 6rem 4rem 0rem 4rem;
   }
-  
+
   .politica-section2 {
     padding-top: 3rem;
     padding-bottom: 12rem;
   }
-  
+
   .politica-green-box {
     background-size: 150px;
     padding: 6rem 4rem;
@@ -810,12 +810,12 @@ html, body {
     padding: 0;
     margin-top: 2rem;
   }
-  
+
   .politica-green-box {
     background-size: 100px;
     padding: 7rem 2rem 3rem 3rem;
   }
-  
+
   .politica-section2 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -827,34 +827,34 @@ html, body {
   .flex.lg\:flex-row {
     flex-direction: column !important;
   }
-  
+
   .lg\:w-1\/2 {
     width: 100% !important;
   }
-  
+
   /* Remove negative margins on mobile */
   .lg\:ml-\[-35px\] {
     margin-left: 0 !important;
   }
-  
+
   .lg\:w-\[calc\(100\%\+35px\)\] {
     width: 100% !important;
   }
-  
+
   /* Hero section rounded corners for stacked layout */
   .rounded-t-\[24px\].lg\:rounded-t-none {
     border-radius: 24px 24px 0 0 !important;
   }
-  
+
   .rounded-b-\[24px\].lg\:rounded-b-none {
     border-radius: 0 0 24px 24px !important;
   }
-  
+
   /* Fix grid columns */
   .col-span-12 {
     grid-column: span 12 !important;
   }
-  
+
   /* Solutions grid - remove stair effect */
   div[style*="marginTop: '-110px'"],
   div[style*="margin-top: -110px"],
@@ -866,60 +866,112 @@ html, body {
   div[style*="margin-top: 130px"] {
     margin-top: 1rem !important;
   }
-  
+
   /* Table scroll */
   .overflow-x-auto {
     overflow-x: auto !important;
     -webkit-overflow-scrolling: touch;
   }
-  
+
   /* Ensure images scale */
   img {
     max-width: 100%;
     height: auto;
   }
-  
+
   /* Gestão digital green box margin fix */
   .lg\:col-span-8.flex.flex-col.justify-center.overflow-hidden.drs360-access-green-box.gestao-digital-greenbox.lg\:\!ml-\[-35px\].lg\:\!rounded-\[40px\].lg\:\!mt-0 {
     margin-top: -40px !important;
   }
-  
+
   /* Header background fix */
   .supports-\[backdrop-filter\]\:bg-background\/60 {
     background-color: #fff !important;
   }
-  
+
   /* Nav alignment fix */
   nav.drs-container {
     align-items: center !important;
   }
-  
+
   /* Footer mobile bottom positioning */
   .footer-bg-mobile-bottom {
     right: -50px !important;
     left: -10px !important;
   }
-  
+
   /* H1 line-height for mobile */
   h1 {
     line-height: 40px !important;
   }
-  
+
   /* Grupo DRS SVG botao font-size */
   .pagina-grupo-drs svg text.botao {
     font-size: 20px !important;
   }
-  
+
   /* Grupo DRS Section 13 arrows */
   .absolute.bottom-12.left-16.flex.gap-4.grupo-drs-section13-arrows {
     padding-left: 0 !important;
   }
-  
+
   /* Backdrop blur override */
   .backdrop-blur {
     --tw-backdrop-blur: none;
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
     background-color: #fff !important;
+  }
+}
+@media (max-width: 1023px) {
+  .mobile-padding {
+    padding: 5rem 1rem 3rem 2rem !important;
+  }
+  .mobile-padding-2 {
+    padding: 0 !important;
+  }
+  .mobile-padding-3 {
+    padding: 1.5rem 0rem 0rem 2rem !important;
+    height: 100%;
+  }
+  .margin-top-mobile {
+    margin-top: -100px !important;
+    margin-left: -110px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .pagina-grupo-drs .carousel-container-offset .swiper-slide {
+    padding: 1rem 2rem 0rem 4rem !important;
+  }
+  .margin-top-mobile {
+    left: 15px !important;
+    bottom: 80px !important;
+  }
+  .pagina-grupo-drs .carousel-container-offset .swiper-slide h3 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .pagina-grupo-drs .carousel-container-offset .swiper-slide p.lg\:text-\[20px\] {
+    font-size: 18px;
+    line-height: 22px !important;
+  }
+  .pagina-grupo-drs .carousel-container-offset .swiper-slide p.lg\:text-\[16px\] {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  .pagina-grupo-drs .grupo-drs-section13-arrows {
+    padding-left: 0;
+    bottom: 85px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .pagina-grupo-drs .carousel-container-offset .swiper-slide {
+    padding: 3rem 4rem !important;
+  }
+  .margin-top-mobile {
+    left: 15px !important;
+    bottom: 80px !important;
   }
 }

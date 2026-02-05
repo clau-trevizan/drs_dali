@@ -213,19 +213,19 @@ export default function GrupoDRS() {
           <div className="flex flex-col lg:flex-row gap-0 items-stretch min-h-[300px] lg:min-h-[400px]">
             {/* Image Side - Left */}
             <div className="relative w-full lg:w-1/2" style={{ position: 'relative', zIndex: 1 }}>
-              <img 
-                src={imgGrupo} 
-                alt="Grupo DRS" 
-                className="w-full h-full min-h-[200px] lg:min-h-[400px] object-cover rounded-t-[24px] lg:rounded-t-none lg:rounded-l-[32px] lg:rounded-tl-[40px] lg:rounded-bl-[40px]"
+              <img
+                src={imgGrupo}
+                alt="Grupo DRS"
+                className="w-full h-full min-h-[200px] lg:min-h-[400px] object-cover rounded-t-[24px] lg:rounded-t-none lg:rounded-l-[32px] lg:rounded-tl-[40px] lg:rounded-bl-[40px] mobile-padding"
               />
             </div>
 
             {/* Content Side - Right with teal background */}
-            <div 
+            <div
               className="relative w-full lg:w-1/2 flex flex-col justify-center overflow-hidden rounded-b-[24px] lg:rounded-b-none lg:rounded-r-[32px] lg:rounded-tr-[40px] lg:rounded-br-[40px] p-[1.5rem_1rem_4rem_2rem] lg:p-0 mt-[-50px] lg:mt-0"
               style={{ backgroundColor: '#69C0AC' }}
             >
-              <div className="lg:ml-[-35px] lg:w-[calc(100%+35px)] lg:p-[5.5rem]">
+              <div className="lg:ml-[-35px] lg:w-[calc(100%+35px)] lg:p-[5.5rem] mobile-padding-2">
                 {/* Tag DRS 360 */}
                 <span
                   className="text-[16px] lg:text-[20px]"
@@ -258,9 +258,9 @@ export default function GrupoDRS() {
       {/* Section 2: Text Blocks Section */}
       <section className="py-8 md:py-16 bg-white overflow-hidden relative">
         {/* Floating decorative image */}
-        <img 
-          src={flutuante2} 
-          alt="Decorativo" 
+        <img
+          src={flutuante2}
+          alt="Decorativo"
           className="hidden lg:block animate-float"
           style={{ position: 'absolute', right: 0, top: '80px', width: '200px', height: 'auto' }}
         />
@@ -292,12 +292,12 @@ export default function GrupoDRS() {
           <div className="grid grid-cols-12">
             {/* Tag - spans 10 cols starting at 2 */}
             <div className="col-span-12 lg:col-start-2 lg:col-span-10">
-              <span 
-                style={{ 
-                  color: '#000', 
-                  fontSize: '20px', 
-                  fontStyle: 'normal', 
-                  fontWeight: 400, 
+              <span
+                style={{
+                  color: '#000',
+                  fontSize: '20px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
                   lineHeight: '40px',
                   borderRadius: '30px',
                   background: '#69C0AC',
@@ -310,7 +310,7 @@ export default function GrupoDRS() {
                 Impacto e Capacidade
               </span>
             </div>
-            
+
             {/* Carousel - 12 cols on desktop */}
             <div className="col-span-12">
               {/* Carousel with 3 items per view */}
@@ -404,16 +404,16 @@ export default function GrupoDRS() {
                     </svg>
                   </SwiperSlide>
                 </Swiper>
-                
+
                 {/* Navigation - prev, dots, next in a row */}
                 <div className="flex items-center justify-center gap-4 mt-8">
-                  <button 
+                  <button
                     onClick={() => benefitsCarouselRef.current?.slidePrev()}
                     className="hover:opacity-80 transition-opacity rotate-180"
                   >
                     <img src={arrowSlide} alt="Previous" className="w-[66px] h-[50px]" />
                   </button>
-                  
+
                   {/* Dots */}
                   <div className="flex gap-2">
                     {[0, 1].map((dotIndex) => (
@@ -431,8 +431,8 @@ export default function GrupoDRS() {
                       />
                     ))}
                   </div>
-                  
-                  <button 
+
+                  <button
                     onClick={() => benefitsCarouselRef.current?.slideNext()}
                     className="hover:opacity-80 transition-opacity"
                   >
@@ -464,7 +464,7 @@ export default function GrupoDRS() {
                 <path d="M496.371 356.88H453.128C444.062 356.88 436.713 364.237 436.713 373.312V416.598C436.713 425.673 444.062 433.029 453.128 433.029H496.371C505.437 433.029 512.786 425.673 512.786 416.598V373.312C512.786 364.237 505.437 356.88 496.371 356.88Z" fill="#F19425"/>
               </svg>
             </div>
-            
+
             {/* Block 2 - Valores (4 columns) */}
             <div className="col-span-12 lg:col-span-4 flex flex-col justify-center" style={{ paddingLeft: '50px' }}>
               <h3 style={{ color: '#000', fontSize: '35px', fontStyle: 'normal', fontWeight: 900, lineHeight: '40px', marginBottom: '24px', textAlign: 'left' }}>
@@ -486,9 +486,9 @@ export default function GrupoDRS() {
       {/* Section 5: Tagline Section */}
       <section className="bg-white overflow-hidden relative" style={{ paddingTop: '5rem', paddingBottom: '3rem' }}>
         {/* Floating decorative image */}
-        <img 
-          src={flutuante3} 
-          alt="Decorativo" 
+        <img
+          src={flutuante3}
+          alt="Decorativo"
           className="hidden md:block animate-float"
           style={{ position: 'absolute', left: '55%', top: '10px', width: '420px', height: 'auto', zIndex: 0 }}
         />
@@ -624,16 +624,16 @@ export default function GrupoDRS() {
                     </svg>
                   </SwiperSlide>
                 </Swiper>
-                
+
                 {/* Navigation - prev, dots, next in a row */}
                 <div className="flex items-center justify-center gap-4 mt-8">
-                  <button 
+                  <button
                     onClick={() => duplicatedCarouselRef.current?.slidePrev()}
                     className="hover:opacity-80 transition-opacity rotate-180"
                   >
                     <img src={arrowSlide} alt="Previous" className="w-[66px] h-[50px]" />
                   </button>
-                  
+
                   {/* Dots */}
                   <div className="flex gap-2">
                     {[0, 1].map((dotIndex) => (
@@ -651,8 +651,8 @@ export default function GrupoDRS() {
                       />
                     ))}
                   </div>
-                  
-                  <button 
+
+                  <button
                     onClick={() => duplicatedCarouselRef.current?.slideNext()}
                     className="hover:opacity-80 transition-opacity"
                   >
@@ -671,13 +671,13 @@ export default function GrupoDRS() {
           <div className="grid grid-cols-12">
             {/* Image Side - Left (4 columns) */}
             <div className="col-span-12 lg:col-span-4 flex items-end justify-center lg:justify-end grupo-drs-section8-image-wrapper" style={{ marginRight: '-50px' }}>
-              <img 
+              <img
                 src="/images/img-nosso-time.png"
-                alt="Nosso Time" 
+                alt="Nosso Time"
                 className="w-full max-w-[400px] h-auto object-contain grupo-drs-section8-image"
               />
             </div>
-            
+
             {/* SVG Side - Right (8 columns) - Desktop */}
             <div className="hidden lg:block col-span-12 lg:col-span-8" style={{ textAlign: 'left' }}>
               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 847 564" fill="none">
@@ -697,7 +697,7 @@ export default function GrupoDRS() {
                 </a>
               </svg>
             </div>
-            
+
             {/* SVG Side - Mobile */}
             <div className="block lg:hidden col-span-12">
               <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 408 713" fill="none" className="w-full h-auto">
@@ -771,7 +771,7 @@ export default function GrupoDRS() {
                     <text className="botao" x="57" y="255" fontSize="20" fontWeight="400" fill="#008C79">internacional.</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 2 - PCS */}
                 <div className="col-span-12 md:col-span-6 lg:col-span-4" style={{ marginTop: '0' }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -784,7 +784,7 @@ export default function GrupoDRS() {
                     <text className="botao" x="57" y="255" fontSize="20" fontWeight="400" fill="#008C79">atendimento especializado.</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 3 - TIS */}
                 <div className="col-span-12 md:col-span-6 lg:col-span-4" style={{ marginTop: '0' }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -812,8 +812,8 @@ export default function GrupoDRS() {
               <p style={{ color: '#000', fontSize: '20px', fontStyle: 'normal', fontWeight: 400, lineHeight: '25px', marginBottom: '32px' }}>
                 Tudo isso é potencializado pela nossa plataforma proprietária, a DRS 360, que monitora em tempo real, gera alertas inteligentes e oferece controle total da operação. Com ela, sponsors, centros de pesquisa e operadoras acompanham cada etapa com transparência e agilidade.
               </p>
-              <a 
-                href="/solucoes" 
+              <a
+                href="/solucoes"
                 className="drs-btn inline-flex items-center gap-2"
               >
                 <ArrowIcon className="w-5 h-4" />
@@ -826,9 +826,9 @@ export default function GrupoDRS() {
 
       {/* Floating decorative element between Section 12 and 13 */}
       <div className="relative bg-white">
-        <img 
-          src="/images/flutuante4.svg" 
-          alt="Decorativo" 
+        <img
+          src="/images/flutuante4.svg"
+          alt="Decorativo"
           className="hidden md:block animate-float"
           style={{ position: 'absolute', right: '10%', top: '-50px', width: '250px', height: 'auto', zIndex: 10 }}
         />
@@ -839,13 +839,13 @@ export default function GrupoDRS() {
         <div className="drs-container">
           <div className="grid grid-cols-12 gap-8 items-center">
             {/* Left side - Swiper content box - 5 cols on desktop, skip 2 */}
-            <div 
-              className="col-span-12 lg:col-start-3 lg:col-span-5 relative min-h-[470px] lg:min-h-[550px] flex flex-wrap justify-center items-center p-[4rem_1rem_4rem_2rem] lg:p-0 carousel-container-offset"
+            <div
+              className="col-span-12 lg:col-start-3 lg:col-span-5 relative min-h-[470px] lg:min-h-[550px] flex flex-wrap justify-center items-center p-[4rem_1rem_4rem_2rem] lg:p-0 carousel-container-offset mobile-padding-3"
             >
               {/* Mobile background - only visible on screens < 1024px */}
-              <div 
+              <div
                 className="absolute inset-0 lg:hidden grupo-drs-section13-bg"
-                style={{ 
+                style={{
                   backgroundImage: 'url(/images/fundo_mobile.svg)',
                   backgroundPosition: 'top left',
                   backgroundRepeat: 'no-repeat',
@@ -853,16 +853,16 @@ export default function GrupoDRS() {
                 }}
               ></div>
               {/* Desktop background - hidden on screens < 1024px */}
-              <div 
+              <div
                 className="absolute inset-0 hidden lg:block"
-                style={{ 
+                style={{
                   backgroundImage: 'url(/images/fundo2.svg)',
                   backgroundPosition: 'center',
                   backgroundRepeat: 'no-repeat',
                   backgroundSize: 'contain'
                 }}
               ></div>
-              
+
               <Swiper
                 modules={[Navigation]}
                 onSwiper={(swiper) => { swiperRef.current = swiper; }}
@@ -898,17 +898,17 @@ export default function GrupoDRS() {
                   </div>
                 </SwiperSlide>
               </Swiper>
-              
+
               {/* Custom navigation buttons at bottom left - with margin-left on mobile */}
-              <div className="flex gap-4 mt-[120px] lg:mt-4 lg:absolute lg:bottom-12 lg:left-16 justify-center lg:justify-start relative z-10 pl-0 lg:pl-[60px] ml-[-90px] lg:ml-0 grupo-drs-section13-arrows">
-                <button 
+              <div className="flex gap-4 mt-[120px] lg:mt-4 lg:absolute lg:bottom-12 lg:left-16 justify-center lg:justify-start relative z-10 pl-0 lg:pl-[60px] ml-[-90px] lg:ml-0 grupo-drs-section13-arrows margin-top-mobile">
+                <button
                   onClick={() => swiperRef.current?.slidePrev()}
                   className="transition-opacity rotate-180"
                   style={{ opacity: certActiveSlide === 0 ? 0.6 : 1 }}
                 >
                   <img src={arrowSlide} alt="Previous" className="w-[50px] h-[38px] lg:w-[66px] lg:h-[50px]" />
                 </button>
-                <button 
+                <button
                   onClick={() => swiperRef.current?.slideNext()}
                   className="transition-opacity"
                   style={{ opacity: certActiveSlide === 1 ? 0.6 : 1 }}
@@ -917,12 +917,12 @@ export default function GrupoDRS() {
                 </button>
               </div>
             </div>
-            
+
             {/* Right side - Fixed image - 3 cols on desktop with max-width 90% */}
             <div className="col-span-12 lg:col-span-3 hidden lg:flex justify-center h-full pb-4 lg:pb-[70px]">
-              <img 
+              <img
                 src="/images/certificacoes.png"
-                alt="Certificações" 
+                alt="Certificações"
                 className="rounded-3xl self-end"
                 style={{ maxWidth: '90%' }}
               />
@@ -932,7 +932,7 @@ export default function GrupoDRS() {
       </section>
 
       {/* Section: Nossa Rede Mundial Section with Map */}
-      <DRS360Section 
+      <DRS360Section
         tagText="nossa rede mundial"
         showTitle={false}
         hasLink={false}
@@ -941,9 +941,9 @@ export default function GrupoDRS() {
       />
 
       <SolutionModal
-        open={modalOpen} 
-        onOpenChange={setModalOpen} 
-        data={selectedSolution} 
+        open={modalOpen}
+        onOpenChange={setModalOpen}
+        data={selectedSolution}
       />
     </Layout>
   );

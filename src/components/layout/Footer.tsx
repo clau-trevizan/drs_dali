@@ -46,6 +46,7 @@ const footerData = {
 export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
   return (
     <footer ref={ref} className="text-primary-foreground relative footer-responsive bg-footer-desktop" style={{ minHeight: 'auto', marginBottom: '125px' }}>
+    <div class="desktop-fundo"></div>
 
       {/* Mobile background with two images */}
       <div

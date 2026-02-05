@@ -929,11 +929,22 @@ html, body {
     background-size: calc(100% - 60px);
     background-repeat: no-repeat, repeat-y, no-repeat;
     padding-top: 140px;
-    background-image: url('/images/top-rodape.svg'), url('/images/rodape-verde.svg'), url('/images/bottom-rodape.svg');
-    background-position: top center, center center, bottom center;
+    background-image: url('/images/top-rodape.svg'), url('/images/bottom-rodape.svg');
+    background-position: top center, bottom center;
     padding-bottom: 50px;
   }
+  .desktop-fundo {
+    background-image: url('/images/meio-rodape.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    width: calc(100% - 60px);
+  }
 }
+
 @media (max-width: 1023px) {
   .mobile-padding {
     padding: 5rem 1rem 3rem 2rem !important;
@@ -984,5 +995,20 @@ html, body {
   .margin-top-mobile {
     left: 15px !important;
     bottom: 80px !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1143px){
+  .desktop-fundo {
+    height: calc(100% - 255px);
+  }
+}
+@media (min-width: 1144px) and (max-width: 1343px){
+  .desktop-fundo {
+    height: calc(100% - 275px);
+  }
+}
+@media (min-width: 1344px) {
+  .desktop-fundo {
+    height: calc(100% - 300px);
   }
 }

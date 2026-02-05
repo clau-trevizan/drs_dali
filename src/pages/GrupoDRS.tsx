@@ -216,13 +216,13 @@ export default function GrupoDRS() {
               <img
                 src={imgGrupo}
                 alt="Grupo DRS"
-                className="w-full h-full min-h-[200px] lg:min-h-[400px] object-cover rounded-t-[24px] lg:rounded-t-none lg:rounded-l-[32px] lg:rounded-tl-[40px] lg:rounded-bl-[40px] mobile-padding"
+                className="w-full h-full min-h-[200px] lg:min-h-[400px] object-cover rounded-t-[24px] lg:rounded-t-none lg:rounded-l-[32px] lg:rounded-tl-[40px] lg:rounded-bl-[40px]"
               />
             </div>
 
             {/* Content Side - Right with teal background */}
             <div
-              className="relative w-full lg:w-1/2 flex flex-col justify-center overflow-hidden rounded-b-[24px] lg:rounded-b-none lg:rounded-r-[32px] lg:rounded-tr-[40px] lg:rounded-br-[40px] p-[1.5rem_1rem_4rem_2rem] lg:p-0 mt-[-50px] lg:mt-0"
+              className="relative w-full lg:w-1/2 flex flex-col justify-center overflow-hidden rounded-b-[24px] lg:rounded-b-none lg:rounded-r-[32px] lg:rounded-tr-[40px] lg:rounded-br-[40px] p-[1.5rem_1rem_4rem_2rem] lg:p-0 mt-[-50px] lg:mt-0 mobile-padding"
               style={{ backgroundColor: '#69C0AC' }}
             >
               <div className="lg:ml-[-35px] lg:w-[calc(100%+35px)] lg:p-[5.5rem] mobile-padding-2">

@@ -7,15 +7,19 @@ export function PageLoader() {
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    // Aguarda o React montar tudo + browser pintar a tela
-    const raf = requestAnimationFrame(() => {
-      const timer = setTimeout(() => {
-        setIsFading(true);
-        setTimeout(() => setIsVisible(false), 500);
-      }, 100);
-    });
+    const onLoad = () => {
+      setIsFading(true);
+      setTimeout(() => setIsVisible(false), 500);
+    };
 
-    return () => cancelAnimationFrame(raf);
+    // Se a página já terminou de carregar
+    if (document.readyState === 'complete') {
+      onLoad();
+    } else {
+      window.addEventListener('load', onLoad);
+    }
+
+    return () => window.removeEventListener('load', onLoad);
   }, []);
 
   if (!isVisible) return null;

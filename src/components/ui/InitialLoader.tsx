@@ -5,65 +5,63 @@ export function InitialLoader() {
   const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
-    const startFade = () => {
-      if (isFading) return;
+    let total = 0;
+    let loaded = 0;
+    let finished = false;
+
+    // trava scroll
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const finish = () => {
+      if (finished) return;
+      finished = true;
+
+      setIsFading(true);
       setTimeout(() => {
-        setIsFading(true);
-        setTimeout(() => setIsVisible(false), 500);
-      }, 1500);
+        setIsVisible(false);
+        document.body.style.overflow = originalOverflow || '';
+      }, 500);
     };
 
-    const waitForImages = () => {
+    const trackImages = () => {
       const images = Array.from(document.images);
-      const unloaded = images.filter((img) => !img.complete || img.naturalHeight === 0);
 
-      if (unloaded.length === 0 && images.length > 0) {
-        startFade();
-        return;
-      }
+      images.forEach((img) => {
+        if (img.dataset.tracked) return;
 
-      if (images.length === 0) {
-        // No images yet — DOM may not be ready, retry
-        return;
-      }
+        img.dataset.tracked = 'true';
+        total++;
 
-      let loaded = 0;
-      const total = unloaded.length;
-
-      unloaded.forEach((img) => {
         const onDone = () => {
           loaded++;
-          if (loaded >= total) startFade();
+          if (loaded >= total) finish();
         };
-        img.addEventListener('load', onDone, { once: true });
-        img.addEventListener('error', onDone, { once: true });
+
+        if (img.complete && img.naturalHeight !== 0) {
+          onDone();
+        } else {
+          img.addEventListener('load', onDone, { once: true });
+          img.addEventListener('error', onDone, { once: true });
+        }
       });
     };
 
-    // Poll until images appear in the DOM, then wait for them
-    let attempts = 0;
-    const poll = setInterval(() => {
-      attempts++;
-      const images = Array.from(document.images);
-      if (images.length > 0) {
-        clearInterval(poll);
-        waitForImages();
-      } else if (attempts > 50) {
-        // After 5s with no images, just show the page
-        clearInterval(poll);
-        startFade();
-      }
-    }, 100);
+    const observer = new MutationObserver(trackImages);
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
 
-    // Hard fallback: 15 seconds max
-    const fallback = setTimeout(() => {
-      clearInterval(poll);
-      startFade();
-    }, 15000);
+    trackImages();
+
+    // fallback absoluto
+    const fallback = setTimeout(finish, 15000);
 
     return () => {
-      clearInterval(poll);
+      observer.disconnect();
       clearTimeout(fallback);
+      document.body.style.overflow = originalOverflow || '';
     };
   }, []);
 

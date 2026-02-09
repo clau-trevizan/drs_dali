@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export function InitialLoader() {
+export function PageLoader() {
   const [isVisible, setIsVisible] = useState(true);
   const [isFading, setIsFading] = useState(false);
 
@@ -9,19 +9,12 @@ export function InitialLoader() {
     let loaded = 0;
     let finished = false;
 
-    // trava scroll
-    const originalOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-
     const finish = () => {
       if (finished) return;
       finished = true;
 
       setIsFading(true);
-      setTimeout(() => {
-        setIsVisible(false);
-        document.body.style.overflow = originalOverflow || '';
-      }, 500);
+      setTimeout(() => setIsVisible(false), 500);
     };
 
     const trackImages = () => {
@@ -53,15 +46,15 @@ export function InitialLoader() {
       subtree: true,
     });
 
+    // Primeira varredura
     trackImages();
 
-    // fallback absoluto
-    const fallback = setTimeout(finish, 15000);
+    // fallback duro
+    const fallback = setTimeout(finish, 20000);
 
     return () => {
       observer.disconnect();
       clearTimeout(fallback);
-      document.body.style.overflow = originalOverflow || '';
     };
   }, []);
 

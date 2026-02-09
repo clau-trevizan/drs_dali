@@ -46,7 +46,7 @@ const App = () => (
     return () => {
       window.removeEventListener('load', onPageLoad);
     };
-  }, []); // Empty dependency array ensures this runs once after initial render
+  }, []) // Empty dependency array ensures this runs once after initial render
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -82,6 +82,5 @@ const App = () => (
   );
 
 
-);
 
 export default App;

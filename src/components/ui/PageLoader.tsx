@@ -1,15 +1,20 @@
 import { useEffect, useState } from 'react';
 
-export function InitialLoader() {
+export function PageLoader() {
   const [isVisible, setIsVisible] = useState(true);
   const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
+    let cancelled = false;
+
     const startFade = () => {
-      if (isFading) return;
+      if (cancelled || isFading) return;
       setTimeout(() => {
+        if (cancelled) return;
         setIsFading(true);
-        setTimeout(() => setIsVisible(false), 500);
+        setTimeout(() => {
+          if (!cancelled) setIsVisible(false);
+        }, 500);
       }, 1500);
     };
 
@@ -23,7 +28,6 @@ export function InitialLoader() {
       }
 
       if (images.length === 0) {
-        // No images yet — DOM may not be ready, retry
         return;
       }
 
@@ -40,7 +44,6 @@ export function InitialLoader() {
       });
     };
 
-    // Poll until images appear in the DOM, then wait for them
     let attempts = 0;
     const poll = setInterval(() => {
       attempts++;
@@ -49,19 +52,18 @@ export function InitialLoader() {
         clearInterval(poll);
         waitForImages();
       } else if (attempts > 50) {
-        // After 5s with no images, just show the page
         clearInterval(poll);
         startFade();
       }
     }, 100);
 
-    // Hard fallback: 15 seconds max
     const fallback = setTimeout(() => {
       clearInterval(poll);
       startFade();
     }, 15000);
 
     return () => {
+      cancelled = true;
       clearInterval(poll);
       clearTimeout(fallback);
     };

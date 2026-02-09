@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export function PageLoader() {
+export function InitialLoader() {
   const [isVisible, setIsVisible] = useState(true);
   const [isFading, setIsFading] = useState(false);
 

@@ -5,8 +5,6 @@ export function PageLoader() {
   const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-
     let total = 0;
     let loaded = 0;
     let finished = false;
@@ -48,8 +46,10 @@ export function PageLoader() {
       subtree: true,
     });
 
+    // Primeira varredura
     trackImages();
 
+    // fallback duro
     const fallback = setTimeout(finish, 20000);
 
     return () => {

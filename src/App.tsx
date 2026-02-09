@@ -27,8 +27,8 @@ const PoliticaPrivacidade = lazy(() => import("./pages/PoliticaPrivacidade"));
 const queryClient = new QueryClient();
 
 const PageLoader = () => (
-  <div className="min-h-screen flex items-center justify-center">
-    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+  <div className="fixed inset-0 z-[9999] flex items-center justify-center" style={{ backgroundColor: '#16493C' }}>
+    <div className="animate-spin rounded-full h-12 w-12 border-4 border-white border-t-transparent"></div>
   </div>
 );
 

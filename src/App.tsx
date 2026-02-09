@@ -46,41 +46,73 @@ const App = () => (
     return () => {
       window.removeEventListener('load', onPageLoad);
     };
-  }, []) // Empty dependency array ensures this runs once after initial render
+  }, []); // Empty dependency array ensures this runs once after initial render
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <SmoothScroll />
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <LanguageProvider>
-            <ScrollToTop />
-            <PageLoader />
-            <Suspense fallback={null}>
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/solucoes" element={<Solucoes />} />
-                <Route path="/areas/cts" element={<CTS />} />
-                <Route path="/areas/pcs" element={<PCS />} />
-                <Route path="/areas/tis" element={<TIS />} />
-                <Route path="/drs-360" element={<DRS360 />} />
-                <Route path="/grupo-drs" element={<GrupoDRS />} />
-                <Route path="/insights" element={<Insights />} />
-                <Route path="/insights/:slug" element={<InsightPost />} />
-                <Route path="/contato" element={<Contato />} />
-                <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
-            <CookieConsent />
-          </LanguageProvider>
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <SmoothScroll />
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <LanguageProvider>
+              <ScrollToTop />
+              <PageLoader />
+              <Suspense fallback={null}>
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/solucoes" element={<Solucoes />} />
+                  <Route path="/areas/cts" element={<CTS />} />
+                  <Route path="/areas/pcs" element={<PCS />} />
+                  <Route path="/areas/tis" element={<TIS />} />
+                  <Route path="/drs-360" element={<DRS360 />} />
+                  <Route path="/grupo-drs" element={<GrupoDRS />} />
+                  <Route path="/insights" element={<Insights />} />
+                  <Route path="/insights/:slug" element={<InsightPost />} />
+                  <Route path="/contato" element={<Contato />} />
+                  <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </Suspense>
+              <CookieConsent />
+            </LanguageProvider>
+          </BrowserRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
   );
 
 
+//
+//   <QueryClientProvider client={queryClient}>
+//     <TooltipProvider>
+//       <SmoothScroll />
+//       <Toaster />
+//       <Sonner />
+//       <BrowserRouter>
+//         <LanguageProvider>
+//           <ScrollToTop />
+//           <PageLoader />
+//           <Suspense fallback={null}>
+//             <Routes>
+//               <Route path="/" element={<Index />} />
+//               <Route path="/solucoes" element={<Solucoes />} />
+//               <Route path="/areas/cts" element={<CTS />} />
+//               <Route path="/areas/pcs" element={<PCS />} />
+//               <Route path="/areas/tis" element={<TIS />} />
+//               <Route path="/drs-360" element={<DRS360 />} />
+//               <Route path="/grupo-drs" element={<GrupoDRS />} />
+//               <Route path="/insights" element={<Insights />} />
+//               <Route path="/insights/:slug" element={<InsightPost />} />
+//               <Route path="/contato" element={<Contato />} />
+//               <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
+//               <Route path="*" element={<NotFound />} />
+//             </Routes>
+//           </Suspense>
+//           <CookieConsent />
+//         </LanguageProvider>
+//       </BrowserRouter>
+//     </TooltipProvider>
+//   </QueryClientProvider>
+// );
 
 export default App;

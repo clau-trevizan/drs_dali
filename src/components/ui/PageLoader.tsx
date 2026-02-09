@@ -5,55 +5,66 @@ export function PageLoader() {
   const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
-    let total = 0;
-    let loaded = 0;
-    let finished = false;
+    let cancelled = false;
 
-    const finish = () => {
-      if (finished) return;
-      finished = true;
-
-      setIsFading(true);
-      setTimeout(() => setIsVisible(false), 500);
+    const startFade = () => {
+      if (cancelled || isFading) return;
+      setTimeout(() => {
+        if (cancelled) return;
+        setIsFading(true);
+        setTimeout(() => {
+          if (!cancelled) setIsVisible(false);
+        }, 500);
+      }, 1500);
     };
 
-    const trackImages = () => {
+    const waitForImages = () => {
       const images = Array.from(document.images);
+      const unloaded = images.filter((img) => !img.complete || img.naturalHeight === 0);
 
-      images.forEach((img) => {
-        if (img.dataset.tracked) return;
+      if (unloaded.length === 0 && images.length > 0) {
+        startFade();
+        return;
+      }
 
-        img.dataset.tracked = 'true';
-        total++;
+      if (images.length === 0) {
+        return;
+      }
 
+      let loaded = 0;
+      const total = unloaded.length;
+
+      unloaded.forEach((img) => {
         const onDone = () => {
           loaded++;
-          if (loaded >= total) finish();
+          if (loaded >= total) startFade();
         };
-
-        if (img.complete && img.naturalHeight !== 0) {
-          onDone();
-        } else {
-          img.addEventListener('load', onDone, { once: true });
-          img.addEventListener('error', onDone, { once: true });
-        }
+        img.addEventListener('load', onDone, { once: true });
+        img.addEventListener('error', onDone, { once: true });
       });
     };
 
-    const observer = new MutationObserver(trackImages);
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-    });
+    let attempts = 0;
+    const poll = setInterval(() => {
+      attempts++;
+      const images = Array.from(document.images);
+      if (images.length > 0) {
+        clearInterval(poll);
+        waitForImages();
+      } else if (attempts > 50) {
+        clearInterval(poll);
+        startFade();
+      }
+    }, 100);
 
-    // Primeira varredura
-    trackImages();
-
-    // fallback duro
-    const fallback = setTimeout(finish, 20000);
+    const fallback = setTimeout(() => {
+      clearInterval(poll);
+      startFade();
+    }, 15000);
 
     return () => {
-      observer.disconnect();
+      cancelled = true;
+      clearInterval(poll);
       clearTimeout(fallback);
     };
   }, []);

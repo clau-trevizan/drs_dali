@@ -5,57 +5,17 @@ export function PageLoader() {
   const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
-    let total = 0;
-    let loaded = 0;
-    let finished = false;
+    if (typeof window === 'undefined') return;
 
-    const finish = () => {
-      if (finished) return;
-      finished = true;
-
-      setIsFading(true);
-      setTimeout(() => setIsVisible(false), 500);
-    };
-
-    const trackImages = () => {
-      const images = Array.from(document.images);
-
-      images.forEach((img) => {
-        if (img.dataset.tracked) return;
-
-        img.dataset.tracked = 'true';
-        total++;
-
-        const onDone = () => {
-          loaded++;
-          if (loaded >= total) finish();
-        };
-
-        if (img.complete && img.naturalHeight !== 0) {
-          onDone();
-        } else {
-          img.addEventListener('load', onDone, { once: true });
-          img.addEventListener('error', onDone, { once: true });
-        }
-      });
-    };
-
-    const observer = new MutationObserver(trackImages);
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
+    // Aguarda o React montar tudo + browser pintar a tela
+    const raf = requestAnimationFrame(() => {
+      const timer = setTimeout(() => {
+        setIsFading(true);
+        setTimeout(() => setIsVisible(false), 500);
+      }, 100);
     });
 
-    // Primeira varredura
-    trackImages();
-
-    // fallback duro
-    const fallback = setTimeout(finish, 20000);
-
-    return () => {
-      observer.disconnect();
-      clearTimeout(fallback);
-    };
+    return () => cancelAnimationFrame(raf);
   }, []);
 
   if (!isVisible) return null;

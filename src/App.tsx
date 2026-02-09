@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+// import { InitialLoader } from "@/components/ui/InitialLoader";
+import { PageLoader } from "@/components/ui/PageLoader";
 import { SmoothScroll } from "@/components/ui/SmoothScroll";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -30,39 +32,34 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <InitialLoader />
       <SmoothScroll />
       <Toaster />
       <Sonner />
-
       <BrowserRouter>
         <LanguageProvider>
           <ScrollToTop />
-
-          <Suspense fallback={null}>
-            <Layout>
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/solucoes" element={<Solucoes />} />
-                <Route path="/areas/cts" element={<CTS />} />
-                <Route path="/areas/pcs" element={<PCS />} />
-                <Route path="/areas/tis" element={<TIS />} />
-                <Route path="/drs-360" element={<DRS360 />} />
-                <Route path="/grupo-drs" element={<GrupoDRS />} />
-                <Route path="/insights" element={<Insights />} />
-                <Route path="/insights/:slug" element={<InsightPost />} />
-                <Route path="/contato" element={<Contato />} />
-                <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Layout>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/solucoes" element={<Solucoes />} />
+              <Route path="/areas/cts" element={<CTS />} />
+              <Route path="/areas/pcs" element={<PCS />} />
+              <Route path="/areas/tis" element={<TIS />} />
+              <Route path="/drs-360" element={<DRS360 />} />
+              <Route path="/grupo-drs" element={<GrupoDRS />} />
+              <Route path="/insights" element={<Insights />} />
+              <Route path="/insights/:slug" element={<InsightPost />} />
+              <Route path="/contato" element={<Contato />} />
+              <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
           </Suspense>
-
           <CookieConsent />
         </LanguageProvider>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
-
 
 export default App;

@@ -273,7 +273,7 @@ export default function DRS360() {
             <div className="col-span-12 lg:col-start-3 lg:col-span-7" style={{ marginBottom: '6.5rem' }}>
               <div className="flex flex-col gap-6">
                 <p style={{ color: '#000', fontSize: '20px', fontWeight: 400, lineHeight: '1.5' }}>
-                  O DRS 360 é a <strong style="font-weight: 900;">plataforma digital</strong> desenvolvida pelo Grupo DRS para oferecer gestão completa e rastreabilidade em tempo real de cada operação.
+                  O DRS 360 é a <strong style={{ fontWeight: 900 }}>plataforma digital</strong> desenvolvida pelo Grupo DRS para oferecer gestão completa e rastreabilidade em tempo real de cada operação.
                 </p>
                 <p style={{ color: '#000', fontSize: '20px', fontWeight: 400, lineHeight: '1.5' }}>
                   Por meio do DRS 360, biofarmacêuticas, CROs, centros de pesquisa, operadoras de saúde e parceiros logísticos monitoram e gerenciam seus próprios projetos, com total segurança, autonomia e visibilidade — sempre dentro de um ambiente exclusivo e protegido.

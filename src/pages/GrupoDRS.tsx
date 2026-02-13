@@ -526,7 +526,7 @@ export default function GrupoDRS() {
     </div>
 
     {/* Right side - Fixed image - 3 cols on desktop */}
-    <div className="col-span-12 lg:col-span-3 lg:flex justify-center h-full pb-4 lg:pb-[70px]">
+    <div className="col-span-12 lg:col-span-4 lg:flex justify-center h-full pb-4 lg:pb-[70px]">
     <div class="col-span-12 lg:col-start-2 lg:col-span-9 mt-8" style={{ paddingLeft: '0px' }}>
     <h3 style={{ color: '#000', fontSize: '35px', fontStyle: 'normal', fontWeight: 900, lineHeight: '40px', marginBottom: '24px', textAlign: 'left' }}>
     Os nossos valores: 

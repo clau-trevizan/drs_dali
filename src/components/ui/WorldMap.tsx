@@ -36,18 +36,18 @@ interface CityWithResponsive {
 const cities: CityWithResponsive[] = [
   {
     name: 'Dublin',
-    position: { 
+    position: {
       desktop: { x: '39.5vw', y: '14.5vw' },
       mobile: { x: '420px', y: '150px' }
     },
     info: {
       title: 'DRS International – Dublin (IE)',
-      description: "Dublin - 15 - 17 Earlsfort Terrace, Saint Kevin's, Dublin 2, D02 YX28, Irlanda"
+      description: "15 - 17 Earlsfort Terrace, Saint Kevin's, Dublin 2, D02 YX28, Irlanda"
     }
   },
   {
     name: 'Buenos Aires',
-    position: { 
+    position: {
       desktop: { x: '24.5vw', bottom: '6vw' },
       mobile: { x: '260px', bottom: '60px' }
     },
@@ -58,7 +58,7 @@ const cities: CityWithResponsive[] = [
   },
   {
     name: 'São Paulo',
-    position: { 
+    position: {
       desktop: { x: '29vw', bottom: '10vw' },
       mobile: { x: '310px', bottom: '100px' }
     },
@@ -73,7 +73,7 @@ const cities: CityWithResponsive[] = [
   },
   {
     name: 'Brasília',
-    position: { 
+    position: {
       desktop: { x: '27.5vw', bottom: '11vw' },
       mobile: { x: '290px', bottom: '115px' }
     },
@@ -84,7 +84,7 @@ const cities: CityWithResponsive[] = [
   },
   {
     name: 'Santa Catarina',
-    position: { 
+    position: {
       desktop: { x: '27.5vw', bottom: '8vw' },
       mobile: { x: '290px', bottom: '85px' }
     },
@@ -125,22 +125,22 @@ export function WorldMap() {
   return (
     <>
       {/* Container with horizontal scroll on mobile */}
-      <div 
+      <div
         ref={scrollContainerRef}
         className="w-full overflow-x-auto lg:overflow-x-visible"
       >
-        <div 
+        <div
           className="relative"
-          style={{ 
+          style={{
             minWidth: '900px' // Ensures zoom effect by setting minimum width
           }}
         >
-          <img 
-            src="/images/mapa.svg" 
-            alt="Mapa de cobertura mundial" 
+          <img
+            src="/images/mapa.svg"
+            alt="Mapa de cobertura mundial"
             className="w-full h-auto"
           />
-          
+
           {/* Pins clicáveis */}
           {cities.map((city) => {
             const pos = getPosition(city);
@@ -149,8 +149,8 @@ export function WorldMap() {
                 key={city.name}
                 onClick={() => setSelectedCity(city)}
                 className="absolute group cursor-pointer z-10"
-                style={{ 
-                  left: pos.x, 
+                style={{
+                  left: pos.x,
                   top: pos.y || 'auto',
                   bottom: pos.bottom || 'auto',
                   width: '25px',
@@ -177,7 +177,7 @@ export function WorldMap() {
       <Dialog open={!!selectedCity} onOpenChange={() => setSelectedCity(null)}>
         <DialogPortal>
           <DialogOverlay />
-          <DialogPrimitive.Content 
+          <DialogPrimitive.Content
             className="fixed left-[50%] top-[50%] z-50 grid w-full max-w-md translate-x-[-50%] translate-y-[-50%] gap-4 border-none p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 sm:rounded-lg"
             style={{ backgroundColor: '#274B41' }}
           >
@@ -191,7 +191,7 @@ export function WorldMap() {
                 <span className="sr-only">Fechar</span>
               </DialogPrimitive.Close>
             </div>
-            
+
             <div className="text-white" style={{ fontSize: '14px', fontWeight: 400, lineHeight: '20px' }}>
               <span className="font-bold">{selectedCity?.info.title}</span>
               <br />

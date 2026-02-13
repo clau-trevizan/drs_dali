@@ -1,7 +1,7 @@
 import { Layout } from '@/components/layout';
 import { ArrowIcon } from '@/components/ui/ArrowIcon';
-import imgGrupo from '/images/img-grupo.png';
-import drs360Final from '@/assets/drs360-final.png';
+import imgGrupo from '/images/img-grupo-nova.png';
+import drs360Final from '@/assets/drs360-final-nova.png';
 import flutuante2 from '@/assets/flutuante2.svg';
 import flutuante3 from '@/assets/flutante3.svg';
 import arrowSlide from '@/assets/arrow-slide.svg';
@@ -199,6 +199,8 @@ export default function GrupoDRS() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [duplicatedActiveSlide, setDuplicatedActiveSlide] = useState(0);
   const [certActiveSlide, setCertActiveSlide] = useState(0);
+  const missaoCarouselRef = useRef<SwiperType | null>(null);
+  const [missaoActiveSlide, setMissaoActiveSlide] = useState(0);
 
   const openBenefitModal = (index: number) => {
     setSelectedSolution(benefitsData[index]);
@@ -446,38 +448,95 @@ export default function GrupoDRS() {
       </section>
 
       {/* Section 4: Missão, Visão e Valores Section */}
-      <section className="py-16 bg-white">
+      <section className="py-8 md:py-12 bg-white">
         <div className="drs-container">
-          <div className="grid grid-cols-12 gap-8">
-            {/* Block 1 - Missão/Visão SVG (5 columns) */}
-            <div className="col-span-12 lg:col-start-2 lg:col-span-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 529 523" fill="none">
-                <path d="M261.548 451.097V489.233C261.548 507.86 276.632 522.958 295.24 522.958H491.202C511.72 522.958 528.359 506.307 528.359 485.764V142.416C528.359 123.477 513.024 108.127 494.104 108.127H469.749C451.741 108.127 437.146 93.5132 437.146 75.4921V34.0006C437.146 15.2243 421.942 0 403.18 0H37.1565C16.6387 0 0 16.6507 0 37.1937V381.81C0 401.947 16.3081 418.271 36.4254 418.271H228.75C246.861 418.271 261.544 432.969 261.544 451.097H261.548Z" fill="#16493C"/>
-                <text className="titulos" x="60" y="104" fontSize="35" fontWeight="900" fill="#ffffff">Missão</text>
-                <text className="botao" x="60" y="145" fontSize="16" fontWeight="400" fill="#69C0AC">Promover o acesso à saúde com soluções</text>
-                <text className="botao" x="60" y="165" fontSize="16" fontWeight="400" fill="#69C0AC">logísticas, clínicas e tecnológicas que gerem </text>
-                <text className="botao" x="60" y="185" fontSize="16" fontWeight="400" fill="#69C0AC">valor, segurança e impacto social positivo.</text>
-                <text className="titulos" x="60" y="255" fontSize="35" fontWeight="900" fill="#ffffff">Visão</text>
-                <text className="botao" x="60" y="297" fontSize="16" fontWeight="400" fill="#69C0AC">Ser reconhecido como o ecossistema logístico</text>
-                <text className="botao" x="60" y="318" fontSize="16" fontWeight="400" fill="#69C0AC"> de saúde mais confiável e inovador da América</text>
-                <text className="botao" x="60" y="337" fontSize="16" fontWeight="400" fill="#69C0AC"> Latina.</text>
-                <path d="M496.371 356.88H453.128C444.062 356.88 436.713 364.237 436.713 373.312V416.598C436.713 425.673 444.062 433.029 453.128 433.029H496.371C505.437 433.029 512.786 425.673 512.786 416.598V373.312C512.786 364.237 505.437 356.88 496.371 356.88Z" fill="#F19425"/>
-              </svg>
+          <div className="grid grid-cols-12 gap-8 items-center">
+            {/* Left side - Swiper content box - 5 cols on desktop, skip 2 */}
+            <div
+              className="col-span-12 lg:col-start-3 lg:col-span-5 relative min-h-[470px] lg:min-h-[550px] flex flex-wrap justify-center items-center p-[4rem_1rem_4rem_2rem] lg:p-0 carousel-container-offset"
+            >
+              {/* Mobile background */}
+              <div
+                className="absolute inset-0 lg:hidden"
+                style={{
+                  backgroundImage: 'url(/images/fundo_mobile_modificado.svg)',
+                  backgroundPosition: 'top left',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundSize: '100%'
+                }}
+              ></div>
+              {/* Desktop background */}
+              <div
+                className="absolute inset-0 hidden lg:block"
+                style={{
+                  backgroundImage: 'url(/images/fundo2-modificado.svg)',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundSize: 'contain'
+                }}
+              ></div>
+
+              <Swiper
+                modules={[Navigation]}
+                onSwiper={(swiper) => { missaoCarouselRef.current = swiper; }}
+                onSlideChange={(swiper) => setMissaoActiveSlide(swiper.activeIndex)}
+                spaceBetween={24}
+                slidesPerView={1}
+                className="drs360-swiper h-full w-full mt-0 lg:mt-[-100px] relative z-10"
+              >
+                <SwiperSlide>
+                  <div className="h-full flex flex-col p-4 lg:p-0">
+                    <h3 className="mb-4 text-[24px] md:text-[28px] lg:text-[35px] leading-[30px] md:leading-[35px] lg:leading-[40px]" style={{ color: '#FFF', fontWeight: 900 }}>
+                      Missão
+                    </h3>
+                    <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[25px]" style={{ color: '#69C0AC', fontWeight: 400 }}>
+                      Transformar inovação e tecnologia em soluções estratégicas que garantam a entrega eficiente de produtos essenciais para a saúde, promovendo o bem-estar dos pacientes e apoiando com excelência no desenvolvimento de terapias inovadoras. Comprometemo-nos com práticas sustentáveis, governança responsável e impacto social positivo, contribuindo para um ecossistema de saúde mais ético, inclusivo e ambientalmente consciente.
+                    </p>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="h-full flex flex-col p-4 lg:p-0">
+                    <h3 className="mb-4 text-[24px] md:text-[28px] lg:text-[35px] leading-[30px] md:leading-[35px] lg:leading-[40px]" style={{ color: '#FFF', fontWeight: 900 }}>
+                      Visão
+                    </h3>
+                    <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[25px]" style={{ color: '#69C0AC', fontWeight: 400 }}>
+                      Ser referência global no desenvolvimento de tecnologias inovadoras e gestão inteligente de informações em saúde, tornando-se o parceiro estratégico das indústrias biofarmacêuticas, CROs, operadores logísticos e comunidade científica.
+                    </p>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+
+              {/* Custom navigation buttons */}
+              <div className="flex gap-4 mt-[120px] lg:mt-4 lg:absolute lg:bottom-12 lg:left-16 justify-center lg:justify-start relative z-10 pl-0 lg:pl-[60px] ml-[-90px] lg:ml-0">
+                <button
+                  onClick={() => missaoCarouselRef.current?.slidePrev()}
+                  className="transition-opacity rotate-180"
+                  style={{ opacity: missaoActiveSlide === 0 ? 0.6 : 1 }}
+                >
+                  <img src={arrowSlide} alt="Previous" className="w-[50px] h-[38px] lg:w-[66px] lg:h-[50px]" />
+                </button>
+                <button
+                  onClick={() => missaoCarouselRef.current?.slideNext()}
+                  className="transition-opacity"
+                  style={{ opacity: missaoActiveSlide === 1 ? 0.6 : 1 }}
+                >
+                  <img src={arrowSlide} alt="Next" className="w-[50px] h-[38px] lg:w-[66px] lg:h-[50px]" />
+                </button>
+              </div>
             </div>
 
-            {/* Block 2 - Valores (4 columns) */}
-            <div className="col-span-12 lg:col-span-4 flex flex-col justify-center" style={{ paddingLeft: '50px' }}>
-              <h3 style={{ color: '#000', fontSize: '35px', fontStyle: 'normal', fontWeight: 900, lineHeight: '40px', marginBottom: '24px', textAlign: 'left' }}>
-                Valores
-              </h3>
-              <ul style={{ listStyleType: 'disc', paddingLeft: '20px', color: '#000', fontSize: '16px', fontWeight: 400, lineHeight: '28px', textAlign: 'left' }}>
-                <li><strong>Ética e transparência</strong> – Integridade em cada decisão e processo.</li>
-                <li><strong>Compromisso com a vida</strong> – O cuidado com o paciente está no centro de tudo.</li>
-                <li><strong>Inovação com propósito</strong> – Tecnologia aplicada com foco em resultados reais.</li>
-                <li><strong>Excelência técnica e humana</strong> – Rigor técnico com atendimento empático.</li>
-                <li><strong>Sustentabilidade real</strong> – Responsabilidade ambiental e social.</li>
-                <li><strong>Colaboração com foco no cuidado</strong> – Parcerias fortes, com escuta ativa.</li>
-              </ul>
+            {/* Right side - Fixed image - 3 cols on desktop */}
+            <div className="col-span-12 lg:col-span-3 hidden lg:flex justify-center h-full pb-4 lg:pb-[70px]">
+            <h3 style={{ color: '#000', fontSize: '35px', fontStyle: 'normal', fontWeight: 900, lineHeight: '40px', marginBottom: '24px', textAlign: 'left' }}>
+              Os nossos valores: 
+            </h3>
+            <ul style={{ listStyleType: 'disc', paddingLeft: '20px', color: '#000', fontSize: '16px', fontWeight: 400, lineHeight: '28px', textAlign: 'left' }}>
+              <li><strong>Ética e transparência</strong> – Atuamos com integridade e responsabilidade em todas as nossas relações.</li>
+              <li><strong>Excelência e Qualidade</strong> - Buscamos constantemente os mais altos padrões em nossos serviços e produtos.</li>
+              <li><strong>Compromisso com a Vida</strong> - Colocamos os pacientes no centro de tudo o que fazemos.</li>
+              <li><strong>Inovação e Tecnologia</strong> - Utilizamos soluções de ponta para impulsionar a evolução da saúde.</li>
+              <li><strong>Colaboração e Parceria</strong> - Valorizamos o trabalho conjunto para gerar impactos positivos e duradouros.</li>
+            </ul>
             </div>
           </div>
         </div>
@@ -672,7 +731,7 @@ export default function GrupoDRS() {
             {/* Image Side - Left (4 columns) */}
             <div className="col-span-12 lg:col-span-4 flex items-end justify-center lg:justify-end grupo-drs-section8-image-wrapper" style={{ marginRight: '-50px' }}>
               <img
-                src="/images/img-nosso-time.png"
+                src="/images/img-nosso-time-nova.png"
                 alt="Nosso Time"
                 className="w-full max-w-[400px] h-auto object-contain grupo-drs-section8-image"
               />
@@ -921,7 +980,7 @@ export default function GrupoDRS() {
             {/* Right side - Fixed image - 3 cols on desktop with max-width 90% */}
             <div className="col-span-12 lg:col-span-3 hidden lg:flex justify-center h-full pb-4 lg:pb-[70px]">
               <img
-                src="/images/certificacoes.png"
+                src="/images/certificacoes-nova.png"
                 alt="Certificações"
                 className="rounded-3xl self-end"
                 style={{ maxWidth: '90%' }}

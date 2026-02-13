@@ -2,7 +2,7 @@ import { Layout } from '@/components/layout';
 import { Link } from 'react-router-dom';
 import { ArrowIcon } from '@/components/ui/ArrowIcon';
 import drs360Hero from '@/assets/drs-360.png';
-import drs360Final from '@/assets/drs360-final.png';
+import drs360Final from '@/assets/drs360-final-nova.png';
 import img360 from '@/assets/img-360.png';
 import cantoVerde from '@/assets/canto-verde.jpg';
 import flutuante2 from '@/assets/flutuante2.svg';
@@ -217,15 +217,15 @@ export default function DRS360() {
           <div className="flex flex-col lg:flex-row gap-0 items-stretch min-h-[300px] lg:min-h-[400px]">
             {/* Image Side - Left */}
             <div className="relative w-full lg:w-1/2" style={{ position: 'relative', zIndex: 1 }}>
-              <img 
-                src={drs360Hero} 
-                alt="DRS 360" 
+              <img
+                src={drs360Hero}
+                alt="DRS 360"
                 className="w-full h-full min-h-[200px] lg:min-h-[400px] object-cover rounded-t-[24px] lg:rounded-t-none lg:rounded-l-[32px] lg:rounded-tl-[40px] lg:rounded-bl-[40px]"
               />
             </div>
 
             {/* Content Side - Right with teal background */}
-            <div 
+            <div
               className="relative w-full lg:w-1/2 flex flex-col justify-center overflow-hidden rounded-b-[24px] lg:rounded-b-none lg:rounded-r-[32px] lg:rounded-tr-[40px] lg:rounded-br-[40px] p-[4rem_0.5rem_0.5rem_0.5rem] lg:p-0 mt-[-50px] lg:mt-0"
               style={{ backgroundColor: '#69C0AC' }}
             >
@@ -262,9 +262,9 @@ export default function DRS360() {
       {/* Text Blocks Section */}
       <section className="py-8 md:py-16 bg-white overflow-hidden relative">
         {/* Floating decorative image */}
-        <img 
-          src={flutuante2} 
-          alt="Decorativo" 
+        <img
+          src={flutuante2}
+          alt="Decorativo"
           className="hidden lg:block animate-float"
           style={{ position: 'absolute', right: 0, top: '80px', width: '200px', height: 'auto' }}
         />
@@ -273,7 +273,7 @@ export default function DRS360() {
             <div className="col-span-12 lg:col-start-3 lg:col-span-7" style={{ marginBottom: '6.5rem' }}>
               <div className="flex flex-col gap-6">
                 <p style={{ color: '#000', fontSize: '20px', fontWeight: 400, lineHeight: '1.5' }}>
-                  O DRS 360 é a plataforma digital desenvolvida pelo Grupo DRS para oferecer gestão completa e rastreabilidade em tempo real de cada operação.
+                  O DRS 360 é a <strong style="font-weight: 900;">plataforma digital</strong> desenvolvida pelo Grupo DRS para oferecer gestão completa e rastreabilidade em tempo real de cada operação.
                 </p>
                 <p style={{ color: '#000', fontSize: '20px', fontWeight: 400, lineHeight: '1.5' }}>
                   Por meio do DRS 360, biofarmacêuticas, CROs, centros de pesquisa, operadoras de saúde e parceiros logísticos monitoram e gerenciam seus próprios projetos, com total segurança, autonomia e visibilidade — sempre dentro de um ambiente exclusivo e protegido.
@@ -292,12 +292,12 @@ export default function DRS360() {
         <div className="drs-container">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-start-2 lg:col-span-10">
-              <span 
-                style={{ 
-                  color: '#000', 
-                  fontSize: '20px', 
-                  fontStyle: 'normal', 
-                  fontWeight: 400, 
+              <span
+                style={{
+                  color: '#000',
+                  fontSize: '20px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
                   lineHeight: '40px',
                   borderRadius: '30px',
                   background: '#F39325',
@@ -308,7 +308,7 @@ export default function DRS360() {
               >
                 NOSSAS FUNCIONALIDADES
               </span>
-              
+
               {/* Desktop: 6 Solution Blocks Grid */}
               <div className="hidden lg:grid grid-cols-12 gap-6 mt-8">
                 {/* Block 1 - Monitoramento em tempo real */}
@@ -327,7 +327,7 @@ export default function DRS360() {
                     <text className="botao" x="49" y="249" fontSize="20" fontWeight="400" fill="#fff">de luminosidade e queda.</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 2 - Visão completa */}
                 <div className="col-span-12 md:col-span-6 lg:col-span-4" style={{ marginTop: '65px' }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -345,7 +345,7 @@ export default function DRS360() {
                     <text className="botao" x="36" y="278" fontSize="20" fontWeight="400" fill="#fff">centros de pesquisa.</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 3 - Alertas inteligentes */}
                 <div className="col-span-12 md:col-span-6 lg:col-span-4" style={{ marginTop: '130px' }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -360,7 +360,7 @@ export default function DRS360() {
                     <text className="botao" x="49" y="255" fontSize="20" fontWeight="400" fill="#fff">necessidade de reabastecimento.</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 4 - Histórico completo */}
                 <div className="col-span-12 md:col-span-6 lg:col-span-4" style={{ marginTop: '-110px' }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -378,7 +378,7 @@ export default function DRS360() {
                     <text className="botao" x="42" y="274" fontSize="20" fontWeight="400" fill="#fff">controle.</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 5 - Relatórios personalizados */}
                 <div className="col-span-12 md:col-span-6 lg:col-span-4" style={{ marginTop: '-45px' }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -396,7 +396,7 @@ export default function DRS360() {
                     <text className="botao" x="50" y="249" fontSize="20" fontWeight="400" fill="#fff">(Compliance FDA, EMA &amp; ANVISA)</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 6 - Segurança da informação */}
                 <div className="col-span-12 md:col-span-6 lg:col-span-4" style={{ marginTop: '20px' }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -445,7 +445,7 @@ export default function DRS360() {
                       </svg>
                     </div>
                   </SwiperSlide>
-                  
+
                   {/* Slide 2 */}
                   <SwiperSlide>
                     <div className="px-4">
@@ -465,7 +465,7 @@ export default function DRS360() {
                       </svg>
                     </div>
                   </SwiperSlide>
-                  
+
                   {/* Slide 3 */}
                   <SwiperSlide>
                     <div className="px-4">
@@ -482,7 +482,7 @@ export default function DRS360() {
                       </svg>
                     </div>
                   </SwiperSlide>
-                  
+
                   {/* Slide 4 */}
                   <SwiperSlide>
                     <div className="px-4">
@@ -502,7 +502,7 @@ export default function DRS360() {
                       </svg>
                     </div>
                   </SwiperSlide>
-                  
+
                   {/* Slide 5 */}
                   <SwiperSlide>
                     <div className="px-4">
@@ -522,7 +522,7 @@ export default function DRS360() {
                       </svg>
                     </div>
                   </SwiperSlide>
-                  
+
                   {/* Slide 6 */}
                   <SwiperSlide>
                     <div className="px-4">
@@ -544,17 +544,17 @@ export default function DRS360() {
                     </div>
                   </SwiperSlide>
                 </Swiper>
-                
+
                 {/* Navigation Arrows */}
                 <div className="flex gap-4 mt-4 justify-center pl-[60px]">
-                  <button 
+                  <button
                     onClick={() => functionalitiesSwiperRef.current?.slidePrev()}
                     className="transition-opacity rotate-180"
                     style={{ opacity: activeFuncSlide === 0 ? 0.6 : 1 }}
                   >
                     <img src={arrowSlide} alt="Previous" className="w-[50px] h-[38px]" />
                   </button>
-                  <button 
+                  <button
                     onClick={() => functionalitiesSwiperRef.current?.slideNext()}
                     className="transition-opacity"
                     style={{ opacity: activeFuncSlide === 5 ? 0.6 : 1 }}
@@ -573,12 +573,12 @@ export default function DRS360() {
         <div className="drs-container">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-start-2 lg:col-span-10">
-              <span 
-                style={{ 
-                  color: '#000', 
-                  fontSize: '20px', 
-                  fontStyle: 'normal', 
-                  fontWeight: 400, 
+              <span
+                style={{
+                  color: '#000',
+                  fontSize: '20px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
                   lineHeight: '40px',
                   borderRadius: '30px',
                   background: '#69C0AC',
@@ -590,7 +590,7 @@ export default function DRS360() {
               >
                 BENEFÍCIOS ESTRATÉGICOS
               </span>
-              
+
               {/* Carousel with 3 items per view */}
               <div className="relative mt-8">
                 <Swiper
@@ -696,16 +696,16 @@ export default function DRS360() {
                     </svg>
                   </SwiperSlide>
                 </Swiper>
-                
+
                 {/* Navigation - prev, dots, next in a row */}
                 <div className="flex items-center justify-center gap-4 mt-8">
-                  <button 
+                  <button
                     onClick={() => benefitsCarouselRef.current?.slidePrev()}
                     className="hover:opacity-80 transition-opacity rotate-180"
                   >
                     <img src={arrowSlide} alt="Previous" className="w-[66px] h-[50px]" />
                   </button>
-                  
+
                   {/* Dots */}
                   <div className="flex gap-2">
                     {[0, 1].map((dotIndex) => (
@@ -723,8 +723,8 @@ export default function DRS360() {
                       />
                     ))}
                   </div>
-                  
-                  <button 
+
+                  <button
                     onClick={() => benefitsCarouselRef.current?.slideNext()}
                     className="hover:opacity-80 transition-opacity"
                   >
@@ -743,13 +743,13 @@ export default function DRS360() {
           <div className="grid grid-cols-12">
             {/* Image Side - Left (4 columns) - Desktop only */}
             <div className="hidden lg:flex col-span-12 lg:col-span-4 items-end justify-center lg:justify-end" style={{ marginRight: '-50px' }}>
-              <img 
-                src={drs360Final} 
-                alt="DRS 360 Segurança" 
+              <img
+                src={drs360Final}
+                alt="DRS 360 Segurança"
                 className="w-full max-w-[400px] h-auto object-contain"
               />
             </div>
-            
+
             {/* SVG Side - Right (8 columns) - Desktop */}
             <div className="hidden lg:block col-span-12 lg:col-span-8">
               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 847 564" fill="none">
@@ -767,7 +767,7 @@ export default function DRS360() {
                 <text className="botao" x="209" y="454" fontSize="20" fontWeight="400" fill="#000000">ISO27001/27701</text>
               </svg>
             </div>
-            
+
             {/* Mobile SVG */}
             <div className="col-span-12 lg:hidden px-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 408 713" fill="none" className="w-full h-auto">
@@ -797,7 +797,7 @@ export default function DRS360() {
       {/* Orange CTA Section */}
       <section className="py-8 bg-white">
         <div className="drs-container">
-          <div 
+          <div
             className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
             style={{
               borderRadius: '50px',
@@ -811,10 +811,10 @@ export default function DRS360() {
                 Transforme sua operação em saúde com o apoio da DRS.
               </h2>
             </div>
-            
+
             {/* Right side - Contact box (5 columns) */}
             <div className="lg:col-span-5 flex items-center">
-              <Link 
+              <Link
                 to="/contato"
                 className="flex items-center gap-4"
                 style={{
@@ -840,10 +840,10 @@ export default function DRS360() {
             <div className="col-span-12 lg:col-start-2 lg:col-span-10">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch" style={{ minHeight: 'auto' }}>
                 {/* Image Side - Left (4 columns) */}
-                <div 
+                <div
                   className="lg:col-span-4 drs360-access-border-box lg:!p-0 lg:!rounded-[50px_0_0_50px]"
-                  style={{ 
-                    position: 'relative', 
+                  style={{
+                    position: 'relative',
                     zIndex: 1,
                     borderRadius: '50px 0px 0 50px',
                     border: '1px solid rgb(105, 192, 172)',
@@ -856,9 +856,9 @@ export default function DRS360() {
                     padding: '0'
                   }}
                 >
-                  <img 
-                    src={img360} 
-                    alt="DRS 360" 
+                  <img
+                    src={img360}
+                    alt="DRS 360"
                     className="object-contain gestao-digital-image"
                     style={{
                       width: '50%',
@@ -869,9 +869,9 @@ export default function DRS360() {
                 </div>
 
                 {/* Content Side - Right with teal background (8 columns) */}
-                <div 
+                <div
                   className="lg:col-span-8 flex flex-col justify-center overflow-hidden drs360-access-green-box gestao-digital-greenbox lg:!ml-[-35px] lg:!rounded-[40px] lg:!mt-0"
-                  style={{ 
+                  style={{
                     backgroundColor: '#69C0AC',
                     marginLeft: '-35px',
                     padding: '3rem 4rem',
@@ -896,10 +896,10 @@ export default function DRS360() {
         </div>
       </section>
 
-      <SolutionModal 
-        open={modalOpen} 
-        onOpenChange={setModalOpen} 
-        data={selectedSolution} 
+      <SolutionModal
+        open={modalOpen}
+        onOpenChange={setModalOpen}
+        data={selectedSolution}
       />
       </div>
     </Layout>

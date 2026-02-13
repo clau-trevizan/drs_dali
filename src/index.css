@@ -304,6 +304,7 @@ header nav nav {
 }
 
 
+
 /* World map section - text in 9 cols */
 @media (min-width: 1024px) {
   .world-map-text-section {
@@ -928,7 +929,7 @@ html, body {
     margin-bottom: 50px;
     background-size: calc(100% - 60px);
     background-repeat: no-repeat;
-    padding-top: 140px;
+    padding-top: 160px;
     background-image: url('/images/top-rodape.svg'), url('/images/bottom-rodape.svg');
     background-position: top center, bottom center;
     padding-bottom: 50px;
@@ -942,6 +943,9 @@ html, body {
     left: 30px;
     right: 30px;
     width: calc(100% - 60px);
+  }
+  .padding-bottom-0 {
+    padding-bottom: 0 !important;
   }
 }
 
@@ -1009,6 +1013,6 @@ html, body {
 }
 @media (min-width: 1344px) {
   .desktop-fundo {
-    height: calc(100% - 300px);
+    height: calc(100% - 320px);
   }
 }

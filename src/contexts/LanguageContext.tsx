@@ -22,6 +22,7 @@ export const translations: Translations = {
     'nav.solucoes': 'Soluções',
     'nav.areas': 'Áreas de expertise',
     'nav.grupo': 'Grupo DRS',
+    'nav.insights': 'Insights',
     'nav.contato': 'Contato',
     'nav.portal': 'Portal 360 DRS',
     
@@ -119,6 +120,7 @@ export const translations: Translations = {
     'nav.solucoes': 'Solutions',
     'nav.areas': 'Areas of expertise',
     'nav.grupo': 'DRS Group',
+    'nav.insights': 'Insights',
     'nav.contato': 'Contact',
     'nav.portal': 'Portal 360 DRS',
     
@@ -216,6 +218,7 @@ export const translations: Translations = {
     'nav.solucoes': 'Soluciones',
     'nav.areas': 'Áreas de expertise',
     'nav.grupo': 'Grupo DRS',
+    'nav.insights': 'Insights',
     'nav.contato': 'Contacto',
     'nav.portal': 'Portal 360 DRS',
     

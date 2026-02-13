@@ -7,10 +7,10 @@ import { DRS360Section } from '@/components/sections';
 import heroSolucoes from '@/assets/hero-solucoes.png';
 import cornerShape from '@/assets/corner-shape.jpg';
 import flutuante2 from '@/assets/flutuante2.svg';
-import tableSolucoes from '@/assets/table-solucoes.svg';
+import tableSolucoes from '@/assets/table-solucoes-2.svg';
 import bannerMobile from '@/assets/banner_mobile.png';
-import table01 from '@/assets/table_01.jpg';
-import table02 from '@/assets/table_02.jpg';
+import table01 from '@/assets/table_01_mobile.jpg';
+import table02 from '@/assets/table_02_mobile.jpg';
 
 const solutions = [
   { title: 'Fornecimento de medicamentos comparadores', description: 'Estratégias personalizadas para cada projeto.', variant: 'teal' as const },
@@ -36,15 +36,15 @@ export default function Solucoes() {
           <div className="flex flex-col lg:flex-row gap-0 items-stretch min-h-[300px] lg:min-h-[400px]">
             {/* Image Side - Left */}
             <div className="relative w-full lg:w-1/2" style={{ position: 'relative', zIndex: 1 }}>
-              <img 
-                src={heroSolucoes} 
-                alt="Clinical Trial Services" 
+              <img
+                src={heroSolucoes}
+                alt="Clinical Trial Services"
                 className="w-full h-full min-h-[200px] lg:min-h-[400px] object-cover rounded-t-[24px] lg:rounded-t-none lg:rounded-l-[32px] lg:rounded-tl-[40px] lg:rounded-bl-[40px]"
               />
             </div>
 
             {/* Content Side - Right with teal background */}
-            <div 
+            <div
               className="relative w-full lg:w-1/2 flex flex-col justify-center overflow-hidden rounded-b-[24px] lg:rounded-b-none lg:rounded-r-[32px] lg:rounded-tr-[40px] lg:rounded-br-[40px] p-[4rem_0.5rem_0.5rem_0.5rem] lg:p-0 mt-[-50px] lg:mt-0"
               style={{ backgroundColor: '#69C0AC' }}
             >
@@ -61,9 +61,9 @@ export default function Solucoes() {
       {/* Text Blocks + Table Section */}
       <section className="py-8 md:py-16 bg-white overflow-hidden relative">
         {/* Floating decorative image */}
-        <img 
-          src={flutuante2} 
-          alt="Decorativo" 
+        <img
+          src={flutuante2}
+          alt="Decorativo"
           className="hidden lg:block animate-float"
           style={{ position: 'absolute', right: 0, top: '80px', width: '200px', height: 'auto' }}
         />
@@ -80,14 +80,14 @@ export default function Solucoes() {
               </div>
               {/* Desktop table */}
               <div className="hidden lg:block overflow-x-auto">
-                <img 
-                  src={tableSolucoes} 
-                  alt="Tabela de Soluções" 
+                <img
+                  src={tableSolucoes}
+                  alt="Tabela de Soluções"
                   className="w-full h-auto min-w-[600px]"
                 />
               </div>
               {/* Mobile table carousel */}
-              <TableCarouselMobile 
+              <TableCarouselMobile
                 images={[
                   { src: table01, alt: 'Tabela de Soluções - Parte 1' },
                   { src: table02, alt: 'Tabela de Soluções - Parte 2' }
@@ -287,16 +287,16 @@ export default function Solucoes() {
       <div className="hidden lg:block">
         <DRS360Section className="[&_.grid]:lg:col-start-2 [&_.grid]:lg:col-span-10" />
       </div>
-      
+
       {/* Mobile version - only visible on screens < 1024px */}
       <section className="py-16 bg-background lg:hidden">
         <div className="drs-container">
-          <span 
-            style={{ 
-              color: '#274B41', 
-              fontSize: '20px', 
-              fontStyle: 'normal', 
-              fontWeight: 400, 
+          <span
+            style={{
+              color: '#274B41',
+              fontSize: '20px',
+              fontStyle: 'normal',
+              fontWeight: 400,
               lineHeight: '40px',
               borderRadius: '30px',
               background: '#69C0AC',
@@ -307,12 +307,12 @@ export default function Solucoes() {
           >
             DRS 360
           </span>
-          <h2 
-            style={{ 
-              color: '#274B41', 
-              fontSize: '35px', 
-              fontStyle: 'normal', 
-              fontWeight: 900, 
+          <h2
+            style={{
+              color: '#274B41',
+              fontSize: '35px',
+              fontStyle: 'normal',
+              fontWeight: 900,
               lineHeight: '40px',
               marginBottom: '2rem'
             }}
@@ -320,9 +320,9 @@ export default function Solucoes() {
             Planejamento, controle, rastreabilidade e decisões em tempo real - tudo em um só lugar
           </h2>
           <Link to="/drs-360">
-            <img 
-              src={bannerMobile} 
-              alt="DRS 360 - Saiba mais" 
+            <img
+              src={bannerMobile}
+              alt="DRS 360 - Saiba mais"
               className="w-full h-auto"
             />
           </Link>

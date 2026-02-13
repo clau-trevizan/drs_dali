@@ -48,10 +48,10 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <SmoothScroll />
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <SmoothScroll />
           <LanguageProvider>
             <ScrollToTop />
             <PageLoader />

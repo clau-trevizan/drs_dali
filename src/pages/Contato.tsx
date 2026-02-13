@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import heroContato from '@/assets/hero-contato.png';
 import flutuante2 from '@/assets/flutuante2.svg';
+import { sendToRDStation } from '@/services/rdstation';
 
 export default function Contato() {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
@@ -28,8 +29,18 @@ export default function Contato() {
     }
   }, [showSuccessModal]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Send to RD Station (non-blocking)
+    sendToRDStation({
+      nome: formData.nome,
+      email: formData.email,
+      empresa: formData.empresa,
+      telefone: formData.telefone,
+      mensagem: formData.mensagem,
+    });
+
     // Clear form
     setFormData({
       nome: '',

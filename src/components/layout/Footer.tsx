@@ -33,7 +33,7 @@ const footerData = {
     {
       region: 'EUROPA',
       name: 'DRS International – Dublin (IE)',
-      address: 'Dublin - 15 - 17 Earlsfort Terrace, Saint Kevin\'s,\nDublin 2, D02 YX28, Irlanda',
+      address: '15 - 17 Earlsfort Terrace, Saint Kevin\'s,\nDublin 2, D02 YX28, Irlanda',
     },
   ],
   legalLinks: [

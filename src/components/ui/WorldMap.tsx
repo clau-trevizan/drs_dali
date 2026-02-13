@@ -53,7 +53,7 @@ const cities: CityWithResponsive[] = [
     },
     info: {
       title: 'Buenos Aires',
-      description: 'Rua Henrique do Rego Almeida, 261 – Setor 01\nCEP: 88133-512 – Palhoça/SC'
+      description: ''
     }
   },
   {

@@ -128,15 +128,15 @@ export default function CTS() {
           <div className="flex flex-col lg:flex-row gap-0 items-stretch min-h-[300px] lg:min-h-[400px]">
             {/* Image Side - Left */}
             <div className="relative w-full lg:w-1/2" style={{ position: 'relative', zIndex: 1 }}>
-              <img 
-                src={imgCts} 
-                alt="Clinical Trial Services" 
+              <img
+                src={imgCts}
+                alt="Clinical Trial Services"
                 className="w-full h-full min-h-[200px] lg:min-h-[400px] object-cover rounded-t-[24px] lg:rounded-t-none lg:rounded-l-[32px] lg:rounded-tl-[40px] lg:rounded-bl-[40px]"
               />
             </div>
 
             {/* Content Side - Right with teal background */}
-            <div 
+            <div
               className="relative w-full lg:w-1/2 flex flex-col justify-center overflow-hidden rounded-b-[24px] lg:rounded-b-none lg:rounded-r-[32px] lg:rounded-tr-[40px] lg:rounded-br-[40px] p-[4rem_0.5rem_0.5rem_0.5rem] lg:p-0 mt-[-50px] lg:mt-0"
               style={{ backgroundColor: '#69C0AC' }}
             >
@@ -174,11 +174,11 @@ export default function CTS() {
       </section>
 
       {/* Text Blocks + Image Section */}
-      <section className="py-8 md:py-16 bg-white overflow-hidden relative">
+      <section className="py-8 md:py-16 bg-white overflow-hidden relative padding-bottom-0">
         {/* Floating decorative image */}
-        <img 
-          src={flutuante2} 
-          alt="Decorativo" 
+        <img
+          src={flutuante2}
+          alt="Decorativo"
           className="hidden lg:block animate-float"
           style={{ position: 'absolute', right: 0, top: '80px', width: '200px', height: 'auto' }}
         />
@@ -196,9 +196,9 @@ export default function CTS() {
                   Cada etapa é pensada para garantir segurança, rastreabilidade e conformidade com padrões internacionais e agências reguladoras, GDP, ICH-GCP, FDA, EMA e ANVISA.
                 </p>
               </div>
-              <img 
-                src={imgSingle} 
-                alt="Soluções CTS" 
+              <img
+                src={imgSingle}
+                alt="Soluções CTS"
                 className="w-full h-auto"
               />
             </div>
@@ -211,12 +211,12 @@ export default function CTS() {
         <div className="drs-container">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-start-2 lg:col-span-10">
-              <span 
-                style={{ 
-                  color: '#274B41', 
-                  fontSize: '20px', 
-                  fontStyle: 'normal', 
-                  fontWeight: 400, 
+              <span
+                style={{
+                  color: '#274B41',
+                  fontSize: '20px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
                   lineHeight: '40px',
                   borderRadius: '30px',
                   background: '#69C0AC',
@@ -227,7 +227,7 @@ export default function CTS() {
               >
                 NOSSAS SOLUÇÕES
               </span>
-              
+
               {/* 6 Solution Blocks Grid - Desktop */}
               <div className="hidden lg:grid grid-cols-3 gap-6 mt-8">
                 {/* Block 1 - Fornecimento de medicamentos */}
@@ -245,7 +245,7 @@ export default function CTS() {
                     <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(0)}>SAIBA MAIS</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 2 - Serviço de armazenagem */}
                 <div className="col-span-1 mt-[65px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -259,7 +259,7 @@ export default function CTS() {
                     <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(1)}>SAIBA MAIS</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 3 - Serviços globais de importador oficial */}
                 <div className="col-span-1 mt-[130px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -274,7 +274,7 @@ export default function CTS() {
                     <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(2)}>SAIBA MAIS</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 4 - Embalagem, etiquetagem e cegamento */}
                 <div className="col-span-1 mt-[-110px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -289,7 +289,7 @@ export default function CTS() {
                     <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(3)}>SAIBA MAIS</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 5 - Kits laboratoriais */}
                 <div className="col-span-1 mt-[-45px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -303,7 +303,7 @@ export default function CTS() {
                     <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(4)}>SAIBA MAIS</text>
                   </svg>
                 </div>
-                
+
                 {/* Block 6 - Transporte especializado */}
                 <div className="col-span-1 mt-[20px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -319,7 +319,7 @@ export default function CTS() {
                   </svg>
                 </div>
               </div>
-              
+
               {/* Mobile Carousel */}
               <div className="lg:hidden mt-8">
                 <Swiper
@@ -367,17 +367,17 @@ export default function CTS() {
                     </div>
                   </SwiperSlide>
                 </Swiper>
-                
+
                 {/* Navigation Arrows */}
                 <div className="flex gap-4 mt-4 justify-center pl-[60px]">
-                  <button 
+                  <button
                     onClick={() => solutionsSwiperRef.current?.slidePrev()}
                     className="transition-opacity rotate-180"
                     style={{ opacity: activeSolutionSlide === 0 ? 0.6 : 1 }}
                   >
                     <img src={arrowSlide} alt="Previous" className="w-[50px] h-[38px]" />
                   </button>
-                  <button 
+                  <button
                     onClick={() => solutionsSwiperRef.current?.slideNext()}
                     className="transition-opacity"
                     style={{ opacity: activeSolutionSlide === solutionsData.length - 1 ? 0.6 : 1 }}
@@ -394,7 +394,7 @@ export default function CTS() {
       {/* Orange CTA Section */}
       <section className="py-8 bg-white">
         <div className="drs-container">
-          <div 
+          <div
             className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-center rounded-[24px] lg:rounded-[50px] p-6 md:p-10 lg:p-[70px]"
             style={{ backgroundColor: '#F39325' }}
           >
@@ -404,10 +404,10 @@ export default function CTS() {
                 Transforme sua operação em saúde com o apoio da DRS.
               </h2>
             </div>
-            
+
             {/* Right side - Contact box (5 columns) */}
             <div className="lg:col-span-5 flex items-center">
-              <Link 
+              <Link
                 to="/contato"
                 className="flex items-center gap-4"
                 style={{
@@ -433,10 +433,10 @@ export default function CTS() {
             <div className="col-span-12 lg:col-start-2 lg:col-span-10">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch" style={{ minHeight: 'auto' }}>
                 {/* Image Side - Left (4 columns) */}
-                <div 
+                <div
                   className="lg:col-span-4 drs360-access-border-box lg:!p-0 lg:!rounded-[50px_0_0_50px]"
-                  style={{ 
-                    position: 'relative', 
+                  style={{
+                    position: 'relative',
                     zIndex: 1,
                     borderRadius: '50px 0px 0 50px',
                     border: '1px solid rgb(105, 192, 172)',
@@ -449,9 +449,9 @@ export default function CTS() {
                     padding: '0'
                   }}
                 >
-                  <img 
-                    src={img360} 
-                    alt="DRS 360" 
+                  <img
+                    src={img360}
+                    alt="DRS 360"
                     className="object-contain gestao-digital-image"
                     style={{
                       width: '50%',
@@ -462,9 +462,9 @@ export default function CTS() {
                 </div>
 
                 {/* Content Side - Right with teal background (8 columns) */}
-                <div 
+                <div
                   className="lg:col-span-8 flex flex-col justify-center overflow-hidden drs360-access-green-box gestao-digital-greenbox lg:!ml-[-35px] lg:!rounded-[40px] lg:!mt-0"
-                  style={{ 
+                  style={{
                     backgroundColor: '#69C0AC',
                     marginLeft: '-35px',
                     padding: '3rem 4rem',
@@ -492,10 +492,10 @@ export default function CTS() {
         </div>
       </section>
 
-      <SolutionModal 
-        open={modalOpen} 
-        onOpenChange={setModalOpen} 
-        data={selectedSolution} 
+      <SolutionModal
+        open={modalOpen}
+        onOpenChange={setModalOpen}
+        data={selectedSolution}
       />
     </Layout>
   );

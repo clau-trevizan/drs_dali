@@ -59,7 +59,7 @@ export default function Solucoes() {
       </section>
 
       {/* Text Blocks + Table Section */}
-      <section className="py-8 md:py-16 bg-white overflow-hidden relative">
+      <section className="py-8 md:py-16 bg-white overflow-hidden relative padding-bottom-0">
         {/* Floating decorative image */}
         <img
           src={flutuante2}

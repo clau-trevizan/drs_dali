@@ -164,13 +164,13 @@ export default function TIS() {
     <div className="col-span-1">
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
     <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
-    <text class="titulos" x="23" y="72" font-size="35" font-weight="900" fill="#274B41">Embalagens </text>
-    <text class="titulos" x="23" y="107" font-size="35" font-weight="900" fill="#274B41">Sustentáveis</text>
-    <text class="botao" x="23" y="160" font-size="20" font-weight="400" fill="#008C79">  Embalagens térmicas retornáveis e </text>
-    <text class="botao" x="23" y="185" font-size="20" font-weight="400" fill="#008C79"> sustentáveis, com controle preciso </text>
-    <text class="botao" x="23" y="210" font-size="20" font-weight="400" fill="#008C79">de temperatura e rastreabilidade </text>
-    <text class="botao" x="23" y="235" font-size="20" font-weight="400" fill="#008C79">total para garantir segurança e </text>
-    <text class="botao" x="23" y="260" font-size="20" font-weight="400" fill="#008C79">desempenho em toda a cadeia fria.</text>
+    <text className="titulos" x="23" y="72" fontSize="35" fontWeight="900" fill="#274B41">Embalagens </text>
+    <text className="titulos" x="23" y="107" fontSize="35" fontWeight="900" fill="#274B41">Sustentáveis</text>
+    <text className="botao" x="23" y="160" fontSize="20" fontWeight="400" fill="#008C79">  Embalagens térmicas retornáveis e </text>
+    <text className="botao" x="23" y="185" fontSize="20" fontWeight="400" fill="#008C79"> sustentáveis, com controle preciso </text>
+    <text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">de temperatura e rastreabilidade </text>
+    <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">total para garantir segurança e </text>
+    <text className="botao" x="23" y="260" fontSize="20" fontWeight="400" fill="#008C79">desempenho em toda a cadeia fria.</text>
     <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(0)}/>
     <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(0)}>SAIBA MAIS</text>
     </svg>
@@ -180,14 +180,14 @@ export default function TIS() {
     <div className="col-span-1 mt-[65px]">
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
     <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
-    <text class="titulos" x="43" y="70" font-size="35" font-weight="900" fill="#274B41">Transporte de</text>
-    <text class="titulos" x="43" y="105" font-size="35" font-weight="900" fill="#274B41">cadeia fria</text>
-    <text class="botao" x="43" y="148" font-size="20" font-weight="400" fill="#008C79">Serviços especializados de </text>
-    <text class="botao" x="43" y="173" font-size="20" font-weight="400" fill="#008C79">transporte de cadeia fria. </text>
-    <text class="botao" x="43" y="198" font-size="20" font-weight="400" fill="#008C79">Descomplique sua logística, </text>
-    <text class="botao" x="43" y="223" font-size="20" font-weight="400" fill="#008C79">integrando sua logística de </text>
-    <text class="botao" x="43" y="248" font-size="20" font-weight="400" fill="#008C79">transporte, reversa, embalagens </text>
-    <text class="botao" x="43" y="273" font-size="20" font-weight="400" fill="#008C79">e monitoramento.</text>
+    <text className="titulos" x="43" y="70" fontSize="35" fontWeight="900" fill="#274B41">Transporte de</text>
+    <text className="titulos" x="43" y="105" fontSize="35" fontWeight="900" fill="#274B41">cadeia fria</text>
+    <text className="botao" x="43" y="148" fontSize="20" fontWeight="400" fill="#008C79">Serviços especializados de </text>
+    <text className="botao" x="43" y="173" fontSize="20" fontWeight="400" fill="#008C79">transporte de cadeia fria. </text>
+    <text className="botao" x="43" y="198" fontSize="20" fontWeight="400" fill="#008C79">Descomplique sua logística, </text>
+    <text className="botao" x="43" y="223" fontSize="20" fontWeight="400" fill="#008C79">integrando sua logística de </text>
+    <text className="botao" x="43" y="248" fontSize="20" fontWeight="400" fill="#008C79">transporte, reversa, embalagens </text>
+    <text className="botao" x="43" y="273" fontSize="20" fontWeight="400" fill="#008C79">e monitoramento.</text>
     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(1)}/>
     <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(1)}>SAIBA MAIS</text>
     </svg>
@@ -197,15 +197,15 @@ export default function TIS() {
     <div className="col-span-1 mt-[130px]">
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
     <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
-    <text class="titulos" x="43" y="55" font-size="35" font-weight="900" fill="#274B41">Telemetria</text>
-    <text class="titulos" x="43" y="90" font-size="35" font-weight="900" fill="#274B41">Data loggers</text>
-    <text class="botao" x="43" y="133" font-size="20" font-weight="400" fill="#008C79">Soluções avançadas de </text>
-    <text class="botao" x="43" font-size="20" font-weight="400" fill="#008C79" y="158">monitoramento, com múltiplos </text>
-    <text class="botao" x="43" y="183" font-size="20" font-weight="400" fill="#008C79">modelos de data loggers e </text>
-    <text class="botao" x="43" y="208" font-size="20" font-weight="400" fill="#008C79">integração completa à nossa </text>
-    <text class="botao" x="43" y="233" font-size="20" font-weight="400" fill="#008C79">plataforma digital. Controle, </text>
-    <text class="botao" x="43" y="258" font-size="20" font-weight="400" fill="#008C79">precisão e rastreabilidade em </text>
-    <text class="botao" x="43" y="283" font-size="20" font-weight="400" fill="#008C79">tempo real para toda a cadeia fria.</text>
+    <text className="titulos" x="43" y="55" fontSize="35" fontWeight="900" fill="#274B41">Telemetria</text>
+    <text className="titulos" x="43" y="90" fontSize="35" fontWeight="900" fill="#274B41">Data loggers</text>
+    <text className="botao" x="43" y="133" fontSize="20" fontWeight="400" fill="#008C79">Soluções avançadas de </text>
+    <text className="botao" x="43" fontSize="20" fontWeight="400" fill="#008C79" y="158">monitoramento, com múltiplos </text>
+    <text className="botao" x="43" y="183" fontSize="20" fontWeight="400" fill="#008C79">modelos de data loggers e </text>
+    <text className="botao" x="43" y="208" fontSize="20" fontWeight="400" fill="#008C79">integração completa à nossa </text>
+    <text className="botao" x="43" y="233" fontSize="20" fontWeight="400" fill="#008C79">plataforma digital. Controle, </text>
+    <text className="botao" x="43" y="258" fontSize="20" fontWeight="400" fill="#008C79">precisão e rastreabilidade em </text>
+    <text className="botao" x="43" y="283" fontSize="20" fontWeight="400" fill="#008C79">tempo real para toda a cadeia fria.</text>
     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(2)}/>
     <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(2)}>SAIBA MAIS</text>
     </svg>
@@ -215,15 +215,15 @@ export default function TIS() {
     <div className="col-span-1 mt--25">
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
     <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
-    <text class="titulos" x="43" y="58" font-size="35" font-weight="900" fill="#274B41">Serviços </text>
-    <text class="titulos" x="43" y="93" font-size="35" font-weight="900" fill="#274B41">Integrados</text>
-    <text class="botao" x="43" y="130" font-size="20" font-weight="400" fill="#008C79">Conte com nossa gestão integrada </text>
-    <text class="botao" x="43" y="155" font-size="20" font-weight="400" fill="#008C79">da cadeia fria para viabilizar a </text>
-    <text class="botao" x="43" y="180" font-size="20" font-weight="400" fill="#008C79">distribuição de produtos, com </text>
-    <text class="botao" x="43" y="205" font-size="20" font-weight="400" fill="#008C79">embalagens prontas para uso com </text>
-    <text class="botao" x="43" y="230" font-size="20" font-weight="400" fill="#008C79">gestão de retornáveis e serviços de </text>
-    <text class="botao" x="43" y="255" font-size="20" font-weight="400" fill="#008C79">maturação, armazenagem, </text>
-    <text class="botao" x="43" y="280" font-size="20" font-weight="400" fill="#008C79">transporte e monitoramento.</text>
+    <text className="titulos" x="43" y="58" fontSize="35" fontWeight="900" fill="#274B41">Serviços </text>
+    <text className="titulos" x="43" y="93" fontSize="35" fontWeight="900" fill="#274B41">Integrados</text>
+    <text className="botao" x="43" y="130" fontSize="20" fontWeight="400" fill="#008C79">Conte com nossa gestão integrada </text>
+    <text className="botao" x="43" y="155" fontSize="20" fontWeight="400" fill="#008C79">da cadeia fria para viabilizar a </text>
+    <text className="botao" x="43" y="180" fontSize="20" fontWeight="400" fill="#008C79">distribuição de produtos, com </text>
+    <text className="botao" x="43" y="205" fontSize="20" fontWeight="400" fill="#008C79">embalagens prontas para uso com </text>
+    <text className="botao" x="43" y="230" fontSize="20" fontWeight="400" fill="#008C79">gestão de retornáveis e serviços de </text>
+    <text className="botao" x="43" y="255" fontSize="20" fontWeight="400" fill="#008C79">maturação, armazenagem, </text>
+    <text className="botao" x="43" y="280" fontSize="20" fontWeight="400" fill="#008C79">transporte e monitoramento.</text>
     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(3)}/>
     <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(3)}>SAIBA MAIS</text>
     </svg>
@@ -246,13 +246,13 @@ export default function TIS() {
     <SwiperSlide>
     <div className="px-2">
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none"><path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"></path>
-    <text class="titulos" x="23" y="72" font-size="35" font-weight="900" fill="#274B41">Embalagens </text>
-    <text class="titulos" x="23" y="107" font-size="35" font-weight="900" fill="#274B41">Sustentáveis</text>
-    <text class="botao" x="23" y="160" font-size="20" font-weight="400" fill="#008C79">Embalagens térmicas retornáveis e </text>
-    <text class="botao" x="23" y="185" font-size="20" font-weight="400" fill="#008C79"> sustentáveis, com controle preciso </text>
-    <text class="botao" x="23" y="210" font-size="20" font-weight="400" fill="#008C79">de temperatura e rastreabilidade </text>
-    <text class="botao" x="23" y="235" font-size="20" font-weight="400" fill="#008C79">total para garantir segurança e </text>
-    <text class="botao" x="23" y="260" font-size="20" font-weight="400" fill="#008C79">desempenho em toda a cadeia fria.</text>
+    <text className="titulos" x="23" y="72" fontSize="35" fontWeight="900" fill="#274B41">Embalagens </text>
+    <text className="titulos" x="23" y="107" fontSize="35" fontWeight="900" fill="#274B41">Sustentáveis</text>
+    <text className="botao" x="23" y="160" fontSize="20" fontWeight="400" fill="#008C79">Embalagens térmicas retornáveis e </text>
+    <text className="botao" x="23" y="185" fontSize="20" fontWeight="400" fill="#008C79"> sustentáveis, com controle preciso </text>
+    <text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">de temperatura e rastreabilidade </text>
+    <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">total para garantir segurança e </text>
+    <text className="botao" x="23" y="260" fontSize="20" fontWeight="400" fill="#008C79">desempenho em toda a cadeia fria.</text>
     <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(0)}></rect><text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(0)}>SAIBA MAIS</text></svg>
     </div>
     </SwiperSlide>
@@ -260,14 +260,14 @@ export default function TIS() {
     <SwiperSlide>
     <div className="px-2">
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none"><path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"></path>
-    <text class="titulos" x="43" y="70" font-size="35" font-weight="900" fill="#274B41">Transporte de</text>
-    <text class="titulos" x="43" y="105" font-size="35" font-weight="900" fill="#274B41">cadeia fria</text>
-    <text class="botao" x="43" y="148" font-size="20" font-weight="400" fill="#008C79">Serviços especializados de </text>
-    <text class="botao" x="43" y="173" font-size="20" font-weight="400" fill="#008C79">transporte de cadeia fria. </text>
-    <text class="botao" x="43" y="198" font-size="20" font-weight="400" fill="#008C79">Descomplique sua logística, </text>
-    <text class="botao" x="43" y="223" font-size="20" font-weight="400" fill="#008C79">integrando sua logística de </text>
-    <text class="botao" x="43" y="248" font-size="20" font-weight="400" fill="#008C79">transporte, reversa, embalagens </text>
-    <text class="botao" x="43" y="273" font-size="20" font-weight="400" fill="#008C79">e monitoramento.</text>
+    <text className="titulos" x="43" y="70" fontSize="35" fontWeight="900" fill="#274B41">Transporte de</text>
+    <text className="titulos" x="43" y="105" fontSize="35" fontWeight="900" fill="#274B41">cadeia fria</text>
+    <text className="botao" x="43" y="148" fontSize="20" fontWeight="400" fill="#008C79">Serviços especializados de </text>
+    <text className="botao" x="43" y="173" fontSize="20" fontWeight="400" fill="#008C79">transporte de cadeia fria. </text>
+    <text className="botao" x="43" y="198" fontSize="20" fontWeight="400" fill="#008C79">Descomplique sua logística, </text>
+    <text className="botao" x="43" y="223" fontSize="20" fontWeight="400" fill="#008C79">integrando sua logística de </text>
+    <text className="botao" x="43" y="248" fontSize="20" fontWeight="400" fill="#008C79">transporte, reversa, embalagens </text>
+    <text className="botao" x="43" y="273" fontSize="20" fontWeight="400" fill="#008C79">e monitoramento.</text>
     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(1)}></rect><text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(1)}>SAIBA MAIS</text></svg>
     </div>
     </SwiperSlide>
@@ -275,15 +275,15 @@ export default function TIS() {
     <SwiperSlide>
     <div className="px-2">
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none"><path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"></path>
-    <text class="titulos" x="43" y="55" font-size="35" font-weight="900" fill="#274B41">Telemetria</text>
-    <text class="titulos" x="43" y="90" font-size="35" font-weight="900" fill="#274B41">Data loggers</text>
-    <text class="botao" x="43" y="133" font-size="20" font-weight="400" fill="#008C79">Soluções avançadas de </text>
-    <text class="botao" x="43" font-size="20" font-weight="400" fill="#008C79" y="158">monitoramento, com múltiplos </text>
-    <text class="botao" x="43" y="183" font-size="20" font-weight="400" fill="#008C79">modelos de data loggers e </text>
-    <text class="botao" x="43" y="208" font-size="20" font-weight="400" fill="#008C79">integração completa à nossa </text>
-    <text class="botao" x="43" y="233" font-size="20" font-weight="400" fill="#008C79">plataforma digital. Controle, </text>
-    <text class="botao" x="43" y="258" font-size="20" font-weight="400" fill="#008C79">precisão e rastreabilidade em </text>
-    <text class="botao" x="43" y="283" font-size="20" font-weight="400" fill="#008C79">tempo real para toda a cadeia fria.</text>
+    <text className="titulos" x="43" y="55" fontSize="35" fontWeight="900" fill="#274B41">Telemetria</text>
+    <text className="titulos" x="43" y="90" fontSize="35" fontWeight="900" fill="#274B41">Data loggers</text>
+    <text className="botao" x="43" y="133" fontSize="20" fontWeight="400" fill="#008C79">Soluções avançadas de </text>
+    <text className="botao" x="43" fontSize="20" fontWeight="400" fill="#008C79" y="158">monitoramento, com múltiplos </text>
+    <text className="botao" x="43" y="183" fontSize="20" fontWeight="400" fill="#008C79">modelos de data loggers e </text>
+    <text className="botao" x="43" y="208" fontSize="20" fontWeight="400" fill="#008C79">integração completa à nossa </text>
+    <text className="botao" x="43" y="233" fontSize="20" fontWeight="400" fill="#008C79">plataforma digital. Controle, </text>
+    <text className="botao" x="43" y="258" fontSize="20" fontWeight="400" fill="#008C79">precisão e rastreabilidade em </text>
+    <text className="botao" x="43" y="283" fontSize="20" fontWeight="400" fill="#008C79">tempo real para toda a cadeia fria.</text>
     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(2)}></rect><text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(2)}>SAIBA MAIS</text></svg>
     </div>
     </SwiperSlide>
@@ -291,15 +291,15 @@ export default function TIS() {
     <SwiperSlide>
     <div className="px-2">
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none"><path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"></path>
-    <text class="titulos" x="43" y="58" font-size="35" font-weight="900" fill="#274B41">Serviços </text>
-    <text class="titulos" x="43" y="93" font-size="35" font-weight="900" fill="#274B41">Integrados</text>
-    <text class="botao" x="43" y="130" font-size="20" font-weight="400" fill="#008C79">Conte com nossa gestão integrada </text>
-    <text class="botao" x="43" y="155" font-size="20" font-weight="400" fill="#008C79">da cadeia fria para viabilizar a </text>
-    <text class="botao" x="43" y="180" font-size="20" font-weight="400" fill="#008C79">distribuição de produtos, com </text>
-    <text class="botao" x="43" y="205" font-size="20" font-weight="400" fill="#008C79">embalagens prontas para uso com </text>
-    <text class="botao" x="43" y="230" font-size="20" font-weight="400" fill="#008C79">gestão de retornáveis e serviços de </text>
-    <text class="botao" x="43" y="255" font-size="20" font-weight="400" fill="#008C79">maturação, armazenagem, </text>
-    <text class="botao" x="43" y="280" font-size="20" font-weight="400" fill="#008C79">transporte e monitoramento.</text>
+    <text className="titulos" x="43" y="58" fontSize="35" fontWeight="900" fill="#274B41">Serviços </text>
+    <text className="titulos" x="43" y="93" fontSize="35" fontWeight="900" fill="#274B41">Integrados</text>
+    <text className="botao" x="43" y="130" fontSize="20" fontWeight="400" fill="#008C79">Conte com nossa gestão integrada </text>
+    <text className="botao" x="43" y="155" fontSize="20" fontWeight="400" fill="#008C79">da cadeia fria para viabilizar a </text>
+    <text className="botao" x="43" y="180" fontSize="20" fontWeight="400" fill="#008C79">distribuição de produtos, com </text>
+    <text className="botao" x="43" y="205" fontSize="20" fontWeight="400" fill="#008C79">embalagens prontas para uso com </text>
+    <text className="botao" x="43" y="230" fontSize="20" fontWeight="400" fill="#008C79">gestão de retornáveis e serviços de </text>
+    <text className="botao" x="43" y="255" fontSize="20" fontWeight="400" fill="#008C79">maturação, armazenagem, </text>
+    <text className="botao" x="43" y="280" fontSize="20" fontWeight="400" fill="#008C79">transporte e monitoramento.</text>
     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(3)}></rect><text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(3)}>SAIBA MAIS</text></svg>
     </div>
     </SwiperSlide>

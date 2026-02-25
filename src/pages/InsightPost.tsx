@@ -81,8 +81,8 @@ export default function InsightPost() {
                       {post.title}
                     </h1>
                   </div>
-                  <div className="col-20 items-center gap-3">
-                    <span style={{ color: '#000', fontSize: '14px', fontWeight: 400 }}>Compartilhar</span>
+                  <div className="col-20 flex items-center gap-3">
+                    <span style={{ color: '#000', fontSize: '14px', fontWeight: 400, width: '100%' }}>Compartilhar</span>
                     <a href={`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`} target="_blank" rel="noopener noreferrer">
                       <img src={iconX} alt="X" className="h-[50px] w-auto" />
                     </a>

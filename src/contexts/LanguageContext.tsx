@@ -119,27 +119,27 @@ export const translations: Translations = {
     // Header
     'nav.solucoes': 'Solutions',
     'nav.areas': 'Areas of expertise',
-    'nav.grupo': 'DRS Group',
+    'nav.grupo': 'Grupo DRS',
     'nav.insights': 'Insights',
     'nav.contato': 'Contact',
     'nav.portal': 'Portal 360 DRS',
     
     // Home - Section 1 (Hero)
     'home.hero.title': 'We connect science and people',
-    'home.hero.description': 'Entregamos resultados e criamos soluções personalizadas para indústria farmacêutica, CROs e centros de pesquisa clínica com tecnologia proprietária.',
-    'home.hero.cta': 'Saiba mais',
+    'home.hero.description': 'We deliver results and create customized solutions for the pharmaceutical industry, CROs and clinical research centers with proprietary technology.',
+    'home.hero.cta': 'Learn more',
     
     // Home - Section 2 (Stats)
-    'home.stats.title': 'Resultados que importam.\nSoluções que transformam.',
+    'home.stats.title': 'Results that matter.\nSolutions that transform.',
     'home.stats.card1.number': '+500',
-    'home.stats.card1.title': 'protocolos\nsob gestão',
-    'home.stats.card1.description': 'Atuação em diferentes fases\nclínicas e terapias.',
+    'home.stats.card1.title': 'protocols\nprotocols under management',  
+    'home.stats.card1.description': 'Acting in different clinical\nphases and therapies.',
     'home.stats.card2.number': '+100',
-    'home.stats.card2.title': 'clientes\nativos',
-    'home.stats.card2.description': "Biofarmacêuticas, CRO's,\nCentros de Pesquisa,\nOperadoras e Logística.",
+    'home.stats.card2.title': 'active\nclients', 
+    'home.stats.card2.description': "Biopharmaceuticals, CRO's,\nResearch Centers,\nOperators and Logistics.",
     'home.stats.card3.number': '+200.000',
-    'home.stats.card3.title': 'pacientes\natendidos\npor ano',
-    'home.stats.card3.description': 'Fazemos a diferença, seja\nconectando a pesquisa clínica\nou viabilizando os tratamentos.',
+    'home.stats.card3.title': 'patients\n seen per\nyear',
+    'home.stats.card3.description': 'We make a difference,\nwhether it`s connecting clinical research\n or making treatments possible.',
     
     // Home - Section 3 (DRS 360 Carousel)
     'home.drs360.slide1.title': 'DRS360: Visibilidade 24/7 em tempo real',
@@ -223,12 +223,12 @@ export const translations: Translations = {
     'nav.portal': 'Portal 360 DRS',
     
     // Home - Section 1 (Hero)
-    'home.hero.title': 'Conectamos la ciencia y las personas',
-    'home.hero.description': 'Entregamos resultados e criamos soluções personalizadas para indústria farmacêutica, CROs e centros de pesquisa clínica com tecnologia proprietária.',
-    'home.hero.cta': 'Saiba mais',
+    'home.hero.title': 'Conectamos ciencia y personas ',
+    'home.hero.description': 'Entregamos resultados y creamos soluciones personalizadas para industria farmacéutica, CROs y centros de investigación clínica con tecnología propietaria. ',
+    'home.hero.cta': 'Sepa más',
     
     // Home - Section 2 (Stats)
-    'home.stats.title': 'Resultados que importam.\nSoluções que transformam.',
+    'home.stats.title': 'Resultados que importam.\nSoluciones que transforman.',
     'home.stats.card1.number': '+500',
     'home.stats.card1.title': 'protocolos\nsob gestão',
     'home.stats.card1.description': 'Atuação em diferentes fases\nclínicas e terapias.',

@@ -71,6 +71,7 @@ export function useInsights(params?: {
   pageSize?: number;
   category?: string;
   search?: string;
+  locale?: string;
 }) {
   return useQuery({
     queryKey: ['insights', params],
@@ -80,10 +81,10 @@ export function useInsights(params?: {
 }
 
 // Hook for Single Insight
-export function useInsight(slug: string) {
+export function useInsight(slug: string, locale?: string) {
   return useQuery({
-    queryKey: ['insight', slug],
-    queryFn: () => strapiService.getInsight(slug),
+    queryKey: ['insight', slug, locale],
+    queryFn: () => strapiService.getInsight(slug, locale),
     staleTime: 1000 * 60 * 5,
     enabled: !!slug,
   });

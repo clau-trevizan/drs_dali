@@ -30,7 +30,6 @@ export function CookieConsent() {
     >
       <div className="drs-container">
         <div className="grid grid-cols-12 gap-4 items-center">
-          {/* Text - 7 columns on desktop */}
           <div className="col-span-12 lg:col-span-7">
             <p className="text-white text-sm lg:text-base" style={{ margin: 0 }}>
               {t('cookie.message')}{' '}
@@ -41,11 +40,9 @@ export function CookieConsent() {
               >
                 {t('cookie.link')}
               </Link>
-              . Ao clicar "{t('cookie.button')}" consente na nossa utilização de cookies.
+              {t('cookie.suffix')}
             </p>
           </div>
-          
-          {/* Button - 5 columns on desktop */}
           <div className="col-span-12 lg:col-span-5 flex justify-start lg:justify-end">
             <button
               onClick={handleAccept}

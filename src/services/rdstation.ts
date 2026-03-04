@@ -11,7 +11,7 @@
  * API Docs: https://developers.rdstation.com/reference/conversions
  */
 
-const RD_STATION_API_KEY = ''; // TODO: Add the client's RD Station API key
+const RD_STATION_API_KEY = 'f7fd60a468e17aa6b1d507f411f4893b';
 const RD_STATION_CONVERSION_URL = 'https://api.rd.services/platform/conversions';
 
 interface RDStationPayload {

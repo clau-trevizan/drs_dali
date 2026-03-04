@@ -1,6 +1,9 @@
 import { Layout } from '@/components/layout';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export default function PoliticaPrivacidade() {
+  const { t } = useTranslation();
+
   return (
     <Layout>
       {/* Section 1: Hero */}
@@ -26,7 +29,7 @@ export default function PoliticaPrivacidade() {
                     lineHeight: '40px' 
                   }}
                 >
-                  Política de Privacidade
+                  {t('privacy.title')}
                 </h1>
               </div>
             </div>

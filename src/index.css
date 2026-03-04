@@ -1037,4 +1037,10 @@ html, body {
     flex-wrap: wrap;
     width: 20%;
   }
+  .ingles .home-section2-grid text.titulos {
+    font-size: 32px;
+}
+.espanhol .home-section2-grid text.botao {
+    font-size: 18px;
+}
 }

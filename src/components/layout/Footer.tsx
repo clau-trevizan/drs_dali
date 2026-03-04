@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from '@/hooks/useTranslation';
 
 const footerData = {
   drsGroup: {
@@ -11,14 +12,12 @@ const footerData = {
     ],
   },
   contact: {
-    title: 'Contato',
     email: 'contato@drsgroup.com.br',
     phone: '+55 (11) 3198-9000',
     supportPhone: '+55 (11) 3198-9005',
     careersLink: 'https://vagasdrsgroup.gupy.io/',
   },
   community: {
-    title: 'Comunidade',
     links: [
       { label: 'Shield Company', href: 'https://shieldcompany.com.br/' },
       { label: 'YouVita', href: 'https://www.youvita.com.br/' },
@@ -36,14 +35,17 @@ const footerData = {
       address: '15 - 17 Earlsfort Terrace, Saint Kevin\'s,\nDublin 2, D02 YX28, Irlanda',
     },
   ],
-  legalLinks: [
-    { label: 'Política de Privacidade', href: '/politica-privacidade' },
-    { label: 'Termos de Uso', href: '/termos-uso' },
-    { label: 'Política de Cookies', href: '/politica-cookies' },
-  ],
 };
 
 export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
+  const { t } = useTranslation();
+
+  const legalLinks = [
+    { label: t('footer.privacy'), href: '/politica-privacidade' },
+    { label: t('footer.terms'), href: '/termos-uso' },
+    { label: t('footer.cookies'), href: '/politica-cookies' },
+  ];
+
   return (
     <footer ref={ref} className="text-primary-foreground relative footer-responsive bg-footer-desktop" style={{ minHeight: 'auto', marginBottom: '125px' }}>
     <div className="desktop-fundo"></div>
@@ -56,7 +58,6 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
           zIndex: 0
         }}
       >
-        {/* Top background image */}
         <div
           className="footer-bg-mobile-top"
           style={{
@@ -71,7 +72,6 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
             backgroundRepeat: 'no-repeat'
           }}
         ></div>
-        {/* Bottom background image */}
         <div
           className="footer-bg-mobile-bottom"
           style={{
@@ -97,8 +97,8 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                 className="font-black mb-6 max-w-md"
                 style={{ fontSize: '35px', lineHeight: '40px' }}
               >
-                Conectamos sua necessidade<br />
-                com a solução ideal.
+                {t('footer.cta.title.line1')}<br />
+                {t('footer.cta.title.line2')}
               </h2>
               <Link
                 to="/contato"
@@ -108,7 +108,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                 <svg className="w-5 h-4" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.1116 0.305374L19.6449 5.79172L19.6911 5.83465C19.8763 6.01824 19.984 6.26036 20 6.54643L19.9991 6.6426C19.9856 6.8692 19.899 7.08569 19.7284 7.27968L19.6638 7.34633L14.1116 12.8525C13.701 13.2597 13.0371 13.2597 12.6265 12.8525C12.2135 12.4429 12.2135 11.777 12.6265 11.3674L16.4601 7.56522L1.05235 7.56559C0.472139 7.56559 0 7.09741 0 6.51765C0 5.93789 0.472144 5.4697 1.05234 5.4697L16.3364 5.46932L12.6265 1.79052C12.2135 1.38092 12.2135 0.714975 12.6265 0.305374C13.0371 -0.101791 13.701 -0.101791 14.1116 0.305374Z" fill="white"/>
                 </svg>
-                Fale com nossa equipe de vendas
+                {t('footer.cta.button')}
               </Link>
             </div>
 
@@ -118,8 +118,8 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                 className="font-black max-w-md mb-6"
                 style={{ fontSize: '28px', lineHeight: '34px' }}
               >
-                Conectamos sua necessidade<br />
-                com a solução ideal.
+                {t('footer.cta.title.line1')}<br />
+                {t('footer.cta.title.line2')}
               </h2>
               <Link
                 to="/contato"
@@ -129,7 +129,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                 <svg className="w-5 h-4" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.1116 0.305374L19.6449 5.79172L19.6911 5.83465C19.8763 6.01824 19.984 6.26036 20 6.54643L19.9991 6.6426C19.9856 6.8692 19.899 7.08569 19.7284 7.27968L19.6638 7.34633L14.1116 12.8525C13.701 13.2597 13.0371 13.2597 12.6265 12.8525C12.2135 12.4429 12.2135 11.777 12.6265 11.3674L16.4601 7.56522L1.05235 7.56559C0.472139 7.56559 0 7.09741 0 6.51765C0 5.93789 0.472144 5.4697 1.05234 5.4697L16.3364 5.46932L12.6265 1.79052C12.2135 1.38092 12.2135 0.714975 12.6265 0.305374C13.0371 -0.101791 13.701 -0.101791 14.1116 0.305374Z" fill="white"/>
                 </svg>
-                Fale com nossa equipe de vendas
+                {t('footer.cta.button')}
               </Link>
             </div>
 
@@ -191,8 +191,8 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
 
             {/* Legal Links */}
             <ul className="mt-6 space-y-1">
-              {footerData.legalLinks.map((link) => (
-                <li key={link.label}>
+              {legalLinks.map((link) => (
+                <li key={link.href}>
                   <Link
                     to={link.href}
                     className="transition-colors hover:opacity-80"
@@ -218,27 +218,27 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                     marginBottom: '16px'
                   }}
                 >
-                  {footerData.contact.title}
+                  {t('footer.contact')}
                 </span>
                 <div className="space-y-2" style={{ color: '#FFF', fontSize: '14px', fontWeight: 400, lineHeight: '30px' }}>
                   <p>
-                    <span style={{ color: '#FFF' }}>E-mail: </span>
+                    <span style={{ color: '#FFF' }}>{t('footer.contact.email')} </span>
                     <a href={`mailto:${footerData.contact.email}`} className="hover:underline" style={{ color: '#FFF' }}>
                       {footerData.contact.email}
                     </a>
                   </p>
                   <p>
-                    <span style={{ color: '#FFF' }}>Comercial: </span>
+                    <span style={{ color: '#FFF' }}>{t('footer.contact.commercial')} </span>
                     {footerData.contact.phone}
                   </p>
                   <p>
-                    <span style={{ color: '#FFF' }}>SAC / Programa de suporte: </span>
+                    <span style={{ color: '#FFF' }}>{t('footer.contact.sac')} </span>
                     {footerData.contact.supportPhone}
                   </p>
                   <p>
-                    <span style={{ color: '#FFF' }}>Trabalhe Conosco: </span>
+                    <span style={{ color: '#FFF' }}>{t('footer.contact.careers')} </span>
                     <a href={footerData.contact.careersLink} target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#69C0AC' }}>
-                      Clique aqui
+                      {t('footer.contact.careers.link')}
                     </a>
                   </p>
                 </div>
@@ -255,7 +255,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                       marginBottom: '16px'
                     }}
                   >
-                    Endereços
+                    {t('footer.addresses')}
                   </span>
                   {footerData.addresses.map((address) => (
                     <div key={address.region} className="mb-4" style={{ color: '#FFF', fontSize: '14px', fontWeight: 400, lineHeight: '30px' }}>
@@ -270,7 +270,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
 
                 {/* Copyright */}
                 <div className="mt-6" style={{ color: '#69C0AC', fontSize: '14px', paddingTop: '30px' }}>
-                  © 2026 DRS Group - Todos os direitos reservados
+                  {t('footer.rights')}
                 </div>
               </div>
 
@@ -287,7 +287,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                     marginBottom: '16px'
                   }}
                 >
-                  {footerData.community.title}
+                  {t('footer.community')}
                 </span>
                 <ul className="space-y-2">
                   {footerData.community.links.map((link) => (
@@ -317,7 +317,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                       marginBottom: '16px'
                     }}
                   >
-                    Siga a DRS Group nas redes sociais
+                    {t('footer.social')}
                   </span>
                   <div className="flex gap-3">
                     <a
@@ -354,27 +354,27 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                 marginBottom: '16px'
               }}
             >
-              {footerData.contact.title}
+              {t('footer.contact')}
             </span>
             <div className="space-y-2" style={{ color: '#FFF', fontSize: '14px', fontWeight: 400, lineHeight: '30px' }}>
               <p>
-                <span style={{ color: '#FFF' }}>E-mail: </span>
+                <span style={{ color: '#FFF' }}>{t('footer.contact.email')} </span>
                 <a href={`mailto:${footerData.contact.email}`} className="hover:underline" style={{ color: '#FFF' }}>
                   {footerData.contact.email}
                 </a>
               </p>
               <p>
-                <span style={{ color: '#FFF' }}>Comercial: </span>
+                <span style={{ color: '#FFF' }}>{t('footer.contact.commercial')} </span>
                 {footerData.contact.phone}
               </p>
               <p>
-                <span style={{ color: '#FFF' }}>SAC / Programa de suporte: </span>
+                <span style={{ color: '#FFF' }}>{t('footer.contact.sac')} </span>
                 {footerData.contact.supportPhone}
               </p>
               <p>
-                <span style={{ color: '#FFF' }}>Trabalhe Conosco: </span>
+                <span style={{ color: '#FFF' }}>{t('footer.contact.careers')} </span>
                 <a href={footerData.contact.careersLink} target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#69C0AC' }}>
-                  Clique aqui
+                  {t('footer.contact.careers.link')}
                 </a>
               </p>
             </div>
@@ -392,7 +392,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                 marginBottom: '16px'
               }}
             >
-              Endereços
+              {t('footer.addresses')}
             </span>
             {footerData.addresses.map((address) => (
               <div key={address.region} className="mb-4" style={{ color: '#FFF', fontSize: '14px', fontWeight: 400, lineHeight: '30px' }}>
@@ -446,7 +446,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                 marginBottom: '16px'
               }}
             >
-              {footerData.community.title}
+              {t('footer.community')}
             </span>
             <ul className="space-y-2">
               {footerData.community.links.map((link) => (
@@ -477,7 +477,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                 marginBottom: '16px'
               }}
             >
-              Siga a DRS Group nas redes sociais
+              {t('footer.social')}
             </span>
             <div className="flex gap-3">
               <a
@@ -523,8 +523,8 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
 
             {/* Legal Links - Mobile */}
             <ul className="mt-6 space-y-1">
-              {footerData.legalLinks.map((link) => (
-                <li key={link.label}>
+              {legalLinks.map((link) => (
+                <li key={link.href}>
                   <Link
                     to={link.href}
                     className="transition-colors hover:opacity-80"
@@ -535,12 +535,12 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
 
-        {/* Copyright - Mobile only */}
-        <div className="lg:hidden text-center pt-8" style={{ color: '#69C0AC', fontSize: '14px' }}>
-          © 2026 DRS Group - Todos os direitos reservados
+            {/* Copyright - Mobile */}
+            <div className="mt-6" style={{ color: '#69C0AC', fontSize: '14px' }}>
+              {t('footer.rights')}
+            </div>
+          </div>
         </div>
       </div>
     </footer>

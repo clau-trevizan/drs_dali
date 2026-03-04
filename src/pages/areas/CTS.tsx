@@ -14,106 +14,53 @@ import { Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { useTranslation } from '@/hooks/useTranslation';
 
-const solutionsData: SolutionModalData[] = [
-  {
-    title: "Fornecimento de medicamentos comparadores",
-    description: "Estratégias personalizadas para cada projeto, considerando as exigências locais, regionais e internacionais.",
-    diferenciais: [
-      "Cobertura nacional e internacional com entrega porta a porta",
-      "Rastreabilidade em tempo real com sensores de temperatura, impacto, umidade e geolocalização",
-      "Equipe treinada conforme padrões IATA",
-      "Gestão completa de logística reversa e trocas",
-      "Transporte de OGMs e materiais biológicos sob demanda"
-    ],
-    destaques: [
-      "Presença em todos os estados brasileiros",
-      "95% das entregas nacionais em até 24 horas",
-      "Licenciamento para transporte de 7 classes de produtos perigosos"
-    ]
-  },
-  {
-    title: "Serviço de armazenagem",
-    description: "Armazenamento e logística clínica com padrões globais de qualidade.",
-    diferenciais: [
-      "Infraestrutura com controle de temperatura 24/7",
-      "Sistemas de monitoramento em tempo real",
-      "Conformidade com normas FDA, EMA e ANVISA",
-      "Gestão de inventário automatizada"
-    ],
-    destaques: [
-      "Capacidade para armazenamento em múltiplas zonas de temperatura",
-      "Certificações internacionais de qualidade",
-      "Rastreabilidade completa de lotes"
-    ]
-  },
-  {
-    title: "Serviços globais de importador oficial",
-    description: "IOR e EOR para pesquisa clínica global.",
-    diferenciais: [
-      "Licenças de importação em múltiplos países",
-      "Expertise em regulamentação internacional",
-      "Suporte documental completo",
-      "Gestão de processos alfandegários"
-    ],
-    destaques: [
-      "Presença em mais de 50 países",
-      "Tempo médio de liberação reduzido",
-      "Conformidade regulatória garantida"
-    ]
-  },
-  {
-    title: "Embalagem, etiquetagem e cegamento",
-    description: "Oferecemos soluções completas em embalagens secundárias, etiquetagem e cegamento.",
-    diferenciais: [
-      "Processos validados conforme normas internacionais",
-      "Etiquetagem multilíngue para estudos globais",
-      "Cegamento com múltiplos níveis de segurança",
-      "Rastreabilidade completa de cada unidade"
-    ],
-    destaques: [
-      "Capacidade para grandes volumes",
-      "Flexibilidade para demandas urgentes",
-      "Conformidade com FDA, EMA e ANVISA"
-    ]
-  },
-  {
-    title: "Kits laboratoriais",
-    description: "Montagem de kits laboratoriais e de medicação para estudos clínicos.",
-    diferenciais: [
-      "Montagem personalizada por protocolo",
-      "Controle de qualidade em cada etapa",
-      "Gestão de componentes e insumos",
-      "Documentação completa para auditoria"
-    ],
-    destaques: [
-      "Flexibilidade para kits complexos",
-      "Entrega just-in-time",
-      "Suporte técnico especializado"
-    ]
-  },
-  {
-    title: "Transporte especializado",
-    description: "Transporte de medicamentos e transporte biológico para suporte e programas de diagnósticos.",
-    diferenciais: [
-      "Cobertura nacional e internacional com entrega porta a porta",
-      "Rastreabilidade em tempo real com sensores de temperatura, impacto, umidade e geolocalização",
-      "Equipe treinada conforme padrões IATA",
-      "Gestão completa de logística reversa e trocas",
-      "Transporte de OGMs e materiais biológicos sob demanda"
-    ],
-    destaques: [
-      "Presença em todos os estados brasileiros",
-      "95% das entregas nacionais em até 24 horas",
-      "Licenciamento para transporte de 7 classes de produtos perigosos"
-    ]
-  }
-];
 export default function CTS() {
+  const { t } = useTranslation();
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedSolution, setSelectedSolution] = useState<SolutionModalData | null>(null);
   const solutionsSwiperRef = useRef<SwiperType | null>(null);
   const [activeSolutionSlide, setActiveSolutionSlide] = useState(0);
+
+  const solutionsData: SolutionModalData[] = [
+    {
+      title: t('cts.sol1.title'),
+      description: t('cts.sol1.desc'),
+      diferenciais: [t('cts.sol1.dif1'), t('cts.sol1.dif2'), t('cts.sol1.dif3'), t('cts.sol1.dif4'), t('cts.sol1.dif5')],
+      destaques: [t('cts.sol1.dest1'), t('cts.sol1.dest2'), t('cts.sol1.dest3')]
+    },
+    {
+      title: t('cts.sol2.title'),
+      description: t('cts.sol2.desc'),
+      diferenciais: [t('cts.sol2.dif1'), t('cts.sol2.dif2'), t('cts.sol2.dif3'), t('cts.sol2.dif4')],
+      destaques: [t('cts.sol2.dest1'), t('cts.sol2.dest2'), t('cts.sol2.dest3')]
+    },
+    {
+      title: t('cts.sol3.title'),
+      description: t('cts.sol3.desc'),
+      diferenciais: [t('cts.sol3.dif1'), t('cts.sol3.dif2'), t('cts.sol3.dif3'), t('cts.sol3.dif4')],
+      destaques: [t('cts.sol3.dest1'), t('cts.sol3.dest2'), t('cts.sol3.dest3')]
+    },
+    {
+      title: t('cts.sol4.title'),
+      description: t('cts.sol4.desc'),
+      diferenciais: [t('cts.sol4.dif1'), t('cts.sol4.dif2'), t('cts.sol4.dif3'), t('cts.sol4.dif4')],
+      destaques: [t('cts.sol4.dest1'), t('cts.sol4.dest2'), t('cts.sol4.dest3')]
+    },
+    {
+      title: t('cts.sol5.title'),
+      description: t('cts.sol5.desc'),
+      diferenciais: [t('cts.sol5.dif1'), t('cts.sol5.dif2'), t('cts.sol5.dif3'), t('cts.sol5.dif4')],
+      destaques: [t('cts.sol5.dest1'), t('cts.sol5.dest2'), t('cts.sol5.dest3')]
+    },
+    {
+      title: t('cts.sol6.title'),
+      description: t('cts.sol6.desc'),
+      diferenciais: [t('cts.sol6.dif1'), t('cts.sol6.dif2'), t('cts.sol6.dif3'), t('cts.sol6.dif4'), t('cts.sol6.dif5')],
+      destaques: [t('cts.sol6.dest1'), t('cts.sol6.dest2'), t('cts.sol6.dest3')]
+    }
+  ];
 
   const openModal = (index: number) => {
     setSelectedSolution(solutionsData[index]);
@@ -141,7 +88,6 @@ export default function CTS() {
               style={{ backgroundColor: '#69C0AC' }}
             >
               <div className="lg:ml-[-35px] lg:w-[calc(100%+35px)] lg:p-[5.5rem]">
-                {/* Tag CTS */}
                 <span
                   className="text-[16px] lg:text-[20px] hero-tag-mobile"
                   style={{
@@ -159,13 +105,13 @@ export default function CTS() {
                     background: 'transparent'
                   }}
                 >
-                  CTS
+                  {t('cts.hero.tag')}
                 </span>
                 <h1 className="text-[24px] md:text-[30px] lg:text-[35px] leading-[30px] md:leading-[36px] lg:leading-[40px] mb-4" style={{ color: '#000', fontWeight: 900 }}>
-                  Clinical Trial Services
+                  {t('cts.hero.title')}
                 </h1>
                 <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[25px]" style={{ color: '#000', fontWeight: 400 }}>
-                  Soluções completas para pesquisa clínica, do início<br className="hidden lg:block" /> ao fim.
+                  {t('cts.hero.description')}
                 </p>
               </div>
             </div>
@@ -175,7 +121,6 @@ export default function CTS() {
 
       {/* Text Blocks + Image Section */}
       <section className="py-8 md:py-16 bg-white overflow-hidden relative padding-bottom-0">
-        {/* Floating decorative image */}
         <img
           src={flutuante2}
           alt="Decorativo"
@@ -187,13 +132,13 @@ export default function CTS() {
             <div className="col-span-12 lg:col-start-3 lg:col-span-7" style={{ marginBottom: '6.5rem' }}>
               <div className="flex flex-col gap-4 md:gap-6 mb-8 md:mb-12">
                 <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[1.5]" style={{ color: '#000', fontWeight: 400 }}>
-                  Viabilizamos centros de pesquisa, CROs e biofarmacêuticas com uma estrutura validada, rastreável e conectada por tecnologia proprietária.
+                  {t('cts.text1')}
                 </p>
                 <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[1.5]" style={{ color: '#000', fontWeight: 400 }}>
-                  Nossa atuação abrange todas as etapas dos estudos clínicos, desde a importação de insumos até a distribuição de kits randomizados, em conformidade com as agências regulatórias globais.
+                  {t('cts.text2')}
                 </p>
                 <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[1.5]" style={{ color: '#000', fontWeight: 900 }}>
-                  Cada etapa é pensada para garantir segurança, rastreabilidade e conformidade com padrões internacionais e agências reguladoras, GDP, ICH-GCP, FDA, EMA e ANVISA.
+                  {t('cts.text3')}
                 </p>
               </div>
               <img
@@ -225,7 +170,7 @@ export default function CTS() {
                   textTransform: 'uppercase'
                 }}
               >
-                NOSSAS SOLUÇÕES
+                {t('cts.solutions.tag')}
               </span>
 
               {/* 6 Solution Blocks Grid - Desktop */}
@@ -234,15 +179,15 @@ export default function CTS() {
                 <div className="col-span-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
                     <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
-                    <text className="titulos" x="23" y="72" fontSize="35" fontWeight="900" fill="#274B41">Fornecimento</text>
-                    <text className="titulos" x="23" y="107" fontSize="35" fontWeight="900" fill="#274B41">de medicamentos</text>
-                    <text className="titulos" x="23" y="142" fontSize="35" fontWeight="900" fill="#274B41">comparadores</text>
-                    <text className="botao" x="23" y="185" fontSize="20" fontWeight="400" fill="#008C79">Estratégias personalizadas para</text>
-                    <text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">cada projeto, considerando as</text>
-                    <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">exigências locais, regionais e</text>
-                    <text className="botao" x="23" y="260" fontSize="20" fontWeight="400" fill="#008C79">internacionais.</text>
+                    <text className="titulos" x="23" y="72" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg1.line1')}</text>
+                    <text className="titulos" x="23" y="107" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg1.line2')}</text>
+                    <text className="titulos" x="23" y="142" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg1.line3')}</text>
+                    <text className="botao" x="23" y="185" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg1.desc1')}</text>
+                    <text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg1.desc2')}</text>
+                    <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg1.desc3')}</text>
+                    <text className="botao" x="23" y="260" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg1.desc4')}</text>
                     <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(0)}/>
-                    <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(0)}>SAIBA MAIS</text>
+                    <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(0)}>{t('saibamais')}</text>
                   </svg>
                 </div>
 
@@ -250,13 +195,13 @@ export default function CTS() {
                 <div className="col-span-1 mt-[65px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
                     <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
-                    <text className="titulos" x="43" y="98" fontSize="35" fontWeight="900" fill="#274B41">Serviço de</text>
-                    <text className="titulos" x="43" y="133" fontSize="35" fontWeight="900" fill="#274B41">armazenagem</text>
-                    <text className="botao" x="43" y="176" fontSize="20" fontWeight="400" fill="#008C79">Armazenamento e logística</text>
-                    <text className="botao" x="43" y="201" fontSize="20" fontWeight="400" fill="#008C79">clínica com padrões globais de</text>
-                    <text className="botao" x="43" y="226" fontSize="20" fontWeight="400" fill="#008C79">qualidade.</text>
+                    <text className="titulos" x="43" y="98" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg2.line1')}</text>
+                    <text className="titulos" x="43" y="133" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg2.line2')}</text>
+                    <text className="botao" x="43" y="176" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg2.desc1')}</text>
+                    <text className="botao" x="43" y="201" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg2.desc2')}</text>
+                    <text className="botao" x="43" y="226" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg2.desc3')}</text>
                     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(1)}/>
-                    <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(1)}>SAIBA MAIS</text>
+                    <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(1)}>{t('saibamais')}</text>
                   </svg>
                 </div>
 
@@ -264,14 +209,14 @@ export default function CTS() {
                 <div className="col-span-1 mt-[130px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
                     <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
-                    <text className="titulos" x="43" y="78" fontSize="35" fontWeight="900" fill="#274B41">Serviços</text>
-                    <text className="titulos" x="43" y="113" fontSize="35" fontWeight="900" fill="#274B41">globais de</text>
-                    <text className="titulos" x="43" y="148" fontSize="35" fontWeight="900" fill="#274B41">importador</text>
-                    <text className="titulos" x="43" y="183" fontSize="35" fontWeight="900" fill="#274B41">oficial</text>
-                    <text className="botao" x="43" y="226" fontSize="20" fontWeight="400" fill="#008C79">IOR e EOR para pesquisa clínica</text>
-                    <text className="botao" x="43" y="251" fontSize="20" fontWeight="400" fill="#008C79">global.</text>
+                    <text className="titulos" x="43" y="78" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg3.line1')}</text>
+                    <text className="titulos" x="43" y="113" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg3.line2')}</text>
+                    <text className="titulos" x="43" y="148" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg3.line3')}</text>
+                    <text className="titulos" x="43" y="183" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg3.line4')}</text>
+                    <text className="botao" x="43" y="226" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg3.desc1')}</text>
+                    <text className="botao" x="43" y="251" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg3.desc2')}</text>
                     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(2)}/>
-                    <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(2)}>SAIBA MAIS</text>
+                    <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(2)}>{t('saibamais')}</text>
                   </svg>
                 </div>
 
@@ -279,14 +224,14 @@ export default function CTS() {
                 <div className="col-span-1 mt-[-110px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
                     <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
-                    <text className="titulos" x="43" y="78" fontSize="35" fontWeight="900" fill="#274B41">Embalagem,</text>
-                    <text className="titulos" x="43" y="113" fontSize="35" fontWeight="900" fill="#274B41">etiquetagem</text>
-                    <text className="titulos" x="43" y="148" fontSize="35" fontWeight="900" fill="#274B41">e cegamento</text>
-                    <text className="botao" x="43" y="191" fontSize="20" fontWeight="400" fill="#008C79">Oferecemos soluções completas</text>
-                    <text className="botao" x="43" y="216" fontSize="20" fontWeight="400" fill="#008C79">em embalagens secundárias,</text>
-                    <text className="botao" x="43" y="241" fontSize="20" fontWeight="400" fill="#008C79">etiquetagem e cegamento.</text>
+                    <text className="titulos" x="43" y="78" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg4.line1')}</text>
+                    <text className="titulos" x="43" y="113" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg4.line2')}</text>
+                    <text className="titulos" x="43" y="148" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg4.line3')}</text>
+                    <text className="botao" x="43" y="191" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg4.desc1')}</text>
+                    <text className="botao" x="43" y="216" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg4.desc2')}</text>
+                    <text className="botao" x="43" y="241" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg4.desc3')}</text>
                     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(3)}/>
-                    <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(3)}>SAIBA MAIS</text>
+                    <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(3)}>{t('saibamais')}</text>
                   </svg>
                 </div>
 
@@ -294,13 +239,13 @@ export default function CTS() {
                 <div className="col-span-1 mt-[-45px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
                     <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
-                    <text className="titulos" x="43" y="98" fontSize="35" fontWeight="900" fill="#274B41">Kits</text>
-                    <text className="titulos" x="43" y="133" fontSize="35" fontWeight="900" fill="#274B41">laboratoriais</text>
-                    <text className="botao" x="43" y="176" fontSize="20" fontWeight="400" fill="#008C79">Montagem de kits laboratoriais</text>
-                    <text className="botao" x="43" y="201" fontSize="20" fontWeight="400" fill="#008C79">e de medicação para estudos</text>
-                    <text className="botao" x="43" y="226" fontSize="20" fontWeight="400" fill="#008C79">clínicos.</text>
+                    <text className="titulos" x="43" y="98" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg5.line1')}</text>
+                    <text className="titulos" x="43" y="133" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg5.line2')}</text>
+                    <text className="botao" x="43" y="176" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg5.desc1')}</text>
+                    <text className="botao" x="43" y="201" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg5.desc2')}</text>
+                    <text className="botao" x="43" y="226" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg5.desc3')}</text>
                     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(4)}/>
-                    <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(4)}>SAIBA MAIS</text>
+                    <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(4)}>{t('saibamais')}</text>
                   </svg>
                 </div>
 
@@ -308,14 +253,14 @@ export default function CTS() {
                 <div className="col-span-1 mt-[20px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
                     <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
-                    <text className="titulos" x="43" y="78" fontSize="35" fontWeight="900" fill="#274B41">Transporte</text>
-                    <text className="titulos" x="43" y="113" fontSize="35" fontWeight="900" fill="#274B41">especializado</text>
-                    <text className="botao" x="43" y="156" fontSize="20" fontWeight="400" fill="#008C79">Transporte de medicamentos</text>
-                    <text className="botao" x="43" y="181" fontSize="20" fontWeight="400" fill="#008C79">e transporte biológico para</text>
-                    <text className="botao" x="43" y="206" fontSize="20" fontWeight="400" fill="#008C79">suporte e programas de</text>
-                    <text className="botao" x="43" y="231" fontSize="20" fontWeight="400" fill="#008C79">diagnósticos.</text>
+                    <text className="titulos" x="43" y="78" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg6.line1')}</text>
+                    <text className="titulos" x="43" y="113" fontSize="35" fontWeight="900" fill="#274B41">{t('cts.svg6.line2')}</text>
+                    <text className="botao" x="43" y="156" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg6.desc1')}</text>
+                    <text className="botao" x="43" y="181" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg6.desc2')}</text>
+                    <text className="botao" x="43" y="206" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg6.desc3')}</text>
+                    <text className="botao" x="43" y="231" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg6.desc4')}</text>
                     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(5)}/>
-                    <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(5)}>SAIBA MAIS</text>
+                    <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(5)}>{t('saibamais')}</text>
                   </svg>
                 </div>
               </div>
@@ -330,42 +275,25 @@ export default function CTS() {
                   slidesPerView={1}
                   className="w-full"
                 >
-                  {/* Slide 1 */}
-                  <SwiperSlide>
-                    <div className="px-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none"><path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"></path><text className="titulos" x="23" y="72" fontSize="35" fontWeight="900" fill="#274B41">Fornecimento</text><text className="titulos" x="23" y="107" fontSize="35" fontWeight="900" fill="#274B41">de medicamentos</text><text className="titulos" x="23" y="142" fontSize="35" fontWeight="900" fill="#274B41">comparadores</text><text className="botao" x="23" y="185" fontSize="20" fontWeight="400" fill="#008C79">Estratégias personalizadas para</text><text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">cada projeto, considerando as</text><text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">exigências locais, regionais e</text><text className="botao" x="23" y="260" fontSize="20" fontWeight="400" fill="#008C79">internacionais.</text><rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(0)}></rect><text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(0)}>SAIBA MAIS</text></svg>
-                    </div>
-                  </SwiperSlide>
-                  {/* Slide 2 */}
-                  <SwiperSlide>
-                    <div className="px-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none"><path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"></path><text className="titulos" x="43" y="98" fontSize="35" fontWeight="900" fill="#274B41">Serviço de</text><text className="titulos" x="43" y="133" fontSize="35" fontWeight="900" fill="#274B41">armazenagem</text><text className="botao" x="43" y="176" fontSize="20" fontWeight="400" fill="#008C79">Armazenamento e logística</text><text className="botao" x="43" y="201" fontSize="20" fontWeight="400" fill="#008C79">clínica com padrões globais de</text><text className="botao" x="43" y="226" fontSize="20" fontWeight="400" fill="#008C79">qualidade.</text><rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(1)}></rect><text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(1)}>SAIBA MAIS</text></svg>
-                    </div>
-                  </SwiperSlide>
-                  {/* Slide 3 */}
-                  <SwiperSlide>
-                    <div className="px-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none"><path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"></path><text className="titulos" x="43" y="78" fontSize="35" fontWeight="900" fill="#274B41">Serviços</text><text className="titulos" x="43" y="113" fontSize="35" fontWeight="900" fill="#274B41">globais de</text><text className="titulos" x="43" y="148" fontSize="35" fontWeight="900" fill="#274B41">importador</text><text className="titulos" x="43" y="183" fontSize="35" fontWeight="900" fill="#274B41">oficial</text><text className="botao" x="43" y="226" fontSize="20" fontWeight="400" fill="#008C79">IOR e EOR para pesquisa clínica</text><text className="botao" x="43" y="251" fontSize="20" fontWeight="400" fill="#008C79">global.</text><rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(2)}></rect><text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(2)}>SAIBA MAIS</text></svg>
-                    </div>
-                  </SwiperSlide>
-                  {/* Slide 4 */}
-                  <SwiperSlide>
-                    <div className="px-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none"><path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"></path><text className="titulos" x="43" y="78" fontSize="35" fontWeight="900" fill="#274B41">Embalagem,</text><text className="titulos" x="43" y="113" fontSize="35" fontWeight="900" fill="#274B41">etiquetagem</text><text className="titulos" x="43" y="148" fontSize="35" fontWeight="900" fill="#274B41">e cegamento</text><text className="botao" x="43" y="191" fontSize="20" fontWeight="400" fill="#008C79">Oferecemos soluções completas</text><text className="botao" x="43" y="216" fontSize="20" fontWeight="400" fill="#008C79">em embalagens secundárias,</text><text className="botao" x="43" y="241" fontSize="20" fontWeight="400" fill="#008C79">etiquetagem e cegamento.</text><rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(3)}></rect><text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(3)}>SAIBA MAIS</text></svg>
-                    </div>
-                  </SwiperSlide>
-                  {/* Slide 5 */}
-                  <SwiperSlide>
-                    <div className="px-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none"><path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"></path><text className="titulos" x="43" y="98" fontSize="35" fontWeight="900" fill="#274B41">Kits</text><text className="titulos" x="43" y="133" fontSize="35" fontWeight="900" fill="#274B41">laboratoriais</text><text className="botao" x="43" y="176" fontSize="20" fontWeight="400" fill="#008C79">Montagem de kits laboratoriais</text><text className="botao" x="43" y="201" fontSize="20" fontWeight="400" fill="#008C79">e de medicação para estudos</text><text className="botao" x="43" y="226" fontSize="20" fontWeight="400" fill="#008C79">clínicos.</text><rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(4)}></rect><text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(4)}>SAIBA MAIS</text></svg>
-                    </div>
-                  </SwiperSlide>
-                  {/* Slide 6 */}
-                  <SwiperSlide>
-                    <div className="px-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none"><path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"></path><text className="titulos" x="43" y="78" fontSize="35" fontWeight="900" fill="#274B41">Transporte</text><text className="titulos" x="43" y="113" fontSize="35" fontWeight="900" fill="#274B41">especializado</text><text className="botao" x="43" y="156" fontSize="20" fontWeight="400" fill="#008C79">Transporte de medicamentos</text><text className="botao" x="43" y="181" fontSize="20" fontWeight="400" fill="#008C79">e transporte biológico para</text><text className="botao" x="43" y="206" fontSize="20" fontWeight="400" fill="#008C79">suporte e programas de</text><text className="botao" x="43" y="231" fontSize="20" fontWeight="400" fill="#008C79">diagnósticos.</text><rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(5)}></rect><text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(5)}>SAIBA MAIS</text></svg>
-                    </div>
-                  </SwiperSlide>
+                  {[0, 1, 2, 3, 4, 5].map((i) => (
+                    <SwiperSlide key={i}>
+                      <div className="px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
+                          <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
+                          <text className="titulos" x="23" y="72" fontSize="35" fontWeight="900" fill="#274B41">{t(`cts.svg${i+1}.line1`)}</text>
+                          <text className="titulos" x="23" y="107" fontSize="35" fontWeight="900" fill="#274B41">{t(`cts.svg${i+1}.line2`)}</text>
+                          {t(`cts.svg${i+1}.line3`) !== `cts.svg${i+1}.line3` && (
+                            <text className="titulos" x="23" y="142" fontSize="35" fontWeight="900" fill="#274B41">{t(`cts.svg${i+1}.line3`)}</text>
+                          )}
+                          <text className="botao" x="23" y="185" fontSize="20" fontWeight="400" fill="#008C79">{t(`cts.svg${i+1}.desc1`)}</text>
+                          <text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">{t(`cts.svg${i+1}.desc2`)}</text>
+                          <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">{t(`cts.svg${i+1}.desc3`)}</text>
+                          <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(i)}/>
+                          <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(i)}>{t('saibamais')}</text>
+                        </svg>
+                      </div>
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
 
                 {/* Navigation Arrows */}
@@ -398,27 +326,20 @@ export default function CTS() {
             className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-center rounded-[24px] lg:rounded-[50px] p-6 md:p-10 lg:p-[70px]"
             style={{ backgroundColor: '#F39325' }}
           >
-            {/* Left side - Title (4 columns) */}
             <div className="lg:col-span-4">
               <h2 className="text-[20px] md:text-[26px] lg:text-[30px] leading-[26px] md:leading-[32px] lg:leading-[1.2]" style={{ fontWeight: 900, color: '#000' }}>
-                Transforme sua operação em saúde com o apoio da DRS.
+                {t('cts.cta.title')}
               </h2>
             </div>
-
-            {/* Right side - Contact box (5 columns) */}
             <div className="lg:col-span-5 flex items-center">
               <Link
                 to="/contato"
                 className="flex items-center gap-4"
-                style={{
-                  borderRadius: '10px',
-                  background: '#274B41',
-                  padding: '15px 25px'
-                }}
+                style={{ borderRadius: '10px', background: '#274B41', padding: '15px 25px' }}
               >
                 <ArrowIcon className="w-5 h-4 text-white flex-shrink-0" />
                 <span style={{ fontSize: '16px', color: '#fff', fontWeight: 400 }}>
-                  Entre em contato e descubra como nossa tecnologia pode acelerar resultados.
+                  {t('cts.cta.button')}
                 </span>
               </Link>
             </div>
@@ -432,58 +353,33 @@ export default function CTS() {
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-start-2 lg:col-span-10">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch" style={{ minHeight: 'auto' }}>
-                {/* Image Side - Left (4 columns) */}
                 <div
                   className="lg:col-span-4 drs360-access-border-box lg:!p-0 lg:!rounded-[50px_0_0_50px]"
                   style={{
-                    position: 'relative',
-                    zIndex: 1,
-                    borderRadius: '50px 0px 0 50px',
-                    border: '1px solid rgb(105, 192, 172)',
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    height: 'auto',
-                    minHeight: 'auto',
-                    padding: '0'
+                    position: 'relative', zIndex: 1, borderRadius: '50px 0px 0 50px',
+                    border: '1px solid rgb(105, 192, 172)', display: 'flex', flexWrap: 'wrap',
+                    justifyContent: 'center', alignItems: 'center', height: 'auto', minHeight: 'auto', padding: '0'
                   }}
                 >
-                  <img
-                    src={img360}
-                    alt="DRS 360"
-                    className="object-contain gestao-digital-image"
-                    style={{
-                      width: '50%',
-                      minHeight: 'auto',
-                      height: 'auto'
-                    }}
-                  />
+                  <img src={img360} alt="DRS 360" className="object-contain gestao-digital-image" style={{ width: '50%', minHeight: 'auto', height: 'auto' }} />
                 </div>
-
-                {/* Content Side - Right with teal background (8 columns) */}
                 <div
                   className="lg:col-span-8 flex flex-col justify-center overflow-hidden drs360-access-green-box gestao-digital-greenbox lg:!ml-[-35px] lg:!rounded-[40px] lg:!mt-0"
                   style={{
-                    backgroundColor: '#69C0AC',
-                    marginLeft: '-35px',
-                    padding: '3rem 4rem',
-                    borderRadius: '40px',
-                    backgroundImage: `url(${cantoVerde})`,
-                    backgroundPosition: 'bottom right',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: '150px'
+                    backgroundColor: '#69C0AC', marginLeft: '-35px', padding: '3rem 4rem',
+                    borderRadius: '40px', backgroundImage: `url(${cantoVerde})`,
+                    backgroundPosition: 'bottom right', backgroundRepeat: 'no-repeat', backgroundSize: '150px'
                   }}
                 >
                   <h2 style={{ color: '#000', fontSize: '30px', fontWeight: 900, lineHeight: '1.2', marginBottom: '1.5rem' }}>
-                    Gestão Digital para acelerar<br className="hidden lg:block" /> a pesquisa clínica com precisão.
+                    {t('drs360.bottom.title')}
                   </h2>
                   <p style={{ color: '#000', fontSize: '20px', fontWeight: 400, lineHeight: '25px', marginBottom: '2rem' }}>
-                    Descubra como integrar eficiência, visibilidade e compliance em seus<br className="hidden lg:block" /> estudos com a plataforma DRS 360.
+                    {t('drs360.bottom.desc')}
                   </p>
                   <Link to="/drs-360" className="drs-btn drs-btn-uppercase inline-flex w-fit">
                     <ArrowIcon className="w-4 h-3" />
-                    Conheça a DRS360
+                    {t('drs360.bottom.cta')}
                   </Link>
                 </div>
               </div>

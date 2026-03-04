@@ -231,7 +231,11 @@ export interface GroupPage {
 
 export interface InsightCategory {
   id: number;
-  attributes: {
+  documentId?: string;
+  name: string;
+  slug: string;
+  // v4 compat
+  attributes?: {
     name: string;
     slug: string;
   };
@@ -239,17 +243,19 @@ export interface InsightCategory {
 
 export interface Insight {
   id: number;
-  attributes: {
-    title: string;
-    slug: string;
-    excerpt: string;
-    content: string;
-    publishedAt: string;
-    featuredImage: { data: StrapiMedia };
-    categories: { data: InsightCategory[] };
-    author?: string;
-    readTime?: string;
-  };
+  documentId?: string;
+  title: string;
+  slug: string | null;
+  description: string | null;
+  publishedAt: string;
+  locale?: string;
+  cover: { url: string } | null;
+  category: { id: number; name: string; slug: string } | null;
+  author: { id: number; name: string } | null;
+  blocks: { __component: string; id: number; body: string }[];
+  localizations?: any[];
+  // v4 compat
+  attributes?: any;
 }
 
 export interface ContactPage {

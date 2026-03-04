@@ -7,14 +7,16 @@ import { DRS360Section } from '@/components/sections';
 import heroSolucoes from '@/assets/hero-solucoes.png';
 import cornerShape from '@/assets/corner-shape.jpg';
 import flutuante2 from '@/assets/flutuante2.svg';
-import tableSolucoes from '@/assets/table-solucoes-2.svg';
+import tableSolucoesPt from '@/assets/table-solucoes-2.svg';
+import tableSolucoesEn from '@/assets/table-solucoes-2-en.svg';
+import tableSolucoesEs from '@/assets/table-solucoes-2-es.svg';
 import bannerMobile from '@/assets/banner_mobile.png';
 import table01 from '@/assets/table_01_mobile.jpg';
 import table02 from '@/assets/table_02_mobile.jpg';
 import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Solucoes() {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   return (
     <Layout>
@@ -51,7 +53,7 @@ export default function Solucoes() {
                 </p>
               </div>
               <div className="hidden lg:block overflow-x-auto">
-                <img src={tableSolucoes} alt={t('solucoes.table.alt')} className="w-full h-auto min-w-[600px]" />
+                <img src={language === 'en' ? tableSolucoesEn : language === 'es' ? tableSolucoesEs : tableSolucoesPt} alt={t('solucoes.table.alt')} className="w-full h-auto min-w-[600px]" />
               </div>
               <TableCarouselMobile
                 images={[

@@ -14,8 +14,8 @@ import type {
 } from '@/types/strapi';
 
 // Strapi API Configuration
-const STRAPI_URL = import.meta.env.VITE_STRAPI_URL || 'https://strapi-backend-nkch.onrender.com';
-const STRAPI_TOKEN = import.meta.env.VITE_STRAPI_TOKEN || 'b33c291cf59f520007a68f46d49afa69375b6c2d271251a03ed9b799987d0e7c91f3383a51285b0f2bdf7d40ecd41b468c6130844b3097c1024471a2af0b58cf9f7709d3103bed81147964a9f89c6e22c005d1879749f7858a391c907413c971a37022031035eb38ede4e3ad87bb4aae2d35042129f0dcf1ae49d11e08a721eb';
+const STRAPI_URL = import.meta.env.VITE_STRAPI_URL || 'https://strapi-backend-nkch.onrender.com/admin';
+const STRAPI_TOKEN = import.meta.env.VITE_STRAPI_TOKEN || 'bf89a2767f04401f00fcab1170fe1ff5a442f6b3d8e9dc3b2ff6c00de1996dde85b2352e463873445c3e08d9e20df28b14a59ca72f9ea042e52999a7343b62f8c46ea476d374e292b3c46e082c076016d90211c36fe64eee2cb58bd8a921717ba349e25f8384c345a1cd8f60e28f6711ae63dca6d367a3669e25829544403c72';
 
 // Base fetch function
 async function fetchAPI<T>(

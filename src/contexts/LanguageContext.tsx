@@ -209,8 +209,8 @@ export const translations: Translations = {
     'cts.text2': 'Nossa atuação abrange todas as etapas dos estudos clínicos, desde a importação de insumos até a distribuição de kits randomizados, em conformidade com as agências regulatórias globais.',
     'cts.text3': 'Cada etapa é pensada para garantir segurança, rastreabilidade e conformidade com padrões internacionais e agências reguladoras, GDP, ICH-GCP, FDA, EMA e ANVISA.',
     'cts.solutions.tag': 'NOSSAS SOLUÇÕES',
-    'cts.cta.title': 'Conecte seu projeto clínico a uma rede de soluções inteligentes, seguras e rastreáveis.',
-    'cts.cta.button': 'Fale com nosso time de soluções',
+    'cts.cta.title': 'Transforme sua operação em saúde com o apoio da DRS.',
+    'cts.cta.button': 'Entre em contato e descubra como nossa tecnologia pode acelerar resultados.',
     'cts.saibamais': 'SAIBA MAIS',
 
     // PCS Page

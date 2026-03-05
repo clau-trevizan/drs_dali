@@ -220,8 +220,8 @@ export const translations: Translations = {
     'pcs.text1': 'Patient Centric Services (PCS) leva a expertise da DRS além da pesquisa clínica, ampliando o cuidado para a fase pós-estudo com foco total no paciente.',
     'pcs.text2': 'Conectamos serviços clínicos, gestão digital e suporte humano para garantir adesão, rastreabilidade e segurança em cada etapa do tratamento.',
     'pcs.solutions.tag': 'NOSSAS SOLUÇÕES',
-    'pcs.cta.title': 'Quer soluções que coloquem o paciente no centro da operação?',
-    'pcs.cta.button': 'Fale com nosso time',
+    'pcs.cta.title': 'Transforme sua operação em saúde com o apoio da DRS.',
+    'pcs.cta.button': 'Entre em contato e descubra como nossa tecnologia pode acelerar resultados.',
     'pcs.saibamais': 'SAIBA MAIS',
 
     // TIS Page
@@ -231,8 +231,8 @@ export const translations: Translations = {
     'tis.text1': 'Elevamos o padrão da cadeia fria ao oferecer soluções completas e integradas, combinando embalagens reutilizáveis de alta performance, tecnologia avançada de monitoramento e gestão logística especializada.',
     'tis.text2': 'Com soluções ready-to-use e rastreabilidade em tempo real, asseguramos segurança, agilidade e máxima confiabilidade em cada etapa — do primeiro movimento até a entrega final.',
     'tis.solutions.tag': 'NOSSAS SOLUÇÕES',
-    'tis.cta.title': 'Precisa de soluções inteligentes para cadeia fria?',
-    'tis.cta.button': 'Fale com nosso time',
+    'tis.cta.title': 'Transforme sua operação em saúde com o apoio da DRS.',
+    'tis.cta.button': 'Entre em contato e descubra como nossa tecnologia pode acelerar resultados.',
     'tis.saibamais': 'SAIBA MAIS',
 
     // DRS 360 section (reusable)

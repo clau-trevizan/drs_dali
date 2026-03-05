@@ -1043,4 +1043,7 @@ html, body {
 .espanhol .home-section2-grid text.botao {
     font-size: 18px;
 }
+.politica-section2.post-content {
+        padding-bottom: 3rem !important;
+    }
 }

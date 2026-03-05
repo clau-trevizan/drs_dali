@@ -11,8 +11,12 @@ import tableSolucoesPt from '@/assets/table-solucoes-2.svg';
 import tableSolucoesEn from '@/assets/table-solucoes-2-en.svg';
 import tableSolucoesEs from '@/assets/table-solucoes-2-es.svg';
 import bannerMobile from '@/assets/banner_mobile.png';
-import table01 from '@/assets/table_01_mobile.jpg';
-import table02 from '@/assets/table_02_mobile.jpg';
+import table01Pt from '@/assets/table_01_mobile.jpg';
+import table01En from '@/assets/table_01_mobile_en.jpg';
+import table01Es from '@/assets/table_01_mobile_es.jpg';
+import table02Pt from '@/assets/table_02_mobile.jpg';
+import table02En from '@/assets/table_02_mobile_en.jpg';
+import table02Es from '@/assets/table_02_mobile_es.jpg';
 import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Solucoes() {
@@ -57,8 +61,8 @@ export default function Solucoes() {
               </div>
               <TableCarouselMobile
                 images={[
-                  { src: table01, alt: t('solucoes.table.part1') },
-                  { src: table02, alt: t('solucoes.table.part2') }
+                  { src: language === 'en' ? table01En : language === 'es' ? table01Es : table01Pt, alt: t('solucoes.table.part1') },
+                  { src: language === 'en' ? table02En : language === 'es' ? table02Es : table02Pt, alt: t('solucoes.table.part2') }
                 ]}
                 className="mt-4"
               />

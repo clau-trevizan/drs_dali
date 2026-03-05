@@ -14,8 +14,9 @@ import type {
 } from '@/types/strapi';
 
 // Strapi API Configuration
-const STRAPI_URL = import.meta.env.VITE_STRAPI_URL || 'https://strapi-backend-nkch.onrender.com/admin';
-const STRAPI_TOKEN = import.meta.env.VITE_STRAPI_TOKEN || 'bf89a2767f04401f00fcab1170fe1ff5a442f6b3d8e9dc3b2ff6c00de1996dde85b2352e463873445c3e08d9e20df28b14a59ca72f9ea042e52999a7343b62f8c46ea476d374e292b3c46e082c076016d90211c36fe64eee2cb58bd8a921717ba349e25f8384c345a1cd8f60e28f6711ae63dca6d367a3669e25829544403c72';
+const STRAPI_URL = import.meta.env.VITE_STRAPI_URL || 'https://strapi-backend-nkch.onrender.com';
+const STRAPI_TOKEN = import.meta.env.VITE_STRAPI_TOKEN || '8e69073ffa68363527c7c6833a05b4a36a88c3db7405dfe11fa37048331bd99d762ebe22bd0367b66f5e4d28bc73c3e249edf4ff9e8ef6845a3d035d65777f7deb51d17b100b0625868f2d133b61407c7ef8519969a5145e8d2bce1426ac2346db397e1bb4bb30f841a2de4787dcd02ace08faa79b74fbf7369ec53934ded00d';
+
 
 // Base fetch function
 async function fetchAPI<T>(
@@ -142,7 +143,7 @@ export async function getInsights(params?: {
   const query = buildQuery({
     filters,
     populate: '*',
-    sort: ['publishedAt:desc'],
+    sort: ['publishedAt:desc', 'createdAt:desc'],
     locale: params?.locale || 'pt-BR',
     pagination: {
       page: params?.page || 1,

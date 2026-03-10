@@ -44,6 +44,7 @@ export default function Insights() {
   }, {} as Record<string, string>);
 
 
+
   const { data: insightsData, isLoading } = useInsights({
     page: currentPage,
     pageSize: PAGE_SIZE,
@@ -145,7 +146,7 @@ export default function Insights() {
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {insights.map((insight: any) => {
-                    const categories = insight.categories || (insight.category ? [insight.category] : []);
+                    const insightCategories = insight.categories || (insight.category ? [insight.category] : []);
                     const coverUrl = insight.cover?.url;
                     const image = coverUrl ? getStrapiMedia(coverUrl) : undefined;
                     const date = new Date(insight.publishedAt).toLocaleDateString(
@@ -163,9 +164,9 @@ export default function Insights() {
                         </div>
                         <p style={{ color: '#012025', fontSize: '16px', fontWeight: 400, lineHeight: '21px', marginBottom: '8px' }}>{date}</p>
                         <h3 className="group-hover:opacity-80 transition-opacity insight-card-title" style={{ color: '#000', fontSize: '20px', fontWeight: 700, lineHeight: '28.33px', letterSpacing: '0.55px', marginBottom: '12px' }}>{insight.title}</h3>
-                        {categories.length > 0 && (
+                        {insightCategories.length > 0 && (
                           <div className="flex flex-wrap gap-2">
-                            {categories.map((cat: any) => (
+                            {insightCategories.map((cat: any) => (
                               <span key={cat.id || cat.name} style={{ color: '#000', textAlign: 'center', fontSize: '16px', fontWeight: 400, lineHeight: '24px', padding: '3px 25px', borderRadius: '16px', border: '1px solid #274B41' }}>{cat.name}</span>
                             ))}
                           </div>

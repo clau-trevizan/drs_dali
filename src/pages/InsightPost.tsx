@@ -61,7 +61,7 @@ export default function InsightPost() {
   const categoryName = postCategories[0]?.name || '';
   const coverUrl = post.cover?.url;
   const featuredImage = coverUrl ? getStrapiMedia(coverUrl) : undefined;
-  const authorName = post.author?.name || '';
+  const authorName = post.authors?.map((a: any) => a.name).join(', ') || '';
   const content = post.blocks?.map((b: any) => b.body || '').join('\n\n') || post.description || '';
 
   // Similar insights: same category, fallback to recent posts

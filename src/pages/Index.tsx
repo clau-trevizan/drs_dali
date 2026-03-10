@@ -36,8 +36,9 @@ const Index = () => {
   const insightsSwiperRef = useRef<SwiperType | null>(null);
   const [insightsActiveSlide, setInsightsActiveSlide] = useState(0);
   const strapiLocale = language === 'en' ? 'en' : language === 'es' ? 'es-ES' : 'pt-BR';
-  const { data: insightsData } = useInsights({ pageSize: 3, locale: strapiLocale });
+  const { data: insightsData } = useInsights({ pageSize: 10, locale: strapiLocale });
   const insights = insightsData?.data || [];
+  const insightsTotalSlides = insights.length;
 
   // Stop video when dialog closes
   const handleVideoDialogChange = (open: boolean) => {
@@ -57,19 +58,19 @@ const Index = () => {
             {/* Image Side - Left (no gap, attached to green box) */}
             <div className="relative w-full lg:w-1/2" style={{ position: 'relative', zIndex: 1 }}>
               {/* Clickable video with overlay */}
-              <button 
+              <button
                 onClick={() => setIsVideoOpen(true)}
                 className="relative block w-full h-full cursor-pointer group"
                 aria-label={t('home.hero.video.ariaLabel')}
               >
               {/* Overlay image top left */}
-                <img 
-                  src={topoVideoNova} 
+                <img
+                  src={topoVideoNova}
                   alt=""
                   className="absolute top-0 left-0 z-10 h-auto pointer-events-none"
                   style={{ maxWidth: '150px' }}
                 />
-                <video 
+                <video
                   src={videoBox}
                   autoPlay
                   loop
@@ -87,9 +88,9 @@ const Index = () => {
             </div>
 
             {/* Content Side - Right with teal background */}
-            <div 
+            <div
               className="relative w-full lg:w-1/2 flex flex-col justify-center overflow-hidden rounded-b-[24px] lg:rounded-b-none lg:rounded-r-[32px] lg:rounded-tr-[40px] lg:rounded-br-[40px] p-[4rem_0.5rem_0.5rem_0.5rem] lg:p-0 mt-[-50px] lg:mt-0"
-              style={{ 
+              style={{
                 backgroundColor: '#69C0AC',
                 backgroundImage: `url(${cornerShape})`,
                 backgroundPosition: 'bottom right',
@@ -135,13 +136,13 @@ const Index = () => {
       {/* Stats Section - Staircase Layout */}
       <section className="py-16 bg-background overflow-hidden relative">
         {/* Floating decorative image - aligned to right edge */}
-        <img 
-          src={flutuante} 
-          alt="Decorativo" 
+        <img
+          src={flutuante}
+          alt="Decorativo"
           className="hidden md:block animate-float"
           style={{ position: 'absolute', right: 0, top: '150px', width: '180px', height: 'auto' }}
         />
-        
+
         <div className="drs-container">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-start-2 lg:col-span-10">
@@ -151,7 +152,7 @@ const Index = () => {
                   {t('home.stats.title.line2')}
                 </h2>
               </div>
-              
+
               {/* 3-Column Cards Layout */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 home-section2-grid">
                 {/* Card 1 */}
@@ -165,7 +166,7 @@ const Index = () => {
                     <path d="M23.8594 0.5H249.622C261.393 0.500256 270.933 10.0575 270.933 21.8457V48.5039C270.933 60.3576 280.527 69.9715 292.367 69.9717H308.007C319.879 69.9718 329.503 79.6091 329.503 91.502V312.104C329.503 325.027 319.042 335.5 306.144 335.5H180.311C168.638 335.5 159.176 326.024 159.176 314.331V289.329H159.167C158.901 277.637 149.354 268.239 137.615 268.239H23.3896C10.7488 268.239 0.500132 257.975 0.5 245.312V23.8965C0.500217 10.9732 10.9583 0.5 23.8594 0.5Z" stroke="#274B41"/>
                   </svg>
                 </div>
-            
+
                 {/* Card 2 */}
                 <div className="flex justify-center mt-0 lg:mt-[150px] home-section2-card2">
                   <svg width="100%" height="100%" viewBox="0 0 330 336" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
@@ -180,7 +181,7 @@ const Index = () => {
                     <path d="M161.741 250H139.272C134.56 250 130.741 253.823 130.741 258.54V281.031C130.741 285.748 134.56 289.571 139.272 289.571H161.741C166.453 289.571 170.272 285.748 170.272 281.031V258.54C170.272 253.823 166.453 250 161.741 250Z" fill="#16493C"/>
                   </svg>
                 </div>
-            
+
                 {/* Card 3 */}
                 <div className="flex justify-center mt-0 lg:mt-[300px] home-section2-card3">
                   <svg width="100%" height="100%" viewBox="0 0 330 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
@@ -205,13 +206,13 @@ const Index = () => {
         <div className="drs-container">
           <div className="grid grid-cols-12 gap-8 items-center">
             {/* Left side - Swiper content box - 5 cols on desktop, skip 2 */}
-            <div 
+            <div
               className="col-span-12 lg:col-start-3 lg:col-span-5 relative min-h-[470px] lg:min-h-[550px] flex flex-wrap justify-center items-center p-[4rem_1rem_4rem_2rem] lg:p-0 carousel-container-offset"
             >
               {/* Mobile background - only visible on screens < 1024px */}
-              <div 
+              <div
                 className="absolute inset-0 lg:hidden"
-                style={{ 
+                style={{
                   backgroundImage: 'url(/images/fundo_mobile.svg)',
                   backgroundPosition: 'top left',
                   backgroundRepeat: 'no-repeat',
@@ -219,16 +220,16 @@ const Index = () => {
                 }}
               ></div>
               {/* Desktop background - hidden on screens < 1024px */}
-              <div 
+              <div
                 className="absolute inset-0 hidden lg:block"
-                style={{ 
+                style={{
                   backgroundImage: 'url(/images/fundo2.svg)',
                   backgroundPosition: 'center',
                   backgroundRepeat: 'no-repeat',
                   backgroundSize: 'contain'
                 }}
               ></div>
-              
+
               <Swiper
                 modules={[Navigation]}
                 onSwiper={(swiper) => { swiperRef.current = swiper; }}
@@ -258,17 +259,17 @@ const Index = () => {
                   </div>
                 </SwiperSlide>
               </Swiper>
-              
+
               {/* Custom navigation buttons at bottom left - with margin-left on mobile */}
               <div className="flex gap-4 mt-[120px] lg:mt-4 lg:absolute lg:bottom-12 lg:left-16 justify-center lg:justify-start relative z-10 pl-0 lg:pl-[60px] ml-[-90px] lg:ml-0">
-                <button 
+                <button
                   onClick={() => swiperRef.current?.slidePrev()}
                   className="transition-opacity rotate-180"
                   style={{ opacity: activeSlide === 0 ? 0.6 : 1 }}
                 >
                   <img src={arrowSlide} alt="Previous" className="w-[50px] h-[38px] lg:w-[66px] lg:h-[50px]" />
                 </button>
-                <button 
+                <button
                   onClick={() => swiperRef.current?.slideNext()}
                   className="transition-opacity"
                   style={{ opacity: activeSlide === 1 ? 0.6 : 1 }}
@@ -277,12 +278,12 @@ const Index = () => {
                 </button>
               </div>
             </div>
-            
+
             {/* Right side - Fixed image - 3 cols on desktop with max-width 90% */}
             <div className="col-span-12 lg:col-span-3 hidden lg:flex justify-center h-full pb-4 lg:pb-[70px]">
-              <img 
-                src={imgSlide} 
-                alt="DRS 360 App" 
+              <img
+                src={imgSlide}
+                alt="DRS 360 App"
                 className="rounded-3xl self-end"
                 style={{ maxWidth: '90%' }}
               />
@@ -314,7 +315,7 @@ const Index = () => {
                 </Link>
               </svg>
             </div>
-            
+
             {/* Mobile SVG - Only visible on screens < 1024px */}
             <div className="lg:hidden w-full">
               <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 408 841" fill="none" className="w-full h-auto">
@@ -338,7 +339,7 @@ const Index = () => {
                 </Link>
               </svg>
             </div>
-            
+
             {/* Right side - 4 columns with button container adjustments */}
             <div className="lg:col-span-4 space-y-3 flex flex-col justify-center mt-[-80px] lg:mt-0 lg:ml-[-80px] lg:pt-[150px] pl-[60px] lg:pl-0">
               {[
@@ -369,16 +370,16 @@ const Index = () => {
       <div className="hidden lg:block">
         <DRS360Section className="[&_.grid]:lg:col-start-2 [&_.grid]:lg:col-span-10" />
       </div>
-      
+
       {/* Mobile version - only visible on screens < 1024px */}
       <section className="py-16 bg-background lg:hidden">
         <div className="drs-container">
-          <span 
-            style={{ 
-              color: '#274B41', 
-              fontSize: '20px', 
-              fontStyle: 'normal', 
-              fontWeight: 400, 
+          <span
+            style={{
+              color: '#274B41',
+              fontSize: '20px',
+              fontStyle: 'normal',
+              fontWeight: 400,
               lineHeight: '40px',
               borderRadius: '30px',
               background: '#69C0AC',
@@ -389,12 +390,12 @@ const Index = () => {
           >
             {t('home.drs360section.tag')}
           </span>
-          <h2 
-            style={{ 
-              color: '#274B41', 
-              fontSize: '35px', 
-              fontStyle: 'normal', 
-              fontWeight: 900, 
+          <h2
+            style={{
+              color: '#274B41',
+              fontSize: '35px',
+              fontStyle: 'normal',
+              fontWeight: 900,
               lineHeight: '40px',
               marginBottom: '2rem'
             }}
@@ -402,89 +403,97 @@ const Index = () => {
             {t('home.drs360section.title')}
           </h2>
           <Link to="/drs-360">
-            <img 
-              src={bannerMobile} 
-              alt="DRS 360 - Saiba mais" 
+            <img
+              src={bannerMobile}
+              alt="DRS 360 - Saiba mais"
               className="w-full h-auto"
             />
           </Link>
         </div>
       </section>
 
-      {/* Insights Carousel Section */}
-      {insights.length > 0 && (
-        <section className="py-8 md:py-12 bg-background">
-          <div className="drs-container">
-            <div className="grid grid-cols-12 gap-8 items-center">
-              <div className="col-span-12 lg:col-start-3 lg:col-span-5 relative min-h-[470px] lg:min-h-[550px] flex flex-wrap justify-center items-center p-[4rem_1rem_4rem_2rem] lg:p-0 carousel-container-offset">
-                <div className="absolute inset-0 lg:hidden" style={{ backgroundImage: 'url(/images/fundo_mobile.svg)', backgroundPosition: 'top left', backgroundRepeat: 'no-repeat', backgroundSize: '100%' }}></div>
-                <div className="absolute inset-0 hidden lg:block" style={{ backgroundImage: 'url(/images/fundo2.svg)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'contain' }}></div>
-                <Swiper
-                  modules={[Navigation]}
-                  onSwiper={(swiper) => { insightsSwiperRef.current = swiper; }}
-                  onSlideChange={(swiper) => setInsightsActiveSlide(swiper.activeIndex)}
-                  spaceBetween={24}
-                  slidesPerView={1}
-                  className="drs360-swiper h-full w-full mt-0 lg:mt-[-100px] relative z-10"
-                >
-                  {insights.map((insight, index) => (
-                    <SwiperSlide key={insight.id || index}>
-                      <div className="h-full flex flex-col p-4 lg:p-0">
-                        <span style={{ color: '#69C0AC', fontSize: '14px', fontWeight: 400, marginBottom: '0.5rem', display: 'block', textTransform: 'uppercase' }}>
-                          {t('home.insights.tag')}
-                        </span>
-                        <span style={{ color: '#69C0AC', fontSize: '14px', fontWeight: 400, marginBottom: '1rem', display: 'block' }}>
-                          {new Date(insight.publishedAt).toLocaleDateString(
-                            language === 'en' ? 'en-US' : language === 'es' ? 'es-ES' : 'pt-BR',
-                            { day: '2-digit', month: 'long', year: 'numeric' }
-                          )}
-                        </span>
-                        <h3 className="mb-4 text-[24px] md:text-[28px] lg:text-[35px] leading-[30px] md:leading-[35px] lg:leading-[40px]" style={{ color: '#FFF', fontWeight: 900 }}>
-                          {insight.title}
-                        </h3>
-                        <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[25px] mb-4" style={{ color: '#69C0AC', fontWeight: 400 }}>
-                          {insight.description || insight.blocks?.[0]?.body?.substring(0, 120) || ''}
-                        </p>
-                        <Link to={`/insights/${insight.slug}`} className="drs-btn drs-btn-uppercase inline-flex w-fit mt-auto">
-                          <ArrowIcon className="w-4 h-3" />
-                          {t('home.insights.readmore')}
-                        </Link>
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-                <div className="flex gap-4 mt-[120px] lg:mt-4 lg:absolute lg:bottom-12 lg:left-16 justify-center lg:justify-start relative z-10 pl-0 lg:pl-[60px] ml-[-90px] lg:ml-0">
-                  <button onClick={() => insightsSwiperRef.current?.slidePrev()} className="transition-opacity rotate-180" style={{ opacity: insightsActiveSlide === 0 ? 0.6 : 1 }}>
-                    <img src={arrowSlide} alt="Previous" className="w-[50px] h-[38px] lg:w-[66px] lg:h-[50px]" />
-                  </button>
-                  <button onClick={() => insightsSwiperRef.current?.slideNext()} className="transition-opacity" style={{ opacity: insightsActiveSlide >= insights.length - 1 ? 0.6 : 1 }}>
-                    <img src={arrowSlide} alt="Next" className="w-[50px] h-[38px] lg:w-[66px] lg:h-[50px]" />
-                  </button>
-                </div>
-              </div>
-              <div className="col-span-12 lg:col-span-3 hidden lg:flex justify-center h-full pb-4 lg:pb-[70px]">
-                {insights[insightsActiveSlide]?.cover?.url && (
-                  <img
-                    src={getStrapiMedia(insights[insightsActiveSlide].cover!.url)}
-                    alt={insights[insightsActiveSlide]?.title}
-                    className="rounded-3xl self-end object-cover"
-                    style={{ maxWidth: '90%', maxHeight: '400px' }}
-                  />
-                )}
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Nossa Rede Mundial Section with Map */}
-      <DRS360Section 
+      <DRS360Section
         tagText={t('home.worldmap.tag')}
         showTitle={false}
         hasLink={false}
         uppercaseTag={true}
         useWorldMap={true}
       />
+
+      {/* Insights Carousel Section */}
+      {insights.length > 0 && (
+        <section className="py-8 md:py-12 bg-background">
+          <div className="drs-container">
+            <div className="grid grid-cols-12 gap-8 bg-insights">
+              <div className="col-span-12 lg:col-span-12">
+                <Swiper
+                  modules={[Navigation]}
+                  onSwiper={(swiper) => { insightsSwiperRef.current = swiper; }}
+                  onSlideChange={(swiper) => setInsightsActiveSlide(swiper.activeIndex)}
+                  spaceBetween={24}
+                  slidesPerView={1.15}
+                  breakpoints={{
+                    768: { slidesPerView: 1.3 },
+                    1024: { slidesPerView: 1.5 },
+                  }}
+                  className="w-full"
+                >
+                  {insights.map((insight, index) => {
+                    const coverUrl = insight.cover?.url ? getStrapiMedia(insight.cover.url) : null;
+                    return (
+                      <SwiperSlide key={insight.id || index}>
+                        <div className="rounded-[24px] overflow-hidden flex flex-col md:flex-row" style={{ backgroundColor: '#69C0AC', minHeight: '320px' }}>
+                          {/* Image */}
+                          {coverUrl && (
+                            <div className="w-full md:w-1/2 h-[200px] md:h-auto p-4 md:p-5">
+                              <img
+                                src={coverUrl}
+                                alt={insight.title}
+                                className="w-full h-full object-cover rounded-[16px]"
+                              />
+                            </div>
+                          )}
+                          {/* Content */}
+                          <div className="w-full md:w-1/2 flex flex-col justify-center p-6 md:p-8 md:pl-2">
+                            <h3 className="text-[22px] md:text-[24px] lg:text-[28px] leading-[28px] md:leading-[30px] lg:leading-[34px] mb-6 mobile-h3" style={{ color: '#000', fontWeight: 900 }}>
+                              {insight.title}
+                            </h3>
+                            <Link to={`/insights/${insight.slug}`} className="drs-btn drs-btn-uppercase inline-flex w-fit">
+                              <ArrowIcon className="w-4 h-3" />
+                              {t('home.insights.readmore')}
+                            </Link>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
+                {/* Pagination dots + arrows */}
+                <div className="flex items-center justify-center gap-3 mt-8">
+                  <button onClick={() => insightsSwiperRef.current?.slidePrev()} className="transition-opacity w-[40px] h-[40px] flex items-center justify-center border border-[#274B41] rounded-[8px]" style={{ opacity: insightsActiveSlide === 0 ? 0.3 : 1 }}>
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none"><path d="M8.5 1L1.5 8L8.5 15" stroke="#274B41" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  </button>
+                  <div className="flex gap-2">
+                    {insights.map((_, i) => (
+                      <button
+                        key={i}
+                        onClick={() => insightsSwiperRef.current?.slideTo(i)}
+                        className="w-[10px] h-[10px] rounded-full transition-colors"
+                        style={{ backgroundColor: i === insightsActiveSlide ? '#274B41' : '#69C0AC' }}
+                      />
+                    ))}
+                  </div>
+                  <button onClick={() => insightsSwiperRef.current?.slideNext()} className="transition-opacity w-[40px] h-[40px] flex items-center justify-center border border-[#274B41] rounded-[8px]" style={{ opacity: insightsActiveSlide >= insightsTotalSlides - 1 ? 0.3 : 1 }}>
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none"><path d="M1.5 1L8.5 8L1.5 15" stroke="#274B41" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
     </Layout>
   );

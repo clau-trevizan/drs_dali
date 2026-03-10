@@ -63,7 +63,10 @@ export default function Insights() {
   const allInsights = insightsData?.data || [];
   // Client-side filter for multiple categories
   const insights = selectedCategories.length > 1
-    ? allInsights.filter((i: any) => selectedCategories.includes(i.category?.name || ''))
+    ? allInsights.filter((i: any) => {
+        const cats = i.categories || (i.category ? [i.category] : []);
+        return cats.some((c: any) => selectedCategories.includes(c.name));
+      })
     : allInsights;
   const totalPages = Math.max(1, Math.ceil((insightsData?.meta?.pagination?.total || 0) / PAGE_SIZE));
 
@@ -141,7 +144,7 @@ export default function Insights() {
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {insights.map((insight: any) => {
-                    const categoryName = insight.category?.name || '';
+                    const categories = insight.categories || (insight.category ? [insight.category] : []);
                     const coverUrl = insight.cover?.url;
                     const image = coverUrl ? getStrapiMedia(coverUrl) : undefined;
                     const date = new Date(insight.publishedAt).toLocaleDateString(
@@ -158,10 +161,12 @@ export default function Insights() {
                           )}
                         </div>
                         <p style={{ color: '#012025', fontSize: '16px', fontWeight: 400, lineHeight: '21px', marginBottom: '8px' }}>{date}</p>
-                        <h3 className="group-hover:opacity-80 transition-opacity" style={{ color: '#000', fontSize: '20px', fontWeight: 700, lineHeight: '28.33px', letterSpacing: '0.55px', marginBottom: '12px' }}>{insight.title}</h3>
-                        {categoryName && (
+                        <h3 className="group-hover:opacity-80 transition-opacity insight-card-title" style={{ color: '#000', fontSize: '20px', fontWeight: 700, lineHeight: '28.33px', letterSpacing: '0.55px', marginBottom: '12px' }}>{insight.title}</h3>
+                        {categories.length > 0 && (
                           <div className="flex flex-wrap gap-2">
-                            <span style={{ color: '#000', textAlign: 'center', fontSize: '16px', fontWeight: 400, lineHeight: '24px', padding: '3px 25px', borderRadius: '16px', border: '1px solid #274B41' }}>{categoryName}</span>
+                            {categories.map((cat: any) => (
+                              <span key={cat.id || cat.name} style={{ color: '#000', textAlign: 'center', fontSize: '16px', fontWeight: 400, lineHeight: '24px', padding: '3px 25px', borderRadius: '16px', border: '1px solid #274B41' }}>{cat.name}</span>
+                            ))}
                           </div>
                         )}
                       </Link>

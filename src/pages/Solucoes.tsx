@@ -77,7 +77,7 @@ export default function Solucoes() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-8">
               {/* Desktop SVG */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 847 564" fill="none" className="hidden lg:block w-full h-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 847 564" fill="none" className="hidden lg:block w-full h-auto svg-desk-1">
                 <path d="M775.139 204.7L813.274 204.696C831.902 204.696 847 189.612 847 171.004L847 37.1558C847 16.638 830.349 -3.62957e-05 809.806 -3.53978e-05L142.416 0.000298951C123.477 0.000299778 108.127 15.3338 108.127 34.2543L108.127 58.6092C108.127 76.6171 93.5132 91.2114 75.4921 91.2114L34.0006 91.2114C15.2243 91.2114 1.0519e-05 106.416 1.13392e-05 125.178L0.000146699 526.773C0.000147596 547.29 16.6508 563.929 37.1938 563.929L705.852 563.929C725.989 563.929 742.313 547.621 742.313 527.504L742.313 397.172L742.313 237.493C742.313 219.383 757.011 204.7 775.139 204.7Z" fill="#F39325"/>
                 <text className="titulos" x="100" y="173" fontSize="35" fontWeight="900" fill="#000000">{t('solucoes.cts.svg.title')}</text>
                 <text className="titulos" x="100" y="230" fontSize="20" fontWeight="900" fill="#000000">{t('solucoes.cts.svg.subtitle1')}</text>
@@ -96,15 +96,17 @@ export default function Solucoes() {
               <a href="/areas/cts" className="block lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 408 713" fill="none" className="w-full h-auto">
                   <path d="M56.1159 655.315L56.1121 685.886C56.1121 700.819 44.0226 712.922 29.1075 712.922H-14.2189C-30.6643 712.922 -44 699.574 -44 683.106L-44 114.169C-44 98.9857 -31.7099 86.6802 -16.5447 86.6802H2.97623C17.4098 86.6802 29.1075 74.9651 29.1075 60.5184V27.2567C29.1075 12.2046 41.2941 0 56.3324 0L378.218 9.44393e-05C394.664 9.44393e-05 408 13.3482 408 29.8165L408 599.77C408 615.914 394.929 629 378.804 629L210.385 629H82.4003C67.8846 629 56.1159 640.782 56.1159 655.315Z" fill="#F39325"/>
-                  <rect x="40" y="466" width="347" height="70" rx="10" fill="#274B41" style={{ cursor: 'pointer' }}/>
-                  <path d="M84.1116 494.727L89.6449 500.213L89.6911 500.256C89.8763 500.439 89.984 500.682 90 500.968L89.9991 501.064C89.9856 501.29 89.899 501.507 89.7284 501.701L89.6638 501.767L84.1116 507.274C83.701 507.681 83.0371 507.681 82.6265 507.274C82.2135 506.864 82.2135 506.198 82.6265 505.789L86.4601 501.986L71.0524 501.987C70.4721 501.987 70 501.519 70 500.939C70 500.359 70.4721 499.891 71.0523 499.891L86.3364 499.89L82.6265 496.212C82.2135 495.802 82.2135 495.136 82.6265 494.727C83.0371 494.319 83.701 494.319 84.1116 494.727Z" fill="white"/>
+                  <rect x="40" y="510" width="347" height="70" rx="10" fill="#274B41" style={{ cursor: 'pointer' }}/>
+                  <path d="M84.1116 494.727L89.6449 500.213L89.6911 500.256C89.8763 500.439 89.984 500.682 90 500.968L89.9991 501.064C89.9856 501.29 89.899 501.507 89.7284 501.701L89.6638 501.767L84.1116 507.274C83.701 507.681 83.0371 507.681 82.6265 507.274C82.2135 506.864 82.2135 506.198 82.6265 505.789L86.4601 501.986L71.0524 501.987C70.4721 501.987 70 501.519 70 500.939C70 500.359 70.4721 499.891 71.0523 499.891L86.3364 499.89L82.6265 496.212C82.2135 495.802 82.2135 495.136 82.6265 494.727C83.0371 494.319 83.701 494.319 84.1116 494.727Z" fill="white" style={{ transform: 'translateY(42px)'}}/>
                   <text className="titulos" x="40" y="150" fontSize="30" fontWeight="900" fill="#000000">Clinical Trial</text>
                   <text className="titulos" x="40" y="185" fontSize="30" fontWeight="900" fill="#000000">Services - CTS </text>
-                  <text className="botao2" x="40" y="240" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.cts.svg.desc1')}</text>
-                  <text className="botao2" x="40" y="270" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.cts.svg.desc2')}</text>
-                  <text className="botao2" x="40" y="312" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.cts.svg.desc3')}</text>
-                  <text className="botao2" x="40" y="340" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.cts.svg.desc4')}</text>
-                  <text className="botao" x="110" y="497" fontSize="16" fontWeight="900" fill="#fff">{t('solucoes.cts.svg.cta')}</text>
+                  <foreignObject x="40" y="215" width="340" height="100%">
+                  <div className="titulos" style={{ fontSize: '20px', color: '#000000', fontWeight: '900'}}>{t('solucoes.cts.svg.subtitle1')} {t('solucoes.cts.svg.subtitle2')}</div>
+                  <div className="botao" style={{ fontSize: '20px', color: '#000000', lineHeight: 'normal', marginTop: '15px'}}>{t('solucoes.cts.svg.desc1mob')}</div>
+                  </foreignObject>
+                  <foreignObject x="110" y="520" width="230" height="100%">
+                  <div className="botao" style={{ fontSize: '16px', color: '#ffffff', lineHeight: 'normal'}}>{t('solucoes.cts.svg.cta')}</div>
+                  </foreignObject>
                 </svg>
               </a>
             </div>
@@ -128,7 +130,7 @@ export default function Solucoes() {
         <div className="drs-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-4 flex flex-col justify-end order-2 lg:order-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 422 379" fill="none" className="block w-full h-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 422 379" fill="none" className="block w-full h-auto svg-desk-2">
                 <path d="M80.3811 377.761C68.6104 377.761 59.0706 368.204 59.0706 356.415V329.757C59.0704 317.903 49.476 308.29 37.636 308.289H21.9963C10.124 308.289 0.500487 298.652 0.500244 286.759V23.8967C0.500277 10.9733 10.9614 0.500244 23.8596 0.500244H149.693C161.365 0.500244 170.827 9.97586 170.827 21.6682V46.6702H170.836C171.101 58.3623 180.649 67.761 192.388 67.761H192.39L397.999 66.762C410.64 66.7626 420.888 77.0253 420.888 89.6877V353.365C420.888 366.288 410.43 376.761 397.529 376.761H397.527L80.3811 377.761Z" stroke="#15AF97"/>
                 <text className="corrido" x="80" y="115" fontSize="20" fontWeight="700" fill="#000000">{t('solucoes.pcs.diff.title')}</text>
                 <text className="corrido" x="81" y="152" fontSize="16" fontWeight="400" fill="#000000">{t('solucoes.pcs.diff.item1')}</text>
@@ -162,17 +164,19 @@ export default function Solucoes() {
               {/* Mobile SVG */}
               <a href="/areas/pcs" className="block lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 409 713" fill="none" className="w-full h-auto">
-                  <path d="M351.884 655.315L351.888 685.886C351.888 700.819 363.977 712.922 378.893 712.922H422.219C438.664 712.922 452 699.574 452 683.106L452 114.169C452 98.9857 439.71 86.6802 424.545 86.6802H405.024C390.59 86.6802 378.893 74.9651 378.893 60.5184V27.2567C378.893 12.2046 366.706 0 351.668 0L29.7819 9.44393e-05C13.3365 9.44393e-05 0.000244141 13.3482 0.000244141 29.8165L0 599.77C0 615.914 13.0712 629 29.1957 629L197.615 629H325.6C340.115 629 351.884 640.782 351.884 655.315Z" fill="#15AF97"/>
-                  <text className="titulos" x="22" y="150" fontSize="30" fontWeight="900" fill="#000000">Patient Centric </text>
-                  <text className="titulos" x="22" y="185" fontSize="30" fontWeight="900" fill="#000000">Services - PCS</text>
-                  <text className="botao2" x="22" y="241" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.pcs.svg.desc1')}</text>
-                  <text className="botao2" x="22" y="269" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.pcs.svg.desc2')}</text>
-                  <text className="botao2" x="22" y="340" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.pcs.svg.desc3')}</text>
-                  <text className="botao2" x="22" y="368" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.pcs.svg.desc4')}</text>
-                  <text className="botao2" x="22" y="395" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.pcs.svg.desc5')}</text>
-                  <rect x="21" y="466" width="347" height="70" rx="10" fill="#274B41"/>
-                  <text className="botao" x="90" y="498" fontSize="16" fontWeight="900" fill="#fff">{t('solucoes.pcs.svg.cta')}</text>
-                  <path d="M65.1116 494.727L70.6449 500.213L70.6911 500.256C70.8763 500.439 70.984 500.682 71 500.968L70.9991 501.064C70.9856 501.29 70.899 501.507 70.7284 501.701L70.6638 501.767L65.1116 507.274C64.701 507.681 64.0371 507.681 63.6265 507.274C63.2135 506.864 63.2135 506.198 63.6265 505.789L67.4601 501.986L52.0524 501.987C51.4721 501.987 51 501.519 51 500.939C51 500.359 51.4721 499.891 52.0523 499.891L67.3364 499.89L63.6265 496.212C63.2135 495.802 63.2135 495.136 63.6265 494.727C64.0371 494.319 64.701 494.319 65.1116 494.727Z" fill="white"/>
+                  <path d="M351.884 655.315L351.888 685.886C351.888 700.819 363.977 712.922 378.893 712.922H422.219C438.664 712.922 452 699.574 452 683.106L452 114.169C452 98.9857 439.71 86.6802 424.545 86.6802H405.024C390.59 86.6802 378.893 74.9651 378.893 60.5184V27.2567C378.893 12.2046 366.706 0 351.668 0L29.7819 9.44393e-05C13.3365 9.44393e-05 0.000244141 13.3482 0.000244141 29.8165L0 599.77C0 615.914 13.0712 629 29.1957 629L197.615 629H325.6C340.115 629 351.884 640.782 351.884 655.315Z" fill="#15AF97" />
+                  <text className="titulos" x="22" y="130" fontSize="30" fontWeight="900" fill="#000000">Patient Centric </text>
+                  <text className="titulos" x="22" y="165" fontSize="30" fontWeight="900" fill="#000000">Services - PCS</text>
+                  <rect x="21" y="530" width="347" height="70" rx="10" fill="#274B41"/>
+                  <path d="M65.1116 494.727L70.6449 500.213L70.6911 500.256C70.8763 500.439 70.984 500.682 71 500.968L70.9991 501.064C70.9856 501.29 70.899 501.507 70.7284 501.701L70.6638 501.767L65.1116 507.274C64.701 507.681 64.0371 507.681 63.6265 507.274C63.2135 506.864 63.2135 506.198 63.6265 505.789L67.4601 501.986L52.0524 501.987C51.4721 501.987 51 501.519 51 500.939C51 500.359 51.4721 499.891 52.0523 499.891L67.3364 499.89L63.6265 496.212C63.2135 495.802 63.2135 495.136 63.6265 494.727C64.0371 494.319 64.701 494.319 65.1116 494.727Z" fill="white" style={{ transform: 'translateY(62px)' }}/>
+
+                  <foreignObject x="20" y="195" width="380" height="100%">
+                  <div className="titulos" style={{ fontSize: '20px', color: '#000000', fontWeight: '900'}}>{t('solucoes.pcs.svg.subtitle1')} {t('solucoes.pcs.svg.subtitle2')}</div>
+                  <div className="botao" style={{ fontSize: '20px', color: '#000000', lineHeight: 'normal', marginTop: '15px'}}>{t('solucoes.pcs.svg.desc1mob')}</div>
+                  </foreignObject>
+                  <foreignObject x="100" y="540" width="230" height="100%">
+                  <div className="botao" style={{ fontSize: '16px', color: '#ffffff', lineHeight: 'normal'}}>{t('solucoes.pcs.svg.cta')}</div>
+                  </foreignObject>
                 </svg>
               </a>
             </div>
@@ -186,7 +190,7 @@ export default function Solucoes() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-8">
               {/* Desktop SVG */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 847 564" fill="none" className="hidden lg:block w-full h-auto">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 847 564" fill="none" className="hidden lg:block w-full h-auto svg-desk-3">
                 <path d="M775.139 204.7L813.274 204.696C831.902 204.696 847 189.612 847 171.004L847 37.1558C847 16.638 830.349 -3.62957e-05 809.806 -3.53978e-05L142.416 0.000298951C123.477 0.000299778 108.127 15.3338 108.127 34.2543L108.127 58.6092C108.127 76.6171 93.5132 91.2114 75.4921 91.2114L34.0006 91.2114C15.2243 91.2114 -1.99985e-05 106.416 -1.91784e-05 125.178L0.000116182 526.773C0.000117078 547.29 16.6508 563.929 37.1938 563.929L705.852 563.929C725.989 563.929 742.313 547.621 742.313 527.504L742.313 397.172L742.313 237.493C742.313 219.383 757.011 204.7 775.139 204.7Z" fill="#F39325"/>
                 <text className="titulos" x="100" y="173" fontSize="35" fontWeight="900" fill="#000000">{t('solucoes.tis.svg.title')}</text>
                 <text className="titulos" x="100" y="230" fontSize="20" fontWeight="900" fill="#000000">{t('solucoes.tis.svg.subtitle')}</text>
@@ -206,14 +210,17 @@ export default function Solucoes() {
                   <path d="M56.1159 655.315L56.1121 685.886C56.1121 700.819 44.0226 712.922 29.1075 712.922H-14.2189C-30.6643 712.922 -44 699.574 -44 683.106L-44 114.169C-44 98.9857 -31.7099 86.6802 -16.5447 86.6802H2.97623C17.4098 86.6802 29.1075 74.9651 29.1075 60.5184V27.2567C29.1075 12.2046 41.2941 0 56.3324 0L378.218 9.44393e-05C394.664 9.44393e-05 408 13.3482 408 29.8165L408 599.77C408 615.914 394.929 629 378.804 629L210.385 629H82.4003C67.8846 629 56.1159 640.782 56.1159 655.315Z" fill="#F39325"/>
                   <text className="titulos" x="40" y="150" fontSize="30" fontWeight="900" fill="#000000">Thermo Integrated</text>
                   <text className="titulos" x="40" y="185" fontSize="30" fontWeight="900" fill="#000000">Services – TIS</text>
-                  <text className="botao2" x="40" y="241" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.tis.svg.desc1')}</text>
-                  <text className="botao2" x="40" y="269" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.tis.svg.desc2')}</text>
-                  <text className="botao2" x="40" y="311" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.tis.svg.desc3')}</text>
-                  <text className="botao2" x="40" y="340" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.tis.svg.desc4')}</text>
-                  <rect x="40" y="466" width="347" height="70" rx="10" fill="#274B41"/>
-                  <text className="botao" x="109" y="497" fontSize="16" fontWeight="400" fill="#fff">{t('solucoes.tis.svg.cta')}</text>
+                  <rect x="40" y="520" width="347" height="70" rx="10" fill="#274B41"/>
                   <text className="botao" x="109" y="518" fontSize="16" fontWeight="400" fill="#fff"></text>
-                  <path d="M84.1116 494.726L89.6449 500.213L89.6911 500.256C89.8763 500.439 89.984 500.681 90 500.967L89.9991 501.063C89.9856 501.29 89.899 501.507 89.7284 501.701L89.6638 501.767L84.1116 507.273C83.701 507.681 83.0371 507.681 82.6265 507.273C82.2135 506.864 82.2135 506.198 82.6265 505.788L86.4601 501.986L71.0524 501.986C70.4721 501.986 70 501.518 70 500.939C70 500.359 70.4721 499.891 71.0523 499.891L86.3364 499.89L82.6265 496.211C82.2135 495.802 82.2135 495.136 82.6265 494.726C83.0371 494.319 83.701 494.319 84.1116 494.726Z" fill="white"/>
+                  <path d="M84.1116 494.726L89.6449 500.213L89.6911 500.256C89.8763 500.439 89.984 500.681 90 500.967L89.9991 501.063C89.9856 501.29 89.899 501.507 89.7284 501.701L89.6638 501.767L84.1116 507.273C83.701 507.681 83.0371 507.681 82.6265 507.273C82.2135 506.864 82.2135 506.198 82.6265 505.788L86.4601 501.986L71.0524 501.986C70.4721 501.986 70 501.518 70 500.939C70 500.359 70.4721 499.891 71.0523 499.891L86.3364 499.89L82.6265 496.211C82.2135 495.802 82.2135 495.136 82.6265 494.726C83.0371 494.319 83.701 494.319 84.1116 494.726Z" fill="white" style={{ transform: 'translateY(52px)' }}/>
+
+                  <foreignObject x="40" y="220" width="340" height="100%">
+                  <div className="titulos" style={{ fontSize: '20px', color: '#000000', fontWeight: '900'}}>{t('solucoes.tis.svg.subtitle')}</div>
+                  <div className="botao" style={{ fontSize: '20px', color: '#000000', lineHeight: 'normal', marginTop: '15px'}}>{t('solucoes.tis.svg.desc1mob')}</div>
+                  </foreignObject>
+                  <foreignObject x="110" y="530" width="230" height="100%">
+                  <div className="botao" style={{ fontSize: '16px', color: '#ffffff', lineHeight: 'normal'}}>{t('solucoes.tis.svg.cta')}</div>
+                  </foreignObject>
                 </svg>
               </a>
             </div>

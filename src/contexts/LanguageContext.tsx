@@ -130,6 +130,7 @@ export const translations: Translations = {
     'solucoes.cts.svg.title': 'Clinical Trial Services - CTS',
     'solucoes.cts.svg.subtitle1': 'O sucesso dos estudos clínicos são viabilizados',
     'solucoes.cts.svg.subtitle2': 'por nossas soluções integradas.',
+    'solucoes.cts.svg.desc1mob': 'Conectamos a pesquisa clínica com soluções validadas, alta performance e conformidade internacional.\nGerenciamos cada etapa com precisão, garantindo uma logística segura, regulada e rastreável.',
     'solucoes.cts.svg.desc1': 'Conectamos a pesquisa clínica com soluções validadas,',
     'solucoes.cts.svg.desc2': 'alta performance e conformidade internacional.',
     'solucoes.cts.svg.desc3': 'Gerenciamos cada etapa com precisão, garantindo uma',
@@ -165,7 +166,7 @@ export const translations: Translations = {
     'grupo.impact.card1.desc2': 'logístico',
     'grupo.impact.card2.number': '+400',
     'grupo.impact.card2.title': 'estudos clínicos',
-    'grupo.impact.card2.desc': 'apoiados em todas as fases',
+    'grupo.impact.card2.desc1': 'apoiados em todas as fases',
     'grupo.impact.card3.number': '+50',
     'grupo.impact.card3.unit': 'mil',
     'grupo.impact.card3.title': 'kits clínicos',
@@ -264,12 +265,14 @@ export const translations: Translations = {
     'solucoes.pcs.diff.item3b': 'logística especializada.',
     'solucoes.pcs.diff.item4': '• Acompanhamento individualizado com',
     'solucoes.pcs.diff.item4b': 'DRS 360.',
+    'solucoes.pcs.svg.desc1mob': 'Serviços especializados que viabilizam o acesso e o suporte a terapias inovadoras e de alta complexidade.\nGestão integral de programas de suporte, atendimento e comercialização - unindo cuidado humanizado, profissionais de saúde, tecnologia e logística.',
     'solucoes.pcs.svg.desc1': 'Serviços especializados que viabilizam o acesso e o',
     'solucoes.pcs.svg.desc2': 'suporte a terapias inovadoras e de alta complexidade.',
     'solucoes.pcs.svg.desc3': 'Gestão integral de programas de suporte, atendimento',
     'solucoes.pcs.svg.desc4': 'e comercialização - unindo cuidado humanizado,',
     'solucoes.pcs.svg.desc5': 'profissionais de saúde, tecnologia e logística.',
     'solucoes.tis.svg.subtitle': 'Cadeia fria inteligente e sustentável.',
+    'solucoes.tis.svg.desc1mob': 'Asseguramos o transporte de produtos sensíveis com soluções de cadeia fria customizadas, monitoramento contínuo em tempo real e embalagens sustentáveis — unindo segurança, precisão e responsabilidade ambiental.',
     'solucoes.tis.svg.desc1': 'Asseguramos o transporte de produtos sensíveis com',
     'solucoes.tis.svg.desc2': 'soluções de cadeia fria customizadas, monitoramento',
     'solucoes.tis.svg.desc3': 'contínuo em tempo real e embalagens sustentáveis —',
@@ -340,6 +343,7 @@ export const translations: Translations = {
     'drs360.func3.line2': ' para gestão proativa — incluindo',
     'drs360.func3.line3': 'temperatura, desvios operacionais e',
     'drs360.func3.line4': 'necessidade de reabastecimento.',
+    'drs360.func3.line5': '',
     'drs360.func4.line1': 'Todo seu projeto em um único',
     'drs360.func4.line2': 'ambiente: importação, estoque,',
     'drs360.func4.line3': ' fornecimentos, logística e faturamento',
@@ -362,6 +366,12 @@ export const translations: Translations = {
     'drs360.benefit2.line2': 'estudos clínicos',
     'drs360.benefit3.line1': 'Apoio à tomada de decisão em',
     'drs360.benefit3.line2': 'tempo real',
+    'drs360.benefit4.line1': 'Redução de perdas e desvios',
+    'drs360.benefit4.line2': 'logísticos ',
+    'drs360.benefit5.line1': 'Aumento da previsibilidade em',
+    'drs360.benefit5.line2': 'estudos clínicos',
+    'drs360.benefit6.line1': 'Apoio à tomada de decisão em',
+    'drs360.benefit6.line2': 'tempo real',
 
     // DRS360 Page - Security SVG
     'drs360.security.title': 'Segurança da informação',
@@ -630,6 +640,7 @@ export const translations: Translations = {
     'pcs.svg2.desc4': '',
     'pcs.svg3.line1': 'Terapias',
     'pcs.svg3.line2': 'inovadoras',
+    'pcs.svg3.line3': '',
     'pcs.svg3.desc1': 'Suporte logístico e clínico para',
     'pcs.svg3.desc2': 'terapias avançadas e de alta',
     'pcs.svg3.desc3': 'complexidade.',
@@ -675,6 +686,7 @@ export const translations: Translations = {
     'tis.svg1.desc3': 'transporte em temperatura',
     'tis.svg1.desc4': 'controlada.',
     'tis.svg1.desc5': '',
+    'tis.svg1.desc6': '',
     'tis.svg2.line1': 'Transporte de',
     'tis.svg2.line2': 'cadeia fria',
     'tis.svg2.desc1': 'Logística especializada em',
@@ -696,6 +708,7 @@ export const translations: Translations = {
     'tis.svg4.desc3': 'localização em tempo real.',
     'tis.svg4.desc4': '',
     'tis.svg4.desc5': '',
+    'tis.svg4.desc6': '',
 
     // TIS Solution Modal keys
     'tis.sol1.title': 'Cadeia fria e embalagens sustentáveis',
@@ -833,6 +846,7 @@ export const translations: Translations = {
     'solucoes.cts.svg.subtitle1': 'The success of clinical studies is made possible',
     'solucoes.cts.svg.subtitle2': 'by our integrated solutions.',
 
+    'solucoes.cts.svg.desc1mob': 'We connect clinical research with validated solutions, high performance and international compliance.\nWe manage each stage with precision, guaranteeing safe, regulated and traceable logistics.',
     'solucoes.cts.svg.desc1': 'We connect clinical research with validated solutions,',
     'solucoes.cts.svg.desc2': 'high performance and international compliance.',
     'solucoes.cts.svg.desc3': 'We manage each stage with precision, guaranteeing',
@@ -846,7 +860,7 @@ export const translations: Translations = {
     'solucoes.cts.diff.item2': '• Clinical research is in our DNA',
     'solucoes.cts.diff.item3': '• Highly specialized team and',
     'solucoes.cts.diff.item3b': 'decentralized technological infrastructure',
-    
+
     'solucoes.pcs.svg.title': 'Patient Centric Services - PCS',
     'solucoes.pcs.svg.subtitle1': 'Clinical excellence with a focus on the patient',
     'solucoes.pcs.svg.subtitle2': 'throughout the care journey.',
@@ -867,13 +881,13 @@ export const translations: Translations = {
     'grupo.text4': 'Validated excellence, a vision of the future and an absolute commitment to care. That is our essence.',
     'grupo.impact.tag': 'IMPACT AND CAPACITY',
     'grupo.impact.card1.number': '+30',
-    'grupo.impact.card1.unit': 'attended with',
-    'grupo.impact.card1.title': 'clinical',
+    'grupo.impact.card1.unit': 'attended ',
+    'grupo.impact.card1.title': 'with clinical',
     'grupo.impact.card1.desc1': 'and logistical',
     'grupo.impact.card1.desc2': 'support',
     'grupo.impact.card2.number': '+400',
     'grupo.impact.card2.title': 'clinical studies',
-    'grupo.impact.card2.desc': 'supported at all stages',
+    'grupo.impact.card2.desc1': 'supported at all stages',
     'grupo.impact.card3.number': '+50',
     'grupo.impact.card3.unit': 'thousand',
     'grupo.impact.card3.title': 'clinical kits',
@@ -973,13 +987,15 @@ export const translations: Translations = {
     'solucoes.pcs.diff.item4': '• Individualized monitoring with',
     'solucoes.pcs.diff.item4b': 'DRS 360.',
 
+    'solucoes.pcs.svg.desc1mob': 'Specialized services that enable access to and support for innovative and highly complex therapies.\nComprehensive management of support, care and marketing programs - bringing together humanized care, health professionals, technology and logistics.',
     'solucoes.pcs.svg.desc1': 'Specialized services that enable access to and',
     'solucoes.pcs.svg.desc2': 'support for innovative and highly complex therapies.',
     'solucoes.pcs.svg.desc3': 'Comprehensive management of support, care and',
     'solucoes.pcs.svg.desc4': 'marketing programs - bringing together humanized',
     'solucoes.pcs.svg.desc5': 'care, health professionals, technology and logistics.',
-  
+
     'solucoes.tis.svg.subtitle': 'Intelligent and sustainable cold chain.',
+    'solucoes.tis.svg.desc1mob': 'We ensure the transportation of sensitive products with customized cold chain solutions, continuous real-time monitoring and sustainable packaging — combining safety, precision and environmental responsibility.',
     'solucoes.tis.svg.desc1': 'We ensure the transportation of sensitive products',
     'solucoes.tis.svg.desc2': 'with customized cold chain solutions, continuous',
     'solucoes.tis.svg.desc3': 'real-time monitoring and sustainable packaging —',
@@ -1021,24 +1037,24 @@ export const translations: Translations = {
     'grupo.missao.text': 'ransforming innovation and technology into strategic solutions that guarantee the efficient delivery of essential health products, promoting the well-being of patients and supporting the development of innovative therapies with excellence. We are committed to sustainable practices, responsible governance and positive social impact, contributing to a more ethical, inclusive and environmentally conscious healthcare ecosystem.',
     'grupo.visao.title': 'Vision',
     'grupo.visao.text': 'To be a global benchmark in the development of innovative technologies and intelligent health information management, becoming a strategic partner for the biopharmaceutical industry, CROs, logistics operators and the scientific community.',
-    
+
     'grupo.valores.title': 'Our values:',
-    
+
     'grupo.tagline': 'We combine science, traceability and human service to transform the healthcare journey: from the laboratory to the patient.',
-    
+
     'grupo.diferencial.title': 'Our differential is how we work',
     'grupo.diferencial.desc': 'We integrate high-performance logistics with data intelligence and clinical care.',
-    
+
     'grupo.nossotime.title': 'Our team',
     'grupo.nossotime.subtitle': 'People who take care of people, with excellence and empathy.',
-    
+
     'grupo.nossotime.cta': 'Join our team!',
-    
+
     'grupo.ondeatuamos': 'Where we operate',
     'grupo.ondeatuamos.desc': 'We offer complete solutions that connect clinical research, technology and health care. We act as strategic partners throughout the journey, guaranteeing safety, efficiency and humanized service at every stage of the process.',
-    
+
     'grupo.nossaatuacao': 'Our work is divided into three main areas:',
-    
+
     'grupo.drs360.platform': 'All this is enhanced by our proprietary platform, DRS 360, which monitors in real time, generates intelligent alerts and offers total control of the operation. With it, sponsors, research centers and operators can follow each stage with transparency and agility.',
     'grupo.drs360.cta': 'Discover all our services',
 
@@ -1062,6 +1078,7 @@ export const translations: Translations = {
     'drs360.func3.line2': 'for proactive management -',
     'drs360.func3.line3': 'including temperature, operational',
     'drs360.func3.line4': 'deviations and the need for refueling.',
+    'drs360.func3.line5': '',
 
     'drs360.func4.line1': 'Your entire project in a single',
     'drs360.func4.line2': 'environment: import, stock,',
@@ -1088,6 +1105,15 @@ export const translations: Translations = {
 
     'drs360.benefit3.line1': 'Real-time decision-',
     'drs360.benefit3.line2': 'making support',
+
+    'drs360.benefit4.line1': 'Reduction of losses and logistical',
+    'drs360.benefit4.line2': 'deviations',
+
+    'drs360.benefit5.line1': 'Increased predictability in',
+    'drs360.benefit5.line2': 'clinical studies',
+
+    'drs360.benefit6.line1': 'Real-time decision-',
+    'drs360.benefit6.line2': 'making support',
 
     'drs360.security.title': 'Information security',
     'drs360.security.line1': 'The platform follows strict digital security and data privacy,',
@@ -1118,21 +1144,21 @@ export const translations: Translations = {
 
     'drs360.security.mobile.bullet4': '• Compliance FDA, EMA, ANVISA,',
     'drs360.security.mobile.bullet4b': 'LGPD/GDPR, ISO27001/27701',
-  
+
     'drs360.access.title': 'Access the DRS 360 platform now.',
     'drs360.access.cta': 'Click here',
 
     'drs360.sol1.title': 'Real-time tracking',
     'drs360.sol1.desc': 'Real-time tracking of shipments with geolocation, temperature, humidity, light and fall sensors.',
-    
+
     'drs360.sol1.dif1': 'Real-time GPS tracking',
-    
+
     'drs360.sol1.dif2': 'Temperature and humidity monitoring',
-    
+
     'drs360.sol1.dif3': 'Impact and drop detection',
-    
+
     'drs360.sol1.dif4': 'Customizable automatic alerts',
-    
+
     'drs360.sol1.dest1': 'Unified dashboard for all operations',
     'drs360.sol1.dest2': 'Complete movement history',
     'drs360.sol1.dest3': 'Integration with existing systems',
@@ -1189,19 +1215,19 @@ export const translations: Translations = {
 
     'grupo.valor1.title': 'Ethics and transparency',
     'grupo.valor1.desc': 'We act with integrity and responsibility in all our relationships.',
-    
+
     'grupo.valor2.title': 'Excellence and Quality',
     'grupo.valor2.desc': 'We constantly strive for the highest standards in our services and products.',
-    
+
     'grupo.valor3.title': 'Commitment to Life',
     'grupo.valor3.desc': ' We put patients at the center of everything we do.',
-    
+
     'grupo.valor4.title': 'Innovation and Technology',
     'grupo.valor4.desc': 'We use cutting-edge solutions to drive the evolution of healthcare.',
-    
+
     'grupo.valor5.title': 'Collaboration and Partnership',
     'grupo.valor5.desc': 'We value working together to generate positive and lasting impacts.',
-    
+
     'grupo.nossotime.svg.line1': 'Our multidisciplinary team brings together logistics experts,',
     'grupo.nossotime.svg.line2': 'pharmacists, nurses, data scientists and',
     'grupo.nossotime.svg.line3': 'technology developers. All aligned with a',
@@ -1219,7 +1245,7 @@ export const translations: Translations = {
     'grupo.nossotime.mobile.line7': 'All aligned with a common purpose:',
     'grupo.nossotime.mobile.line8': 'to make access to healthcare more',
     'grupo.nossotime.mobile.line9': 'efficient, safe and humane.',
-    
+
     'grupo.diff1.title1': 'DRS 360',
     'grupo.diff1.desc1': 'proprietary platform with',
     'grupo.diff1.desc2': 'real-time tracking,',
@@ -1378,8 +1404,9 @@ export const translations: Translations = {
     'pcs.svg2.desc2': 'total visibility of the journey and',
     'pcs.svg2.desc3': 'precision at every stage.',
     'pcs.svg2.desc4': '',
-    'pcs.svg3.line1': 'Innovative therapies',
-    'pcs.svg3.line2': 'and high complexity',
+    'pcs.svg3.line1': 'Innovative',
+    'pcs.svg3.line2': 'therapies and',
+    'pcs.svg3.line3': 'high complexity',
     'pcs.svg3.desc1': 'We deliver solutions that integrate',
     'pcs.svg3.desc2': 'science, technology and',
     'pcs.svg3.desc3': 'human sensitivity.',
@@ -1418,32 +1445,34 @@ export const translations: Translations = {
     // TIS SVG text keys
     'tis.svg1.line1': 'Sustainable',
     'tis.svg1.line2': 'Packaging',
-    'tis.svg1.desc1': 'Returnable and sustainable thermal packaging',
-    'tis.svg1.desc2': 'with precise temperature control and total traceability',
-    'tis.svg1.desc3': 'to guarantee safety and performance throughout the cold chain.',
-    'tis.svg1.desc4': '',
-    'tis.svg1.desc5': '',
+    'tis.svg1.desc1': 'Returnable and sustainable thermal ',
+    'tis.svg1.desc2': 'packaging with precise temperature ',
+    'tis.svg1.desc3': 'control and total traceability to ',
+    'tis.svg1.desc4': 'guarantee safety and performance ',
+    'tis.svg1.desc5': 'throughout the cold chain.',
+    'tis.svg1.desc6': '',
     'tis.svg2.line1': 'Cold chain',
     'tis.svg2.line2': 'transportation',
-    'tis.svg2.desc1': 'Specialized cold chain transport services.',
-    'tis.svg2.desc2': 'Simplify your logistics by integrating your',
-    'tis.svg2.desc3': 'transportation, reverse logistics, packaging and monitoring.',
-    'tis.svg2.desc4': '',
-    'tis.svg2.desc5': '',
+    'tis.svg2.desc1': 'Specialized cold chain transport ',
+    'tis.svg2.desc2': 'services. Simplify your logistics ',
+    'tis.svg2.desc3': 'by integrating your transportation, ',
+    'tis.svg2.desc4': ' reverse logistics, packaging and ',
+    'tis.svg2.desc5': 'monitoring.',
     'tis.svg3.line1': 'Telemetry',
     'tis.svg3.line2': 'Data Loggers',
-    'tis.svg3.desc1': 'Advanced monitoring solutions, with multiple data logger',
-    'tis.svg3.desc2': 'models and complete integration with our digital platform. Control,',
-    'tis.svg3.desc3': 'precision and real-time traceability for the entire cold chain.',
-    'tis.svg3.desc4': '',
-    'tis.svg3.desc5': '',
+    'tis.svg3.desc1': 'Advanced monitoring solutions, with ',
+    'tis.svg3.desc2': 'multiple data logger models and complete',
+    'tis.svg3.desc3': 'integration with our digital platform. ',
+    'tis.svg3.desc4': 'Control, precision and real-time ',
+    'tis.svg3.desc5': 'traceability for the entire cold chain.',
     'tis.svg4.line1': 'Integrated',
     'tis.svg4.line2': 'Services',
-    'tis.svg4.desc1': 'You can count on our integrated cold chain management to make',
-    'tis.svg4.desc2': 'product distribution feasible, with ready-to-use packaging and returnable',
-    'tis.svg4.desc3': 'management and maturation, storage, transportation and monitoring services. ',
-    'tis.svg4.desc4': '',
-    'tis.svg4.desc5': '',
+    'tis.svg4.desc1': 'You can count on our integrated cold chain ',
+    'tis.svg4.desc2': 'management to make product distribution ',
+    'tis.svg4.desc3': 'feasible, with ready-to-use packaging and ',
+    'tis.svg4.desc4': 'returnable management and maturation, ',
+    'tis.svg4.desc5': 'storage, transportation and monitoring ',
+    'tis.svg4.desc6': 'services.',
     'tis.sol1.title': 'Sustainable Packaging',
     'tis.sol1.desc': 'Returnable and sustainable thermal packaging, with precise temperature control and total traceability to guarantee safety and performance throughout the cold chain.',
     'tis.sol2.title': 'Cold chain transport',
@@ -1579,6 +1608,7 @@ export const translations: Translations = {
     'solucoes.cts.svg.subtitle1': 'El éxito de los ensayos clínicos es posible gracias',
     'solucoes.cts.svg.subtitle2': 'a nuestras soluciones integradas.',
 
+    'solucoes.cts.svg.desc1mob': 'Conectamos la investigación clínica con soluciones validadas, alto desempeño y cumplimiento internacional.\nGestionamos cada paso con precisión, garantizando una logística segura, regulada y trazable',
     'solucoes.cts.svg.desc1': 'Conectamos la investigación clínica con soluciones validadas,',
     'solucoes.cts.svg.desc2': 'alto desempeño y cumplimiento internacional.',
     'solucoes.cts.svg.desc3': 'Gestionamos cada paso con precisión, garantizando una',
@@ -1617,7 +1647,7 @@ export const translations: Translations = {
     'grupo.impact.card1.desc2': 'logístico',
     'grupo.impact.card2.number': '+400',
     'grupo.impact.card2.title': 'estudios clínicos',
-    'grupo.impact.card2.desc': 'apoyados en todas las fases',
+    'grupo.impact.card2.desc1': 'apoyados en todas las fases',
     'grupo.impact.card3.number': '+50',
     'grupo.impact.card3.unit': 'mil',
     'grupo.impact.card3.title': 'kits clínicos',
@@ -1716,13 +1746,15 @@ export const translations: Translations = {
     'solucoes.pcs.diff.item3b': 'logística especializada.',
     'solucoes.pcs.diff.item4': '• Seguimiento individualizado con',
     'solucoes.pcs.diff.item4b': 'DRS 360.',
+    'solucoes.pcs.svg.desc1mob': 'Servicios especializados que permiten el acceso y apoyo a terapias innovadoras y de alta complejidad.\nGestión integral de programas de soporte, servicio y ventas -  combinando atención humanizada, profesionales de la salud, tecnología y logística.',
     'solucoes.pcs.svg.desc1': 'Servicios especializados que permiten el acceso y',
     'solucoes.pcs.svg.desc2': 'apoyo a terapias innovadoras y de alta complejidad.',
     'solucoes.pcs.svg.desc3': 'Gestión integral de programas de soporte, servicio y',
     'solucoes.pcs.svg.desc4': 'ventas -  combinando atención humanizada,',
     'solucoes.pcs.svg.desc5': 'profesionales de la salud, tecnología y logística.',
-    
+
     'solucoes.tis.svg.subtitle': 'Cadena fría inteligente y sostenible.',
+    'solucoes.tis.svg.desc1mob': 'Garantizamos el transporte seguro de productos sensibles con soluciones de cadena fría personalizadas, monitoreo continuo en tiempo real y envase sustentable — combinando seguridad, precisión y responsabilidad ambiental.',
     'solucoes.tis.svg.desc1': 'Garantizamos el transporte seguro de productos',
     'solucoes.tis.svg.desc2': 'sensibles con soluciones de cadena fría personalizadas, ',
     'solucoes.tis.svg.desc3': 'monitoreo continuo en tiempo real y envase sustentable —',
@@ -1739,7 +1771,7 @@ export const translations: Translations = {
     'solucoes.tis.diff.item4': '• Ready-to-use - Embalajes listos',
     'solucoes.tis.diff.item4b': 'para usar, bajo demanda e integrados',
     'solucoes.tis.diff.item4c': 'con servicios logísticos.',
-    
+
     'solucoes.table.alt': 'Tabla de Soluciones',
     'solucoes.table.part1': 'Tabla de Soluciones - Parte 1',
     'solucoes.table.part2': 'Tabla de Soluciones - Parte 2',
@@ -1761,14 +1793,14 @@ export const translations: Translations = {
     'grupo.valores.title': 'Nuestros valores:',
 
     'grupo.tagline': 'Combinamos ciencia, trazabilidad y cuidado humano para transformar la experiencia de la atención médica - desde el laboratorio hasta el paciente.',
-    
+
     'grupo.diferencial.title': 'Nuestra característica distintiva es nuestra forma de trabajar',
-    
+
     'grupo.diferencial.desc': 'Integramos alto desempeño logístico con inteligencia de datos y atención médica.',
-    
+
     'grupo.nossotime.title': 'Nuestro equipo',
     'grupo.nossotime.subtitle': 'Personas que se preocupan por las personas, con excelencia y empatía.',
-    'grupo.nossotime.cta': '¡Únase a nuestro equipo!!',
+    'grupo.nossotime.cta': '¡Únase a nuestro equipo!',
     'grupo.ondeatuamos': 'Dónde actuamos',
     'grupo.ondeatuamos.desc': 'Ofrecemos soluciones integrales que conectan la investigación clínica, la tecnología y la atención médica. Actuamos como asociados estratégicos durante todo el proceso, garantizando seguridad, eficiencia y atención humanizada en cada etapa del proceso.',
     'grupo.nossaatuacao': 'Nuestro trabajo se divide en tres áreas principales:',
@@ -1792,35 +1824,45 @@ export const translations: Translations = {
 
     'drs360.func3.line1': 'Alertas inteligentes y configurables',
     'drs360.func3.line2': 'para una gestión proactiva — que',
-    'drs360.func3.line3': 'incluyen temperatura, desviaciones o',
-    'drs360.func3.line4': 'perativas y necesidades de reabastecimiento.',
-    
+    'drs360.func3.line3': 'incluyen temperatura, desviaciones ',
+    'drs360.func3.line4': 'operativas y necesidades de ',
+    'drs360.func3.line5': 'reabastecimiento.',
+
     'drs360.func4.line1': 'Todo su proyecto en un único',
     'drs360.func4.line2': 'entorno: importación, stock, suministros,',
     'drs360.func4.line3': 'logística y facturación, todo junto',
     'drs360.func4.line4': 'con total visibilidad y ',
     'drs360.func4.line5': 'control.',
-    
+
     'drs360.func5.line1': 'Historial completo de cada transacción,',
     'drs360.func5.line2': 'incluidos los niveles de autorización',
     'drs360.func5.line3': 'y el registro de actividad',
     'drs360.func5.line4': '(Compliance FDA, EMA & ANVISA)',
-    
+
     'drs360.func6.line1': 'Informes de gestión con vistas',
     'drs360.func6.line2': 'dinámicas de volumen, proyectos,',
     'drs360.func6.line3': 'periodos, rutas y mucho más.',
     'drs360.func6.line4': 'OPEN API para integración de',
     'drs360.func6.line5': 'procesos o exportación de datos.',
-    
+
     'drs360.benefit1.line1': 'Reducción de pérdidas y',
     'drs360.benefit1.line2': 'desviaciones logísticas',
 
     'drs360.benefit2.line1': 'Mayor previsibilidad en los',
     'drs360.benefit2.line2': 'estudios clínicos',
-    
+
     'drs360.benefit3.line1': 'Apoyo a la toma de decisiones',
     'drs360.benefit3.line2': 'en tiempo real',
-    
+
+    'drs360.benefit4.line1': 'Reducción de pérdidas y',
+    'drs360.benefit4.line2': 'desviaciones logísticas',
+
+    'drs360.benefit5.line1': 'Mayor previsibilidad en los',
+    'drs360.benefit5.line2': 'estudios clínicos',
+
+    'drs360.benefit6.line1': 'Apoyo a la toma de decisiones',
+    'drs360.benefit6.line2': 'en tiempo real',
+
     'drs360.security.title': 'Seguridad de la información',
     'drs360.security.line1': 'La plataforma sigue estrictos protocolos de seguridad',
     'drs360.security.line2': 'digital y privacidad de datos, con respaldo continuo, alojamiento',
@@ -1850,78 +1892,78 @@ export const translations: Translations = {
 
     'drs360.access.title': 'Acceda ahora a la plataforma DRS 360.',
     'drs360.access.cta': 'Haga clic aquí',
-    
+
     'drs360.sol1.title': 'Seguimiento de envíos en tiempo real',
     'drs360.sol1.desc': 'con geolocalización, temperatura, sensores de temperatura, humedad, luz y caída. ',
-    'drs360.sol1.dif1': 'Rastreo GPS en tiempo real', 
+    'drs360.sol1.dif1': 'Rastreo GPS en tiempo real',
     'drs360.sol1.dif2': 'Monitoreo de temperatura y humedad',
-    'drs360.sol1.dif3': 'Detección de impacto y caídas', 
+    'drs360.sol1.dif3': 'Detección de impacto y caídas',
     'drs360.sol1.dif4': 'Alertas automáticas personalizables',
     'drs360.sol1.dest1': 'Dashboard unificado para todas las operaciones',
-    'drs360.sol1.dest2': 'Historial completo de movimientos', 
+    'drs360.sol1.dest2': 'Historial completo de movimientos',
     'drs360.sol1.dest3': 'Integración con sistemas existentes',
-    
+
     'drs360.sol2.title': 'Visión completa de la operación',
     'drs360.sol2.desc': 'Control de entregas y recepción en tiempo real para gestión eficiente.',
-    'drs360.sol2.dif1': 'Panel de control centralizado', 
+    'drs360.sol2.dif1': 'Panel de control centralizado',
     'drs360.sol2.dif2': 'Visualización de todas las entregas',
-    'drs360.sol2.dif3': 'Estado en tiempo real de cada envío', 
+    'drs360.sol2.dif3': 'Estado en tiempo real de cada envío',
     'drs360.sol2.dif4': 'Reportes de rendimiento',
-    'drs360.sol2.dest1': 'Interfaz intuitiva y responsiva', 
+    'drs360.sol2.dest1': 'Interfaz intuitiva y responsiva',
     'drs360.sol2.dest2': 'Acceso multi-dispositivo',
     'drs360.sol2.dest3': 'Filtros avanzados de búsqueda',
-    
+
     'drs360.sol3.title': 'Alertas inteligentes',
     'drs360.sol3.desc': 'Notificaciones configurables para gestión proactiva de excepciones y desvíos.',
-    'drs360.sol3.dif1': 'Alertas por temperatura fuera de rango', 
+    'drs360.sol3.dif1': 'Alertas por temperatura fuera de rango',
     'drs360.sol3.dif2': 'Notificaciones de retraso de entrega',
-    'drs360.sol3.dif3': 'Avisos de desvío de ruta', 
+    'drs360.sol3.dif3': 'Avisos de desvío de ruta',
     'drs360.sol3.dif4': 'Escalación automática de incidentes',
-    'drs360.sol3.dest1': 'Configuración flexible por usuario', 
+    'drs360.sol3.dest1': 'Configuración flexible por usuario',
     'drs360.sol3.dest2': 'Múltiples canales de notificación',
     'drs360.sol3.dest3': 'Reportes de ocurrencias',
-    
-    'drs360.sol4.title': 'Historial completo', 
+
+    'drs360.sol4.title': 'Historial completo',
     'drs360.sol4.desc': 'Rastreo completo de cada movimiento para auditoría y compliance.',
-    'drs360.sol4.dif1': 'Registro de todos los movimientos', 
+    'drs360.sol4.dif1': 'Registro de todos los movimientos',
     'drs360.sol4.dif2': 'Logs de acceso y modificaciones',
-    'drs360.sol4.dif3': 'Documentación automática', 
+    'drs360.sol4.dif3': 'Documentación automática',
     'drs360.sol4.dif4': 'Exportación de datos',
-    'drs360.sol4.dest1': 'Retención de datos según regulación', 
+    'drs360.sol4.dest1': 'Retención de datos según regulación',
     'drs360.sol4.dest2': 'Búsqueda avanzada por período',
     'drs360.sol4.dest3': 'Reportes personalizados',
-    
-    'drs360.sol5.title': 'Reportes personalizados', 
+
+    'drs360.sol5.title': 'Reportes personalizados',
     'drs360.sol5.desc': 'Reportes listos validados para compliance FDA, ANVISA y otras agencias.',
-    'drs360.sol5.dif1': 'Templates preconfigurados', 
+    'drs360.sol5.dif1': 'Templates preconfigurados',
     'drs360.sol5.dif2': 'Personalización de reportes',
-    'drs360.sol5.dif3': 'Exportación en múltiples formatos', 
+    'drs360.sol5.dif3': 'Exportación en múltiples formatos',
     'drs360.sol5.dif4': 'Programación automática',
-    'drs360.sol5.dest1': 'Conformidad con FDA y ANVISA', 
-    'drs360.sol5.dest2': 'Firma digital', 
+    'drs360.sol5.dest1': 'Conformidad con FDA y ANVISA',
+    'drs360.sol5.dest2': 'Firma digital',
     'drs360.sol5.dest3': 'Versionado de documentos',
-    
-    'drs360.sol6.title': 'Seguridad de la información', 
+
+    'drs360.sol6.title': 'Seguridad de la información',
     'drs360.sol6.desc': 'Protocolos rigurosos de seguridad digital para protección de datos sensibles.',
-    'drs360.sol6.dif1': 'Cifrado de extremo a extremo', 
+    'drs360.sol6.dif1': 'Cifrado de extremo a extremo',
     'drs360.sol6.dif2': 'Autenticación multifactor',
-    'drs360.sol6.dif3': 'Control de acceso granular', 
+    'drs360.sol6.dif3': 'Control de acceso granular',
     'drs360.sol6.dif4': 'Backup automático',
-    'drs360.sol6.dest1': 'Conformidad con LGPD', 
-    'drs360.sol6.dest2': 'Certificaciones de seguridad', 
+    'drs360.sol6.dest1': 'Conformidad con LGPD',
+    'drs360.sol6.dest2': 'Certificaciones de seguridad',
     'drs360.sol6.dest3': 'Monitoreo 24/7',
-    
-    'grupo.valor1.title': 'Ética y transparencia -', 
+
+    'grupo.valor1.title': 'Ética y transparencia -',
     'grupo.valor1.desc': 'Actuamos con integridad y responsabilidad en todas nuestras relaciones.',
-    'grupo.valor2.title': 'Excelencia y Calidad -', 
+    'grupo.valor2.title': 'Excelencia y Calidad -',
     'grupo.valor2.desc': 'Buscamos constantemente los más altos estándares en nuestros servicios y productos.',
-    'grupo.valor3.title': 'Compromiso con la Vida -', 
+    'grupo.valor3.title': 'Compromiso con la Vida -',
     'grupo.valor3.desc': 'Colocamos los pacientes en el centro de todo lo que hacemos. ',
-    'grupo.valor4.title': 'Innovación y Tecnología -', 
+    'grupo.valor4.title': 'Innovación y Tecnología -',
     'grupo.valor4.desc': 'Utilizamos soluciones de punta para impulsar la evolución de la salud.',
-    'grupo.valor5.title': 'Colaboración y Alianza -', 
+    'grupo.valor5.title': 'Colaboración y Alianza -',
     'grupo.valor5.desc': 'Valoramos el trabajo conjunto para generar impactos positivos y durables.',
-    
+
     'grupo.nossotime.svg.line1': 'Nuestro equipo multidisciplinario reúne especialistas en logística,',
     'grupo.nossotime.svg.line2': 'farmacéuticos, enfermeros, científicos de datos y',
     'grupo.nossotime.svg.line3': 'desarrolladores de tecnología. Todos alineados por un',
@@ -1929,58 +1971,58 @@ export const translations: Translations = {
     'grupo.nossotime.svg.line5': 'seguro y humano.',
     'grupo.nossotime.svg.line6': 'Nuestra cultura es colaborativa, con un enfoque en la escucha activa y',
     'grupo.nossotime.svg.line7': 'en soluciones centradas en las personas.',
-    
+
     'grupo.nossotime.mobile.line1': 'Personas que se preocupan por las personas,',
     'grupo.nossotime.mobile.line2': 'con excelencia y empatía. Nuestro equipo',
     'grupo.nossotime.mobile.line3': 'multidisciplinario reúne a especialistas en',
     'grupo.nossotime.mobile.line4': 'logística, farmacéuticos, enfermeros,',
-    'grupo.nossotime.mobile.line5': 'científicos de datos y desarrolladores de', 
+    'grupo.nossotime.mobile.line5': 'científicos de datos y desarrolladores de',
     'grupo.nossotime.mobile.line6': 'tecnología. Todos unidos por un propósito',
     'grupo.nossotime.mobile.line7': 'común: hacer que el acceso a la atención',
     'grupo.nossotime.mobile.line8': 'médica sea más eficiente,',
     'grupo.nossotime.mobile.line9': 'seguro y humano.',
-    
-    'grupo.diff1.title1': 'DRS 360', 
-    
-    'grupo.diff1.desc1': 'plataforma propia con', 
+
+    'grupo.diff1.title1': 'DRS 360',
+
+    'grupo.diff1.desc1': 'plataforma propia con',
     'grupo.diff1.desc2': 'seguimiento en tiempo real,',
-    'grupo.diff1.desc3': 'informes inteligentes y', 
+    'grupo.diff1.desc3': 'informes inteligentes y',
     'grupo.diff1.desc4': 'gestión predictiva',
-    
-    'grupo.diff2.title1': 'Ecosistema', 
+
+    'grupo.diff2.title1': 'Ecosistema',
     'grupo.diff2.title2': 'completo:',
-    'grupo.diff2.desc1': 'logística, tecnología, apoyo  al', 
+    'grupo.diff2.desc1': 'logística, tecnología, apoyo  al',
     'grupo.diff2.desc2': 'paciente y servicios regulatorios',
-    'grupo.diff2.desc3': 'en una única estructura', 
+    'grupo.diff2.desc3': 'en una única estructura',
     'grupo.diff2.desc4': 'operativa.',
-    
-    'grupo.diff3.title1': 'Especialización', 
+
+    'grupo.diff3.title1': 'Especialización',
     'grupo.diff3.title2': 'en salud:',
-    'grupo.diff3.desc1': 'operación 100% regulada, con', 
+    'grupo.diff3.desc1': 'operación 100% regulada, con',
     'grupo.diff3.desc2': 'validaciones y protocolos para',
-    'grupo.diff3.desc3': 'medicamentos sensibles', 
+    'grupo.diff3.desc3': 'medicamentos sensibles',
     'grupo.diff3.desc4': '',
-    
-    'grupo.area1.title1': 'Clinical Trial', 
+
+    'grupo.area1.title1': 'Clinical Trial',
     'grupo.area1.title2': 'Services - CTS:',
-    'grupo.area1.desc1': 'soluciones integradas y reguladas', 
+    'grupo.area1.desc1': 'soluciones integradas y reguladas',
     'grupo.area1.desc2': 'para estudios clínicos, con total',
-    'grupo.area1.desc3': 'trazabilidad y cumplimiento', 
+    'grupo.area1.desc3': 'trazabilidad y cumplimiento',
     'grupo.area1.desc4': 'internacional.',
-    
-    'grupo.area2.title1': 'Patient Centric', 
+
+    'grupo.area2.title1': 'Patient Centric',
     'grupo.area2.title2': 'Services - PCS:',
-    'grupo.area2.desc1': 'terapias y soporte al paciente,', 
+    'grupo.area2.desc1': 'terapias y soporte al paciente,',
     'grupo.area2.desc2': 'entregas a domicilio,',
-    'grupo.area2.desc3': 'adherencia al tratamiento', 
+    'grupo.area2.desc3': 'adherencia al tratamiento',
     'grupo.area2.desc4': 'y atención especializada.',
-    
-    'grupo.area3.title1': 'Thermo', 
-    'grupo.area3.title2': 'Integrated', 
+
+    'grupo.area3.title1': 'Thermo',
+    'grupo.area3.title2': 'Integrated',
     'grupo.area3.title3': 'Services - TIS:',
-    'grupo.area3.desc1': 'cadena fría inteligente y', 
+    'grupo.area3.desc1': 'cadena fría inteligente y',
     'grupo.area3.desc2': 'sostenible para productos',
-    'grupo.area3.desc3': 'sensibles, con altos estándares', 
+    'grupo.area3.desc3': 'sensibles, con altos estándares',
     'grupo.area3.desc4': 'de seguridad.',
 
     // CTS SVG text keys
@@ -2000,9 +2042,9 @@ export const translations: Translations = {
     'cts.svg2.desc2': 'logística con estándares',
     'cts.svg2.desc3': ' globales de calidad.',
 
-    'cts.svg3.line1': 'Servicios globales',
-    'cts.svg3.line2': 'de importador',
-    'cts.svg3.line3': 'oficial',
+    'cts.svg3.line1': 'Servicios',
+    'cts.svg3.line2': 'globales de ',
+    'cts.svg3.line3': 'importador oficial',
     'cts.svg3.line4': '',
     'cts.svg3.desc1': 'IOR y EOR para la',
     'cts.svg3.desc2': 'investigación clínica global.',
@@ -2101,8 +2143,9 @@ export const translations: Translations = {
     'pcs.svg2.desc2': 'visibilidad total de la jornada y',
     'pcs.svg2.desc3': 'precisión en cada etapa.',
     'pcs.svg2.desc4': '',
-    'pcs.svg3.line1': 'Terapias innovadoras',
-    'pcs.svg3.line2': 'y alta complejidad',
+    'pcs.svg3.line1': 'Terapias ',
+    'pcs.svg3.line2': 'innovadoras y ',
+    'pcs.svg3.line3': 'alta complejidad',
     'pcs.svg3.desc1': 'Ofrecemos soluciones que',
     'pcs.svg3.desc2': 'integran ciencia, tecnología y',
     'pcs.svg3.desc3': 'sensibilidad humana.',
@@ -2142,32 +2185,36 @@ export const translations: Translations = {
     'tis.svg1.line1': 'Embalajes',
     'tis.svg1.line2': 'Sostenibles',
 
-    'tis.svg1.desc1': 'Embalajes térmicos retornables y sostenibles,',
-    'tis.svg1.desc2': 'con control preciso de temperatura y trazabilidad',
-    'tis.svg1.desc3': 'total para garantizar la seguridad y',
-    'tis.svg1.desc4': 'el desempeño en toda la cadena fría.',
-    'tis.svg1.desc5': '',
+    'tis.svg1.desc1': 'Embalajes térmicos retornables y ',
+    'tis.svg1.desc2': 'sostenibles, con control preciso de ',
+    'tis.svg1.desc3': 'temperatura y trazabilidad total para ',
+    'tis.svg1.desc4': 'garantizar la seguridad y el desempeño ',
+    'tis.svg1.desc5': 'en toda la cadena fría.',
+    'tis.svg1.desc6': '',
     'tis.svg2.line1': 'Transporte de',
     'tis.svg2.line2': 'cadena fría',
-    'tis.svg2.desc1': 'Servicios especializados de transporte en cadena fría.',
-    'tis.svg2.desc2': 'Simplifique su logística integrando transporte,',
-    'tis.svg2.desc3': 'logística inversa, embalaje y monitoreo.',
-    'tis.svg2.desc4': '',
+    'tis.svg2.desc1': 'Servicios especializados de transporte ',
+    'tis.svg2.desc2': 'en cadena fría. Simplifique su logística ',
+    'tis.svg2.desc3': 'integrando transporte, logística inversa, ',
+    'tis.svg2.desc4': 'embalaje y monitoreo.',
     'tis.svg2.desc5': '',
+    'tis.svg2.desc6': '',
     'tis.svg3.line1': 'Telemetría',
     'tis.svg3.line2': 'Data loggers',
-    'tis.svg3.desc1': 'Soluciones avanzadas de monitoreo, con múltiples modelos de registradores de datos ',
-    'tis.svg3.desc2': 'e integración completa en nuestra plataforma digital. Control, precisión y',
-    'tis.svg3.desc3': 'trazabilidad en tiempo real para toda la cadena fría.',
-    'tis.svg3.desc4': '',
-    'tis.svg3.desc5': '',
+    'tis.svg3.desc1': 'Soluciones avanzadas de monitoreo, ',
+    'tis.svg3.desc2': 'con múltiples modelos de registradores ',
+    'tis.svg3.desc3': 'de datos e integración completa en ',
+    'tis.svg3.desc4': 'nuestra plataforma digital. Control, ',
+    'tis.svg3.desc5': 'precisión y trazabilidad en tiempo real ',
+    'tis.svg3.desc6': 'para toda la cadena fría.',
     'tis.svg4.line1': 'Servicios',
     'tis.svg4.line2': 'Integrados',
-    'tis.svg4.desc1': 'Cuente con nuestra gestión integrada de la cadena fría para facilitar la ',
-    'tis.svg4.desc2': 'distribución de sus productos, con embalajes listos para usar, gestión de ',
-    'tis.svg4.desc3': 'retornables y servicios de maduración, almacenamiento, transporte y monitoreo.',
-    'tis.svg4.desc4': '',
-    'tis.svg4.desc5': '',
+    'tis.svg4.desc1': 'Cuente con nuestra gestión integrada ',
+    'tis.svg4.desc2': 'de la cadena fría para facilitar la ',
+    'tis.svg4.desc3': 'distribución de sus productos, con ',
+    'tis.svg4.desc4': 'embalajes listos para usar, gestión de ',
+    'tis.svg4.desc5': 'retornables y servicios de maduración, ',
+    'tis.svg4.desc6': 'almacenamiento, transporte y monitoreo.',
     'tis.sol1.title': 'Embalajes Sostenibles',
     'tis.sol1.desc': 'Embalajes térmicos retornables y sostenibles, con control preciso de temperatura y trazabilidad total para garantizar la seguridad y el desempeño en toda la cadena fría.',
     'tis.sol2.title': 'Transporte de cadena fría',

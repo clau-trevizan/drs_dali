@@ -251,6 +251,7 @@ export interface Insight {
   locale?: string;
   cover: { url: string } | null;
   category: { id: number; name: string; slug: string } | null;
+  categories: { id: number; name: string; slug: string }[] | null;
   author: { id: number; name: string } | null;
   blocks: { __component: string; id: number; body: string }[];
   localizations?: any[];

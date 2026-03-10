@@ -65,6 +65,15 @@ export function useContactPage() {
   });
 }
 
+// Hook for Privacy Policy
+export function usePrivacyPolicy(locale?: string) {
+  return useQuery({
+    queryKey: ['privacy-policy', locale],
+    queryFn: () => strapiService.getPrivacyPolicy(locale),
+    staleTime: 1000 * 60 * 60, // 1 hour
+  });
+}
+
 // Hook for Insights List
 export function useInsights(params?: {
   page?: number;

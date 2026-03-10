@@ -161,6 +161,28 @@ text.botao {
     margin-bottom: 1rem;
   }
 
+  /* Privacy policy content from Strapi */
+  .privacy-content h2 {
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .privacy-content p {
+    margin-bottom: 1rem;
+  }
+
+  .privacy-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .privacy-content strong {
+    font-weight: 700;
+  }
+
   .drs-btn-uppercase {
     @apply uppercase;
   }
@@ -1039,11 +1061,58 @@ html, body {
   }
   .ingles .home-section2-grid text.titulos {
     font-size: 32px;
-}
-.espanhol .home-section2-grid text.botao {
+  }
+  .espanhol .home-section2-grid text.botao {
     font-size: 18px;
+  }
+  .politica-section2.post-content {
+    padding-bottom: 3rem !important;
+  }
 }
-.politica-section2.post-content {
-        padding-bottom: 3rem !important;
-    }
+.bg-insights{
+  background: url('/images/blog.svg') no-repeat left top / 35%;
+  padding-top: 100px;
+}
+
+@media (max-width: 1023px) {
+  .insight-card-title {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+  .bg-insights {
+    background-size: contain;
+    background-position: top left -115px !important;
+    padding-top: 80px;
+  }
+  .mobile-h3 {
+    font-size: 22px !important;
+  }
+}
+.botao {
+  white-space: pre-wrap;
+}
+
+@media (min-width: 1024px) {
+  .espanhol .svg-desk-1 rect {
+    width: 560px;
+  }
+  .espanhol .svg-desk-2 rect {
+    width: 580px;
+  }
+  .espanhol .svg-desk-3 rect {
+    width: 420px;
+  }
+
+  .ingles .svg-desk-1 rect, .ingles .svg-desk-2 rect,  .ingles .svg-desk-3 rect {
+    width: 450px;
+  }
+  .ingles text.botao.cursor-pointer {
+    transform: translateX(-7px);
+}
+.espanhol text.botao.cursor-pointer {
+    transform: translateX(6px);
+}
+.ingles .svg-team rect {
+  width: 210px;
+}
 }

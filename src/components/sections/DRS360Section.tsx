@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import drs360Banner from '@/assets/drs360-banner.png';
+import drs360BannerEn from '@/assets/drs360-banner_en.png';
+import drs360BannerEs from '@/assets/drs360-banner_es.png';
 import { WorldMap } from '@/components/ui/WorldMap';
 import { useTranslation } from '@/hooks/useTranslation';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 interface DRS360SectionProps {
   title?: string;
@@ -30,7 +33,10 @@ export function DRS360Section({
   useWorldMap = false,
 }: DRS360SectionProps) {
   const { t } = useTranslation();
-  const bannerImage = imageSrc || drs360Banner;
+  const { language } = useLanguage();
+  
+  const bannerByLang = { pt: drs360Banner, en: drs360BannerEn, es: drs360BannerEs };
+  const bannerImage = imageSrc || bannerByLang[language] || drs360Banner;
   
   const displayTagText = tagText || t('home.drs360section.tag');
   const displayTitle = title || t('home.drs360section.title');

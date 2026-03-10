@@ -100,10 +100,10 @@ export function useInsight(slug: string, locale?: string) {
 }
 
 // Hook for Insight Categories
-export function useInsightCategories() {
+export function useInsightCategories(locale?: string) {
   return useQuery({
-    queryKey: ['insight-categories'],
-    queryFn: strapiService.getInsightCategories,
+    queryKey: ['insight-categories', locale],
+    queryFn: () => strapiService.getInsightCategories(locale),
     staleTime: 1000 * 60 * 60, // 1 hour
   });
 }

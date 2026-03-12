@@ -45,10 +45,12 @@ export default function Insights() {
 
 
 
+  const selectedSlugs = selectedCategories.map(name => categorySlugsMap[name]).filter(Boolean);
+
   const { data: insightsData, isLoading } = useInsights({
     page: currentPage,
     pageSize: PAGE_SIZE,
-    category: selectedCategories.length > 0 ? categorySlugsMap[selectedCategories[0]] : undefined,
+    categories: selectedSlugs.length > 0 ? selectedSlugs : undefined,
     search: search.trim() || undefined,
     locale: strapiLocale,
   });
@@ -62,14 +64,7 @@ export default function Insights() {
     }
   }, [searchParams, categoriesData]);
 
-  const allInsights = insightsData?.data || [];
-  // Client-side filter for multiple categories
-  const insights = selectedCategories.length > 1
-    ? allInsights.filter((i: any) => {
-        const cats = i.categories || (i.category ? [i.category] : []);
-        return cats.some((c: any) => selectedCategories.includes(c.name));
-      })
-    : allInsights;
+  const insights = insightsData?.data || [];
   const totalPages = Math.max(1, Math.ceil((insightsData?.meta?.pagination?.total || 0) / PAGE_SIZE));
 
   const handleCategoryToggle = (cat: string) => {

@@ -79,6 +79,7 @@ export function useInsights(params?: {
   page?: number;
   pageSize?: number;
   category?: string;
+  categories?: string[];
   search?: string;
   locale?: string;
 }) {

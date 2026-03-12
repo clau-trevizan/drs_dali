@@ -10,6 +10,8 @@ import { useTranslation } from '@/hooks/useTranslation';
 
 export default function Contato() {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [privacyError, setPrivacyError] = useState(false);
+  const [fieldErrors, setFieldErrors] = useState<Record<string, boolean>>({});
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
     nome: '',
@@ -31,6 +33,15 @@ export default function Contato() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const errors: Record<string, boolean> = {};
+    if (!formData.nome.trim()) errors.nome = true;
+    if (!formData.email.trim()) errors.email = true;
+    if (!formData.telefone.trim()) errors.telefone = true;
+    if (!formData.mensagem.trim()) errors.mensagem = true;
+    if (!formData.privacidade) setPrivacyError(true);
+    setFieldErrors(errors);
+    if (Object.keys(errors).length > 0 || !formData.privacidade) return;
+    setPrivacyError(false);
     sendToRDStation({
       nome: formData.nome,
       email: formData.email,
@@ -42,10 +53,10 @@ export default function Contato() {
     setShowSuccessModal(true);
   };
 
-  const inputStyle = { 
+  const inputStyle = (field?: string) => ({
     borderRadius: '8px', background: '#FFF', padding: '12px 20px', color: '#15AF97',
-    border: '1px solid #274B41', fontSize: '16px', fontStyle: 'normal' as const, fontWeight: 400, lineHeight: 'normal'
-  };
+    border: `1px solid ${field && fieldErrors[field] ? '#ef4444' : '#274B41'}`, fontSize: '16px', fontStyle: 'normal' as const, fontWeight: 400, lineHeight: 'normal'
+  });
 
   return (
     <Layout>
@@ -108,15 +119,22 @@ export default function Contato() {
             </div>
             <div className="col-span-1 lg:col-span-5" style={{ padding: 'clamp(1rem, 2vw, 4rem) clamp(1rem, 2vw, 4rem) 0 clamp(1rem, 2vw, 4rem)' }}>
               <form className="space-y-4 contato-form" onSubmit={handleSubmit}>
-                <input type="text" placeholder={t('contato.form.name')} value={formData.nome} onChange={(e) => setFormData({...formData, nome: e.target.value})} className="w-full outline-none focus:ring-0" style={inputStyle} />
-                <input type="email" placeholder={t('contato.form.email')} value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full outline-none focus:ring-0" style={inputStyle} />
-                <input type="text" placeholder={t('contato.form.company')} value={formData.empresa} onChange={(e) => setFormData({...formData, empresa: e.target.value})} className="w-full outline-none focus:ring-0" style={inputStyle} />
-                <input type="tel" placeholder={t('contato.form.phone')} value={formData.telefone} onChange={(e) => setFormData({...formData, telefone: e.target.value})} className="w-full outline-none focus:ring-0" style={inputStyle} />
-                <textarea placeholder={t('contato.form.message')} value={formData.mensagem} onChange={(e) => setFormData({...formData, mensagem: e.target.value})} className="w-full outline-none focus:ring-0 min-h-[120px] resize-none" style={inputStyle} />
-                <label className="flex items-start gap-2 text-sm">
-                  <Checkbox className="mt-0.5" checked={formData.privacidade} onCheckedChange={(checked) => setFormData({...formData, privacidade: checked as boolean})} />
-                  <span style={{ color: '#666', fontSize: '14px' }}>
-                    {t('contato.form.privacy')} <a href="#" className="underline" style={{ color: '#274B41' }}>{t('contato.form.privacy.link')}</a>.
+                <input type="text" placeholder={t('contato.form.name')} value={formData.nome} onChange={(e) => { setFormData({...formData, nome: e.target.value}); setFieldErrors(prev => ({...prev, nome: false})); }} className="w-full outline-none focus:ring-0" style={inputStyle('nome')} />
+                <input type="email" placeholder={t('contato.form.email')} value={formData.email} onChange={(e) => { setFormData({...formData, email: e.target.value}); setFieldErrors(prev => ({...prev, email: false})); }} className="w-full outline-none focus:ring-0" style={inputStyle('email')} />
+                <input type="text" placeholder={t('contato.form.company')} value={formData.empresa} onChange={(e) => setFormData({...formData, empresa: e.target.value})} className="w-full outline-none focus:ring-0" style={inputStyle()} />
+                <input type="tel" placeholder={t('contato.form.phone')} value={formData.telefone} onChange={(e) => { setFormData({...formData, telefone: e.target.value}); setFieldErrors(prev => ({...prev, telefone: false})); }} className="w-full outline-none focus:ring-0" style={inputStyle('telefone')} />
+                <textarea placeholder={t('contato.form.message')} value={formData.mensagem} onChange={(e) => { setFormData({...formData, mensagem: e.target.value}); setFieldErrors(prev => ({...prev, mensagem: false})); }} className="w-full outline-none focus:ring-0 min-h-[120px] resize-none" style={inputStyle('mensagem')} />
+                <label className={`flex items-start gap-2 text-sm rounded-md p-2 transition-colors ${privacyError ? 'bg-red-50 ring-1 ring-red-500' : ''}`}>
+                  <Checkbox
+                    className={`mt-0.5 ${privacyError ? 'border-red-500 data-[state=unchecked]:border-red-500' : ''}`}
+                    checked={formData.privacidade}
+                    onCheckedChange={(checked) => {
+                      setFormData({...formData, privacidade: checked as boolean});
+                      if (checked) setPrivacyError(false);
+                    }}
+                  />
+                  <span style={{ color: privacyError ? '#ef4444' : '#666', fontSize: '14px' }}>
+                    {t('contato.form.privacy')} <a href="/politica-privacidade" className="underline" style={{ color: '#274B41' }}>{t('contato.form.privacy.link')}</a>.
                   </span>
                 </label>
                 <button type="submit" className="drs-btn" style={{ backgroundColor: '#274B41', width: 'fit-content' }}>

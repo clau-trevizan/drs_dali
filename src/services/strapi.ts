@@ -133,12 +133,15 @@ export async function getInsights(params?: {
   page?: number;
   pageSize?: number;
   category?: string;
+  categories?: string[];
   search?: string;
   locale?: string;
 }): Promise<StrapiResponse<Insight[]>> {
   const filters: Record<string, unknown> = {};
 
-  if (params?.category) {
+  if (params?.categories && params.categories.length > 0) {
+    filters.categories = { slug: { $in: params.categories } };
+  } else if (params?.category) {
     filters.categories = { slug: { $eq: params.category } };
   }
 

@@ -2236,16 +2236,30 @@ export const translations: Translations = {
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [language, setLanguageState] = useState<Language>('pt');
+  
+  // Initialize language from URL param > localStorage > default 'pt'
+  const [language, setLanguageState] = useState<Language>(() => {
+    const langParam = new URLSearchParams(window.location.search).get('lang');
+    if (langParam && ['pt', 'en', 'es'].includes(langParam)) {
+      return langParam as Language;
+    }
+    const stored = localStorage.getItem('drs-language');
+    if (stored && ['pt', 'en', 'es'].includes(stored)) {
+      return stored as Language;
+    }
+    return 'pt';
+  });
 
+  // Sync from URL params when they change (e.g. direct URL access)
   useEffect(() => {
     const langParam = searchParams.get('lang');
-    if (langParam && ['pt', 'en', 'es'].includes(langParam)) {
+    if (langParam && ['pt', 'en', 'es'].includes(langParam) && langParam !== language) {
       setLanguageState(langParam as Language);
+      localStorage.setItem('drs-language', langParam);
     }
   }, [searchParams]);
 
-  // Add language class to body
+  // Add language class to body + persist to localStorage
   useEffect(() => {
     document.body.classList.remove('ingles', 'espanhol');
     if (language === 'en') {
@@ -2253,10 +2267,12 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     } else if (language === 'es') {
       document.body.classList.add('espanhol');
     }
+    localStorage.setItem('drs-language', language);
   }, [language]);
 
   const setLanguage = useCallback((lang: Language) => {
     setLanguageState(lang);
+    localStorage.setItem('drs-language', lang);
     const newParams = new URLSearchParams(searchParams);
     if (lang === 'pt') {
       newParams.delete('lang');

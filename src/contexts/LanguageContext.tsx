@@ -362,16 +362,18 @@ export const translations: Translations = {
     // DRS360 Page - Benefits SVG
     'drs360.benefit1.line1': 'Redução de perdas e desvios',
     'drs360.benefit1.line2': 'logísticos ',
+
     'drs360.benefit2.line1': 'Aumento da previsibilidade em',
     'drs360.benefit2.line2': 'estudos clínicos',
+
     'drs360.benefit3.line1': 'Apoio à tomada de decisão em',
     'drs360.benefit3.line2': 'tempo real',
-    'drs360.benefit4.line1': 'Redução de perdas e desvios',
-    'drs360.benefit4.line2': 'logísticos ',
-    'drs360.benefit5.line1': 'Aumento da previsibilidade em',
-    'drs360.benefit5.line2': 'estudos clínicos',
-    'drs360.benefit6.line1': 'Apoio à tomada de decisão em',
-    'drs360.benefit6.line2': 'tempo real',
+
+    'drs360.benefit4.line1': 'Otimização de processos',
+    'drs360.benefit4.line2': 'operacionais ',
+
+    'drs360.benefit5.line1': 'Melhor gerenciamento de riscos',
+    'drs360.benefit5.line2': 'e contingências',
 
     // DRS360 Page - Security SVG
     'drs360.security.title': 'Segurança da informação',
@@ -732,7 +734,7 @@ export const translations: Translations = {
     // Header
     'nav.solucoes': 'Solutions',
     'nav.areas': 'Areas of expertise',
-    'nav.grupo': 'DRS GROUP',
+    'nav.grupo': 'DRS Group',
     'nav.insights': 'Insights',
     'nav.contato': 'Contact',
     'nav.portal': 'Portal 360 DRS',
@@ -931,8 +933,8 @@ export const translations: Translations = {
     'cts.text2': 'Our work covers all stages of clinical trials, from importing supplies to distributing randomized kits, in compliance with global regulatory agencies. ',
     'cts.text3': 'Each stage is designed to guarantee safety, traceability and compliance with international standards and regulatory agencies, GDP, ICH-GCP, FDA, EMA and ANVISA. ',
     'cts.solutions.tag': 'OUR SOLUTIONS',
-    'cts.cta.title': 'Connect your clinical project to a network of smart, safe and traceable solutions.',
-    'cts.cta.button': 'Talk to our solutions team',
+    'cts.cta.title': 'Transform your healthcare operation with DRS support.',
+    'cts.cta.button': 'Get in touch and discover how our technology can accelerate results.',
     'cts.saibamais': 'LEARN MORE',
 
     // PCS Page
@@ -942,8 +944,8 @@ export const translations: Translations = {
     'pcs.text1': 'Patient Centric Services (PCS) takes DRS`s expertise beyond clinical research, extending care to the post-study phase with a total focus on the patient.',
     'pcs.text2': 'We connect clinical services, digital management and human support to guarantee adherence, traceability and safety at every stage of treatment.',
     'pcs.solutions.tag': 'OUR SOLUTIONS',
-    'pcs.cta.title': 'Want solutions that put the patient at the center of the operation?',
-    'pcs.cta.button': 'Talk to our team',
+    'pcs.cta.title': 'Transform your healthcare operation with DRS support.',
+    'pcs.cta.button': 'Get in touch and discover how our technology can accelerate results.',
     'pcs.saibamais': 'LEARN MORE',
 
     // TIS Page
@@ -953,8 +955,8 @@ export const translations: Translations = {
     'tis.text1': 'We raise the standard of the cold chain by offering complete and integrated solutions, combining high-performance reusable packaging, advanced monitoring technology and specialized logistics management.',
     'tis.text2': 'With ready-to-use solutions and real-time traceability, we ensure security, agility and maximum reliability at every stage - from the first move to the final delivery.',
     'tis.solutions.tag': 'OUR SOLUTIONS',
-    'tis.cta.title': 'Need smart solutions for cold chain?',
-    'tis.cta.button': 'Talk to our team',
+    'tis.cta.title': 'Transform your healthcare operation with DRS support.',
+    'tis.cta.button': 'Get in touch and discover how our technology can accelerate results.',
     'tis.saibamais': 'LEARN MORE',
 
     // DRS 360 section (reusable)
@@ -1106,14 +1108,11 @@ export const translations: Translations = {
     'drs360.benefit3.line1': 'Real-time decision-',
     'drs360.benefit3.line2': 'making support',
 
-    'drs360.benefit4.line1': 'Reduction of losses and logistical',
-    'drs360.benefit4.line2': 'deviations',
+    'drs360.benefit4.line1': 'Optimization of operational',
+    'drs360.benefit4.line2': 'processes',
 
-    'drs360.benefit5.line1': 'Increased predictability in',
-    'drs360.benefit5.line2': 'clinical studies',
-
-    'drs360.benefit6.line1': 'Real-time decision-',
-    'drs360.benefit6.line2': 'making support',
+    'drs360.benefit5.line1': 'Better risk and contingency',
+    'drs360.benefit5.line2': 'management',
 
     'drs360.security.title': 'Information security',
     'drs360.security.line1': 'The platform follows strict digital security and data privacy,',
@@ -1691,8 +1690,8 @@ export const translations: Translations = {
     'cts.text2': 'Nuestro trabajo abarca todas las etapas de los ensayos clínicos, desde la importación de materias primas hasta la distribución de kits aleatorios, en cumplimiento con las agencias reguladoras globales.',
     'cts.text3': 'Cada paso está diseñado para garantizar la seguridad, la trazabilidad y el cumplimiento de las normas internacionales y las agencias reguladoras, GDP, ICH-GCP, FDA, EMA y ANVISA.',
     'cts.solutions.tag': 'NUESTRAS SOLUCIONES',
-    'cts.cta.title': 'Conecte su proyecto clínico a una red de soluciones inteligentes, seguras y trazables.',
-    'cts.cta.button': 'Hable con nuestro equipo de soluciones',
+    'cts.cta.title': 'Transforme su operación en salud con el apoyo de DRS.',
+    'cts.cta.button': 'Contáctenos y descubra cómo nuestra tecnología puede acelerar resultados.',
     'cts.saibamais': 'SEPA MÁS',
 
     // PCS Page
@@ -1854,14 +1853,11 @@ export const translations: Translations = {
     'drs360.benefit3.line1': 'Apoyo a la toma de decisiones',
     'drs360.benefit3.line2': 'en tiempo real',
 
-    'drs360.benefit4.line1': 'Reducción de pérdidas y',
-    'drs360.benefit4.line2': 'desviaciones logísticas',
+    'drs360.benefit4.line1': 'Optimización de los procesos',
+    'drs360.benefit4.line2': 'operativos',
 
-    'drs360.benefit5.line1': 'Mayor previsibilidad en los',
-    'drs360.benefit5.line2': 'estudios clínicos',
-
-    'drs360.benefit6.line1': 'Apoyo a la toma de decisiones',
-    'drs360.benefit6.line2': 'en tiempo real',
+    'drs360.benefit5.line1': 'Mejor gestión de riesgos y contingencias',
+    'drs360.benefit5.line2': 'y contingencias',
 
     'drs360.security.title': 'Seguridad de la información',
     'drs360.security.line1': 'La plataforma sigue estrictos protocolos de seguridad',

@@ -802,8 +802,8 @@ export const translations: Translations = {
     'home.drs360.slide2.description': 'Manage all processes in an integrated and efficient manner.',
 
     // Home - Solutions SVG
-    'home.solutions.svg.title1': 'Intelligent solutions for every stage',
-    'home.solutions.svg.title2': 'of the healthcare chain',
+    'home.solutions.svg.title1': 'Intelligent solutions for every',
+    'home.solutions.svg.title2': 'stage of the healthcare chain',
     'home.solutions.svg.desc1': 'We combine innovation, technology and care to',
     'home.solutions.svg.desc2': 'drive essential health projects.',
     'home.solutions.svg.desc3': 'We work in three complementary areas, connected by',
@@ -1621,7 +1621,7 @@ export const translations: Translations = {
 
     // Home - DRS 360 Section
     'home.drs360section.tag': 'DRS 360',
-    'home.drs360section.title': 'Planning, control, traceability and real-time decisions - all in one place',
+    'home.drs360section.title': 'Planificación, control, trazabilidad y decisiones en tiempo real - todo en un sólo lugar',
 
     // Home - World Map
     'home.worldmap.tag': 'NUESTRA RED GLOBAL',

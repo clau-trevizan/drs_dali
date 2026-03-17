@@ -176,23 +176,24 @@ export const translations: Translations = {
     'grupo.impact.card3.desc1': 'montados e rastreados',
 
     'grupo.impact.card4.number': '+2',
-    'grupo.impact.card4.title': 'milhões de produtos armazenados',
-    'grupo.impact.card4.desc1': 'com controle térmico',
-    'grupo.impact.card4.desc2': 'validado',
+    'grupo.impact.card4.unit': 'milhões',
+    'grupo.impact.card4.title': 'de produtos',
+    'grupo.impact.card4.desc1': 'armazenados com controle',
+    'grupo.impact.card4.desc2': 'térmico validado',
 
     'grupo.impact.card5.number': '+95%',
     'grupo.impact.card5.title': 'das entregas',
     'grupo.impact.card5.desc1': 'realizadas em até 24 horas',
 
-    'grupo.impact.card6.number': 'Presença nacional',
-    'grupo.impact.card6.unit': 'e internacional',
-    'grupo.impact.card6.title': 'com bases em',
-    'grupo.impact.card6.desc1': 'SP, DF, SC, Dublin e Argentina',
-    'grupo.impact.card6.desc2': '',
+    'grupo.impact.card6.number': 'Presença',
+    'grupo.impact.card6.unit': '',
+    'grupo.impact.card6.title': '',
+    'grupo.impact.card6.desc1': 'nacional e internacional',
+    'grupo.impact.card6.desc2': 'SP, DF, SC, Dublin e Argentina',
 
-    'grupo.impact.card7.number': 'Faixas térmicas',
-    'grupo.impact.card7.title': 'operacionais de',
-    'grupo.impact.card7.desc1': '+25 °C a -196 °C',
+    'grupo.impact.card7.number': 'Faixas',
+    'grupo.impact.card7.title': 'térmicas',
+    'grupo.impact.card7.desc1': 'operacionais de +25 °C a -196 °C',
     'grupo.impact.card7.desc2': '',
 
     'grupo.nossotime': 'Nosso time',
@@ -924,10 +925,11 @@ export const translations: Translations = {
     'grupo.impact.card3.title': 'clinical kits',
     'grupo.impact.card3.desc1': 'assembled and tracked',
 
-    'grupo.impact.card4.number': '+2 million',
+    'grupo.impact.card4.number': '+2',
+    'grupo.impact.card4.unit': 'million',
     'grupo.impact.card4.title': 'products stored',
-    'grupo.impact.card4.desc1': 'with validated',
-    'grupo.impact.card4.desc2': 'temperature control',
+    'grupo.impact.card4.desc1': 'with validated temperature control',
+    'grupo.impact.card4.desc2': '',
 
     'grupo.impact.card5.number': '+95%',
     'grupo.impact.card5.title': 'of deliveries',
@@ -1712,13 +1714,15 @@ export const translations: Translations = {
     'grupo.impact.card3.desc1': 'montados y rastreados',
 
     'grupo.impact.card4.number': 'Más de',
+    'grupo.impact.card4.unit': '',
     'grupo.impact.card4.title': '2 millones',
     'grupo.impact.card4.desc1': 'de productos almacenados',
     'grupo.impact.card4.desc2': 'con control térmico validado',
 
     'grupo.impact.card5.number': '95%',
     'grupo.impact.card5.title': 'de las entregas',
-    'grupo.impact.card5.desc1': 'realizadas en un plazo máximo de 24 horas',
+    'grupo.impact.card5.desc1': 'realizadas en un plazo',
+    'grupo.impact.card5.desc2': 'máximo de 24 horas',
 
     'grupo.impact.card6.number': 'Presencia nacional',
     'grupo.impact.card6.unit': 'e internacional',
@@ -1945,8 +1949,8 @@ export const translations: Translations = {
     'drs360.benefit4.line1': 'Optimización de los procesos',
     'drs360.benefit4.line2': 'operativos',
 
-    'drs360.benefit5.line1': 'Mejor gestión de riesgos y contingencias',
-    'drs360.benefit5.line2': 'y contingencias',
+    'drs360.benefit5.line1': 'Mejor gestión de riesgos y',
+    'drs360.benefit5.line2': 'contingencias y contingencias',
 
     'drs360.security.title': 'Seguridad de la información',
     'drs360.security.line1': 'La plataforma sigue estrictos protocolos de seguridad',

@@ -9,11 +9,13 @@ import imgSlide from '@/assets/img-slide.png';
 import { useState, useRef } from 'react';
 import { SolutionModal, SolutionModalData } from '@/components/ui/SolutionModal';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, EffectCreative } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+// @ts-ignore
+import 'swiper/css/effect-creative';
 import { DRS360Section } from '@/components/sections';
 import { useTranslation } from '@/hooks/useTranslation';
 
@@ -29,6 +31,9 @@ export default function GrupoDRS() {
   const [certActiveSlide, setCertActiveSlide] = useState(0);
   const missaoCarouselRef = useRef<SwiperType | null>(null);
   const [missaoActiveSlide, setMissaoActiveSlide] = useState(0);
+  const [missaoNavHidden, setMissaoNavHidden] = useState(false);
+  const [dupNavHidden, setDupNavHidden] = useState(false);
+  const [certNavHidden, setCertNavHidden] = useState(false);
 
   return (
     <Layout mainClassName="pagina-grupo-drs">
@@ -76,7 +81,7 @@ export default function GrupoDRS() {
     <div className="col-span-12">
     <div className="relative mt-8">
     <Swiper modules={[Navigation, Pagination]} onSwiper={(swiper) => { benefitsCarouselRef.current = swiper; }} onSlideChange={(swiper) => setActiveSlide(Math.floor(swiper.activeIndex / 3))} spaceBetween={24} slidesPerView={3} slidesPerGroup={3} className="benefits-carousel" breakpoints={{ 0: { slidesPerView: 1, slidesPerGroup: 1 }, 768: { slidesPerView: 2, slidesPerGroup: 2 }, 1024: { slidesPerView: 3, slidesPerGroup: 3 } }}>
-    {[1,2,3,1,2,3].map((i, idx) => (
+    {[1,2,3,4,5].map((i, idx) => (
       <SwiperSlide key={idx}>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
       <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
@@ -111,7 +116,7 @@ export default function GrupoDRS() {
     <div className="col-span-12 lg:col-start-3 lg:col-span-5 relative min-h-[470px] lg:min-h-[550px] flex flex-wrap justify-center items-center p-[4rem_1rem_4rem_2rem] lg:p-0 carousel-container-offset">
     <div className="absolute inset-0 lg:hidden" style={{ backgroundImage: 'url(/images/fundo_mobile_modificado.svg)', backgroundPosition: 'top left', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
     <div className="absolute inset-0 hidden lg:block" style={{ backgroundImage: 'url(/images/fundo2-modificado.svg)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'contain' }}></div>
-    <Swiper modules={[Navigation]} onSwiper={(swiper) => { missaoCarouselRef.current = swiper; }} onSlideChange={(swiper) => setMissaoActiveSlide(swiper.activeIndex)} spaceBetween={24} slidesPerView={1} className="drs360-swiper h-full w-full mt-0 lg:mt-[-100px] relative z-10">
+    <Swiper modules={[Navigation, EffectCreative]} effect="creative" creativeEffect={{ prev: { translate: [0, 0, 0], opacity: 0 }, next: { translate: [0, 0, 0], opacity: 0 } }} onSwiper={(swiper) => { missaoCarouselRef.current = swiper; setMissaoNavHidden(swiper.isLocked); }} onResize={(swiper) => setMissaoNavHidden(swiper.isLocked)} onSlideChange={(swiper) => setMissaoActiveSlide(swiper.activeIndex)} spaceBetween={24} slidesPerView={1} className="drs360-swiper h-full w-full mt-0 lg:mt-[-100px] relative z-10">
     <SwiperSlide>
     <div className="h-full flex flex-col p-4 lg:p-0">
     <h3 className="mb-4 text-[24px] md:text-[28px] lg:text-[35px] leading-[30px] md:leading-[35px] lg:leading-[40px]" style={{ color: '#FFF', fontWeight: 900 }}>{t('grupo.missao.title')}</h3>
@@ -125,7 +130,7 @@ export default function GrupoDRS() {
     </div>
     </SwiperSlide>
     </Swiper>
-    <div className="flex gap-4 mt-[120px] lg:mt-4 lg:absolute lg:bottom-12 lg:left-16 justify-center lg:justify-start relative z-10 pl-0 lg:pl-[60px] ml-[-90px] lg:ml-0">
+    <div className={`flex gap-4 mt-[120px] lg:mt-4 lg:absolute lg:bottom-12 lg:left-16 justify-center lg:justify-start relative z-10 pl-0 lg:pl-[60px] ml-[-90px] lg:ml-0 ${missaoNavHidden ? 'hidden' : ''}`}>
     <button onClick={() => missaoCarouselRef.current?.slidePrev()} className="transition-opacity rotate-180" style={{ opacity: missaoActiveSlide === 0 ? 0.6 : 1 }}><img src={arrowSlide} alt="Previous" className="w-[50px] h-[38px] lg:w-[66px] lg:h-[50px]" /></button>
     <button onClick={() => missaoCarouselRef.current?.slideNext()} className="transition-opacity" style={{ opacity: missaoActiveSlide === 1 ? 0.6 : 1 }}><img src={arrowSlide} alt="Next" className="w-[50px] h-[38px] lg:w-[66px] lg:h-[50px]" /></button>
     </div>
@@ -176,8 +181,8 @@ export default function GrupoDRS() {
     <div className="grid grid-cols-12 gap-8 items-center">
     <div className="col-span-12 grupo-drs-section7-carousel">
     <div className="relative mt-8">
-    <Swiper modules={[Navigation, Pagination]} onSwiper={(swiper) => { duplicatedCarouselRef.current = swiper; }} onSlideChange={(swiper) => setDuplicatedActiveSlide(Math.floor(swiper.activeIndex / 3))} spaceBetween={24} slidesPerView={3} slidesPerGroup={3} className="benefits-carousel-duplicated" breakpoints={{ 0: { slidesPerView: 1, slidesPerGroup: 1 }, 768: { slidesPerView: 2, slidesPerGroup: 2 }, 1024: { slidesPerView: 3, slidesPerGroup: 3 } }}>
-    {[1,2,3,1,2,3].map((i, idx) => (
+    <Swiper modules={[Navigation, Pagination]} onSwiper={(swiper) => { duplicatedCarouselRef.current = swiper; setDupNavHidden(swiper.isLocked); }} onResize={(swiper) => setDupNavHidden(swiper.isLocked)} onSlideChange={(swiper) => setDuplicatedActiveSlide(Math.floor(swiper.activeIndex / 3))} spaceBetween={24} slidesPerView={3} slidesPerGroup={3} className="benefits-carousel-duplicated" breakpoints={{ 0: { slidesPerView: 1, slidesPerGroup: 1 }, 768: { slidesPerView: 2, slidesPerGroup: 2 }, 1024: { slidesPerView: 3, slidesPerGroup: 3 } }}>
+    {[1,2,3].map((i, idx) => (
       <SwiperSlide key={idx}>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
       <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
@@ -191,7 +196,7 @@ export default function GrupoDRS() {
       </SwiperSlide>
     ))}
     </Swiper>
-    <div className="flex items-center justify-center gap-4 mt-8">
+    <div className={`flex items-center justify-center gap-4 mt-8 ${dupNavHidden ? 'hidden' : ''}`}>
     <button onClick={() => duplicatedCarouselRef.current?.slidePrev()} className="hover:opacity-80 transition-opacity rotate-180"><img src={arrowSlide} alt="Previous" className="w-[66px] h-[50px]" /></button>
     <div className="flex gap-2">
     {[0, 1].map((dotIndex) => (
@@ -331,7 +336,7 @@ export default function GrupoDRS() {
     <div className="col-span-12 lg:col-start-3 lg:col-span-5 relative min-h-[470px] lg:min-h-[550px] flex flex-wrap justify-center items-center p-[4rem_1rem_4rem_2rem] lg:p-0 carousel-container-offset mobile-padding-3">
     <div className="absolute inset-0 lg:hidden grupo-drs-section13-bg" style={{ backgroundImage: 'url(/images/fundo_mobile.svg)', backgroundPosition: 'top left', backgroundRepeat: 'no-repeat', backgroundSize: '100%' }}></div>
     <div className="absolute inset-0 hidden lg:block" style={{ backgroundImage: 'url(/images/fundo2.svg)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'contain' }}></div>
-    <Swiper modules={[Navigation]} onSwiper={(swiper) => { swiperRef.current = swiper; }} onSlideChange={(swiper) => setCertActiveSlide(swiper.activeIndex)} spaceBetween={24} slidesPerView={1} className="drs360-swiper h-full w-full mt-0 lg:mt-[-100px] relative z-10">
+    <Swiper modules={[Navigation, EffectCreative]} effect="creative" creativeEffect={{ prev: { translate: [0, 0, 0], opacity: 0 }, next: { translate: [0, 0, 0], opacity: 0 } }} onSwiper={(swiper) => { swiperRef.current = swiper; setCertNavHidden(swiper.isLocked); }} onResize={(swiper) => setCertNavHidden(swiper.isLocked)} onSlideChange={(swiper) => setCertActiveSlide(swiper.activeIndex)} spaceBetween={24} slidesPerView={1} className="drs360-swiper h-full w-full mt-0 lg:mt-[-100px] relative z-10">    
     <SwiperSlide>
     <div className="h-full flex flex-col p-4 lg:p-0">
     <h3 className="mb-4 text-[24px] md:text-[28px] lg:text-[35px] leading-[30px] md:leading-[35px] lg:leading-[40px]" style={{ color: '#FFF', fontWeight: 900 }}>{t('grupo.cert.title')}</h3>
@@ -341,13 +346,20 @@ export default function GrupoDRS() {
     </SwiperSlide>
     <SwiperSlide>
     <div className="h-full flex flex-col p-4 lg:p-0">
-    <h3 className="mb-4 text-[24px] md:text-[28px] lg:text-[35px] leading-[30px] md:leading-[35px] lg:leading-[40px]" style={{ color: '#FFF', fontWeight: 900 }}>{t('grupo.cert.title')}</h3>
-    <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[25px] mb-4" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.cert.subtitle')}</p>
-    <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[20px] md:leading-[21px] lg:leading-[22px]" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.cert.desc')}</p>
+    <h3 className="mb-4 text-[24px] md:text-[28px] lg:text-[35px] leading-[30px] md:leading-[35px] lg:leading-[40px]" style={{ color: '#FFF', fontWeight: 900 }}>{t('grupo.cert2.title')}</h3>
+    <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[25px] mb-4" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.cert2.subtitle')}</p>
+    <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[20px] md:leading-[21px] lg:leading-[22px]" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.cert2.desc')}</p>
+    </div>
+    </SwiperSlide>
+    <SwiperSlide>
+    <div className="h-full flex flex-col p-4 lg:p-0">
+    <h3 className="mb-4 text-[24px] md:text-[28px] lg:text-[35px] leading-[30px] md:leading-[35px] lg:leading-[40px]" style={{ color: '#FFF', fontWeight: 900 }}>{t('grupo.cert3.title')}</h3>
+    <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[25px] mb-4" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.cert3.subtitle')}</p>
+    <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[20px] md:leading-[21px] lg:leading-[22px]" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.cert3.desc')}</p>
     </div>
     </SwiperSlide>
     </Swiper>
-    <div className="flex gap-4 mt-[120px] lg:mt-4 lg:absolute lg:bottom-12 lg:left-16 justify-center lg:justify-start relative z-10 pl-0 lg:pl-[60px] ml-[-90px] lg:ml-0 grupo-drs-section13-arrows margin-top-mobile">
+    <div className={`flex gap-4 mt-[120px] lg:mt-4 lg:absolute lg:bottom-12 lg:left-16 justify-center lg:justify-start relative z-10 pl-0 lg:pl-[60px] ml-[-90px] lg:ml-0 grupo-drs-section13-arrows margin-top-mobile ${certNavHidden ? 'hidden' : ''}`}>
     <button onClick={() => swiperRef.current?.slidePrev()} className="transition-opacity rotate-180" style={{ opacity: certActiveSlide === 0 ? 0.6 : 1 }}><img src={arrowSlide} alt="Previous" className="w-[50px] h-[38px] lg:w-[66px] lg:h-[50px]" /></button>
     <button onClick={() => swiperRef.current?.slideNext()} className="transition-opacity" style={{ opacity: certActiveSlide === 1 ? 0.6 : 1 }}><img src={arrowSlide} alt="Next" className="w-[50px] h-[38px] lg:w-[66px] lg:h-[50px]" /></button>
     </div>

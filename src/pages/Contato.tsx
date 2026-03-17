@@ -22,6 +22,22 @@ export default function Contato() {
     privacidade: false
   });
 
+  // useEffect para carregar o script
+
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://d335luupugsy2.cloudfront.net/js/loader-scripts/fa00a752-5447-4a30-897d-331dc3190154-loader.js";
+    script.type = "text/javascript";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   useEffect(() => {
     if (showSuccessModal) {
       const timer = setTimeout(() => {

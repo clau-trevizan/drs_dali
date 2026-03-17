@@ -170,7 +170,17 @@ export const translations: Translations = {
     'grupo.impact.card3.number': '+50',
     'grupo.impact.card3.unit': 'mil',
     'grupo.impact.card3.title': 'kits clínicos',
-    'grupo.impact.card3.desc': 'montados e rastreados',
+    'grupo.impact.card3.desc1': 'montados e rastreados',
+
+    'grupo.impact.card4.number': '+30',
+    'grupo.impact.card4.unit': 'mil',
+    'grupo.impact.card4.title': 'pacientes',
+    'grupo.impact.card4.desc1': 'atendidos com suporte clínico e',
+    'grupo.impact.card4.desc2': 'logístico',
+    'grupo.impact.card5.number': '+400',
+    'grupo.impact.card5.title': 'estudos clínicos',
+    'grupo.impact.card5.desc1': 'apoiados em todas as fases',
+
     'grupo.nossotime': 'Nosso time',
     'grupo.certificacoes': 'Certificações',
 
@@ -328,6 +338,12 @@ export const translations: Translations = {
     'grupo.cert.title': 'Certificações e Conformidades',
     'grupo.cert.subtitle': 'Excelência reconhecida, com qualidade validada em cada etapa.',
     'grupo.cert.desc': 'A DRS opera em conformidade com os mais altos padrões regulatórios nacionais e internacionais, garantindo segurança, rastreabilidade e confiança em toda a cadeia da saúde',
+    'grupo.cert2.title': 'Certificações e Conformidades',
+    'grupo.cert2.subtitle': 'Excelência reconhecida, com qualidade validada em cada etapa.',
+    'grupo.cert2.desc': 'A DRS opera em conformidade com os mais altos padrões regulatórios nacionais e internacionais, garantindo segurança, rastreabilidade e confiança em toda a cadeia da saúde',
+    'grupo.cert3.title': 'Certificações e Conformidades',
+    'grupo.cert3.subtitle': 'Excelência reconhecida, com qualidade validada em cada etapa.',
+    'grupo.cert3.desc': 'A DRS opera em conformidade com os mais altos padrões regulatórios nacionais e internacionais, garantindo segurança, rastreabilidade e confiança em toda a cadeia da saúde',
 
     // DRS360 Page - Functionalities SVG
     'drs360.func1.line1': 'Rastreamento em tempo real de',
@@ -893,7 +909,7 @@ export const translations: Translations = {
     'grupo.impact.card3.number': '+50',
     'grupo.impact.card3.unit': 'thousand',
     'grupo.impact.card3.title': 'clinical kits',
-    'grupo.impact.card3.desc': 'assembled and tracked',
+    'grupo.impact.card3.desc1': 'assembled and tracked',
     'grupo.nossotime': 'Our Team',
     'grupo.certificacoes': 'Certifications and Conformities',
 
@@ -1650,7 +1666,7 @@ export const translations: Translations = {
     'grupo.impact.card3.number': '+50',
     'grupo.impact.card3.unit': 'mil',
     'grupo.impact.card3.title': 'kits clínicos',
-    'grupo.impact.card3.desc': 'montados y rastreados',
+    'grupo.impact.card3.desc1': 'montados y rastreados',
     'grupo.nossotime': 'Nuestro equipo',
     'grupo.certificacoes': 'Certificaciones y Conformidades',
 
@@ -2232,7 +2248,7 @@ export const translations: Translations = {
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [searchParams, setSearchParams] = useSearchParams();
-  
+
   // Initialize language from URL param > localStorage > default 'pt'
   const [language, setLanguageState] = useState<Language>(() => {
     const langParam = new URLSearchParams(window.location.search).get('lang');

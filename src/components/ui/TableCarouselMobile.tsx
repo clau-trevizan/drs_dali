@@ -16,13 +16,15 @@ export function TableCarouselMobile({ images, className = '' }: TableCarouselMob
   const swiperRef = useRef<SwiperType | null>(null);
   const [activeSlide, setActiveSlide] = useState(0);
   const totalSlides = images.length;
+  const [navHidden, setNavHidden] = useState(false);
 
   return (
     <div className={`lg:hidden ${className}`}>
       <Swiper
         modules={[Navigation, Pagination]}
-        onSwiper={(swiper) => { swiperRef.current = swiper; }}
+        onSwiper={(swiper) => { swiperRef.current = swiper; setNavHidden(swiper.isLocked); }}
         onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)}
+        onResize={(swiper) => setNavHidden(swiper.isLocked)}
         spaceBetween={0}
         slidesPerView={1}
         className="w-full"
@@ -40,6 +42,7 @@ export function TableCarouselMobile({ images, className = '' }: TableCarouselMob
         ))}
       </Swiper>
       
+      <div className={`${navHidden ? 'hidden' : ''}`}>
       {/* Slide indicator */}
       <div className="flex justify-center gap-2 mt-4">
         {images.map((_, index) => (
@@ -71,6 +74,7 @@ export function TableCarouselMobile({ images, className = '' }: TableCarouselMob
         >
           <img src={arrowSlide} alt="Próximo" className="w-[50px] h-[38px]" />
         </button>
+      </div>
       </div>
     </div>
   );

@@ -20,13 +20,15 @@ export function SolutionsCarouselMobile({ solutions, className = '' }: Solutions
   const swiperRef = useRef<SwiperType | null>(null);
   const [activeSlide, setActiveSlide] = useState(0);
   const totalSlides = solutions.length;
+  const [navHidden, setNavHidden] = useState(false);
 
   return (
     <div className={`lg:hidden ${className}`}>
       <Swiper
         modules={[Navigation, Pagination]}
-        onSwiper={(swiper) => { swiperRef.current = swiper; }}
+        onSwiper={(swiper) => { swiperRef.current = swiper; setNavHidden(swiper.isLocked); }}
         onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)}
+        onResize={(swiper) => setNavHidden(swiper.isLocked)}
         spaceBetween={16}
         slidesPerView={1}
         className="w-full"
@@ -41,7 +43,7 @@ export function SolutionsCarouselMobile({ solutions, className = '' }: Solutions
       </Swiper>
       
       {/* Navigation Arrows */}
-      <div className="flex gap-4 mt-4 justify-center pl-[60px]">
+      <div className={`flex gap-4 mt-4 justify-center pl-[60px] ${navHidden ? 'hidden' : ''}`}>
         <button 
           onClick={() => swiperRef.current?.slidePrev()}
           className="transition-opacity rotate-180"

@@ -14,9 +14,12 @@ import videoBox from '@/assets/video-box.mp4';
 import videoModal from '@/assets/video-modal.mp4';
 import topoVideoNova from '@/assets/topo_video_nova.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination, EffectCreative } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+// @ts-ignore
+import 'swiper/css/effect-creative';
 import type { Swiper as SwiperType } from 'swiper';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
@@ -30,11 +33,13 @@ import { getStrapiMedia } from '@/services/strapi';
 const Index = () => {
   const swiperRef = useRef<SwiperType | null>(null);
   const [activeSlide, setActiveSlide] = useState(0);
+  const [drsNavHidden, setDrsNavHidden] = useState(false);
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const { t, language } = useTranslation();
   const insightsSwiperRef = useRef<SwiperType | null>(null);
   const [insightsActiveSlide, setInsightsActiveSlide] = useState(0);
+  const [insightsNavHidden, setInsightsNavHidden] = useState(false);
   const strapiLocale = language === 'en' ? 'en' : language === 'es' ? 'es-ES' : 'pt-BR';
   const { data: insightsData } = useInsights({ pageSize: 10, locale: strapiLocale });
   const insights = insightsData?.data || [];
@@ -231,9 +236,10 @@ const Index = () => {
               ></div>
 
               <Swiper
-                modules={[Navigation]}
-                onSwiper={(swiper) => { swiperRef.current = swiper; }}
+                modules={[Navigation, EffectCreative]} effect="creative" creativeEffect={{ prev: { translate: [0, 0, 0], opacity: 0 }, next: { translate: [0, 0, 0], opacity: 0 } }}
+                onSwiper={(swiper) => { swiperRef.current = swiper; setDrsNavHidden(swiper.isLocked); }}
                 onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)}
+                onResize={(swiper) => setDrsNavHidden(swiper.isLocked)}
                 spaceBetween={24}
                 slidesPerView={1}
                 className="drs360-swiper h-full w-full mt-0 lg:mt-[-100px] relative z-10"
@@ -261,7 +267,7 @@ const Index = () => {
               </Swiper>
 
               {/* Custom navigation buttons at bottom left - with margin-left on mobile */}
-              <div className="flex gap-4 mt-[120px] lg:mt-4 lg:absolute lg:bottom-12 lg:left-16 justify-center lg:justify-start relative z-10 pl-0 lg:pl-[60px] ml-[-90px] lg:ml-0">
+              <div className={`flex gap-4 mt-[120px] lg:mt-4 lg:absolute lg:bottom-12 lg:left-16 justify-center lg:justify-start relative z-10 pl-0 lg:pl-[60px] ml-[-90px] lg:ml-0 ${drsNavHidden ? 'hidden' : ''}`}>
                 <button
                   onClick={() => swiperRef.current?.slidePrev()}
                   className="transition-opacity rotate-180"
@@ -430,8 +436,9 @@ const Index = () => {
               <div className="col-span-12 lg:col-span-12">
                 <Swiper
                   modules={[Navigation]}
-                  onSwiper={(swiper) => { insightsSwiperRef.current = swiper; }}
+                  onSwiper={(swiper) => { insightsSwiperRef.current = swiper; setInsightsNavHidden(swiper.isLocked); }}
                   onSlideChange={(swiper) => setInsightsActiveSlide(swiper.activeIndex)}
+                  onResize={(swiper) => setInsightsNavHidden(swiper.isLocked)}
                   spaceBetween={24}
                   slidesPerView={1.15}
                   breakpoints={{
@@ -471,7 +478,7 @@ const Index = () => {
                   })}
                 </Swiper>
                 {/* Pagination dots + arrows */}
-                <div className="flex items-center justify-center gap-3 mt-8">
+                <div className={`flex items-center justify-center gap-3 mt-8 ${insightsNavHidden ? 'hidden' : ''}`}>
                   <button onClick={() => insightsSwiperRef.current?.slidePrev()} className="transition-opacity w-[40px] h-[40px] flex items-center justify-center border border-[#274B41] rounded-[8px]" style={{ opacity: insightsActiveSlide === 0 ? 0.3 : 1 }}>
                     <svg width="10" height="16" viewBox="0 0 10 16" fill="none"><path d="M8.5 1L1.5 8L8.5 15" stroke="#274B41" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </button>

@@ -93,8 +93,8 @@ export default function PCS() {
                       <text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc2`)}</text>
                       <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc3`)}</text>
                       <text className="botao" x="23" y="260" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc4`)}</text>
-                      <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(i-1)}/>
-                      <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(i-1)}>{t('saibamais')}</text>
+                      
+                      
                     </svg>
                   </div>
                 ))}
@@ -113,8 +113,8 @@ export default function PCS() {
                           <text className="botao" x="23" y="185" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc1`)}</text>
                           <text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc2`)}</text>
                           <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc3`)}</text>
-                          <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(i)}/>
-                          <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(i)}>{t('saibamais')}</text>
+                          
+                          
                         </svg>
                       </div>
                     </SwiperSlide>

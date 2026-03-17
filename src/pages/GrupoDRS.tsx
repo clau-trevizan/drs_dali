@@ -120,13 +120,13 @@ export default function GrupoDRS() {
     <SwiperSlide>
     <div className="h-full flex flex-col p-4 lg:p-0">
     <h3 className="mb-4 text-[24px] md:text-[28px] lg:text-[35px] leading-[30px] md:leading-[35px] lg:leading-[40px]" style={{ color: '#FFF', fontWeight: 900 }}>{t('grupo.missao.title')}</h3>
-    <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[25px]" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.missao.text')}</p>
+    <p className="text-[16px] md:text-[18px] lg:text-[16px] leading-[22px] md:leading-[24px] lg:leading-[25px]" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.missao.text')}</p>
     </div>
     </SwiperSlide>
     <SwiperSlide>
     <div className="h-full flex flex-col p-4 lg:p-0">
     <h3 className="mb-4 text-[24px] md:text-[28px] lg:text-[35px] leading-[30px] md:leading-[35px] lg:leading-[40px]" style={{ color: '#FFF', fontWeight: 900 }}>{t('grupo.visao.title')}</h3>
-    <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[25px]" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.visao.text')}</p>
+    <p className="text-[16px] md:text-[18px] lg:text-[16px] leading-[22px] md:leading-[24px] lg:leading-[25px]" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.visao.text')}</p>
     </div>
     </SwiperSlide>
     </Swiper>
@@ -347,7 +347,7 @@ export default function GrupoDRS() {
     <SwiperSlide>
     <div className="h-full flex flex-col p-4 lg:p-0">
     <h3 className="mb-4 text-[24px] md:text-[28px] lg:text-[35px] leading-[30px] md:leading-[35px] lg:leading-[40px]" style={{ color: '#FFF', fontWeight: 900 }}>{t('grupo.cert2.title')}</h3>
-    <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[25px] mb-4" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.cert2.subtitle')}</p>
+    <p className="text-[16px] md:text-[18px] lg:text-[20px] leading-[22px] md:leading-[24px] lg:leading-[25px] mb-4" style={{ color: '#69C0AC', fontWeight: 400 }}></p>
     <p className="text-[14px] md:text-[15px] lg:text-[16px] leading-[20px] md:leading-[21px] lg:leading-[22px]" style={{ color: '#69C0AC', fontWeight: 400 }}>{t('grupo.cert2.desc')}</p>
     </div>
     </SwiperSlide>

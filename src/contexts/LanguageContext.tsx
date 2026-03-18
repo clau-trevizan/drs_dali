@@ -175,7 +175,7 @@ export const translations: Translations = {
     'grupo.impact.card3.title': 'kits clínicos',
     'grupo.impact.card3.desc1': 'montados e rastreados',
 
-    'grupo.impact.card4.number': '+2',
+    'grupo.impact.card4.number': '+2 ',
     'grupo.impact.card4.unit': 'milhões',
     'grupo.impact.card4.title': 'de produtos',
     'grupo.impact.card4.desc1': 'armazenados com controle',
@@ -353,10 +353,10 @@ export const translations: Translations = {
     'grupo.cert.title': 'Certificações e Conformidades',
     'grupo.cert.subtitle': 'Excelência reconhecida, com qualidade validada em cada etapa.',
     'grupo.cert.desc': 'A DRS opera em conformidade com os mais altos padrões regulatórios nacionais e internacionais, garantindo segurança, rastreabilidade e confiança em toda a cadeia da saúde',
-    
+
     'grupo.cert2.title': 'Licenciamento Sanitário',
     'grupo.cert2.desc': 'Carta IATA - CEIV Pharma / LGPD e Padrões Internacionais de Proteção de Dados / ISO 9001:2015 - Sistema de Gestão da Qualidade / EcoVadis - Avaliação de Sustentabilidade (ESG)',
-    
+
     'grupo.cert3.title': 'GDP',
     'grupo.cert3.subtitle': 'Boas práticas de armazenamento e distribuição',
     'grupo.cert3.desc': 'SBTi - ESG / ISO 27001 / Licença de Dangerous Good / Operador de CAR-T',
@@ -719,25 +719,25 @@ export const translations: Translations = {
     'tis.svg1.desc2': 'alta performance para',
     'tis.svg1.desc3': 'transporte em temperatura',
     'tis.svg1.desc4': 'controlada.',
-  
+
     'tis.svg2.line1': 'Transporte de',
     'tis.svg2.line2': 'cadeia fria',
     'tis.svg2.desc1': 'Logística especializada em',
     'tis.svg2.desc2': 'transporte de produtos',
     'tis.svg2.desc3': 'termossensíveis.',
-   
+
     'tis.svg3.line1': 'Gestão de',
     'tis.svg3.line2': 'importação',
     'tis.svg3.desc1': 'Gestão completa de processos',
     'tis.svg3.desc2': 'de importação e exportação',
     'tis.svg3.desc3': 'de produtos sensíveis.',
-    
+
     'tis.svg4.line1': 'Telemetria e',
     'tis.svg4.line2': 'Data Loggers',
     'tis.svg4.desc1': 'Monitoramento contínuo de',
     'tis.svg4.desc2': 'temperatura, umidade e',
     'tis.svg4.desc3': 'localização em tempo real.',
-   
+
 
     // TIS Solution Modal keys
     'tis.sol1.title': 'Cadeia fria e embalagens sustentáveis',
@@ -1118,7 +1118,7 @@ export const translations: Translations = {
 
     'grupo.cert2.title': 'Health Licensing',
     'grupo.cert2.desc': 'IATA Letter - CEIV Pharma / LGPD (General Personal Data Protection Law) and International Data Protection Standards / ISO 9001:2015 - Quality Management System / EcoVadis - Sustainability Assessment (ESG)',
-    
+
     'grupo.cert3.title': 'GDP',
     'grupo.cert3.subtitle': 'Good storage and distribution practices',
     'grupo.cert3.desc': 'SBTi - ESG / ISO 27001 / Dangerous Good License / CAR-T operator',
@@ -1896,11 +1896,11 @@ export const translations: Translations = {
 
     'grupo.cert2.title': 'Licencia Sanitaria',
     'grupo.cert2.desc': 'Carta IATA - CEIV Pharma / LGPD y Estándares Internacionales de Protección de Datos / ISO 9001:2015 - Sistema de Gestión de la Calidad / EcoVadis – Evaluación de la Sostenibilidad (ESG)',
-    
+
     'grupo.cert3.title': 'GDP',
     'grupo.cert3.subtitle': 'Buenas prácticas de almacenamiento y distribución',
     'grupo.cert3.desc': 'ISO 27001 / Licencia de Dangerous Good / Operador de CAR-T',
-    
+
 
     // DRS360 Page - Functionalities SVG
     'drs360.func1.line1': 'Seguimiento de envíos en tiempo',
@@ -2279,14 +2279,14 @@ export const translations: Translations = {
     'tis.svg1.desc3': 'temperatura y trazabilidad total para ',
     'tis.svg1.desc4': 'garantizar la seguridad y el desempeño ',
     'tis.svg1.desc5': 'en toda la cadena fría.',
-  
+
     'tis.svg2.line1': 'Transporte de',
     'tis.svg2.line2': 'cadena fría',
     'tis.svg2.desc1': 'Servicios especializados de transporte ',
     'tis.svg2.desc2': 'en cadena fría. Simplifique su logística ',
     'tis.svg2.desc3': 'integrando transporte, logística inversa, ',
     'tis.svg2.desc4': 'embalaje y monitoreo.',
-   
+
     'tis.svg3.line1': 'Telemetría',
     'tis.svg3.line2': 'Data loggers',
     'tis.svg3.desc1': 'Soluciones avanzadas de monitoreo, ',

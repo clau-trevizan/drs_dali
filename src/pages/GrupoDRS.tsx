@@ -91,8 +91,9 @@ export default function GrupoDRS() {
       <text className="titulo1" x="57" y="116" fontSize="50" fontWeight="900" fill="#F39325">{t(`grupo.impact.card${i}.number`)}</text>
       {t(`grupo.impact.card${i}.unit`) !== `grupo.impact.card${i}.unit` && <text className="titulo2" x={i === 4 ? "135" : "168"} y="116" fontSize="35" fontWeight="400" fill="#274B41">{t(`grupo.impact.card${i}.unit`)}</text>}
       <text className="titulo2" x="57" y="151" fontSize="35" fontWeight="400" fill="#274B41">{t(`grupo.impact.card${i}.title`)}</text>
+      {t(`grupo.impact.card${i}.title2`) !== `grupo.impact.card${i}.title2` && (<text className="titulo2" x="57" y="183" fontSize="30" fontWeight="400" fill="#274B41"> {t(`grupo.impact.card${i}.title2`)}</text>)}
       <text className="botao" x="57" y="195" fontSize="20" fontWeight="400" fill="#008C79">{t(`grupo.impact.card${i}.desc1` in {} ? `grupo.impact.card${i}.desc1` : `grupo.impact.card${i}.desc1`)}</text>
-      {i === 1 && <text className="botao" x="57" y="220" fontSize="20" fontWeight="400" fill="#008C79">{t(`grupo.impact.card${i}.desc2`)}</text>}
+      <text className="botao" x="57" y="220" fontSize="20" fontWeight="400" fill="#008C79">{t(`grupo.impact.card${i}.desc2`)}</text>
       </svg>
       </SwiperSlide>
     ))}

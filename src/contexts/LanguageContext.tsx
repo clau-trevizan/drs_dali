@@ -187,8 +187,9 @@ export const translations: Translations = {
 
     'grupo.impact.card6.number': 'Presença',
     'grupo.impact.card6.unit': '',
-    'grupo.impact.card6.title': '',
-    'grupo.impact.card6.desc1': 'nacional e internacional',
+    'grupo.impact.card6.title': 'nacional e ',
+    'grupo.impact.card6.title2': 'internacional',
+    'grupo.impact.card6.desc1': '',
     'grupo.impact.card6.desc2': 'SP, DF, SC, Dublin e Argentina',
 
     'grupo.impact.card7.number': 'Faixas',

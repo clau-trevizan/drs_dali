@@ -24,7 +24,7 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent 
+      <DialogContent
         className="max-w-2xl p-0 overflow-hidden border-0"
         style={{
           background: 'none',
@@ -32,7 +32,7 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
         }}
       >
         {/* Content area */}
-        <div 
+        <div
           className="p-6 pt-8 lg:p-10 lg:pt-8 relative"
           style={{
             borderRadius: '30px',
@@ -44,20 +44,20 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
             <button
               onClick={() => onOpenChange(false)}
               className="px-4 py-2 text-white text-sm font-medium rounded-[10px] hover:opacity-80 transition-opacity"
-              style={{ 
+              style={{
                 backgroundColor: '#274B41'
               }}
             >
-              FECHAR
+              {t(`fechar`)}
             </button>
           </div>
 
           <DialogHeader className="mb-6 pr-24">
-            <DialogTitle 
+            <DialogTitle
               className="text-left"
-              style={{ 
-                fontSize: '28px', 
-                fontWeight: 900, 
+              style={{
+                fontSize: '28px',
+                fontWeight: 900,
                 color: '#274B41',
                 lineHeight: '1.2'
               }}
@@ -66,10 +66,10 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
             </DialogTitle>
           </DialogHeader>
 
-          <p 
+          <p
             className="mb-6"
-            style={{ 
-              fontSize: '16px', 
+            style={{
+              fontSize: '16px',
               color: '#274B41',
               lineHeight: '1.5'
             }}
@@ -79,19 +79,19 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
 
           {data.diferenciais.length > 0 && (
             <div className="mb-6">
-              <h3 
+              <h3
                 className="mb-3"
-                style={{ 
-                  fontSize: '18px', 
-                  fontWeight: 700, 
-                  color: '#274B41' 
+                style={{
+                  fontSize: '18px',
+                  fontWeight: 700,
+                  color: '#274B41'
                 }}
               >
                 Diferenciais
               </h3>
               <ul className="space-y-2">
                 {data.diferenciais.map((item, index) => (
-                  <li 
+                  <li
                     key={index}
                     className="flex items-start gap-2"
                     style={{ fontSize: '15px', color: '#274B41' }}
@@ -106,19 +106,19 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
 
           {data.destaques.length > 0 && (
             <div>
-              <h3 
+              <h3
                 className="mb-3"
-                style={{ 
-                  fontSize: '18px', 
-                  fontWeight: 700, 
-                  color: '#274B41' 
+                style={{
+                  fontSize: '18px',
+                  fontWeight: 700,
+                  color: '#274B41'
                 }}
               >
                 Destaques
               </h3>
               <ul className="space-y-2">
                 {data.destaques.map((item, index) => (
-                  <li 
+                  <li
                     key={index}
                     className="flex items-start gap-2"
                     style={{ fontSize: '15px', color: '#274B41' }}

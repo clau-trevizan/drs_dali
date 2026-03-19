@@ -169,11 +169,13 @@ export const translations: Translations = {
     'grupo.impact.card2.number': '+400',
     'grupo.impact.card2.title': 'estudos clínicos',
     'grupo.impact.card2.desc1': 'apoiados em todas as fases',
+    'grupo.impact.card2.desc2': '',
 
     'grupo.impact.card3.number': '+50',
     'grupo.impact.card3.unit': 'mil',
     'grupo.impact.card3.title': 'kits clínicos',
     'grupo.impact.card3.desc1': 'montados e rastreados',
+    'grupo.impact.card3.desc2': '',
 
     'grupo.impact.card4.number': '+2 ',
     'grupo.impact.card4.unit': 'milhões',
@@ -184,6 +186,7 @@ export const translations: Translations = {
     'grupo.impact.card5.number': '+95%',
     'grupo.impact.card5.title': 'das entregas',
     'grupo.impact.card5.desc1': 'realizadas em até 24 horas',
+    'grupo.impact.card5.desc2': '',
 
     'grupo.impact.card6.number': 'Presença',
     'grupo.impact.card6.unit': '',

@@ -89,9 +89,9 @@ export default function PCS() {
                       <text className="titulos" x="23" y="72" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i}.line1`)}</text>
                       <text className="titulos" x="23" y="107" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i}.line2`)}</text>
                       {t(`pcs.svg${i}.line3`) !== `pcs.svg${i}.line3` && <text className="titulos" x="23" y="142" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i}.line3`)}</text>}
-                      <text className="botao" x="23" y={i === 1 || i === 2 ? "185" : "135"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc1`)}</text>
-                      <text className="botao" x="23" y={i === 1 || i === 2 ? "210" : "185"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc2`)}</text>
-                      <text className="botao" x="23" y={i === 1 || i === 2 ? "235" : "210"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc3`)}</text>
+                      <text className="botao" x="23" y={i === 1 || i === 2 ? "185" : "150"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc1`)}</text>
+                      <text className="botao" x="23" y={i === 1 || i === 2 ? "210" : "175"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc2`)}</text>
+                      <text className="botao" x="23" y={i === 1 || i === 2 ? "235" : "200"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc3`)}</text>
                       <text className="botao" x="23" y={i === 1 || i === 2 ? "260" : "235"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc4`)}</text>
                     </svg>
                   </div>

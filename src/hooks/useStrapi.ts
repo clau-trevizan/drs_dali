@@ -70,7 +70,25 @@ export function usePrivacyPolicy(locale?: string) {
   return useQuery({
     queryKey: ['privacy-policy', locale],
     queryFn: () => strapiService.getPrivacyPolicy(locale),
-    staleTime: 1000 * 60 * 60, // 1 hour
+    staleTime: 1000 * 60 * 60,
+  });
+}
+
+// Hook for Terms of Use
+export function useTermsOfUse(locale?: string) {
+  return useQuery({
+    queryKey: ['terms-of-use', locale],
+    queryFn: () => strapiService.getTermsOfUse(locale),
+    staleTime: 1000 * 60 * 60,
+  });
+}
+
+// Hook for Cookies Policy
+export function useCookiesPolicy(locale?: string) {
+  return useQuery({
+    queryKey: ['cookies-policy', locale],
+    queryFn: () => strapiService.getCookiesPolicy(locale),
+    staleTime: 1000 * 60 * 60,
   });
 }
 

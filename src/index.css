@@ -1135,11 +1135,12 @@ html, body {
   .bg-footer-desktop {
     padding-top: 114px;
   }
-}
-@media (min-width: 1025px) and (max-width: 1152px) {
   .drs-container {
       max-width: 100%;
   }
+}
+
+@media (min-width: 1025px) and (max-width: 1199px) {
   nav li a, nav li button, header .drs-btn, header button {
     font-size: 12px !important;
 }

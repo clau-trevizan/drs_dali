@@ -69,6 +69,14 @@ const cities: CityWithResponsive[] = [
       extra: {
         title: 'Escritório Administrativo – São Paulo (SP)',
         description: 'Av. Queiroz Filho, 1700 – Torre A, salas 107 e 108\nCEP: 05319-000 – São Paulo/SP'
+      },
+      extra2: {
+        title: 'Lorem ipsum',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+      },
+      extra3: {
+        title: 'Consectetur adipisicing elit',
+        description: 'Duis aute irure dolor in reprehenderit.'
       }
     }
   },
@@ -212,6 +220,32 @@ export function WorldMap() {
                     <span key={i}>
                       {line}
                       {i < (selectedCity.info.extra!.description.split('\n').length || 1) - 1 && <br />}
+                    </span>
+                  ))}
+                </>
+              )}
+              {selectedCity?.info.extra2 && (
+                <>
+                  <br /><br />
+                  <span className="font-bold">{selectedCity.info.extra.title}</span>
+                  <br />
+                  {selectedCity.info.extra2.description.split('\n').map((line, i) => (
+                    <span key={i}>
+                      {line}
+                      {i < (selectedCity.info.extra2!.description.split('\n').length || 1) - 1 && <br />}
+                    </span>
+                  ))}
+                </>
+              )}
+              {selectedCity?.info.extra3 && (
+                <>
+                  <br /><br />
+                  <span className="font-bold">{selectedCity.info.extra.title}</span>
+                  <br />
+                  {selectedCity.info.extra3.description.split('\n').map((line, i) => (
+                    <span key={i}>
+                      {line}
+                      {i < (selectedCity.info.extra3!.description.split('\n').length || 1) - 1 && <br />}
                     </span>
                   ))}
                 </>

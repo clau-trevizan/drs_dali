@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Dialog, DialogPortal, DialogOverlay } from '@/components/ui/dialog';
 import * as DialogPrimitive from "@radix-ui/react-dialog";
+import { useTranslation } from '@/hooks/useTranslation';
 
 interface City {
   name: string;
@@ -78,7 +79,7 @@ const cities: CityWithResponsive[] = [
       mobile: { x: '290px', bottom: '115px' }
     },
     info: {
-      title: 'Filial Brasília (DF)',
+      title: ' Brasília (DF)',
       description: 'ST SCIA, Quadra 14, Conjunto 2, Lote 11 – Sala PT B\nCEP: 71250-110 – Brasília/DF'
     }
   },
@@ -89,13 +90,14 @@ const cities: CityWithResponsive[] = [
       mobile: { x: '290px', bottom: '85px' }
     },
     info: {
-      title: 'Filial Santa Catarina (SC)',
+      title: ' Santa Catarina (SC)',
       description: 'Rua Henrique do Rego Almeida, 261 – Setor 01\nCEP: 88133-512 – Palhoça/SC'
     }
   }
 ];
 
 export function WorldMap() {
+  const { t } = useTranslation();
   const [selectedCity, setSelectedCity] = useState<CityWithResponsive | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   const scrollContainerRef = React.useRef<HTMLDivElement>(null);
@@ -188,12 +190,12 @@ export function WorldMap() {
                   <path d="M1.25 16.4023L17.525 1.40234" stroke="#69C0AC" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M1.25 1.25L17.525 16.25" stroke="#69C0AC" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span className="sr-only">Fechar</span>
+                <span className="sr-only">{t(`worldmap.close`)}</span>
               </DialogPrimitive.Close>
             </div>
 
             <div className="text-white" style={{ fontSize: '14px', fontWeight: 400, lineHeight: '20px' }}>
-              <span className="font-bold">{selectedCity?.info.title}</span>
+              <span className="font-bold">{selectedCity?.name === 'Brasília' || selectedCity?.name === 'Santa Catarina' ? t(`worldmap.filial`) : ""}{selectedCity?.info.title}</span>
               <br />
               {selectedCity?.info.description.split('\n').map((line, i) => (
                 <span key={i}>

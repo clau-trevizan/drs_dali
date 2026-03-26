@@ -258,7 +258,7 @@ export default function DRS360() {
         <text className="botao" x="42" y="200" fontSize="20" fontWeight="400" fill="#fff">{t(`${funcKey}.line2`)}</text>
         <text className="botao" x="42" y="225" fontSize="20" fontWeight="400" fill="#fff">{t(`${funcKey}.line3`)}</text>
         <text className="botao" x="42" y="250" fontSize="20" fontWeight="400" fill="#fff">{t(`${funcKey}.line4`)}</text>
-        {lineCount === 5 && <text className="botao" x="42" y="275" fontSize="20" fontWeight="400" fill="#fff">{t(`${funcKey}.line5`)}</text>}
+        <text className="botao" x="42" y="275" fontSize="20" fontWeight="400" fill="#fff">{t(`${funcKey}.line5`)}</text>
         </svg>
         </div>
         </SwiperSlide>

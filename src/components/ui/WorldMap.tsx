@@ -83,17 +83,17 @@ const cities: CityWithResponsive[] = [
       description: 'ST SCIA, Quadra 14, Conjunto 2, Lote 11 – Sala PT B\nCEP: 71250-110 – Brasília/DF'
     }
   },
-  {
-    name: 'Santa Catarina',
-    position: {
-      desktop: { x: '27.5vw', bottom: '8vw' },
-      mobile: { x: '290px', bottom: '85px' }
-    },
-    info: {
-      title: ' Santa Catarina (SC)',
-      description: 'Rua Henrique do Rego Almeida, 261 – Setor 01\nCEP: 88133-512 – Palhoça/SC'
-    }
-  }
+  // {
+  //   name: 'Santa Catarina',
+  //   position: {
+  //     desktop: { x: '27.5vw', bottom: '8vw' },
+  //     mobile: { x: '290px', bottom: '85px' }
+  //   },
+  //   info: {
+  //     title: ' Santa Catarina (SC)',
+  //     description: 'Rua Henrique do Rego Almeida, 261 – Setor 01\nCEP: 88133-512 – Palhoça/SC'
+  //   }
+  // }
 ];
 
 export function WorldMap() {

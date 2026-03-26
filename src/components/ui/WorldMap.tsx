@@ -42,7 +42,7 @@ const cities: CityWithResponsive[] = [
       mobile: { x: '420px', y: '150px' }
     },
     info: {
-      title: 'DRS International – Dublin (IE)',
+      title: 'DRS International - Dublin (IE)',
       description: "15 - 17 Earlsfort Terrace, Saint Kevin's, Dublin 2, D02 YX28, Irlanda"
     }
   },
@@ -64,19 +64,19 @@ const cities: CityWithResponsive[] = [
       mobile: { x: '310px', bottom: '100px' }
     },
     info: {
-      title: 'Centro Logístico – São Paulo (SP)',
-      description: 'Rod. Anhanguera, s/nº – Km 15 – Warehouses 09–40\nVila Jaguara – São Paulo/SP – CEP: 05110-080',
+      title: 'Centro Logístico - São Paulo (SP)',
+      description: 'Rod. Anhanguera, s/nº - Km 15 - Warehouses 09-40\nVila Jaguara - São Paulo/SP - CEP: 05110-080',
       extra: {
-        title: 'Escritório Administrativo – São Paulo (SP)',
-        description: 'Av. Queiroz Filho, 1700 – Torre A, salas 107 e 108\nCEP: 05319-000 – São Paulo/SP'
+        title: 'Escritório Administrativo - São Paulo (SP)',
+        description: 'Av. Queiroz Filho, 1700 - Torre A, salas 107 e 108\nSão Paulo/SP - CEP: 05319-000'
       },
       extra2: {
-        title: 'Lorem ipsum',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+        title: 'Filial Taboão da Serra',
+        description: 'Estrada São Francisco, 1820 - Sala 711, Divisória 1 - Jardim Henriqueta - Taboão da Serra/SP - CEP: 06764-290'
       },
       extra3: {
-        title: 'Consectetur adipisicing elit',
-        description: 'Duis aute irure dolor in reprehenderit.'
+        title: 'Filial Campinas',
+        description: 'Avenida John Dalton, 92 - Anexo 2, Sala 01 - Techno Park\nCampinas/SP - CEP: 13069-330'
       }
     }
   },
@@ -88,7 +88,7 @@ const cities: CityWithResponsive[] = [
     },
     info: {
       title: ' Brasília (DF)',
-      description: 'ST SCIA, Quadra 14, Conjunto 2, Lote 11 – Sala PT B\nCEP: 71250-110 – Brasília/DF'
+      description: 'ST SCIA, Quadra 14, Conjunto 2, Lote 11 - Sala PT B\nCEP: 71250-110 - Brasília/DF'
     }
   },
   // {

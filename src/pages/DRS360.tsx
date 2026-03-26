@@ -164,7 +164,7 @@ export default function DRS360() {
     <text className="botao" x="49" y="205" fontSize="20" fontWeight="400" fill="#fff">{t('drs360.func3.line2')}</text>
     <text className="botao" x="49" y="230" fontSize="20" fontWeight="400" fill="#fff">{t('drs360.func3.line3')}</text>
     <text className="botao" x="49" y="255" fontSize="20" fontWeight="400" fill="#fff">{t('drs360.func3.line4')}</text>
-    <text className="botao" x="49" y="255" fontSize="20" fontWeight="400" fill="#fff">{t('drs360.func3.line5')}</text>
+    <text className="botao" x="49" y="280" fontSize="20" fontWeight="400" fill="#fff">{t('drs360.func3.line5')}</text>
     </svg>
     </div>
 

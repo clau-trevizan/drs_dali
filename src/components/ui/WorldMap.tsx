@@ -227,7 +227,7 @@ export function WorldMap() {
               {selectedCity?.info.extra2 && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{selectedCity.info.extra.title}</span>
+                  <span className="font-bold">{selectedCity.info.extra2.title}</span>
                   <br />
                   {selectedCity.info.extra2.description.split('\n').map((line, i) => (
                     <span key={i}>
@@ -240,7 +240,7 @@ export function WorldMap() {
               {selectedCity?.info.extra3 && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{selectedCity.info.extra.title}</span>
+                  <span className="font-bold">{selectedCity.info.extra3.title}</span>
                   <br />
                   {selectedCity.info.extra3.description.split('\n').map((line, i) => (
                     <span key={i}>

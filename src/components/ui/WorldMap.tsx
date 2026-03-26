@@ -71,11 +71,13 @@ const cities: CityWithResponsive[] = [
         description: 'Av. Queiroz Filho, 1700 - Torre A, salas 107 e 108\nSão Paulo/SP - CEP: 05319-000'
       },
       extra2: {
-        title: 'Filial Taboão da Serra',
+        name: 'Taboão da Serra',
+        title: ' Taboão da Serra',
         description: 'Estrada São Francisco, 1820 - Sala 711, Divisória 1 - Jardim Henriqueta - Taboão da Serra/SP - CEP: 06764-290'
       },
       extra3: {
-        title: 'Filial Campinas',
+        name: 'Campinas',
+        title: ' Campinas',
         description: 'Avenida John Dalton, 92 - Anexo 2, Sala 01 - Techno Park\nCampinas/SP - CEP: 13069-330'
       }
     }
@@ -231,12 +233,13 @@ export function WorldMap() {
                   <br />
                   {selectedCity.info.extra2.description.split('\n').map((line, i) => (
                     <span key={i}>
-                      {line}
+                      {selectedCity?.info.extra2.name === 'Campinas' || selectedCity?.info.extra2.name === 'Taboão da Serra' ? t(`worldmap.filial`) : ""}{line}
                       {i < (selectedCity.info.extra2!.description.split('\n').length || 1) - 1 && <br />}
                     </span>
                   ))}
                 </>
               )}
+
               {selectedCity?.info.extra3 && (
                 <>
                   <br /><br />
@@ -244,7 +247,7 @@ export function WorldMap() {
                   <br />
                   {selectedCity.info.extra3.description.split('\n').map((line, i) => (
                     <span key={i}>
-                      {line}
+                      {selectedCity?.info.extra2.name === 'Campinas' || selectedCity?.info.extra2.name === 'Taboão da Serra' ? t(`worldmap.filial`) : ""}{line}
                       {i < (selectedCity.info.extra3!.description.split('\n').length || 1) - 1 && <br />}
                     </span>
                   ))}

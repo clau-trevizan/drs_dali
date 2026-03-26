@@ -14,8 +14,8 @@ import type {
 } from '@/types/strapi';
 
 // Strapi API Configuration
-const STRAPI_URL = import.meta.env.VITE_STRAPI_URL || 'https://testesitedev.com';
-const STRAPI_TOKEN = import.meta.env.VITE_STRAPI_TOKEN || '14c3b22875342636c2b52ac25cebc9c2d88cb9b0417f87b023a117544d224b967d130aa617a279e06b0dc803549a0e62551312bac0edfe08d809e977e264e5575c8fecec57128074294f27c1e115b0f39a9c3627c462585167c8d74428e6120ff202b4e3fb3f673607ed565665e8b701cbbc45017749ba1b8b550c94e46cb106';
+const STRAPI_URL = import.meta.env.VITE_STRAPI_URL;
+const STRAPI_TOKEN = import.meta.env.VITE_STRAPI_TOKEN;
 
 
 // Base fetch function

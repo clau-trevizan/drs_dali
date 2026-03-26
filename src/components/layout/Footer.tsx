@@ -319,7 +319,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                   >
                     {t('footer.social')}
                   </span>
-                  <div className="flex gap-3">
+                  <div className="flex gap-3" style={{alignItems: 'center'}}>
                     <a
                       href="https://www.linkedin.com/company/groupdrs?originalSubdomain=br"
                       target="_blank"
@@ -340,8 +340,8 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                       className="transition-opacity hover:opacity-80"
                     >
                     <svg width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M38.4032 34.4065C43.9338 34.6079 48.5841 30.2958 48.8001 24.7657V10.4474C48.5841 4.91747 43.9338 0.605241 38.4032 0.806577H11.1968C5.66636 0.605241 1.016 4.91747 0.800049 10.4474V24.7657C1.016 30.2958 5.66636 34.6079 11.1968 34.4065H38.4032Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.6192 10.8266L31.2056 15.9817C31.6971 16.2688 31.9993 16.7951 31.9993 17.3641C31.9993 17.9334 31.6971 18.4597 31.2056 18.7465L23.6192 24.3865C22.1792 25.3633 20 24.5305 20 23.0041V12.2042C20 10.685 22.1816 9.84983 23.6192 10.8266Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fillRule="evenodd" clip-rule="evenodd" d="M38.4032 34.4065C43.9338 34.6079 48.5841 30.2958 48.8001 24.7657V10.4474C48.5841 4.91747 43.9338 0.605241 38.4032 0.806577H11.1968C5.66636 0.605241 1.016 4.91747 0.800049 10.4474V24.7657C1.016 30.2958 5.66636 34.6079 11.1968 34.4065H38.4032Z" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path fillRule="evenodd" clip-rule="evenodd" d="M23.6192 10.8266L31.2056 15.9817C31.6971 16.2688 31.9993 16.7951 31.9993 17.3641C31.9993 17.9334 31.6971 18.4597 31.2056 18.7465L23.6192 24.3865C22.1792 25.3633 20 24.5305 20 23.0041V12.2042C20 10.685 22.1816 9.84983 23.6192 10.8266Z" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     </a>
                   </div>

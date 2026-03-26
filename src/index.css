@@ -1108,14 +1108,39 @@ html, body {
   }
   .ingles text.botao.cursor-pointer {
     transform: translateX(-7px);
-}
-.espanhol text.botao.cursor-pointer {
+  }
+  .espanhol text.botao.cursor-pointer {
     transform: translateX(6px);
-}
-.ingles .svg-team rect {
-  width: 210px;
-}
-.drs360-swiper {
+  }
+  .ingles .svg-team rect {
+    width: 210px;
+  }
+  .drs360-swiper {
     width: 570px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1315px) {
+  .drs-container {
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 1158px) and (max-width: 1342px) {
+  .bg-footer-desktop {
+    padding-top: 137px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1157px) {
+  .bg-footer-desktop {
+    padding-top: 114px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1152px) {
+  .drs-container {
+      max-width: 100%;
+  }
+  nav li a, nav li button, header .drs-btn, header button {
+    font-size: 12px !important;
 }
 }

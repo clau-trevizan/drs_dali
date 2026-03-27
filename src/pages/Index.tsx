@@ -326,11 +326,11 @@ const Index = () => {
             <div className="lg:hidden w-full">
               <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 408 841" fill="none" className="w-full h-auto">
                 <path d="M56.1159 783.209L56.1121 813.78C56.1121 828.713 44.0226 840.816 29.1075 840.816H-14.2189C-30.6643 840.816 -44 827.468 -44 811L-44 114.169C-44 98.9857 -31.7099 86.6802 -16.5447 86.6802H2.9762C17.4098 86.6802 29.1075 74.9651 29.1075 60.5184V27.2567C29.1075 12.2046 41.2941 0 56.3324 0L378.218 9.44393e-05C394.663 9.44393e-05 408 13.3482 408 29.8165L408 727.664C408 743.808 394.929 756.894 378.804 756.894L210.385 756.894H82.4003C67.8846 756.894 56.1159 768.676 56.1159 783.209Z" fill="#F39325"/>
-                <text className="titulos" x="41" y="176" fontSize="35" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.title1')}</text>
-                <text className="titulos" x="41" y="216" fontSize="35" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.title2')}</text>
-                <text className="titulos" x="41" y="255" fontSize="35" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.title3')}</text>
-                <text className="titulos" x="41" y="296" fontSize="35" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.title4')}</text>
-                <foreignObject x="41" y="335" width="360" height="100%">
+                <text className="titulos" x="41" y="156" fontSize="35" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.title1')}</text>
+                <text className="titulos" x="41" y="196" fontSize="35" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.title2')}</text>
+                <text className="titulos" x="41" y="235" fontSize="35" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.title3')}</text>
+                <text className="titulos" x="41" y="276" fontSize="35" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.title4')}</text>
+                <foreignObject x="41" y="285" width="360" height="100%">
                 <div className="botao" style={{ fontSize: '20px', color: '#000000', lineHeight: 'normal', marginTop: '15px'}}>{t('home.solutions.svg.mobile.desc1')}</div>
                 </foreignObject>
                 <Link to="/solucoes">

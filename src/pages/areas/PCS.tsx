@@ -111,7 +111,7 @@ export default function PCS() {
                           <text className="botao" x="23" y="185" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc1`)}</text>
                           <text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc2`)}</text>
                           <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc3`)}</text>
-                          <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc4`)}</text>
+                          <text className="botao" x="23" y="260" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc4`)}</text>
 
 
                         </svg>

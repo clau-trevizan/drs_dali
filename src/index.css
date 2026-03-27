@@ -1187,3 +1187,10 @@ html, body {
     bottom: 5.5rem;
   }
 }
+@media (min-width: 1024px) {
+.lg\:pl-\[60px\] {
+    padding-left: 0;
+    bottom: 8% !important;
+    left: calc(50% - 175px);
+}
+}

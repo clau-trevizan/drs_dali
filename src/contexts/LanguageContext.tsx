@@ -570,28 +570,34 @@ export const translations: Translations = {
     'cts.svg2.desc1': 'Depósito especializado com',
     'cts.svg2.desc2': 'temperatura controlada para',
     'cts.svg2.desc3': 'produtos investigacionais.',
+    'cts.svg2.desc4': '',
     'cts.svg3.line1': 'Serviços',
     'cts.svg3.line2': 'globais de',
     'cts.svg3.line3': 'importador',
     'cts.svg3.line4': 'oficial',
     'cts.svg3.desc1': 'Importação e registro de',
     'cts.svg3.desc2': 'produtos para pesquisa clínica.',
+    'cts.svg3.desc3': '',
+    'cts.svg3.desc4': '',
     'cts.svg4.line1': 'Embalagem,',
     'cts.svg4.line2': 'etiquetagem e',
     'cts.svg4.line3': 'cegamento',
     'cts.svg4.desc1': 'Reembalagem, etiquetagem e',
     'cts.svg4.desc2': 'cegamento de medicamentos',
     'cts.svg4.desc3': 'investigacionais.',
+    'cts.svg4.desc4': '',
     'cts.svg5.line1': 'Kits',
     'cts.svg5.line2': 'laboratoriais',
     'cts.svg5.desc1': 'Montagem e distribuição',
     'cts.svg5.desc2': 'de kits para coleta e',
     'cts.svg5.desc3': 'análise laboratorial.',
+    'cts.svg5.desc4': '',
     'cts.svg6.line1': 'Transporte',
     'cts.svg6.line2': 'especializado',
     'cts.svg6.desc1': 'Logística regulada para',
     'cts.svg6.desc2': 'transporte de materiais',
     'cts.svg6.desc3': 'clínicos sensíveis.',
+    'cts.svg6.desc4': '',
 
     // CTS Solution Modal keys
     'cts.sol1.title': 'Fornecimento de medicamentos comparadores',
@@ -714,6 +720,7 @@ export const translations: Translations = {
     'tis.svg1.desc3': 'transporte em temperatura',
     'tis.svg1.desc4': 'controlada.',
     'tis.svg1.desc5': '',
+    'tis.svg1.desc6': '',
 
     'tis.svg2.line1': 'Transporte de',
     'tis.svg2.line2': 'cadeia fria',
@@ -738,6 +745,7 @@ export const translations: Translations = {
     'tis.svg4.desc3': 'localização em tempo real.',
     'tis.svg4.desc4': '',
     'tis.svg4.desc5': '',
+    'tis.svg4.desc6': '',
 
 
     // TIS Solution Modal keys
@@ -1351,12 +1359,15 @@ export const translations: Translations = {
     'cts.svg2.desc1': 'Storage and clinical',
     'cts.svg2.desc2': 'logistics with global',
     'cts.svg2.desc3': 'quality standards.',
+    'cts.svg2.desc4': '',
     'cts.svg3.line1': 'Global',
     'cts.svg3.line2': 'official',
     'cts.svg3.line3': 'importer',
     'cts.svg3.line4': 'services',
     'cts.svg3.desc1': 'IOR and EOR for global',
     'cts.svg3.desc2': 'clinical research.',
+    'cts.svg3.desc3': '',
+    'cts.svg3.desc4': '',
 
     'cts.svg4.line1': 'Packaging,',
     'cts.svg4.line2': 'labeling and',
@@ -1365,6 +1376,7 @@ export const translations: Translations = {
     'cts.svg4.desc1': 'We offer complete solutions',
     'cts.svg4.desc2': 'in secondary packaging,',
     'cts.svg4.desc3': 'labeling and blinding.',
+    'cts.svg4.desc4': '',
 
     'cts.svg5.line1': 'Laboratory',
     'cts.svg5.line2': 'kits',
@@ -1372,6 +1384,7 @@ export const translations: Translations = {
     'cts.svg5.desc1': 'Assembling laboratory',
     'cts.svg5.desc2': 'and medication kits for',
     'cts.svg5.desc3': 'clinical studies.',
+    'cts.svg5.desc4': '',
 
     'cts.svg6.line1': 'Specialized',
     'cts.svg6.line2': 'transport',
@@ -1379,6 +1392,7 @@ export const translations: Translations = {
     'cts.svg6.desc1': 'Transport of medicines and',
     'cts.svg6.desc2': 'biological transport for',
     'cts.svg6.desc3': 'support and diagnostic programs.',
+    'cts.svg6.desc4': '',
 
     'cts.sol1.title': 'Supply of comparator drugs',
     'cts.sol1.desc': 'Sourcing and import of reference drugs for clinical studies in any phase, with traceability and international compliance.',
@@ -1449,7 +1463,7 @@ export const translations: Translations = {
     'pcs.svg1.desc1': 'An intelligent support journey',
     'pcs.svg1.desc2': 'that expands access, strengthens',
     'pcs.svg1.desc3': 'adherence and puts the patient',
-    'pcs.svg1.desc4': ' at the center of everything.',
+    'pcs.svg1.desc4': 'at the center of everything.',
     'pcs.svg2.line1': 'Services for',
     'pcs.svg2.line2': 'consumers',
     'pcs.svg2.line3': 'and patients',
@@ -1503,6 +1517,7 @@ export const translations: Translations = {
     'tis.svg1.desc3': 'control and total traceability to ',
     'tis.svg1.desc4': 'guarantee safety and performance ',
     'tis.svg1.desc5': 'throughout the cold chain.',
+    'tis.svg1.desc6': '',
     'tis.svg2.line1': 'Cold chain',
     'tis.svg2.line2': 'transportation',
     'tis.svg2.desc1': 'Specialized cold chain transport ',
@@ -2118,6 +2133,7 @@ export const translations: Translations = {
     'cts.svg2.desc1': 'Almacenamiento clínico y',
     'cts.svg2.desc2': 'logística con estándares',
     'cts.svg2.desc3': ' globales de calidad.',
+    'cts.svg2.desc4': '',
 
     'cts.svg3.line1': 'Servicios',
     'cts.svg3.line2': 'globales de ',
@@ -2125,7 +2141,8 @@ export const translations: Translations = {
     'cts.svg3.line4': 'oficial',
     'cts.svg3.desc1': 'IOR y EOR para la',
     'cts.svg3.desc2': 'investigación clínica global.',
-
+    'cts.svg3.desc3': '',
+    'cts.svg3.desc4': '',
     'cts.svg4.line1': 'Embalaje,',
     'cts.svg4.line2': 'etiquetado y',
     'cts.svg4.line3': 'cegamiento',
@@ -2133,6 +2150,7 @@ export const translations: Translations = {
     'cts.svg4.desc1': 'Ofrecemos soluciones completas',
     'cts.svg4.desc2': 'en embalaje secundario,',
     'cts.svg4.desc3': 'etiquetado y cegamiento.',
+    'cts.svg4.desc4': '',
 
     'cts.svg5.line1': 'Kits de',
     'cts.svg5.line2': 'laboratorio',
@@ -2140,6 +2158,7 @@ export const translations: Translations = {
     'cts.svg5.desc1': 'Montaje de kits de',
     'cts.svg5.desc2': 'laboratorio y medicación',
     'cts.svg5.desc3': 'para estudios clínicos.',
+    'cts.svg5.desc4': '',
 
     'cts.svg6.line1': 'Transporte',
     'cts.svg6.line2': 'especializado',
@@ -2147,6 +2166,7 @@ export const translations: Translations = {
     'cts.svg6.desc1': 'Transporte de medicamentos y',
     'cts.svg6.desc2': 'transporte biológico para soporte',
     'cts.svg6.desc3': 'y programas de diagnóstico.',
+    'cts.svg6.desc4': '',
 
     'cts.sol1.title': 'Suministro de medicamentos comparadores',
     'cts.sol1.desc': 'Sourcing e importación de medicamentos de referencia para estudios clínicos en cualquier fase, con trazabilidad y compliance internacional.',
@@ -2267,6 +2287,7 @@ export const translations: Translations = {
     'tis.svg1.desc3': 'temperatura y trazabilidad total para ',
     'tis.svg1.desc4': 'garantizar la seguridad y el desempeño ',
     'tis.svg1.desc5': 'en toda la cadena fría.',
+    'tis.svg1.desc6': '',
 
     'tis.svg2.line1': 'Transporte de',
     'tis.svg2.line2': 'cadena fría',
@@ -2274,6 +2295,7 @@ export const translations: Translations = {
     'tis.svg2.desc2': 'en cadena fría. Simplifique su logística ',
     'tis.svg2.desc3': 'integrando transporte, logística inversa, ',
     'tis.svg2.desc4': 'embalaje y monitoreo.',
+    'tis.svg2.desc5': '',
 
     'tis.svg3.line1': 'Telemetría',
     'tis.svg3.line2': 'Data loggers',

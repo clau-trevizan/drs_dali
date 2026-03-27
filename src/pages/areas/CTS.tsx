@@ -200,6 +200,7 @@ export default function CTS() {
                     <text className="botao" x="43" y="176" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg2.desc1')}</text>
                     <text className="botao" x="43" y="201" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg2.desc2')}</text>
                     <text className="botao" x="43" y="226" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg2.desc3')}</text>
+                    <text className="botao" x="43" y="226" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg2.desc4')}</text>
                     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(1)}/>
                     <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(1)}>{t('saibamais')}</text>
                   </svg>
@@ -258,7 +259,7 @@ export default function CTS() {
                     <text className="botao" x="43" y="156" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg6.desc1')}</text>
                     <text className="botao" x="43" y="181" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg6.desc2')}</text>
                     <text className="botao" x="43" y="206" fontSize="20" fontWeight="400" fill="#008C79">{t('cts.svg6.desc3')}</text>
-                    
+
                     <rect x="269" y="326" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(5)}/>
                     <text className="botao cursor-pointer" x="292" y="353" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(5)}>{t('saibamais')}</text>
                   </svg>

@@ -720,6 +720,7 @@ export const translations: Translations = {
     'tis.svg1.desc2': 'alta performance para',
     'tis.svg1.desc3': 'transporte em temperatura',
     'tis.svg1.desc4': 'controlada.',
+    'tis.svg1.desc5': '',
 
     'tis.svg2.line1': 'Transporte de',
     'tis.svg2.line2': 'cadeia fria',
@@ -727,6 +728,7 @@ export const translations: Translations = {
     'tis.svg2.desc2': 'transporte de produtos',
     'tis.svg2.desc3': 'termossensíveis.',
     'tis.svg2.desc4': '',
+    'tis.svg2.desc5': '',
 
     'tis.svg3.line1': 'Gestão de',
     'tis.svg3.line2': 'importação',
@@ -734,6 +736,7 @@ export const translations: Translations = {
     'tis.svg3.desc2': 'de importação e exportação',
     'tis.svg3.desc3': 'de produtos sensíveis.',
     'tis.svg3.desc4': '',
+    'tis.svg3.desc5': '',
 
     'tis.svg4.line1': 'Telemetria e',
     'tis.svg4.line2': 'Data Loggers',
@@ -741,6 +744,7 @@ export const translations: Translations = {
     'tis.svg4.desc2': 'temperatura, umidade e',
     'tis.svg4.desc3': 'localização em tempo real.',
     'tis.svg4.desc4': '',
+    'tis.svg4.desc5': '',
 
 
     // TIS Solution Modal keys

@@ -108,6 +108,7 @@ export default function PCS() {
                           <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
                           <text className="titulos" x="23" y="72" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i+1}.line1`)}</text>
                           <text className="titulos" x="23" y="107" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i+1}.line2`)}</text>
+                          <text className="titulos" x="23" y="142" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i+1}.line3`)}</text>
                           <text className="botao" x="23" y="185" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc1`)}</text>
                           <text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc2`)}</text>
                           <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc3`)}</text>

@@ -284,7 +284,9 @@ export const translations: Translations = {
 
     // WorldMap
     'worldmap.close': 'Fechar',
-    'worldmap.filial': 'Filial',
+    'worldmap.filial.brasilia': 'Filial Brasília (DF)',
+    'worldmap.filial.campinas': 'Filial Campinas',
+    'worldmap.filial.taboao': 'Filial Taboão da Serra',
 
     // Solucoes - PCS diff items
     'solucoes.pcs.diff.item1': '• Gestão por profissionais de saúde,',
@@ -1038,7 +1040,9 @@ export const translations: Translations = {
 
     // WorldMap
     'worldmap.close': 'Close',
-    'worldmap.filial': 'branch',
+    'worldmap.filial.brasilia': 'Brasília (DF) branch',
+    'worldmap.filial.campinas': 'Campinas branch',
+    'worldmap.filial.taboao': 'Taboão da Serra branch',
 
     // Solucoes - PCS diff items
     'solucoes.pcs.diff.item1': '• Management by health professionals,',
@@ -1832,6 +1836,9 @@ export const translations: Translations = {
     // WorldMap
     'worldmap.close': 'Cerrar',
     'worldmap.filial': 'Sucursal',
+    'worldmap.filial.brasilia': 'Sucursal Brasília (DF)',
+    'worldmap.filial.campinas': 'Sucursal Campinas',
+    'worldmap.filial.taboao': 'Sucursal Taboão da Serra',
 
     // Solucoes - PCS diff items
     'solucoes.pcs.diff.item1': '• Gestión por profesionales sanitarios,',
@@ -2392,7 +2399,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>
-      {children}
+    {children}
     </LanguageContext.Provider>
   );
 }

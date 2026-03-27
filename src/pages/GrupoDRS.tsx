@@ -245,7 +245,7 @@ export default function GrupoDRS() {
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 408 713" fill="none" className="w-full h-auto">
     <path d="M56.1159 655.315L56.1121 685.886C56.1121 700.819 44.0226 712.922 29.1075 712.922H-14.2189C-30.6643 712.922 -44 699.574 -44 683.106L-44 114.169C-44 98.9857 -31.7099 86.6802 -16.5447 86.6802H2.97623C17.4098 86.6802 29.1075 74.9651 29.1075 60.5184V27.2567C29.1075 12.2046 41.2941 0 56.3324 0L378.218 9.44393e-05C394.664 9.44393e-05 408 13.3482 408 29.8165L408 599.77C408 615.914 394.929 629 378.804 629L210.385 629H82.4003C67.8846 629 56.1159 640.782 56.1159 655.315Z" fill="#F39325"></path>
     <text className="titulos" x="40" y="120" fontSize="30" fontWeight="900" fill="#000000">{t('grupo.nossotime.title')}</text>
-    <foreignObject x="40" y="180" width="360" height="100%">
+    <foreignObject x="40" y="150" width="360" height="100%">
     <div className="botao" style={{ fontSize: '20px', color: '#000000', lineHeight: 'normal', marginTop: '15px'}}>{t('grupo.nossotime.mobile.line1')}</div>
     </foreignObject>
     <a href="https://vagasdrsgroup.gupy.io/" target="_blank">

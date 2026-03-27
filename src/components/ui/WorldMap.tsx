@@ -114,7 +114,7 @@ export function WorldMap() {
   const isPTorES = i18n.language?.startsWith('pt') || i18n.language?.startsWith('es');
 
 const isTargetCity =
-selectedCity?.name === 'Brasília' || selectedCity?.name === 'Santa Catarina';
+selectedCity?.name === 'Brasília' || selectedCity?.name === 'Santa Catarina' || selectedCity?.info.extra2.name === 'Campinas' || selectedCity?.info.extra2.name === 'Taboão da Serra';
 
 const filial = t('worldmap.filial');
 const title = selectedCity?.info.title;
@@ -236,7 +236,7 @@ const title = selectedCity?.info.title;
               {selectedCity?.info.extra2 && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{selectedCity?.info.extra2.name === 'Campinas' || selectedCity?.info.extra2.name === 'Taboão da Serra' ? t(`worldmap.filial`) : ""}{selectedCity.info.extra2.title}</span>
+                  <span className="font-bold">{isPTorES && filial} {title} {!isPTorES && isTargetCity && filial}</span>
                   <br />
                   {selectedCity.info.extra2.description.split('\n').map((line, i) => (
                     <span key={i}>
@@ -250,7 +250,7 @@ const title = selectedCity?.info.title;
               {selectedCity?.info.extra3 && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{selectedCity.info.extra3.title}</span>
+                  <span className="font-bold">{isPTorES && filial} {title} {!isPTorES && isTargetCity && filial}</span>
                   <br />
                   {selectedCity.info.extra3.description.split('\n').map((line, i) => (
                     <span key={i}>

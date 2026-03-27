@@ -393,7 +393,7 @@ export const translations: Translations = {
     'drs360.func6.line1': 'Relatórios gerenciais visões',
     'drs360.func6.line2': 'dinâmicas de volume, projetos,',
     'drs360.func6.line3': 'períodos, rotas e muito mais.',
-    'drs360.func6.line4': 'OPEN API para integração de ',
+    'drs360.func6.line4': 'OPEN API para integração de',
     'drs360.func6.line5': 'processos ou exportação de dados.',
 
     // DRS360 Page - Benefits SVG
@@ -533,7 +533,7 @@ export const translations: Translations = {
     'grupo.diff1.desc1': 'plataforma proprietária com',
     'grupo.diff1.desc2': 'rastreamento em tempo real,',
     'grupo.diff1.desc3': 'relatórios inteligentes e gestão',
-    'grupo.diff1.desc4': 'preditiva',
+    'grupo.diff1.desc4': 'preditiva.',
     'grupo.diff2.title1': 'Ecossistema',
     'grupo.diff2.title2': 'completo:',
     'grupo.diff2.desc1': 'logística, tecnologia, suporte ao',
@@ -544,7 +544,7 @@ export const translations: Translations = {
     'grupo.diff3.title2': 'em saúde:',
     'grupo.diff3.desc1': 'operação 100% regulada, com',
     'grupo.diff3.desc2': 'validações e protocolos para',
-    'grupo.diff3.desc3': 'medicamentos sensíveis',
+    'grupo.diff3.desc3': 'medicamentos sensíveis.',
     'grupo.diff3.desc4': '',
 
     // Grupo DRS - Area blocks
@@ -720,7 +720,7 @@ export const translations: Translations = {
     // TIS SVG text keys
     'tis.svg1.line1': 'Cadeia fria e',
     'tis.svg1.line2': 'embalagens',
-    'tis.svg1.desc1': 'Embalagens reutilizáveis de',
+    'tis.svg1.desc1': 'reutilizáveis de',
     'tis.svg1.desc2': 'alta performance para',
     'tis.svg1.desc3': 'transporte em temperatura',
     'tis.svg1.desc4': 'controlada.',
@@ -1123,7 +1123,7 @@ export const translations: Translations = {
 
     'grupo.cert.title': 'Certifications and Conformities',
     'grupo.cert.subtitle': 'Recognized excellence, with quality validated at every stage.',
-    'grupo.cert.desc': 'DRS operates in compliance with the highest national and international regulatory standards, guaranteeing safety, traceability and trust throughout the healthcare chain',
+    'grupo.cert.desc': 'DRS operates in compliance with the highest national and international regulatory standards, guaranteeing safety, traceability and trust throughout the healthcare chain.',
 
     'grupo.cert2.title': 'Health Licensing',
     'grupo.cert2.desc': 'IATA Letter - CEIV Pharma / LGPD (General Personal Data Protection Law) and International Data Protection Standards / ISO 9001:2015 - Quality Management System / EcoVadis - Sustainability Assessment (ESG)',
@@ -1317,7 +1317,7 @@ export const translations: Translations = {
     'grupo.diff1.desc1': 'proprietary platform with',
     'grupo.diff1.desc2': 'real-time tracking,',
     'grupo.diff1.desc3': 'intelligent reporting and predictive',
-    'grupo.diff1.desc4': 'management',
+    'grupo.diff1.desc4': 'management.',
     'grupo.diff2.title1': 'Complete',
     'grupo.diff2.title2': 'ecosystem:',
     'grupo.diff2.desc1': 'logistics, technology, patient',
@@ -1329,7 +1329,7 @@ export const translations: Translations = {
     'grupo.diff3.title2': 'in health:',
     'grupo.diff3.desc1': '100% regulated operation, with',
     'grupo.diff3.desc2': 'validations and protocols for',
-    'grupo.diff3.desc3': 'sensitive medicines',
+    'grupo.diff3.desc3': 'sensitive medicines.',
     'grupo.diff3.desc4': '',
     'grupo.area1.title1': 'Clinical Trial',
     'grupo.area1.title2': 'Services - CTS:',
@@ -1831,7 +1831,7 @@ export const translations: Translations = {
 
     // WorldMap
     'worldmap.close': 'Cerrar',
-    'worldmap.filial': 'Rama',
+    'worldmap.filial': 'Sucursal',
 
     // Solucoes - PCS diff items
     'solucoes.pcs.diff.item1': '• Gestión por profesionales sanitarios,',
@@ -1904,7 +1904,7 @@ export const translations: Translations = {
     'grupo.drs360.cta': 'Descubra todos nuestros servicios',
     'grupo.cert.title': 'Certificaciones y Conformidades',
     'grupo.cert.subtitle': 'Excelencia reconocida, con calidad validada en cada etapa.',
-    'grupo.cert.desc': 'DRS opera de acuerdo con los más altos estándares regulatorios nacionales e internacionales, garantizando seguridad, trazabilidad y confiabilidad en toda la cadena de atención médica',
+    'grupo.cert.desc': 'DRS opera de acuerdo con los más altos estándares regulatorios nacionales e internacionales, garantizando seguridad, trazabilidad y confiabilidad en toda la cadena de atención médica.',
 
     'grupo.cert2.title': 'Licencia Sanitaria',
     'grupo.cert2.desc': 'Carta IATA - CEIV Pharma / LGPD y Estándares Internacionales de Protección de Datos / ISO 9001:2015 - Sistema de Gestión de la Calidad / EcoVadis – Evaluación de la Sostenibilidad (ESG)',
@@ -2088,7 +2088,7 @@ export const translations: Translations = {
     'grupo.diff1.desc1': 'plataforma propia con',
     'grupo.diff1.desc2': 'seguimiento en tiempo real,',
     'grupo.diff1.desc3': 'informes inteligentes y',
-    'grupo.diff1.desc4': 'gestión predictiva',
+    'grupo.diff1.desc4': 'gestión predictiva.',
 
     'grupo.diff2.title1': 'Ecosistema',
     'grupo.diff2.title2': 'completo:',
@@ -2101,7 +2101,7 @@ export const translations: Translations = {
     'grupo.diff3.title2': 'en salud:',
     'grupo.diff3.desc1': 'operación 100% regulada, con',
     'grupo.diff3.desc2': 'validaciones y protocolos para',
-    'grupo.diff3.desc3': 'medicamentos sensibles',
+    'grupo.diff3.desc3': 'medicamentos sensibles.',
     'grupo.diff3.desc4': '',
 
     'grupo.area1.title1': 'Clinical Trial',

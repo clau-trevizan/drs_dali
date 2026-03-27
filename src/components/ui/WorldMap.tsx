@@ -114,7 +114,7 @@ export function WorldMap() {
   const isPTorES = i18n.language?.startsWith('pt') || i18n.language?.startsWith('es');
 
 const isTargetCity =
-selectedCity?.name === 'Brasília' || selectedCity?.name === 'Santa Catarina' || selectedCity?.info.extra2.name === 'Campinas' || selectedCity?.info.extra2.name === 'Taboão da Serra';
+selectedCity?.name === 'Brasília' || selectedCity?.name === 'Santa Catarina' || selectedCity?.info.extra2.name === 'Campinas' || selectedCity?.info.extra3.name === 'Taboão da Serra';
 
 const filial = t('worldmap.filial');
 const title = selectedCity?.info.title;

@@ -729,6 +729,7 @@ export const translations: Translations = {
     'tis.svg2.desc3': 'termossensíveis.',
     'tis.svg2.desc4': '',
     'tis.svg2.desc5': '',
+    'tis.svg2.desc6': '',
 
     'tis.svg3.line1': 'Gestão de',
     'tis.svg3.line2': 'importação',
@@ -737,6 +738,7 @@ export const translations: Translations = {
     'tis.svg3.desc3': 'de produtos sensíveis.',
     'tis.svg3.desc4': '',
     'tis.svg3.desc5': '',
+    'tis.svg3.desc6': '',
 
     'tis.svg4.line1': 'Telemetria e',
     'tis.svg4.line2': 'Data Loggers',
@@ -1525,6 +1527,7 @@ export const translations: Translations = {
     'tis.svg2.desc3': 'by integrating your transportation, ',
     'tis.svg2.desc4': ' reverse logistics, packaging and ',
     'tis.svg2.desc5': 'monitoring.',
+    'tis.svg2.desc6': '',
     'tis.svg3.line1': 'Telemetry',
     'tis.svg3.line2': 'Data Loggers',
     'tis.svg3.desc1': 'Advanced monitoring solutions, with ',
@@ -1532,6 +1535,7 @@ export const translations: Translations = {
     'tis.svg3.desc3': 'integration with our digital platform. ',
     'tis.svg3.desc4': 'Control, precision and real-time ',
     'tis.svg3.desc5': 'traceability for the entire cold chain.',
+    'tis.svg3.desc6': '',
     'tis.svg4.line1': 'Integrated',
     'tis.svg4.line2': 'Services',
     'tis.svg4.desc1': 'You can count on our integrated cold chain ',
@@ -2296,6 +2300,7 @@ export const translations: Translations = {
     'tis.svg2.desc3': 'integrando transporte, logística inversa, ',
     'tis.svg2.desc4': 'embalaje y monitoreo.',
     'tis.svg2.desc5': '',
+    'tis.svg2.desc6': '',
 
     'tis.svg3.line1': 'Telemetría',
     'tis.svg3.line2': 'Data loggers',

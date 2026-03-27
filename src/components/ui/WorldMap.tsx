@@ -206,7 +206,7 @@ export function WorldMap() {
 
             <div className="text-white" style={{ fontSize: '14px', fontWeight: 400, lineHeight: '20px' }}>
 
-              <span className="font-bold">{{t(`worldmap.filialTitle`, { title: selectedCity?.info.title })}}</span>
+              <span className="font-bold">{{t(`worldmap.filial`, { title: selectedCity?.info.title })}}</span>
               <br />
               {selectedCity?.info.description.split('\n').map((line, i) => (
                 <span key={i}>
@@ -217,7 +217,7 @@ export function WorldMap() {
               {selectedCity?.info.extra && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{{t(`worldmap.filialTitle`, { title: selectedCity.info.extra.title })}}</span>
+                  <span className="font-bold">{{t(`worldmap.filial`, { title: selectedCity.info.extra.title })}}</span>
                   <br />
                   {selectedCity.info.extra.description.split('\n').map((line, i) => (
                     <span key={i}>
@@ -230,7 +230,7 @@ export function WorldMap() {
               {selectedCity?.info.extra2 && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{{t(`worldmap.filialTitle`, { title: selectedCity.info.extra2.title })}}</span>
+                  <span className="font-bold">{{t(`worldmap.filial`, { title: selectedCity.info.extra2.title })}}</span>
                   <br />
                   {selectedCity.info.extra2.description.split('\n').map((line, i) => (
                     <span key={i}>
@@ -244,7 +244,7 @@ export function WorldMap() {
               {selectedCity?.info.extra3 && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{{t(`worldmap.filialTitle`, { title: selectedCity.info.extra3.title })}}</span>
+                  <span className="font-bold">{{t(`worldmap.filial`, { title: selectedCity.info.extra3.title })}}</span>
                   <br />
                   {selectedCity.info.extra3.description.split('\n').map((line, i) => (
                     <span key={i}>

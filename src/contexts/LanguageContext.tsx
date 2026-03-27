@@ -1141,6 +1141,7 @@ export const translations: Translations = {
     'drs360.func1.line2': 'with geolocation,',
     'drs360.func1.line3': 'temperature, humidity, light',
     'drs360.func1.line4': 'and fall sensors.',
+    'drs360.func1.line5': '',
 
     'drs360.func2.line1': 'Complete overview of stock and',
     'drs360.func2.line2': 'control of entries and exits in',
@@ -1164,6 +1165,7 @@ export const translations: Translations = {
     'drs360.func5.line2': 'movement with permissions',
     'drs360.func5.line3': 'and activity records',
     'drs360.func5.line4': '(FDA, EMA & ANVISA compliance)',
+    'drs360.func5.line5': '',
 
     'drs360.func6.line1': 'Management reports with dynamic',
     'drs360.func6.line2': 'views of volume, projects,',

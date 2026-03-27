@@ -522,15 +522,7 @@ export const translations: Translations = {
     'grupo.nossotime.svg.line5': 'seguro e humano.',
     'grupo.nossotime.svg.line6': 'Nossa cultura é colaborativa, com foco na escuta ativa e',
     'grupo.nossotime.svg.line7': 'soluções centradas em pessoas.',
-    'grupo.nossotime.mobile.line1': 'Pessoas que cuidam de pessoas,',
-    'grupo.nossotime.mobile.line2': 'com excelência e empatia.',
-    'grupo.nossotime.mobile.line3': 'Nosso time multidisciplinar reúne',
-    'grupo.nossotime.mobile.line4': 'especialistas em logística, ',
-    'grupo.nossotime.mobile.line5': 'farmacêuticos, enfermeiros, cientistas',
-    'grupo.nossotime.mobile.line6': 'de dados e desenvolvedores de',
-    'grupo.nossotime.mobile.line7': 'tecnologia. Todos alinhados por um',
-    'grupo.nossotime.mobile.line8': 'propósito comum: tornar o acesso à',
-    'grupo.nossotime.mobile.line9': 'saúde mais eficiente, seguro e humano.',
+    'grupo.nossotime.mobile.line1': 'Pessoas que cuidam de pessoas, com excelência e empatia. \nNosso time multidisciplinar reúne especialistas em logística, farmacêuticos, enfermeiros, cientistas de dados e desenvolvedores de tecnologia. Todos alinhados por um propósito comum: tornar o acesso à saúde mais eficiente, seguro e humano.',
 
     // Grupo DRS - Differentials carousel
     'grupo.diff1.title1': 'DRS 360',
@@ -1315,15 +1307,7 @@ export const translations: Translations = {
     'grupo.nossotime.svg.line6': 'Our culture is collaborative, with a focus on',
     'grupo.nossotime.svg.line7': 'active listening and people-centered solutions. Join our team! ',
 
-    'grupo.nossotime.mobile.line1': 'People who take care of people,',
-    'grupo.nossotime.mobile.line2': 'with excellence and empathy.',
-    'grupo.nossotime.mobile.line3': 'Our multidisciplinary team brings',
-    'grupo.nossotime.mobile.line4': 'together logistics experts, pharmacists,',
-    'grupo.nossotime.mobile.line5': 'nurses, data scientists and',
-    'grupo.nossotime.mobile.line6': 'technology developers.',
-    'grupo.nossotime.mobile.line7': 'All aligned with a common purpose:',
-    'grupo.nossotime.mobile.line8': 'to make access to healthcare more',
-    'grupo.nossotime.mobile.line9': 'efficient, safe and humane.',
+    'grupo.nossotime.mobile.line1': 'People who take care of people, with excellence and empathy. \nOur multidisciplinary team brings together logistics experts, pharmacists, nurses, data scientists and technology developers. \nAll aligned with a common purpose: to make access to healthcare more efficient, safe and humane.',
 
     'grupo.diff1.title1': 'DRS 360',
     'grupo.diff1.desc1': 'proprietary platform with',
@@ -2091,15 +2075,7 @@ export const translations: Translations = {
     'grupo.nossotime.svg.line6': 'Nuestra cultura es colaborativa, con un enfoque en la escucha activa y',
     'grupo.nossotime.svg.line7': 'en soluciones centradas en las personas.',
 
-    'grupo.nossotime.mobile.line1': 'Personas que se preocupan por las personas,',
-    'grupo.nossotime.mobile.line2': 'con excelencia y empatía. Nuestro equipo',
-    'grupo.nossotime.mobile.line3': 'multidisciplinario reúne a especialistas en',
-    'grupo.nossotime.mobile.line4': 'logística, farmacéuticos, enfermeros,',
-    'grupo.nossotime.mobile.line5': 'científicos de datos y desarrolladores de',
-    'grupo.nossotime.mobile.line6': 'tecnología. Todos unidos por un propósito',
-    'grupo.nossotime.mobile.line7': 'común: hacer que el acceso a la atención',
-    'grupo.nossotime.mobile.line8': 'médica sea más eficiente,',
-    'grupo.nossotime.mobile.line9': 'seguro y humano.',
+    'grupo.nossotime.mobile.line1': 'Personas que se preocupan por las personas, con excelencia y empatía. Nuestro equipo multidisciplinario reúne a especialistas en logística, farmacéuticos, enfermeros, científicos de datos y desarrolladores de tecnología. Todos unidos por un propósito común: hacer que el acceso a la atención médica sea más eficiente, seguro y humano.',
 
     'grupo.diff1.title1': 'DRS 360',
 

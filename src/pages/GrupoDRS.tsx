@@ -245,15 +245,9 @@ export default function GrupoDRS() {
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 408 713" fill="none" className="w-full h-auto">
     <path d="M56.1159 655.315L56.1121 685.886C56.1121 700.819 44.0226 712.922 29.1075 712.922H-14.2189C-30.6643 712.922 -44 699.574 -44 683.106L-44 114.169C-44 98.9857 -31.7099 86.6802 -16.5447 86.6802H2.97623C17.4098 86.6802 29.1075 74.9651 29.1075 60.5184V27.2567C29.1075 12.2046 41.2941 0 56.3324 0L378.218 9.44393e-05C394.664 9.44393e-05 408 13.3482 408 29.8165L408 599.77C408 615.914 394.929 629 378.804 629L210.385 629H82.4003C67.8846 629 56.1159 640.782 56.1159 655.315Z" fill="#F39325"></path>
     <text className="titulos" x="40" y="120" fontSize="30" fontWeight="900" fill="#000000">{t('grupo.nossotime.title')}</text>
-    <text className="botao2" x="40" y="180" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.mobile.line1')}</text>
-    <text className="botao2" x="40" y="210" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.mobile.line2')}</text>
-    <text className="botao2" x="40" y="270" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.mobile.line3')}</text>
-    <text className="botao2" x="40" y="298" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.mobile.line4')}</text>
-    <text className="botao2" x="40" y="328" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.mobile.line5')}</text>
-    <text className="botao2" x="40" y="356" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.mobile.line6')}</text>
-    <text className="botao2" x="40" y="384" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.mobile.line7')}</text>
-    <text className="botao2" x="40" y="415" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.mobile.line8')}</text>
-    <text className="botao2" x="40" y="445" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.mobile.line9')}</text>
+    <foreignObject x="40" y="180" width="360" height="100%">
+    <div className="botao" style={{ fontSize: '20px', color: '#000000', lineHeight: 'normal', marginTop: '15px'}}>{t('grupo.nossotime.mobile.line1')}</div>
+    </foreignObject>
     <a href="https://vagasdrsgroup.gupy.io/" target="_blank">
     <rect x="40" y="485" width="347" height="70" rx="10" fill="#274B41" style={{ cursor: 'pointer' }}></rect>
     <path d="M84.1116 494.727L89.6449 500.213L89.6911 500.256C89.8763 500.439 89.984 500.682 90 500.968L89.9991 501.064C89.9856 501.29 89.899 501.507 89.7284 501.701L89.6638 501.767L84.1116 507.274C83.701 507.681 83.0371 507.681 82.6265 507.274C82.2135 506.864 82.2135 506.198 82.6265 505.789L86.4601 501.986L71.0524 501.987C70.4721 501.987 70 501.519 70 500.939C70 500.359 70.4721 499.891 71.0523 499.891L86.3364 499.89L82.6265 496.212C82.2135 495.802 82.2135 495.136 82.6265 494.727C83.0371 494.319 83.701 494.319 84.1116 494.727Z" fill="white" style={{ transform: 'translateY(18px)' }}></path>

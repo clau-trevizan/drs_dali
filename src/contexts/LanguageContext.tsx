@@ -284,7 +284,7 @@ export const translations: Translations = {
 
     // WorldMap
     'worldmap.close': 'Fechar',
-    'worldmap.filial': 'Filial',
+    'worldmap.filial': 'Filial {{name.title}}',
 
     // Solucoes - PCS diff items
     'solucoes.pcs.diff.item1': '• Gestão por profissionais de saúde,',
@@ -1038,7 +1038,7 @@ export const translations: Translations = {
 
     // WorldMap
     'worldmap.close': 'Close',
-    'worldmap.filial': 'Branch',
+    'worldmap.filial': '{{name.title}} branch',
 
     // Solucoes - PCS diff items
     'solucoes.pcs.diff.item1': '• Management by health professionals,',
@@ -1831,7 +1831,7 @@ export const translations: Translations = {
 
     // WorldMap
     'worldmap.close': 'Cerrar',
-    'worldmap.filial': 'Sucursal',
+    'worldmap.filial': 'Sucursal {{name.title}}',
 
     // Solucoes - PCS diff items
     'solucoes.pcs.diff.item1': '• Gestión por profesionales sanitarios,',

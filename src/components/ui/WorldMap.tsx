@@ -111,13 +111,6 @@ export function WorldMap() {
   const [selectedCity, setSelectedCity] = useState<CityWithResponsive | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   const scrollContainerRef = React.useRef<HTMLDivElement>(null);
-  const isPTorES = i18n.language?.startsWith('pt') || i18n.language?.startsWith('es');
-
-const isTargetCity =
-selectedCity?.name === 'Brasília' || selectedCity?.name === 'Santa Catarina' || selectedCity?.info.extra2.name === 'Campinas' || selectedCity?.info.extra3.name === 'Taboão da Serra';
-
-const filial = t('worldmap.filial');
-const title = selectedCity?.info.title;
 
   // Check if mobile on mount and resize
   React.useEffect(() => {
@@ -212,7 +205,8 @@ const title = selectedCity?.info.title;
             </div>
 
             <div className="text-white" style={{ fontSize: '14px', fontWeight: 400, lineHeight: '20px' }}>
-              <span className="font-bold">{isPTorES && filial} {title} {!isPTorES && isTargetCity && filial}</span>
+
+              <span className="font-bold">{{t(`worldmap.filialTitle`, { title: selectedCity?.info.title })}}</span>
               <br />
               {selectedCity?.info.description.split('\n').map((line, i) => (
                 <span key={i}>
@@ -223,7 +217,7 @@ const title = selectedCity?.info.title;
               {selectedCity?.info.extra && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{selectedCity.info.extra.title}</span>
+                  <span className="font-bold">{{t(`worldmap.filialTitle`, { title: selectedCity.info.extra.title })}}</span>
                   <br />
                   {selectedCity.info.extra.description.split('\n').map((line, i) => (
                     <span key={i}>
@@ -236,11 +230,11 @@ const title = selectedCity?.info.title;
               {selectedCity?.info.extra2 && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{isPTorES && filial} {title} {!isPTorES && isTargetCity && filial}</span>
+                  <span className="font-bold">{{t(`worldmap.filialTitle`, { title: selectedCity.info.extra2.title })}}</span>
                   <br />
                   {selectedCity.info.extra2.description.split('\n').map((line, i) => (
                     <span key={i}>
-                      {line}
+                    {line}
                       {i < (selectedCity.info.extra2!.description.split('\n').length || 1) - 1 && <br />}
                     </span>
                   ))}
@@ -250,11 +244,11 @@ const title = selectedCity?.info.title;
               {selectedCity?.info.extra3 && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{isPTorES && filial} {title} {!isPTorES && isTargetCity && filial}</span>
+                  <span className="font-bold">{{t(`worldmap.filialTitle`, { title: selectedCity.info.extra3.title })}}</span>
                   <br />
                   {selectedCity.info.extra3.description.split('\n').map((line, i) => (
                     <span key={i}>
-                      {selectedCity?.info.extra2.name === 'Campinas' || selectedCity?.info.extra2.name === 'Taboão da Serra' ? t(`worldmap.filial`) : ""}{line}
+                      {line}
                       {i < (selectedCity.info.extra3!.description.split('\n').length || 1) - 1 && <br />}
                     </span>
                   ))}

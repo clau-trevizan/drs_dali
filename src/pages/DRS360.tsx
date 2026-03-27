@@ -258,181 +258,182 @@ export default function DRS360() {
         <text className="botao" x="42" y="200" fontSize="20" fontWeight="400" fill="#fff">{t(`${funcKey}.line2`)}</text>
         <text className="botao" x="42" y="225" fontSize="20" fontWeight="400" fill="#fff">{t(`${funcKey}.line3`)}</text>
         <text className="botao" x="42" y="250" fontSize="20" fontWeight="400" fill="#fff">{t(`${funcKey}.line4`)}</text>
-        <text className="botao" x="42" y="275" fontSize="20" fontWeight="400" fill="#fff">{t(`${funcKey}.line5`)}</text>
-        </svg>
-        </div>
-        </SwiperSlide>
-      );
-    })}
-    </Swiper>
-    <div className="flex gap-4 mt-4 justify-center pl-[60px]">
-    <button onClick={() => functionalitiesSwiperRef.current?.slidePrev()} className="transition-opacity rotate-180" style={{ opacity: activeFuncSlide === 0 ? 0.6 : 1 }}><img src={arrowSlide} alt="Previous" className="w-[50px] h-[38px]" /></button>
-    <button onClick={() => functionalitiesSwiperRef.current?.slideNext()} className="transition-opacity" style={{ opacity: activeFuncSlide === 5 ? 0.6 : 1 }}><img src={arrowSlide} alt="Next" className="w-[50px] h-[38px]" /></button>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
+        {t(`${funcKey}.line5`) && ( <text className="botao" x="42" y="275" fontSize="20" fontWeight="400" fill="#fff"> {t(`${funcKey}.line5`)}</text>
+      )}
+      </svg>
+      </div>
+      </SwiperSlide>
+    );
+  })}
+  </Swiper>
+  <div className="flex gap-4 mt-4 justify-center pl-[60px]">
+  <button onClick={() => functionalitiesSwiperRef.current?.slidePrev()} className="transition-opacity rotate-180" style={{ opacity: activeFuncSlide === 0 ? 0.6 : 1 }}><img src={arrowSlide} alt="Previous" className="w-[50px] h-[38px]" /></button>
+  <button onClick={() => functionalitiesSwiperRef.current?.slideNext()} className="transition-opacity" style={{ opacity: activeFuncSlide === 5 ? 0.6 : 1 }}><img src={arrowSlide} alt="Next" className="w-[50px] h-[38px]" /></button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
 
-    {/* Benefícios Estratégicos Carousel Section */}
-    <section className="py-8 bg-white">
-    <div className="drs-container">
-    <div className="grid grid-cols-12">
-    <div className="col-span-12 lg:col-start-2 lg:col-span-10">
-    <span style={{ color: '#000', fontSize: '20px', fontStyle: 'normal', fontWeight: 400, lineHeight: '40px', borderRadius: '30px', background: '#69C0AC', padding: '3px 30px', display: 'inline-block', textTransform: 'uppercase', marginLeft: '10%' }}>{t('drs360.beneficios')}</span>
+  {/* Benefícios Estratégicos Carousel Section */}
+  <section className="py-8 bg-white">
+  <div className="drs-container">
+  <div className="grid grid-cols-12">
+  <div className="col-span-12 lg:col-start-2 lg:col-span-10">
+  <span style={{ color: '#000', fontSize: '20px', fontStyle: 'normal', fontWeight: 400, lineHeight: '40px', borderRadius: '30px', background: '#69C0AC', padding: '3px 30px', display: 'inline-block', textTransform: 'uppercase', marginLeft: '10%' }}>{t('drs360.beneficios')}</span>
 
-    <div className="relative mt-8">
-    <Swiper modules={[Navigation, Pagination]} onSwiper={(swiper) => { benefitsCarouselRef.current = swiper; setBenefitPages(swiper.snapGrid.length); setBenefitNavHidden(swiper.isLocked); }} onResize={(swiper) => { setBenefitPages(swiper.snapGrid.length); setBenefitNavHidden(swiper.isLocked); }} onSlideChange={(swiper) => { setActiveSlide(swiper.snapIndex); }} spaceBetween={24} slidesPerView={3} slidesPerGroup={3} className="benefits-carousel" breakpoints={{ 0: { slidesPerView: 1, slidesPerGroup: 1 }, 768: { slidesPerView: 2, slidesPerGroup: 2 }, 1024: { slidesPerView: 3, slidesPerGroup: 3 } }}>
-    {[1,2,3,4,5].map((i, idx) => {
+  <div className="relative mt-8">
+  <Swiper modules={[Navigation, Pagination]} onSwiper={(swiper) => { benefitsCarouselRef.current = swiper; setBenefitPages(swiper.snapGrid.length); setBenefitNavHidden(swiper.isLocked); }} onResize={(swiper) => { setBenefitPages(swiper.snapGrid.length); setBenefitNavHidden(swiper.isLocked); }} onSlideChange={(swiper) => { setActiveSlide(swiper.snapIndex); }} spaceBetween={24} slidesPerView={3} slidesPerGroup={3} className="benefits-carousel" breakpoints={{ 0: { slidesPerView: 1, slidesPerGroup: 1 }, 768: { slidesPerView: 2, slidesPerGroup: 2 }, 1024: { slidesPerView: 3, slidesPerGroup: 3 } }}>
+  {[1,2,3,4,5].map((i, idx) => {
 
-      const benefits = [
-        {
-          path: "M57.8333 52.75H33.3333C31.0782 52.75 29.25 54.5782 29.25 56.8333V81.3333C29.25 83.5885 31.0782 85.4167 33.3333 85.4167H57.8333C60.0885 85.4167 61.9167 83.5885 61.9167 81.3333V56.8333C61.9167 54.5782 60.0885 52.75 57.8333 52.75Z M29.25 65H61.9167 M82.3333 44.5833L98.6667 48.6666V64.9999C98.6667 77.2499 90.5 85.4166 82.3333 89.4999C74.1667 85.4166 66 77.2499 66 64.9999V48.6666L82.3333 44.5833Z M82.333 56.8333V77.2499 M76.208 71.125L82.333 77.25L88.458 71.125",
-          transform: "translate(50px, 32px)"
-        },
-        {
-          path: "M31.501 1.5L7.50098 25.0664 M31.5 1.5L55.5 25.0664 M7.5 25.0664L1.5 19.1748M55.5 25.0664L61.5 19.1748",
-          transform: "translate(83px, 85px)"
-        },
-        {
-          path: "M29.5059 56.5C44.9732 56.5 57.5119 44.1878 57.5119 29C57.5119 13.8122 44.9732 1.5 29.5059 1.5C14.0387 1.5 1.5 13.8122 1.5 29C1.5 44.1878 14.0387 56.5 29.5059 56.5Z M29.5059 15.25V29L46.3094 40",
-          transform: "translate(85px, 72px)"
-        },
-        {
-          path: "M98.8824 58H31.1176C27.739 58 25 60.725 25 64.0865V65.9593C25 69.3208 27.739 72.0458 31.1176 72.0458H98.8824C102.261 72.0458 105 69.3208 105 65.9593V64.0865C105 60.725 102.261 58 98.8824 58Z M88.2058 68.9929C90.3981 68.9929 92.1753 67.2157 92.1753 65.0234C92.1753 62.8311 90.3981 61.054 88.2058 61.054C86.0135 61.054 84.2363 62.8311 84.2363 65.0234C84.2363 67.2157 86.0135 68.9929 88.2058 68.9929Z M66.0007 68.9929C67.193 68.9929 68.9702 67.2157 68.9702 65.0234C68.9702 62.8311 67.193 61.054 65.0007 61.054C62.8084 61.054 61.0312 62.8311 61.0312 65.0234C61.0312 67.2157 62.8084 68.9929 65.0007 68.9929Z M41.7947 68.9929C43.9869 68.9929 45.7641 67.2157 45.7641 65.0234C45.7641 62.8311 43.9869 61.054 41.7947 61.054C39.6024 61.054 37.8252 62.8311 37.8252 65.0234C37.8252 67.2157 39.6024 68.9929 41.7947 68.9929Z",
-          transform: "translate(50px, 37px)"
-        },
-        {
-          path: "M37.9921 15.855H21.028C19.9258 15.855 19.0322 16.7485 19.0322 17.8508V40.8022C19.0322 41.9044 19.9258 42.798 21.028 42.798H37.9921C39.0943 42.798 39.9879 41.9044 39.9879 40.8022V17.8508C39.9879 16.7485 39.0943 15.855 37.9921 15.855Z M23.6895 23.5056H35.3315M23.6895 30.4908H35.3315M23.6895 37.476H31.6726",
-          path2: "M29.2344 56.9688C44.5516 56.9688 56.9688 44.5516 56.9688 29.2344C56.9688 13.9171 44.5516 1.5 29.2344 1.5C13.9171 1.5 1.5 13.9171 1.5 29.2344C1.5 44.5516 13.9171 56.9688 29.2344 56.9688Z",
-          transform: "translate(85px, 70px)"
-        },
-      ];
-      const benefit = benefits[idx];
-      return(
+    const benefits = [
+      {
+        path: "M57.8333 52.75H33.3333C31.0782 52.75 29.25 54.5782 29.25 56.8333V81.3333C29.25 83.5885 31.0782 85.4167 33.3333 85.4167H57.8333C60.0885 85.4167 61.9167 83.5885 61.9167 81.3333V56.8333C61.9167 54.5782 60.0885 52.75 57.8333 52.75Z M29.25 65H61.9167 M82.3333 44.5833L98.6667 48.6666V64.9999C98.6667 77.2499 90.5 85.4166 82.3333 89.4999C74.1667 85.4166 66 77.2499 66 64.9999V48.6666L82.3333 44.5833Z M82.333 56.8333V77.2499 M76.208 71.125L82.333 77.25L88.458 71.125",
+        transform: "translate(50px, 32px)"
+      },
+      {
+        path: "M31.501 1.5L7.50098 25.0664 M31.5 1.5L55.5 25.0664 M7.5 25.0664L1.5 19.1748M55.5 25.0664L61.5 19.1748",
+        transform: "translate(83px, 85px)"
+      },
+      {
+        path: "M29.5059 56.5C44.9732 56.5 57.5119 44.1878 57.5119 29C57.5119 13.8122 44.9732 1.5 29.5059 1.5C14.0387 1.5 1.5 13.8122 1.5 29C1.5 44.1878 14.0387 56.5 29.5059 56.5Z M29.5059 15.25V29L46.3094 40",
+        transform: "translate(85px, 72px)"
+      },
+      {
+        path: "M98.8824 58H31.1176C27.739 58 25 60.725 25 64.0865V65.9593C25 69.3208 27.739 72.0458 31.1176 72.0458H98.8824C102.261 72.0458 105 69.3208 105 65.9593V64.0865C105 60.725 102.261 58 98.8824 58Z M88.2058 68.9929C90.3981 68.9929 92.1753 67.2157 92.1753 65.0234C92.1753 62.8311 90.3981 61.054 88.2058 61.054C86.0135 61.054 84.2363 62.8311 84.2363 65.0234C84.2363 67.2157 86.0135 68.9929 88.2058 68.9929Z M66.0007 68.9929C67.193 68.9929 68.9702 67.2157 68.9702 65.0234C68.9702 62.8311 67.193 61.054 65.0007 61.054C62.8084 61.054 61.0312 62.8311 61.0312 65.0234C61.0312 67.2157 62.8084 68.9929 65.0007 68.9929Z M41.7947 68.9929C43.9869 68.9929 45.7641 67.2157 45.7641 65.0234C45.7641 62.8311 43.9869 61.054 41.7947 61.054C39.6024 61.054 37.8252 62.8311 37.8252 65.0234C37.8252 67.2157 39.6024 68.9929 41.7947 68.9929Z",
+        transform: "translate(50px, 37px)"
+      },
+      {
+        path: "M37.9921 15.855H21.028C19.9258 15.855 19.0322 16.7485 19.0322 17.8508V40.8022C19.0322 41.9044 19.9258 42.798 21.028 42.798H37.9921C39.0943 42.798 39.9879 41.9044 39.9879 40.8022V17.8508C39.9879 16.7485 39.0943 15.855 37.9921 15.855Z M23.6895 23.5056H35.3315M23.6895 30.4908H35.3315M23.6895 37.476H31.6726",
+        path2: "M29.2344 56.9688C44.5516 56.9688 56.9688 44.5516 56.9688 29.2344C56.9688 13.9171 44.5516 1.5 29.2344 1.5C13.9171 1.5 1.5 13.9171 1.5 29.2344C1.5 44.5516 13.9171 56.9688 29.2344 56.9688Z",
+        transform: "translate(85px, 70px)"
+      },
+    ];
+    const benefit = benefits[idx];
+    return(
 
-        <SwiperSlide key={idx}>
-        <svg width="422" height="379" viewBox="0 0 422 379" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width: '100%'}}>
-        <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
-        <circle cx="114" cy="100" r="65" fill="#69C0AC"/>
-        <path d={benefit.path} style={{ transform: benefit.transform }} stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-        {benefit.path2 && (
+      <SwiperSlide key={idx}>
+      <svg width="422" height="379" viewBox="0 0 422 379" fill="none" xmlns="http://www.w3.org/2000/svg" style={{width: '100%'}}>
+      <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
+      <circle cx="114" cy="100" r="65" fill="#69C0AC"/>
+      <path d={benefit.path} style={{ transform: benefit.transform }} stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      {benefit.path2 && (
         <path d={benefit.path2} style={{ transform: benefit.transform }} stroke="black" strokeWidth="3" strokeLinecap="round" strokeDasharray="1 5" />
       )}
-        <text className="botao" x="49" y="205" fontSize="20" fontWeight="400" fill="#008C79">{t(`drs360.benefit${i}.line1`)}</text>
-        <text className="botao" x="49" y="230" fontSize="20" fontWeight="400" fill="#008C79">{t(`drs360.benefit${i}.line2`)}</text>
-        </svg>
-        </SwiperSlide>
+      <text className="botao" x="49" y="205" fontSize="20" fontWeight="400" fill="#008C79">{t(`drs360.benefit${i}.line1`)}</text>
+      <text className="botao" x="49" y="230" fontSize="20" fontWeight="400" fill="#008C79">{t(`drs360.benefit${i}.line2`)}</text>
+      </svg>
+      </SwiperSlide>
 
-      )
-    })}
-    </Swiper>
+    )
+  })}
+  </Swiper>
 
-    <div className={`flex items-center justify-center gap-4 mt-8 ${benefitNavHidden ? 'hidden' : ''}`}>
-    <button onClick={() => benefitsCarouselRef.current?.slidePrev()} className="transition-opacity rotate-180" style={{ opacity: activeSlide === 0 ? 0.6 : 1 }}><img src={arrowSlide} alt="Previous" className="w-[66px] h-[50px]" /></button>
-    <div className="flex gap-2">
-    {Array.from({ length: benefitPages }, (_, i) => i).map((dotIndex) => (
-      <button key={dotIndex} onClick={() => { const spg = (benefitsCarouselRef.current?.params.slidesPerGroup as number) || 1; benefitsCarouselRef.current?.slideTo(dotIndex * spg); }} className="w-3 h-3 hover:opacity-80 transition-opacity" style={{ borderRadius: '5px', backgroundColor: activeSlide === dotIndex ? '#274B41' : '#69C0AC' }} />
-    ))}
-    </div>
-    <button onClick={() => benefitsCarouselRef.current?.slideNext()} className="transition-opacity" style={{ opacity: activeSlide === benefitPages - 1 ? 0.6 : 1 }}><img src={arrowSlide} alt="Next" className="w-[66px] h-[50px]" /></button>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
+  <div className={`flex items-center justify-center gap-4 mt-8 ${benefitNavHidden ? 'hidden' : ''}`}>
+  <button onClick={() => benefitsCarouselRef.current?.slidePrev()} className="transition-opacity rotate-180" style={{ opacity: activeSlide === 0 ? 0.6 : 1 }}><img src={arrowSlide} alt="Previous" className="w-[66px] h-[50px]" /></button>
+  <div className="flex gap-2">
+  {Array.from({ length: benefitPages }, (_, i) => i).map((dotIndex) => (
+    <button key={dotIndex} onClick={() => { const spg = (benefitsCarouselRef.current?.params.slidesPerGroup as number) || 1; benefitsCarouselRef.current?.slideTo(dotIndex * spg); }} className="w-3 h-3 hover:opacity-80 transition-opacity" style={{ borderRadius: '5px', backgroundColor: activeSlide === dotIndex ? '#274B41' : '#69C0AC' }} />
+  ))}
+  </div>
+  <button onClick={() => benefitsCarouselRef.current?.slideNext()} className="transition-opacity" style={{ opacity: activeSlide === benefitPages - 1 ? 0.6 : 1 }}><img src={arrowSlide} alt="Next" className="w-[66px] h-[50px]" /></button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
 
-    {/* Security Info SVG Section */}
-    <section className="py-16 bg-white">
-    <div className="drs-container">
-    <div className="grid grid-cols-12">
-    <div className="hidden lg:flex col-span-12 lg:col-span-4 items-end justify-center lg:justify-end" style={{ marginRight: '-50px' }}>
-    <img src={drs360Final} alt={t('drs360.seguranca.tag')} className="w-full max-w-[400px] h-auto object-contain" />
-    </div>
-    <div className="hidden lg:block col-span-12 lg:col-span-8">
-    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 847 564" fill="none">
-    <path d="M71.8609 204.7L33.7256 204.696C15.0985 204.696 1.63619e-05 189.612 1.71753e-05 171.004L2.3026e-05 37.1558C2.39229e-05 16.638 16.6508 -3.62957e-05 37.1938 -3.53978e-05L704.584 0.000298951C723.523 0.000299778 738.873 15.3338 738.873 34.2543L738.873 58.6092C738.873 76.6171 753.487 91.2114 771.508 91.2114L812.999 91.2114C831.776 91.2114 847 106.416 847 125.178L847 526.773C847 547.29 830.349 563.929 809.806 563.929L141.148 563.929C121.011 563.929 104.687 547.621 104.687 527.504L104.687 397.172L104.687 237.493C104.687 219.383 89.9892 204.7 71.8609 204.7Z" fill="#F39325"/>
-    <text className="titulos" x="180" y="144" fontSize="30" fontWeight="900" fill="#000000">{t('drs360.security.title')}</text>
-    <text className="botao" x="180" y="190" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.line1')}</text>
-    <text className="botao" x="180" y="218" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.line2')}</text>
-    <text className="botao" x="180" y="246" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.line3')}</text>
-    <text className="botao" x="180" y="274" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.line4')}</text>
-    <text className="botao" x="195" y="318" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet1')}</text>
-    <text className="botao" x="195" y="350" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet2')}</text>
-    <text className="botao" x="195" y="382" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet3')}</text>
-    <text className="botao" x="209" y="402" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet3b')}</text>
-    <text className="botao" x="195" y="434" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet4')}</text>
-    <text className="botao" x="209" y="454" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet4b')}</text>
-    </svg>
-    </div>
-    <div className="col-span-12 lg:hidden px-4">
-    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 408 713" fill="none" className="w-full h-auto">
-    <path d="M56.1159 655.315L56.1121 685.886C56.1121 700.819 44.0226 712.922 29.1075 712.922H-14.2189C-30.6643 712.922 -44 699.574 -44 683.106L-44 114.169C-44 98.9857 -31.7099 86.6802 -16.5447 86.6802H2.97623C17.4098 86.6802 29.1075 74.9651 29.1075 60.5184V27.2567C29.1075 12.2046 41.2941 0 56.3324 0L378.218 9.44393e-05C394.664 9.44393e-05 408 13.3482 408 29.8165L408 599.77C408 615.914 394.929 629 378.804 629L210.385 629H82.4003C67.8846 629 56.1159 640.782 56.1159 655.315Z" fill="#F39325"></path>
-    <text className="titulos" x="40" y="120" fontSize="30" fontWeight="900" fill="#000000">{t('drs360.security.mobile.title1')}</text>
-    <text className="titulos" x="40" y="155" fontSize="30" fontWeight="900" fill="#000000">{t('drs360.security.mobile.title2')}</text>
-    <text className="botao2" x="40" y="210" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line1')}</text>
-    <text className="botao2" x="40" y="240" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line2')}</text>
-    <text className="botao2" x="40" y="270" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line3')}</text>
-    <text className="botao2" x="40" y="298" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line4')}</text>
-    <text className="botao2" x="40" y="328" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line5')}</text>
-    <text className="botao2" x="40" y="356" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line6')}</text>
-    <text className="botao2" x="40" y="384" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line7')}</text>
-    <text className="botao2" x="40" y="425" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet1')}</text>
-    <text className="botao2" x="40" y="455" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet2')}</text>
-    <text className="botao2" x="40" y="485" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.bullet3')}</text>
-    <text className="botao2" x="52" y="513" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.bullet3b')}</text>
-    <text className="botao2" x="52" y="540" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet3b')}</text>
-    <text className="botao2" x="40" y="568" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.bullet4')}</text>
-    <text className="botao2" x="52" y="595" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.bullet4b')}</text>
-    </svg>
-    </div>
-    </div>
-    </div>
-    </section>
+  {/* Security Info SVG Section */}
+  <section className="py-16 bg-white">
+  <div className="drs-container">
+  <div className="grid grid-cols-12">
+  <div className="hidden lg:flex col-span-12 lg:col-span-4 items-end justify-center lg:justify-end" style={{ marginRight: '-50px' }}>
+  <img src={drs360Final} alt={t('drs360.seguranca.tag')} className="w-full max-w-[400px] h-auto object-contain" />
+  </div>
+  <div className="hidden lg:block col-span-12 lg:col-span-8">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 847 564" fill="none">
+  <path d="M71.8609 204.7L33.7256 204.696C15.0985 204.696 1.63619e-05 189.612 1.71753e-05 171.004L2.3026e-05 37.1558C2.39229e-05 16.638 16.6508 -3.62957e-05 37.1938 -3.53978e-05L704.584 0.000298951C723.523 0.000299778 738.873 15.3338 738.873 34.2543L738.873 58.6092C738.873 76.6171 753.487 91.2114 771.508 91.2114L812.999 91.2114C831.776 91.2114 847 106.416 847 125.178L847 526.773C847 547.29 830.349 563.929 809.806 563.929L141.148 563.929C121.011 563.929 104.687 547.621 104.687 527.504L104.687 397.172L104.687 237.493C104.687 219.383 89.9892 204.7 71.8609 204.7Z" fill="#F39325"/>
+  <text className="titulos" x="180" y="144" fontSize="30" fontWeight="900" fill="#000000">{t('drs360.security.title')}</text>
+  <text className="botao" x="180" y="190" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.line1')}</text>
+  <text className="botao" x="180" y="218" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.line2')}</text>
+  <text className="botao" x="180" y="246" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.line3')}</text>
+  <text className="botao" x="180" y="274" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.line4')}</text>
+  <text className="botao" x="195" y="318" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet1')}</text>
+  <text className="botao" x="195" y="350" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet2')}</text>
+  <text className="botao" x="195" y="382" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet3')}</text>
+  <text className="botao" x="209" y="402" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet3b')}</text>
+  <text className="botao" x="195" y="434" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet4')}</text>
+  <text className="botao" x="209" y="454" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet4b')}</text>
+  </svg>
+  </div>
+  <div className="col-span-12 lg:hidden px-4">
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 408 713" fill="none" className="w-full h-auto">
+  <path d="M56.1159 655.315L56.1121 685.886C56.1121 700.819 44.0226 712.922 29.1075 712.922H-14.2189C-30.6643 712.922 -44 699.574 -44 683.106L-44 114.169C-44 98.9857 -31.7099 86.6802 -16.5447 86.6802H2.97623C17.4098 86.6802 29.1075 74.9651 29.1075 60.5184V27.2567C29.1075 12.2046 41.2941 0 56.3324 0L378.218 9.44393e-05C394.664 9.44393e-05 408 13.3482 408 29.8165L408 599.77C408 615.914 394.929 629 378.804 629L210.385 629H82.4003C67.8846 629 56.1159 640.782 56.1159 655.315Z" fill="#F39325"></path>
+  <text className="titulos" x="40" y="120" fontSize="30" fontWeight="900" fill="#000000">{t('drs360.security.mobile.title1')}</text>
+  <text className="titulos" x="40" y="155" fontSize="30" fontWeight="900" fill="#000000">{t('drs360.security.mobile.title2')}</text>
+  <text className="botao2" x="40" y="210" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line1')}</text>
+  <text className="botao2" x="40" y="240" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line2')}</text>
+  <text className="botao2" x="40" y="270" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line3')}</text>
+  <text className="botao2" x="40" y="298" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line4')}</text>
+  <text className="botao2" x="40" y="328" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line5')}</text>
+  <text className="botao2" x="40" y="356" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line6')}</text>
+  <text className="botao2" x="40" y="384" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.line7')}</text>
+  <text className="botao2" x="40" y="425" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet1')}</text>
+  <text className="botao2" x="40" y="455" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet2')}</text>
+  <text className="botao2" x="40" y="485" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.bullet3')}</text>
+  <text className="botao2" x="52" y="513" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.bullet3b')}</text>
+  <text className="botao2" x="52" y="540" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.bullet3b')}</text>
+  <text className="botao2" x="40" y="568" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.bullet4')}</text>
+  <text className="botao2" x="52" y="595" fontSize="20" fontWeight="400" fill="#000000">{t('drs360.security.mobile.bullet4b')}</text>
+  </svg>
+  </div>
+  </div>
+  </div>
+  </section>
 
-    {/* Orange CTA Section */}
-    <section className="py-8 bg-white">
-    <div className="drs-container">
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ borderRadius: '50px', padding: '70px', backgroundColor: '#F39325' }}>
-    <div className="lg:col-span-4">
-    <h2 style={{ fontWeight: 900, fontSize: '30px', color: '#000', lineHeight: '1.2' }}>{t('cta.orange.title')}</h2>
-    </div>
-    <div className="lg:col-span-5 flex items-center">
-    <Link to="/contato" className="flex items-center gap-4" style={{ borderRadius: '10px', background: '#274B41', padding: '15px 25px' }}>
-    <ArrowIcon className="w-5 h-4 text-white flex-shrink-0" />
-    <span style={{ fontSize: '16px', color: '#fff', fontWeight: 400 }}>{t('cta.orange.contact')}</span>
-    </Link>
-    </div>
-    </div>
-    </div>
-    </section>
+  {/* Orange CTA Section */}
+  <section className="py-8 bg-white">
+  <div className="drs-container">
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ borderRadius: '50px', padding: '70px', backgroundColor: '#F39325' }}>
+  <div className="lg:col-span-4">
+  <h2 style={{ fontWeight: 900, fontSize: '30px', color: '#000', lineHeight: '1.2' }}>{t('cta.orange.title')}</h2>
+  </div>
+  <div className="lg:col-span-5 flex items-center">
+  <Link to="/contato" className="flex items-center gap-4" style={{ borderRadius: '10px', background: '#274B41', padding: '15px 25px' }}>
+  <ArrowIcon className="w-5 h-4 text-white flex-shrink-0" />
+  <span style={{ fontSize: '16px', color: '#fff', fontWeight: 400 }}>{t('cta.orange.contact')}</span>
+  </Link>
+  </div>
+  </div>
+  </div>
+  </section>
 
-    {/* DRS 360 Access Section */}
-    <section className="pt-16 bg-white" style={{ paddingBottom: '12rem' }}>
-    <div className="drs-container">
-    <div className="grid grid-cols-12">
-    <div className="col-span-12 lg:col-start-2 lg:col-span-10">
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch" style={{ minHeight: 'auto' }}>
-    <div className="lg:col-span-4 drs360-access-border-box lg:!p-0 lg:!rounded-[50px_0_0_50px]" style={{ position: 'relative', zIndex: 1, borderRadius: '50px 0px 0 50px', border: '1px solid rgb(105, 192, 172)', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', height: 'auto', minHeight: 'auto', padding: '0' }}>
-    <img src={img360} alt="DRS 360" className="object-contain gestao-digital-image" style={{ width: '50%', minHeight: 'auto', height: 'auto' }} />
-    </div>
-    <div className="lg:col-span-8 flex flex-col justify-center overflow-hidden drs360-access-green-box gestao-digital-greenbox lg:!ml-[-35px] lg:!rounded-[40px] lg:!mt-0" style={{ backgroundColor: '#69C0AC', marginLeft: '-35px', padding: '3rem 4rem', borderRadius: '40px', backgroundImage: `url(${cantoVerde})`, backgroundPosition: 'bottom right', backgroundRepeat: 'no-repeat', backgroundSize: '150px' }}>
-    <h2 style={{ color: '#000', fontSize: '30px', fontWeight: 900, lineHeight: '1.2', marginBottom: '1.5rem' }}>{t('drs360.access.title')}</h2>
-    <a href="https://360.drsgroup.com.br/" target="_blank" rel="noopener noreferrer" className="drs-btn drs-btn-uppercase inline-flex w-fit">
-    <ArrowIcon className="w-4 h-3" />
-    {t('drs360.access.cta')}
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
+  {/* DRS 360 Access Section */}
+  <section className="pt-16 bg-white" style={{ paddingBottom: '12rem' }}>
+  <div className="drs-container">
+  <div className="grid grid-cols-12">
+  <div className="col-span-12 lg:col-start-2 lg:col-span-10">
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch" style={{ minHeight: 'auto' }}>
+  <div className="lg:col-span-4 drs360-access-border-box lg:!p-0 lg:!rounded-[50px_0_0_50px]" style={{ position: 'relative', zIndex: 1, borderRadius: '50px 0px 0 50px', border: '1px solid rgb(105, 192, 172)', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', height: 'auto', minHeight: 'auto', padding: '0' }}>
+  <img src={img360} alt="DRS 360" className="object-contain gestao-digital-image" style={{ width: '50%', minHeight: 'auto', height: 'auto' }} />
+  </div>
+  <div className="lg:col-span-8 flex flex-col justify-center overflow-hidden drs360-access-green-box gestao-digital-greenbox lg:!ml-[-35px] lg:!rounded-[40px] lg:!mt-0" style={{ backgroundColor: '#69C0AC', marginLeft: '-35px', padding: '3rem 4rem', borderRadius: '40px', backgroundImage: `url(${cantoVerde})`, backgroundPosition: 'bottom right', backgroundRepeat: 'no-repeat', backgroundSize: '150px' }}>
+  <h2 style={{ color: '#000', fontSize: '30px', fontWeight: 900, lineHeight: '1.2', marginBottom: '1.5rem' }}>{t('drs360.access.title')}</h2>
+  <a href="https://360.drsgroup.com.br/" target="_blank" rel="noopener noreferrer" className="drs-btn drs-btn-uppercase inline-flex w-fit">
+  <ArrowIcon className="w-4 h-3" />
+  {t('drs360.access.cta')}
+  </a>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
 
-    <SolutionModal open={modalOpen} onOpenChange={setModalOpen} data={selectedSolution} />
-    </div>
-    </Layout>
-  );
+  <SolutionModal open={modalOpen} onOpenChange={setModalOpen} data={selectedSolution} />
+  </div>
+  </Layout>
+);
 }

@@ -383,8 +383,8 @@ export const translations: Translations = {
     'drs360.func3.line5': '',
     'drs360.func4.line1': 'Todo seu projeto em um único',
     'drs360.func4.line2': 'ambiente: importação, estoque,',
-    'drs360.func4.line3': ' fornecimentos, logística e faturamento',
-    'drs360.func4.line4': ' reunidos com total visibilidade e',
+    'drs360.func4.line3': 'fornecimentos, logística e faturamento',
+    'drs360.func4.line4': 'reunidos com total visibilidade e',
     'drs360.func4.line5': 'controle.',
     'drs360.func5.line1': 'Histórico completo de cada',
     'drs360.func5.line2': 'movimentação com alçadas de',
@@ -392,9 +392,9 @@ export const translations: Translations = {
     'drs360.func5.line4': '(Compliance FDA, EMA & ANVISA)',
     'drs360.func6.line1': 'Relatórios gerenciais visões',
     'drs360.func6.line2': 'dinâmicas de volume, projetos,',
-    'drs360.func6.line3': ' períodos, rotas e muito mais.',
-    'drs360.func6.line4': 'OPEN API para integração de',
-    'drs360.func6.line5': ' processos ou exportação de dados.',
+    'drs360.func6.line3': 'períodos, rotas e muito mais.',
+    'drs360.func6.line4': 'OPEN API para integração de ',
+    'drs360.func6.line5': 'processos ou exportação de dados.',
 
     // DRS360 Page - Benefits SVG
     'drs360.benefit1.line1': 'Redução de perdas e desvios',
@@ -1038,7 +1038,7 @@ export const translations: Translations = {
 
     // WorldMap
     'worldmap.close': 'Close',
-    'worldmap.filial': 'Subsidiary',
+    'worldmap.filial': 'Branch',
 
     // Solucoes - PCS diff items
     'solucoes.pcs.diff.item1': '• Management by health professionals,',

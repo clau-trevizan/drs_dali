@@ -373,6 +373,7 @@ export const translations: Translations = {
     'drs360.func1.line2': 'envios com geolocalização,',
     'drs360.func1.line3': 'temperatura, umidade, sensores',
     'drs360.func1.line4': 'de luminosidade e queda.',
+    'drs360.func1.line5': '',
     'drs360.func2.line1': 'Visão completa de estoque e',
     'drs360.func2.line2': 'controle de entradas e saídas em',
     'drs360.func2.line3': 'tempo real — no armazém principal',
@@ -392,6 +393,7 @@ export const translations: Translations = {
     'drs360.func5.line2': 'movimentação com alçadas de',
     'drs360.func5.line3': 'permissão e registro de atividades',
     'drs360.func5.line4': '(Compliance FDA, EMA & ANVISA)',
+    'drs360.func5.line5': '',
     'drs360.func6.line1': 'Relatórios gerenciais visões',
     'drs360.func6.line2': 'dinâmicas de volume, projetos,',
     'drs360.func6.line3': 'períodos, rotas e muito mais.',
@@ -1928,6 +1930,7 @@ export const translations: Translations = {
     'drs360.func1.line2': 'real con geolocalización, ',
     'drs360.func1.line3': 'sensores de temperatura, humedad,',
     'drs360.func1.line4': 'luz y caída.',
+    'drs360.func1.line5': '',
 
     'drs360.func2.line1': 'Visión completa del stock y',
     'drs360.func2.line2': 'control en tiempo real de entradas y ',
@@ -1951,6 +1954,7 @@ export const translations: Translations = {
     'drs360.func5.line2': 'incluidos los niveles de autorización',
     'drs360.func5.line3': 'y el registro de actividad',
     'drs360.func5.line4': '(Compliance FDA, EMA & ANVISA)',
+    'drs360.func5.line5': '',
 
     'drs360.func6.line1': 'Informes de gestión con vistas',
     'drs360.func6.line2': 'dinámicas de volumen, proyectos,',

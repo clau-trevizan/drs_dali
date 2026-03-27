@@ -100,7 +100,7 @@ export default function Solucoes() {
                   <path d="M84.1116 494.727L89.6449 500.213L89.6911 500.256C89.8763 500.439 89.984 500.682 90 500.968L89.9991 501.064C89.9856 501.29 89.899 501.507 89.7284 501.701L89.6638 501.767L84.1116 507.274C83.701 507.681 83.0371 507.681 82.6265 507.274C82.2135 506.864 82.2135 506.198 82.6265 505.789L86.4601 501.986L71.0524 501.987C70.4721 501.987 70 501.519 70 500.939C70 500.359 70.4721 499.891 71.0523 499.891L86.3364 499.89L82.6265 496.212C82.2135 495.802 82.2135 495.136 82.6265 494.727C83.0371 494.319 83.701 494.319 84.1116 494.727Z" fill="white" style={{ transform: 'translateY(42px)'}}/>
                   <text className="titulos" x="40" y="150" fontSize="30" fontWeight="900" fill="#000000">Clinical Trial</text>
                   <text className="titulos" x="40" y="185" fontSize="30" fontWeight="900" fill="#000000">Services - CTS </text>
-                  <foreignObject x="40" y="215" width="340" height="100%">
+                  <foreignObject x="40" y="215" width="360" height="100%">
                   <div className="titulos" style={{ fontSize: '20px', color: '#000000', fontWeight: '900'}}>{t('solucoes.cts.svg.subtitle1')} {t('solucoes.cts.svg.subtitle2')}</div>
                   <div className="botao" style={{ fontSize: '20px', color: '#000000', lineHeight: 'normal', marginTop: '15px'}}>{t('solucoes.cts.svg.desc1mob')}</div>
                   </foreignObject>
@@ -174,7 +174,7 @@ export default function Solucoes() {
                   <div className="titulos" style={{ fontSize: '20px', color: '#000000', fontWeight: '900'}}>{t('solucoes.pcs.svg.subtitle1')} {t('solucoes.pcs.svg.subtitle2')}</div>
                   <div className="botao" style={{ fontSize: '20px', color: '#000000', lineHeight: 'normal', marginTop: '15px'}}>{t('solucoes.pcs.svg.desc1mob')}</div>
                   </foreignObject>
-                  <foreignObject x="100" y="540" width="230" height="100%">
+                  <foreignObject x="100" y="540" width="250" height="100%">
                   <div className="botao" style={{ fontSize: '16px', color: '#ffffff', lineHeight: 'normal'}}>{t('solucoes.pcs.svg.cta')}</div>
                   </foreignObject>
                 </svg>

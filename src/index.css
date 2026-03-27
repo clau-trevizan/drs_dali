@@ -1087,6 +1087,9 @@ html, body {
   .mobile-h3 {
     font-size: 22px !important;
   }
+  text.titulos {
+    font-size: 30px;
+}
 }
 .botao {
   white-space: pre-wrap;

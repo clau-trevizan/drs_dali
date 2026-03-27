@@ -330,14 +330,9 @@ const Index = () => {
                 <text className="titulos" x="41" y="216" fontSize="35" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.title2')}</text>
                 <text className="titulos" x="41" y="255" fontSize="35" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.title3')}</text>
                 <text className="titulos" x="41" y="296" fontSize="35" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.title4')}</text>
-                <text className="botao" x="41" y="355" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.desc1')}</text>
-                <text className="botao" x="41" y="383" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.desc2')}</text>
-                <text className="botao" x="41" y="411" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.desc3')}</text>
-                <text className="botao" x="41" y="439" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.desc4')}</text>
-                <text className="botao" x="41" y="467" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.desc5')}</text>
-                <text className="botao" x="41" y="495" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.desc6')}</text>
-                <text className="botao" x="41" y="523" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.desc7')}</text>
-                <text className="botao" x="41" y="551" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.mobile.desc8')}</text>
+                <foreignObject x="41" y="335" width="360" height="100%">
+                <div className="botao" style={{ fontSize: '20px', color: '#000000', lineHeight: 'normal', marginTop: '15px'}}>{t('home.solutions.svg.mobile.desc1')}</div>
+                </foreignObject>
                 <Link to="/solucoes">
                   <rect x="41" y="613" width="200" height="50" rx="10" fill="#274B41" style={{ cursor: 'pointer' }}/>
                   <path d="M80.1116 631.726L85.6449 637.213L85.6911 637.256C85.8763 637.439 85.984 637.681 86 637.967L85.9991 638.063C85.9856 638.29 85.899 638.507 85.7284 638.701L85.6638 638.767L80.1116 644.273C79.701 644.681 79.0371 644.681 78.6265 644.273C78.2135 643.864 78.2135 643.198 78.6265 642.788L82.4601 638.986L67.0524 638.986C66.4721 638.986 66 638.518 66 637.939C66 637.359 66.4721 636.891 67.0523 636.891L82.3364 636.89L78.6265 633.211C78.2135 632.802 78.2135 632.136 78.6265 631.726C79.0371 631.319 79.701 631.319 80.1116 631.726Z" fill="white"/>

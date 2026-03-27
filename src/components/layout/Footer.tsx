@@ -492,7 +492,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
             >
               {t('footer.social')}
             </span>
-            <div className="flex gap-3">
+            <div className="flex gap-3" style={{alignItems: 'center'}}>
               <a
                 href="https://www.linkedin.com/company/groupdrs?originalSubdomain=br"
                 target="_blank"

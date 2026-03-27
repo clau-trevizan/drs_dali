@@ -1151,46 +1151,11 @@ html, body {
     background-position: top center, bottom 30px center !important;
   }
 }
-@media (min-width: 1500px) {
-  .lg\:pl-\[60px\] {
-    padding-left: 3rem;
-    bottom: 3rem;
-  }
-}
-@media (min-width: 1315px) and (max-width: 1499px) {
-  .lg\:pl-\[60px\] {
-    padding-left: 2rem;
-    bottom: 4rem;
-  }
-}
-@media (min-width: 1260px) and (max-width: 1314px) {
-  .lg\:pl-\[60px\] {
-    padding-left: 2.5rem;
-    bottom: 3rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1259px) {
-  .lg\:pl-\[60px\] {
-    padding-left: 1.5rem;
-    bottom: 4rem;
-  }
-}
-@media (min-width: 1057px) and (max-width: 1199px) {
-  .lg\:pl-\[60px\] {
-    padding-left: 0rem;
-            bottom: 5rem;
-  }
-}
-@media (min-width: 1080px) and (max-width: 1056px) {
-  .lg\:pl-\[60px\] {
-    padding-left: .5rem;
-    bottom: 5.5rem;
-  }
-}
+
 @media (min-width: 1024px) {
 .lg\:pl-\[60px\] {
-    padding-left: 0;
+    padding-left: 0 !important;
     bottom: 8% !important;
-    left: calc(50% - 175px);
+    left: calc(50% - 175px)!important;
 }
 }

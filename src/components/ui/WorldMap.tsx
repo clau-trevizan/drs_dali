@@ -229,7 +229,7 @@ export function WorldMap() {
               {selectedCity?.info.extra2 && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{selectedCity?.info.extra2.name === 'Campinas' ? t(`worldmap.filial.campinas`) : selectedCity.info.extra2.title}</span>
+                  <span className="font-bold">{selectedCity.info.extra2.name === 'Campinas' ? t(`worldmap.filial.campinas`) : selectedCity.info.extra2.title}</span>
                   <br />
                   {selectedCity.info.extra2.description.split('\n').map((line, i) => (
                     <span key={i}>
@@ -243,7 +243,7 @@ export function WorldMap() {
               {selectedCity?.info.extra3 && (
                 <>
                   <br /><br />
-                  <span className="font-bold">{selectedCity?.info.extra3.name === 'Taboão da Serra' ? t(`worldmap.filial.taboao`) : selectedCity.info.extra3.title}</span>
+                  <span className="font-bold">{selectedCity.info.extra3.name === 'Taboão da Serra' ? t(`worldmap.filial.taboao`) : selectedCity.info.extra3.title}</span>
                   <br />
                   {selectedCity.info.extra3.description.split('\n').map((line, i) => (
                     <span key={i}>

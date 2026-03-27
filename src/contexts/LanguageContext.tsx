@@ -515,13 +515,13 @@ export const translations: Translations = {
     'grupo.valor5.desc': 'Valorizamos o trabalho conjunto para gerar impactos positivos e duradouros.',
 
     // Grupo DRS - Nosso Time SVG
-    'grupo.nossotime.svg.line1': 'Nosso time multidisciplinar reúne especialistas em logística,',
-    'grupo.nossotime.svg.line2': 'farmacêuticos, enfermeiros, cientistas de dados e',
-    'grupo.nossotime.svg.line3': 'desenvolvedores de tecnologia. Todos alinhados por um',
-    'grupo.nossotime.svg.line4': 'propósito comum: tornar o acesso à saúde mais eficiente,',
-    'grupo.nossotime.svg.line5': 'seguro e humano.',
-    'grupo.nossotime.svg.line6': 'Nossa cultura é colaborativa, com foco na escuta ativa e',
-    'grupo.nossotime.svg.line7': 'soluções centradas em pessoas.',
+    'grupo.nossotime.svg.line1': 'Nosso time multidisciplinar reúne especialistas em logística, farmacêuticos, enfermeiros, cientistas de dados e desenvolvedores de tecnologia. Todos alinhados por um propósito comum: tornar o acesso à saúde mais eficiente, seguro e humano. Nossa cultura é colaborativa, com foco na escuta ativa e soluções centradas em pessoas.',
+    'grupo.nossotime.svg.line2': '',
+    'grupo.nossotime.svg.line3': '',
+    'grupo.nossotime.svg.line4': '',
+    'grupo.nossotime.svg.line5': '',
+    'grupo.nossotime.svg.line6': '',
+    'grupo.nossotime.svg.line7': '',
     'grupo.nossotime.mobile.line1': 'Pessoas que cuidam de pessoas,',
     'grupo.nossotime.mobile.line2': 'com excelência e empatia.',
     'grupo.nossotime.mobile.line3': 'Nosso time multidisciplinar reúne',
@@ -734,18 +734,21 @@ export const translations: Translations = {
     'tis.svg2.desc1': 'Logística especializada em',
     'tis.svg2.desc2': 'transporte de produtos',
     'tis.svg2.desc3': 'termossensíveis.',
+    'tis.svg2.desc4': '',
 
     'tis.svg3.line1': 'Gestão de',
     'tis.svg3.line2': 'importação',
     'tis.svg3.desc1': 'Gestão completa de processos',
     'tis.svg3.desc2': 'de importação e exportação',
     'tis.svg3.desc3': 'de produtos sensíveis.',
+    'tis.svg3.desc4': '',
 
     'tis.svg4.line1': 'Telemetria e',
     'tis.svg4.line2': 'Data Loggers',
     'tis.svg4.desc1': 'Monitoramento contínuo de',
     'tis.svg4.desc2': 'temperatura, umidade e',
     'tis.svg4.desc3': 'localização em tempo real.',
+    'tis.svg4.desc4': '',
 
 
     // TIS Solution Modal keys
@@ -934,6 +937,7 @@ export const translations: Translations = {
     'grupo.impact.card3.unit': 'thousand',
     'grupo.impact.card3.title': 'clinical kits',
     'grupo.impact.card3.desc1': 'assembled and tracked',
+    'grupo.impact.card3.desc2': '',
 
     'grupo.impact.card4.number': '+2',
     'grupo.impact.card4.unit': 'million',
@@ -1303,13 +1307,13 @@ export const translations: Translations = {
     'grupo.valor5.title': 'Collaboration and Partnership',
     'grupo.valor5.desc': 'We value working together to generate positive and lasting impacts.',
 
-    'grupo.nossotime.svg.line1': 'Our multidisciplinary team brings together logistics experts,',
-    'grupo.nossotime.svg.line2': 'pharmacists, nurses, data scientists and',
-    'grupo.nossotime.svg.line3': 'technology developers. All aligned with a',
-    'grupo.nossotime.svg.line4': 'common purpose: to make access to healthcare more efficient,',
-    'grupo.nossotime.svg.line5': 'safe and humane.',
-    'grupo.nossotime.svg.line6': 'Our culture is collaborative, with a focus on',
-    'grupo.nossotime.svg.line7': 'active listening and people-centered solutions. Join our team! ',
+    'grupo.nossotime.svg.line1': 'Our multidisciplinary team brings together logistics experts, pharmacists, nurses, data scientists and technology developers. All aligned with a common purpose: to make access to healthcare more efficient, safe and humane. Our culture is collaborative, with a focus on active listening and people-centered solutions. Join our team!',
+    'grupo.nossotime.svg.line2': '',
+    'grupo.nossotime.svg.line3': '',
+    'grupo.nossotime.svg.line4': '',
+    'grupo.nossotime.svg.line5': '',
+    'grupo.nossotime.svg.line6': '',
+    'grupo.nossotime.svg.line7': '',
 
     'grupo.nossotime.mobile.line1': 'People who take care of people,',
     'grupo.nossotime.mobile.line2': 'with excellence and empathy.',
@@ -1730,6 +1734,7 @@ export const translations: Translations = {
     'grupo.impact.card3.unit': 'mil',
     'grupo.impact.card3.title': 'kits clínicos',
     'grupo.impact.card3.desc1': 'montados y rastreados',
+    'grupo.impact.card3.desc2': '',
 
     'grupo.impact.card4.number': 'Más de',
     'grupo.impact.card4.unit': '',
@@ -2078,7 +2083,7 @@ export const translations: Translations = {
     'grupo.valor5.title': 'Colaboración y Alianza',
     'grupo.valor5.desc': 'Valoramos el trabajo conjunto para generar impactos positivos y durables.',
 
-    'grupo.nossotime.svg.line1': 'Nuestro equipo multidisciplinario reúne especialistas en logística,',
+    'grupo.nossotime.svg.line1': 'Personas que se preocupan por las personas, con excelencia y empatía. Nuestro equipo multidisciplinario reúne a especialistas en logística, farmacéuticos, enfermeros, científicos de datos y desarrolladores de tecnología. Todos unidos por un propósito común: hacer que el acceso a la atención médica sea más eficiente, seguro y humano.',
     'grupo.nossotime.svg.line2': 'farmacéuticos, enfermeros, científicos de datos y',
     'grupo.nossotime.svg.line3': 'desarrolladores de tecnología. Todos alineados por un',
     'grupo.nossotime.svg.line4': 'propósito común: hacer el acceso a la salud más eficiente,',

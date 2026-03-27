@@ -227,13 +227,9 @@ export default function GrupoDRS() {
     <path d="M71.8609 204.7L33.7256 204.696C15.0985 204.696 1.63619e-05 189.612 1.71753e-05 171.004L2.3026e-05 37.1558C2.39229e-05 16.638 16.6508 -3.62957e-05 37.1938 -3.53978e-05L704.584 0.000298951C723.523 0.000299778 738.873 15.3338 738.873 34.2543L738.873 58.6092C738.873 76.6171 753.487 91.2114 771.508 91.2114L812.999 91.2114C831.776 91.2114 847 106.416 847 125.178L847 526.773C847 547.29 830.349 563.929 809.806 563.929L141.148 563.929C121.011 563.929 104.687 547.621 104.687 527.504L104.687 397.172L104.687 237.493C104.687 219.383 89.9892 204.7 71.8609 204.7Z" fill="#F39325"/>
     <text className="titulos" x="180" y="144" fontSize="30" fontWeight="900" fill="#000000">{t('grupo.nossotime.title')}</text>
     <text className="botao" x="180" y="190" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.subtitle')}</text>
-    <text className="botao" x="180" y="238" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.svg.line1')}</text>
-    <text className="botao" x="180" y="266" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.svg.line2')}</text>
-    <text className="botao" x="180" y="294" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.svg.line3')}</text>
-    <text className="botao" x="180" y="322" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.svg.line4')}</text>
-    <text className="botao" x="180" y="350" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.svg.line5')}</text>
-    <text className="botao" x="180" y="393" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.svg.line6')}</text>
-    <text className="botao" x="180" y="420" fontSize="20" fontWeight="400" fill="#000000">{t('grupo.nossotime.svg.line7')}</text>
+    <text className="botao" x="180" y="238" fontSize="20" fontWeight="400" fill="#000000"></text>
+    <foreignObject x="40" y="143" width="340" height="100%"><div class="botao" style="font-size: 20px; color: rgb(0, 0, 0); line-height: normal; margin-top: 15px;">{t('grupo.nossotime.svg.line1')}</div></foreignObject>
+
     <a href="https://vagasdrsgroup.gupy.io/" target="_blank">
     <rect x="211" y="450" width="305" height="50" rx="10" fill="#274B41" style={{ transform: 'translateX(-30px)' }}/>
     <path d="M143.112 465.807L148.645 471.294L148.691 471.337C148.876 471.52 148.984 471.762 149 472.048L148.999 472.145C148.986 472.371 148.899 472.588 148.728 472.782L148.664 472.848L143.112 478.354C142.701 478.762 142.037 478.762 141.627 478.354C141.213 477.945 141.213 477.279 141.627 476.869L145.46 473.067L130.052 473.068C129.472 473.068 129 472.599 129 472.02C129 471.44 129.472 470.972 130.052 470.972L145.336 470.971L141.627 467.292C141.213 466.883 141.213 466.217 141.627 465.807C142.037 465.4 142.701 465.4 143.112 465.807Z" fill="white" style={{transform: 'translate(70px, 3px)'}}></path>

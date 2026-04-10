@@ -100,7 +100,7 @@ export default function Contato() {
         <div className="drs-container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 items-start">
             <div className="lg:col-span-4">
-              <Link to="#" className="flex items-center gap-4 p-4 rounded-xl transition-colors group w-full" style={{ backgroundColor: '#274B41', color: '#fff', fontSize: '16px', fontWeight: 400, lineHeight: '24px' }}>
+              <Link to="mailto:compras.internas@drsgroup.com.br" className="flex items-center gap-4 p-4 rounded-xl transition-colors group w-full" style={{ backgroundColor: '#274B41', color: '#fff', fontSize: '16px', fontWeight: 400, lineHeight: '24px' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 40 40" fill="none" className="flex-shrink-0">
                   <path d="M3.33334 19.9999C3.33334 12.1432 3.33334 8.2148 5.77413 5.77404C8.21489 3.33325 12.1433 3.33325 20 3.33325C27.8567 3.33325 31.7852 3.33325 34.2258 5.77404C36.6667 8.2148 36.6667 12.1432 36.6667 19.9999C36.6667 27.8566 36.6667 31.7851 34.2258 34.2258C31.7852 36.6666 27.8567 36.6666 20 36.6666C12.1433 36.6666 8.21489 36.6666 5.77413 34.2258C3.33334 31.7851 3.33334 27.8566 3.33334 19.9999Z" stroke="white" strokeWidth="2"/>
                   <path className="origin-center transition-transform duration-300 group-hover:rotate-180" d="M25 20H20M20 20H15M20 20V15M20 20V25" stroke="white" strokeWidth="2" strokeLinecap="round"/>

@@ -1578,8 +1578,8 @@ export const translations: Translations = {
 
     // Home - Hero
     'home.hero.title': 'Conectamos ciencia y personas',
-    'home.hero.description': 'Entregamos resultados y creamos soluciones personalizadas para industria farmacéutica, CROs y centros de investigación clínica con tecnología propietaria.',
-    'home.hero.cta': 'Sepa más',
+    'home.hero.description': 'Entregamos resultados y creamos soluciones personalizadas para la industria farmacéutica, CROs y centros de investigación clínica, utilizando tecnología propietaria.',
+    'home.hero.cta': 'MÁS INFORMACIÓN',
     'home.hero.video.title': 'Video Institucional DRS',
     'home.hero.video.description': 'Video institucional de DRS',
     'home.hero.video.ariaLabel': 'Ver el video',
@@ -1608,27 +1608,27 @@ export const translations: Translations = {
 
     // Home - DRS 360 Carousel
     'home.drs360.slide1.title': 'DRS360: Visibilidad 24/7 en tiempo real',
-    'home.drs360.slide1.description': 'Plataforma propietaria con trazabilidad y dashboards por estudio.',
+    'home.drs360.slide1.description': 'Plataforma propia con trazabilidad y dashboards por estudio.',
     'home.drs360.slide2.title': 'Control total de su operación',
-    'home.drs360.slide2.description': 'Gestione todos los procesos de forma integrada y eficiente.',
+    'home.drs360.slide2.description': 'Administre todos los procesos de forma integrada y eficiente.',
 
     // Home - Solutions SVG
     'home.solutions.svg.title1': 'Soluciones inteligentes para',
     'home.solutions.svg.title2': 'cada etapa en la cadena de salud',
-    'home.solutions.svg.desc1': 'Combinamos innovación, tecnología y atención para',
-    'home.solutions.svg.desc2': 'impulsar proyectos de atención médica esenciales.',
+    'home.solutions.svg.desc1': 'Combinamos innovación, tecnología y cuidado para',
+    'home.solutions.svg.desc2': 'impulsar proyectos clave en el sector salud.',
     'home.solutions.svg.desc3': 'Operamos en tres áreas complementarias, conectadas por',
     'home.solutions.svg.desc4': 'nuestra plataforma propietaria DRS 360 y guiadas por un',
     'home.solutions.svg.desc5': 'propósito común: hacer los estudios clínicos posibles y',
     'home.solutions.svg.desc6': 'asegurar que cada tratamiento llegue a quien lo necesita.',
-    'home.solutions.svg.cta': 'Sepa más',
+    'home.solutions.svg.cta': 'MÁS INFORMACIÓN',
     'home.solutions.svg.mobile.title1': 'Soluciones',
-    'home.solutions.svg.mobile.title2': 'inteligentes para',
-    'home.solutions.svg.mobile.title3': 'cada etapa  de',
-    'home.solutions.svg.mobile.title4': 'la cadena de salud',
+    'home.solutions.svg.mobile.title2': 'inteligentes para cada',
+    'home.solutions.svg.mobile.title3': 'etapa de la cadena',
+    'home.solutions.svg.mobile.title4': 'de valor en salud',
+    'home.solutions.svg.mobile.desc1': 'Operamos en tres áreas complementarias, conectadas por nuestra plataforma propia DRS 360 y guiadas \npor un propósito común: hacer posibles los estudios clínicos y asegurar que cada tratamiento llegue a quien lo necesita.',
 
-    'home.solutions.svg.mobile.desc1': 'Combinamos innovación, tecnología y atención para impulsar proyectos de atención médica esenciales. \nOperamos en tres áreas complementarias, conectadas por nuestra plataforma propietaria DRS 360 y guiadas por un propósito común: hacer los estudios clínicos posibles y asegurar que cada tratamiento llegue a quien lo necesita.',
-    'home.solutions.svg.mobile.cta': 'SEPA MÁS',
+    'home.solutions.svg.mobile.cta': 'MÁS INFORMACIÓN',
     'home.solutions.cts': 'Clinical Trial Services - CTS',
     'home.solutions.pcs': 'Patient Centric Services - PCS',
     'home.solutions.tis': 'Thermo Integrated Services - TIS',
@@ -1642,7 +1642,7 @@ export const translations: Translations = {
 
     // CTA Section
     'cta.title': 'Transforme su operación en salud con el apoyo de DRS.',
-    'cta.button': 'Sepa más',
+    'cta.button': 'MÁS INFORMACIÓN',
     'cta.contact.text': 'Contáctenos y descubra cómo nuestra tecnología puede acelerar resultados.',
 
     // Cookie Consent
@@ -1652,7 +1652,7 @@ export const translations: Translations = {
     'cookie.suffix': '. Al hacer clic "ACEPTO" acepta nuestro uso de cookies.',
 
     // Footer
-    'footer.cta.title.line1': 'Conectamos su necesidad',
+    'footer.cta.title.line1': 'Conectamos sus necesidades',
     'footer.cta.title.line2': 'con la solución ideal.',
     'footer.cta.button': 'Hable con nuestro equipo de ventas',
     'footer.contact': 'Contacto',
@@ -1671,17 +1671,18 @@ export const translations: Translations = {
 
     // Soluções Page
     'solucoes.hero.title': 'El ecosistema que integra tecnología, inteligencia y atención médica.',
-    'solucoes.text1': 'Nuestras soluciones ofrecen infraestructura validada, trazabilidad en tiempo real y atención verdaderamente humanizada para apoyar proyectos críticos, estudios clínicos y entregas a domicilio para pacientes.',
-    'solucoes.text2': 'Nuestro trabajo está organizado en tres áreas complementarias, integradas por un propósito común — ofrecer inteligencia, confianza y cuidado para que cada entrega haga la diferencia en la vida de la persona que más importa: el paciente.',
+    'solucoes.text1': 'Nuestras soluciones ofrecen infraestructura validada, trazabilidad en tiempo real y un enfoque de cuidado verdaderamente humano para apoyar proyectos críticos, estudios clínicos y entregas a domicilio a pacientes.',
+    'solucoes.text2': 'Nuestro trabajo se organiza en tres áreas complementarias, alineadas con un propósito común: ofrecer inteligencia, confianza y cuidado para que cada entrega marque la diferencia en la vida de quien más importa: el paciente.',
     'solucoes.cts.svg.title': 'Clinical Trial Services - CTS',
-    'solucoes.cts.svg.subtitle1': 'El éxito de los ensayos clínicos es posible gracias',
-    'solucoes.cts.svg.subtitle2': 'a nuestras soluciones integradas.',
+    'solucoes.cts.svg.subtitle1': 'Impulsamos el éxito de los ensayos clínicos',
+    'solucoes.cts.svg.subtitle2': 'mediante soluciones integradas.',
 
-    'solucoes.cts.svg.desc1mob': 'Conectamos la investigación clínica con soluciones validadas, alto desempeño y cumplimiento internacional.\nGestionamos cada paso con precisión, garantizando una logística segura, regulada y trazable',
+    'solucoes.cts.svg.desc1mob': 'Conectamos la investigación clínica con soluciones validadas, alto rendimiento y cumplimiento normativo internacional.\nGestionamos cada etapa con precisión, garantizando una logística segura, regulada y totalmente trazable.',
+    
     'solucoes.cts.svg.desc1': 'Conectamos la investigación clínica con soluciones validadas,',
-    'solucoes.cts.svg.desc2': 'alto desempeño y cumplimiento internacional.',
-    'solucoes.cts.svg.desc3': 'Gestionamos cada paso con precisión, garantizando una',
-    'solucoes.cts.svg.desc4': 'logística segura, regulada y trazable.',
+    'solucoes.cts.svg.desc2': 'alto rendimiento y cumplimiento normativo internacional.',
+    'solucoes.cts.svg.desc3': 'Gestionamos cada etapa con precisión, garantizando una',
+    'solucoes.cts.svg.desc4': 'logística segura, regulada y totalmente trazable.',
 
     'solucoes.cts.svg.cta': 'Descubra nuestras soluciones para estudios clínicos',
 
@@ -1693,21 +1694,21 @@ export const translations: Translations = {
     'solucoes.cts.diff.item3b': 'infraestructura tecnológica descentralizada',
 
     'solucoes.pcs.svg.title': 'Patient Centric Services - PCS',
-    'solucoes.pcs.svg.subtitle1': 'Excelencia clínica con enfoque en el paciente',
-    'solucoes.pcs.svg.subtitle2': 'durante todo el proceso de atención.',
-    'solucoes.pcs.svg.cta': ' Vea cómo apoyamos la atención centrada en el paciente',
+    'solucoes.pcs.svg.subtitle1': 'Excelencia clínica con un enfoque centrado en el',
+    'solucoes.pcs.svg.subtitle2': 'paciente a lo largo de todo el proceso.',
+    'solucoes.pcs.svg.cta': 'Descubra cómo apoyamos la atención centrada en el paciente',
     'solucoes.pcs.diff.title': 'Nuestros diferenciales - PCS',
     'solucoes.tis.svg.title': 'Thermo Integrated Services - TIS',
-    'solucoes.tis.svg.cta': 'Cadena fría inteligente y sostenible.',
+    'solucoes.tis.svg.cta': 'Descubra nuestras soluciones de cadena de frío',
     'solucoes.tis.diff.title': 'Nuestros diferenciales - TIS',
 
     // Grupo DRS
     'grupo.hero.tag': 'DRS 360',
     'grupo.hero.title': 'Somos líderes en investigación clínica, tecnología e innovación aplicada a la salud',
-    'grupo.text1': 'El Grupo DRS es un ecosistema integrado que impulsa la evolución de la atención médica a través de la investigación clínica, el almacenamiento especializado, la tecnología avanzada, los programas de apoyo al paciente, las soluciones regulatorias y los envases térmicos de alto desempeño. Transformamos la jornada de los medicamentos, los datos y las personas con precisión, gobernanza y responsabilidad.',
-    'grupo.text2': 'Con presencia en Brasil, Argentina y Europa, operamos con una infraestructura que potencia nuestra capacidad de innovación y garantiza estándares internacionales de calidad. Transportamos productos y brindamos confianza, trazabilidad y adherencia al tratamiento — generando un impacto real en la vida de los pacientes.',
-    'grupo.text3': 'Con presencia en Brasil, Argentina y Europa, operamos con una infraestructura que amplía nuestra capacidad de innovación y asegura estándares internacionales de calidad. Movemos productos y entregamos confianza, trazabilidad y adherencia al tratamiento — generando impacto real en la vida de los pacientes.',
-    'grupo.text4': 'Excelencia comprobada, visión de futuro y un compromiso absoluto con la atención médica. Esa es nuestra esencia.',
+    'grupo.text1': 'El Grupo DRS es un ecosistema integrado que impulsa la evolución del sector salud a través de la investigación clínica, el almacenamiento especializado, la tecnología avanzada, los programas de apoyo al paciente, las soluciones regulatorias y los envases térmicos de alto rendimiento. Transformamos el ciclo de vida de los medicamentos, los datos y las personas con precisión, gobernanza y responsabilidad.',
+    'grupo.text2': 'Con presencia en Brasil, Argentina y Europa, operamos con una infraestructura que impulsa la innovación y garantiza estándares internacionales de calidad. Transportamos y gestionamos productos, generando confianza, trazabilidad y adherencia al tratamiento, con impacto real en la vida de los pacientes.',
+    'grupo.text3': '',
+    'grupo.text4': 'Excelencia comprobada, visión de futuro y un compromiso absoluto con la salud. Esa es nuestra esencia.',
     'grupo.impact.tag': 'IMPACTO Y CAPACIDAD',
 
     'grupo.impact.card1.number': '+30',
@@ -1757,9 +1758,9 @@ export const translations: Translations = {
     // DRS 360 Page
     'drs360.hero.tag': 'DRS 360',
     'drs360.hero.title': 'Conectando tecnología, logística y cuidado en tiempo real',
-    'drs360.text1': 'DRS 360 es la <strong>plataforma digital</strong> desarrollada por el Grupo DRS para ofrecer una gestión completa y trazabilidad en tiempo real de cada operación.',
-    'drs360.text2': 'A través de DRS 360, empresas biofarmacéuticas, CRO, centros de investigación, proveedores de seguros de salud y asociados logísticos supervisan y gestionan sus propios proyectos con total seguridad, autonomía y visibilidad — siempre dentro de un entorno exclusivo y protegido.',
-    'drs360.text3': 'Al integrar datos, tecnología y operaciones, DRS 360 proporciona control en tiempo real, precisión continua y atención en cada entrega.',
+    'drs360.text1': 'DRS 360 es la <strong>plataforma digital</strong> desarrollada por el Grupo DRS para ofrecer una gestión integral y trazabilidad en tiempo real de cada operación.',
+    'drs360.text2': 'A través de DRS 360, empresas biofarmacéuticas, CROs, centros de investigación, aseguradoras de salud y socios logísticos gestionan sus proyectos con total seguridad, autonomía y visibilidad, en un entorno seguro.',
+    'drs360.text3': 'Al integrar datos, tecnología y operaciones, DRS 360 proporciona control en tiempo real, precisión continua y cuidado en cada entrega.',
     'drs360.funcionalidades': 'NUESTRAS FUNCIONALIDADES',
     'drs360.beneficios': 'BENEFICIOS ESTRATÉGICOS',
     'drs360.seguranca.tag': 'Seguridad de la información',
@@ -1788,33 +1789,33 @@ export const translations: Translations = {
     'cts.hero.description': 'Soluciones completas para la investigación clínica, de principio a fin.',
     'cts.text1': 'Facilitamos a centros de investigación, CRO y empresas biofarmacéuticas una infraestructura validada, trazable y conectada por tecnología propia.',
     'cts.text2': 'Nuestro trabajo abarca todas las etapas de los ensayos clínicos, desde la importación de materias primas hasta la distribución de kits aleatorios, en cumplimiento con las agencias reguladoras globales.',
-    'cts.text3': 'Cada paso está diseñado para garantizar la seguridad, la trazabilidad y el cumplimiento de las normas internacionales y las agencias reguladoras, GDP, ICH-GCP, FDA, EMA y ANVISA.',
+    'cts.text3': 'Cada etapa está diseñada para garantizar la seguridad, la trazabilidad y el cumplimiento de estándares internacionales y normativas regulatorias (GDP, ICH-GCP, FDA, EMA y ANVISA).',
     'cts.solutions.tag': 'NUESTRAS SOLUCIONES',
     'cts.cta.title': 'Transforme su operación en salud con el apoyo de DRS.',
     'cts.cta.button': 'Contáctenos y descubra cómo nuestra tecnología puede acelerar resultados.',
-    'cts.saibamais': 'SEPA MÁS',
+    'cts.saibamais': 'MÁS INFORMACIÓN',
 
     // PCS Page
     'pcs.hero.tag': 'PCS',
     'pcs.hero.title': 'Patient Centric Services',
     'pcs.hero.description': 'Precisión operativa que acelera el desarrollo de terapias que cambian la vida.',
-    'pcs.text1': 'Patient Centric Services (PCS) lleva la expertise de DRS más allá de la investigación clínica, extendiendo la atención a la fase post-estudio con un enfoque total en el paciente.',
-    'pcs.text2': 'Conectamos servicios clínicos, gestión digital y soporte humano para garantizar adherencia, trazabilidad y seguridad en cada etapa del tratamiento.',
+    'pcs.text1': 'Patient Centric Services (PCS) extiende la experiencia de DRS más allá de la investigación clínica, llevando el cuidado a la fase post-estudio con un enfoque centrado en el paciente.',
+    'pcs.text2': 'Conectamos servicios clínicos, gestión digital y soporte al paciente para garantizar adherencia, trazabilidad y seguridad en cada etapa del tratamiento.',
     'pcs.solutions.tag': 'NUESTRAS SOLUCIONES',
     'pcs.cta.title': 'Transforme su operación en salud con apoyo de DRS.',
     'pcs.cta.button': 'Contáctese con nosotros y descubra cómo nuestra tecnología puede acelerar los resultados.',
-    'pcs.saibamais': 'SEPA MÁS',
+    'pcs.saibamais': 'MÁS INFORMACIÓN',
 
     // TIS Page
     'tis.hero.tag': 'TIS',
     'tis.hero.title': 'Thermo Integrated Services',
     'tis.hero.description': 'Sus productos avanzaron — y hemos evolucionado juntos. Ofrecemos tecnología, precisión e inteligencia logística que se adapta a las terapias más innovadoras.',
-    'tis.text1': 'Elevamos el estándar de la cadena fría ofreciendo soluciones completas e integradas, combinando embalajes reutilizables de alto desempeño, tecnología de monitorización avanzada y gestión logística especializada.',
-    'tis.text2': 'Con soluciones listas para usar y trazabilidad en tiempo real, garantizamos seguridad, rapidez y máxima confiabilidad en cada etapa — desde el primer movimiento hasta la entrega final.',
+    'tis.text1': 'Elevamos el estándar de la cadena de frío ofreciendo soluciones completas e integradas, combinando embalajes reutilizables de alto rendimiento, tecnología de monitoreo avanzada y gestión logística especializada.',
+    'tis.text2': 'Con soluciones listas para su uso y trazabilidad en tiempo real, garantizamos seguridad, rapidez y máxima confiabilidad en cada etapa, desde el punto de origen hasta la entrega final.',
     'tis.solutions.tag': 'NUESTRAS SOLUCIONES',
     'tis.cta.title': 'Transforme su operación en salud con el apoyo de DRS.',
     'tis.cta.button': ' Contáctese con nosotros y descubra cómo nuestra tecnología puede acelerar resultados.',
-    'tis.saibamais': 'SEPA MÁS',
+    'tis.saibamais': 'MÁS INFORMACIÓN',
 
     // DRS 360 section (reusable)
     'drs360.section.tag': 'DRS 360',
@@ -1849,19 +1850,19 @@ export const translations: Translations = {
     'solucoes.pcs.diff.item3b': 'logística especializada.',
     'solucoes.pcs.diff.item4': '• Seguimiento individualizado con',
     'solucoes.pcs.diff.item4b': 'DRS 360.',
-    'solucoes.pcs.svg.desc1mob': 'Servicios especializados que permiten el acceso y apoyo a terapias innovadoras y de alta complejidad.\nGestión integral de programas de soporte, servicio y ventas -  combinando atención humanizada, profesionales de la salud, tecnología y logística.',
-    'solucoes.pcs.svg.desc1': 'Servicios especializados que permiten el acceso y',
-    'solucoes.pcs.svg.desc2': 'apoyo a terapias innovadoras y de alta complejidad.',
-    'solucoes.pcs.svg.desc3': 'Gestión integral de programas de soporte, servicio y',
-    'solucoes.pcs.svg.desc4': 'ventas -  combinando atención humanizada,',
-    'solucoes.pcs.svg.desc5': 'profesionales de la salud, tecnología y logística.',
+    'solucoes.pcs.svg.desc1mob': 'Servicios especializados que facilitan el acceso y brindan apoyo a terapias innovadoras y de alta complejidad.\nGestión integral de programas de soporte al paciente, servicios y comercialización, combinando cuidado, profesionales de la salud, tecnología y logística.',
+    'solucoes.pcs.svg.desc1': 'Servicios especializados que facilitan el acceso y',
+    'solucoes.pcs.svg.desc2': 'brindan apoyo a terapias innovadoras y de alta complejidad.',
+    'solucoes.pcs.svg.desc3': 'Gestión integral de programas de soporte al paciente, servicios y',
+    'solucoes.pcs.svg.desc4': 'comercialización, combinando cuidado, profesionales de la salud, ',
+    'solucoes.pcs.svg.desc5': 'tecnología y logística.',
 
-    'solucoes.tis.svg.subtitle': 'Cadena fría inteligente y sostenible.',
-    'solucoes.tis.svg.desc1mob': 'Garantizamos el transporte seguro de productos sensibles con soluciones de cadena fría personalizadas, monitoreo continuo en tiempo real y envase sustentable — combinando seguridad, precisión y responsabilidad ambiental.',
-    'solucoes.tis.svg.desc1': 'Garantizamos el transporte seguro de productos',
-    'solucoes.tis.svg.desc2': 'sensibles con soluciones de cadena fría personalizadas, ',
-    'solucoes.tis.svg.desc3': 'monitoreo continuo en tiempo real y envase sustentable —',
-    'solucoes.tis.svg.desc4': 'combinando seguridad, precisión y responsabilidad ambiental.',
+    'solucoes.tis.svg.subtitle': 'Cadena de frío inteligente y sostenible',
+    'solucoes.tis.svg.desc1mob': 'Garantizamos el transporte seguro de productos sensibles a la temperatura a través de soluciones personalizadas de cadena de frío, monitoreo continuo en tiempo real y envases sostenibles, integrando seguridad, precisión y responsabilidad ambiental.',
+    'solucoes.tis.svg.desc1': 'Garantizamos el transporte seguro de productos sensibles a',
+    'solucoes.tis.svg.desc2': 'la temperatura a través de soluciones personalizadas de cadena ',
+    'solucoes.tis.svg.desc3': 'de frío, monitoreo continuo en tiempo real y envases sostenibles,',
+    'solucoes.tis.svg.desc4': 'integrando seguridad, precisión y responsabilidad ambiental.',
 
     'solucoes.tis.diff.item1': '• Embalajes reutilizables de alto,',
     'solucoes.tis.diff.item1b': 'rendimientovalidados globalmente y',
@@ -1923,9 +1924,9 @@ export const translations: Translations = {
 
     // DRS360 Page - Functionalities SVG
     'drs360.func1.line1': 'Seguimiento de envíos en tiempo',
-    'drs360.func1.line2': 'real con geolocalización, ',
+    'drs360.func1.line2': 'real con geolocalización y',
     'drs360.func1.line3': 'sensores de temperatura, humedad,',
-    'drs360.func1.line4': 'luz y caída.',
+    'drs360.func1.line4': 'luz e impacto.',
     'drs360.func1.line5': '',
 
     'drs360.func2.line1': 'Visión completa del stock y',
@@ -2178,7 +2179,7 @@ export const translations: Translations = {
     'cts.svg6.desc3': 'y programas de diagnóstico.',
     'cts.svg6.desc4': '',
 
-    'cts.sol1.title': 'Suministro de medicamentos comparadores',
+    'cts.sol1.title': 'Suministro de medicamentos de comparación',
     'cts.sol1.desc': 'Sourcing e importación de medicamentos de referencia para estudios clínicos en cualquier fase, con trazabilidad y compliance internacional.',
     'cts.sol1.dif1': 'Sourcing global con red de proveedores calificados',
     'cts.sol1.dif2': 'Importación y despacho aduanero especializado',
@@ -2341,7 +2342,7 @@ export const translations: Translations = {
     'home.insights.readmore': 'Leer más',
 
     // Misc
-    'saibamais': 'SEPA MÁS',
+    'saibamais': 'MÁS INFORMACIÓN',
     'fechar': 'CERRAR',
   },
 };

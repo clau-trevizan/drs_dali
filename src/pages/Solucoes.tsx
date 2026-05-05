@@ -156,7 +156,7 @@ export default function Solucoes() {
                 <text className="botao" x="170" y="374" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.pcs.svg.desc4')}</text>
                 <text className="botao" x="170" y="402" fontSize="20" fontWeight="400" fill="#000000">{t('solucoes.pcs.svg.desc5')}</text>
                 <a href="/areas/pcs">
-                  <rect x="170" y="429" width="540" height="50" rx="10" fill="#274B41" style={{ cursor: 'pointer' }}/>
+                  <rect x="170" y="429" width="560" height="50" rx="10" fill="#274B41" style={{ cursor: 'pointer' }}/>
                   <path d="M255.112 447.727L260.645 453.213L260.691 453.256C260.876 453.439 260.984 453.682 261 453.968L260.999 454.064C260.986 454.29 260.899 454.507 260.728 454.701L260.664 454.767L255.112 460.274C254.701 460.681 254.037 460.681 253.627 460.274C253.213 459.864 253.213 459.198 253.627 458.789L257.46 454.986L242.052 454.987C241.472 454.987 241 454.519 241 453.939C241 453.359 241.472 452.891 242.052 452.891L257.336 452.89L253.627 449.212C253.213 448.802 253.213 448.136 253.627 447.727C254.037 447.319 254.701 447.319 255.112 447.727Z" fill="white" style={{ transform: 'translateX(-50px)' }}/>
                   <text className="botao" x="222" y="460" fontSize="18" fontWeight="900" fill="#ffffff">{t('solucoes.pcs.svg.cta')}</text>
                 </a>

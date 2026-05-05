@@ -1124,7 +1124,7 @@ html, body {
 }
 
 @media (min-width: 1200px) and (max-width: 1315px) {
-  .drs-container {
+  .drs-container:not(.drs-container.mapa-section) {
     max-width: 100% !important;
   }
 }
@@ -1138,7 +1138,7 @@ html, body {
   .bg-footer-desktop {
     padding-top: 114px;
   }
-  .drs-container {
+  .drs-container:not(.drs-container.mapa-section) {
     max-width: 100%;
   }
 }

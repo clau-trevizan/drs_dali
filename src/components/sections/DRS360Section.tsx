@@ -34,16 +34,16 @@ export function DRS360Section({
 }: DRS360SectionProps) {
   const { t } = useTranslation();
   const { language } = useLanguage();
-  
+
   const bannerByLang = { pt: drs360Banner, en: drs360BannerEn, es: drs360BannerEs };
   const bannerImage = imageSrc || bannerByLang[language] || drs360Banner;
-  
+
   const displayTagText = tagText || t('home.drs360section.tag');
   const displayTitle = title || t('home.drs360section.title');
-  
+
   return (
     <section className={cn('py-20 bg-background', useWorldMap ? '' : '', className)}>
-      <div className="drs-container">
+      <div className="drs-container mapa-section">
         {/* Tag Section - 9 cols for world map text */}
         <div className="grid grid-cols-12">
           <div className={cn(
@@ -51,12 +51,12 @@ export function DRS360Section({
             useWorldMap ? "lg:col-start-3 lg:col-span-9" : "lg:col-start-3 lg:col-span-9"
           )}>
             {/* Tag */}
-            <span 
-              style={{ 
-                color: '#274B41', 
-                fontSize: '20px', 
-                fontStyle: 'normal', 
-                fontWeight: 400, 
+            <span
+              style={{
+                color: '#274B41',
+                fontSize: '20px',
+                fontStyle: 'normal',
+                fontWeight: 400,
                 lineHeight: '40px',
                 borderRadius: '30px',
                 background: '#69C0AC',
@@ -68,15 +68,15 @@ export function DRS360Section({
             >
               {displayTagText}
             </span>
-            
+
             {/* Title */}
             {showTitle && (
-              <h2 
-                style={{ 
-                  color: '#274B41', 
-                  fontSize: '35px', 
-                  fontStyle: 'normal', 
-                  fontWeight: 900, 
+              <h2
+                style={{
+                  color: '#274B41',
+                  fontSize: '35px',
+                  fontStyle: 'normal',
+                  fontWeight: 900,
                   lineHeight: '40px',
                   marginBottom: '2rem'
                 }}
@@ -86,7 +86,7 @@ export function DRS360Section({
             )}
           </div>
         </div>
-        
+
         {/* Content Section - 12 cols for world map, 9 cols for others */}
         <div className="grid grid-cols-12">
           <div className={cn(
@@ -98,17 +98,17 @@ export function DRS360Section({
               <WorldMap />
             ) : hasLink ? (
               <Link to={buttonLink} className="block">
-                <img 
-                  src={bannerImage} 
-                  alt={imageAlt} 
+                <img
+                  src={bannerImage}
+                  alt={imageAlt}
                   className="h-auto"
                   style={{ maxWidth: '95%' }}
                 />
               </Link>
             ) : (
-              <img 
-                src={bannerImage} 
-                alt={imageAlt} 
+              <img
+                src={bannerImage}
+                alt={imageAlt}
                 className="h-auto"
                 style={{ maxWidth: '95%' }}
               />

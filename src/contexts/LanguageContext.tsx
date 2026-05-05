@@ -1302,10 +1302,10 @@ export const translations: Translations = {
     'grupo.valor5.title': 'Collaboration and Partnership',
     'grupo.valor5.desc': 'We value working together to generate positive and lasting impacts.',
 
-    'grupo.nossotime.svg.line1': 'Our multidisciplinary team brings together logistics experts,',
-    'grupo.nossotime.svg.line2': 'pharmacists, nurses, data scientists and',
-    'grupo.nossotime.svg.line3': 'technology developers. All aligned with a',
-    'grupo.nossotime.svg.line4': 'common purpose: to make access to healthcare more efficient,',
+    'grupo.nossotime.svg.line1': 'Our multidisciplinary team brings together logistics,',
+    'grupo.nossotime.svg.line2': 'expertspharmacists, nurses, data scientists and',
+    'grupo.nossotime.svg.line3': 'technology developers. All aligned with a common',
+    'grupo.nossotime.svg.line4': 'purpose: to make access to healthcare more efficient,',
     'grupo.nossotime.svg.line5': 'safe and humane.',
     'grupo.nossotime.svg.line6': 'Our culture is collaborative, with a focus on',
     'grupo.nossotime.svg.line7': 'active listening and people-centered solutions. Join our team! ',
@@ -1579,7 +1579,7 @@ export const translations: Translations = {
     // Home - Hero
     'home.hero.title': 'Conectamos ciencia y personas',
     'home.hero.description': 'Entregamos resultados y creamos soluciones personalizadas para la industria farmacéutica, CROs y centros de investigación clínica, utilizando tecnología propietaria.',
-    'home.hero.cta': 'MÁS INFORMACIÓN',
+    'home.hero.cta': 'VER MÁS',
     'home.hero.video.title': 'Video Institucional DRS',
     'home.hero.video.description': 'Video institucional de DRS',
     'home.hero.video.ariaLabel': 'Ver el video',
@@ -1621,14 +1621,14 @@ export const translations: Translations = {
     'home.solutions.svg.desc4': 'nuestra plataforma propietaria DRS 360 y guiadas por un',
     'home.solutions.svg.desc5': 'propósito común: hacer los estudios clínicos posibles y',
     'home.solutions.svg.desc6': 'asegurar que cada tratamiento llegue a quien lo necesita.',
-    'home.solutions.svg.cta': 'MÁS INFORMACIÓN',
+    'home.solutions.svg.cta': 'Ver más',
     'home.solutions.svg.mobile.title1': 'Soluciones',
     'home.solutions.svg.mobile.title2': 'inteligentes para cada',
     'home.solutions.svg.mobile.title3': 'etapa de la cadena',
     'home.solutions.svg.mobile.title4': 'de valor en salud',
     'home.solutions.svg.mobile.desc1': 'Operamos en tres áreas complementarias, conectadas por nuestra plataforma propia DRS 360 y guiadas \npor un propósito común: hacer posibles los estudios clínicos y asegurar que cada tratamiento llegue a quien lo necesita.',
 
-    'home.solutions.svg.mobile.cta': 'MÁS INFORMACIÓN',
+    'home.solutions.svg.mobile.cta': 'VER MÁS',
     'home.solutions.cts': 'Clinical Trial Services - CTS',
     'home.solutions.pcs': 'Patient Centric Services - PCS',
     'home.solutions.tis': 'Thermo Integrated Services - TIS',
@@ -1642,7 +1642,7 @@ export const translations: Translations = {
 
     // CTA Section
     'cta.title': 'Transforme su operación en salud con el apoyo de DRS.',
-    'cta.button': 'MÁS INFORMACIÓN',
+    'cta.button': 'VER MÁS',
     'cta.contact.text': 'Contáctenos y descubra cómo nuestra tecnología puede acelerar resultados.',
 
     // Cookie Consent
@@ -1793,7 +1793,7 @@ export const translations: Translations = {
     'cts.solutions.tag': 'NUESTRAS SOLUCIONES',
     'cts.cta.title': 'Transforme su operación en salud con el apoyo de DRS.',
     'cts.cta.button': 'Contáctenos y descubra cómo nuestra tecnología puede acelerar resultados.',
-    'cts.saibamais': 'MÁS INFORMACIÓN',
+    'cts.saibamais': 'VER MÁS',
 
     // PCS Page
     'pcs.hero.tag': 'PCS',
@@ -1804,7 +1804,7 @@ export const translations: Translations = {
     'pcs.solutions.tag': 'NUESTRAS SOLUCIONES',
     'pcs.cta.title': 'Transforme su operación en salud con apoyo de DRS.',
     'pcs.cta.button': 'Contáctese con nosotros y descubra cómo nuestra tecnología puede acelerar los resultados.',
-    'pcs.saibamais': 'MÁS INFORMACIÓN',
+    'pcs.saibamais': 'VER MÁS',
 
     // TIS Page
     'tis.hero.tag': 'TIS',
@@ -1815,7 +1815,7 @@ export const translations: Translations = {
     'tis.solutions.tag': 'NUESTRAS SOLUCIONES',
     'tis.cta.title': 'Transforme su operación en salud con el apoyo de DRS.',
     'tis.cta.button': ' Contáctese con nosotros y descubra cómo nuestra tecnología puede acelerar resultados.',
-    'tis.saibamais': 'MÁS INFORMACIÓN',
+    'tis.saibamais': 'VER MÁS',
 
     // DRS 360 section (reusable)
     'drs360.section.tag': 'DRS 360',
@@ -2342,7 +2342,7 @@ export const translations: Translations = {
     'home.insights.readmore': 'Leer más',
 
     // Misc
-    'saibamais': 'MÁS INFORMACIÓN',
+    'saibamais': 'VER MÁS',
     'fechar': 'CERRAR',
   },
 };

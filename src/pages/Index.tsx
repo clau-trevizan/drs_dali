@@ -168,6 +168,7 @@ const Index = () => {
                     <text className="titulos" x="34" y="145" fontSize="35" fontWeight="900" fill="#274B41">{t('home.stats.card1.line2')}</text>
                     <text className="botao" x="34" y="189" fontSize="20" fontWeight="400" fill="#008C79">{t('home.stats.card1.desc1')}</text>
                     <text className="botao" x="34" y="214" fontSize="20" fontWeight="400" fill="#008C79">{t('home.stats.card1.desc2')}</text>
+                    <text className="botao" x="34" y="239" fontSize="20" fontWeight="400" fill="#008C79">{t('home.stats.card1.desc3')}</text>
                     <path d="M23.8594 0.5H249.622C261.393 0.500256 270.933 10.0575 270.933 21.8457V48.5039C270.933 60.3576 280.527 69.9715 292.367 69.9717H308.007C319.879 69.9718 329.503 79.6091 329.503 91.502V312.104C329.503 325.027 319.042 335.5 306.144 335.5H180.311C168.638 335.5 159.176 326.024 159.176 314.331V289.329H159.167C158.901 277.637 149.354 268.239 137.615 268.239H23.3896C10.7488 268.239 0.500132 257.975 0.5 245.312V23.8965C0.500217 10.9732 10.9583 0.5 23.8594 0.5Z" stroke="#274B41"/>
                   </svg>
                 </div>

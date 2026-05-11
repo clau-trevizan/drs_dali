@@ -833,7 +833,7 @@ export const translations: Translations = {
     'home.solutions.svg.mobile.title2': 'solutions for',
     'home.solutions.svg.mobile.title3': 'every stage of',
     'home.solutions.svg.mobile.title4': 'the healthcare chain',
-    'home.solutions.svg.mobile.desc1': 'We combine innovation, technology and care to drive essential health projects. /nWe work in three complementary areas, connected by our proprietary DRS 360 platform and guided by a common purpose: to make clinical studies possible and ensure that each treatment reaches those who need it.',
+    'home.solutions.svg.mobile.desc1': 'We combine innovation, technology and care to drive essential health projects. \nWe work in three complementary areas, connected by our proprietary DRS 360 platform and guided by a common purpose: to make clinical studies possible and ensure that each treatment reaches those who need it.',
     'home.solutions.svg.mobile.cta': 'Learn more',
     'home.solutions.cts': 'Clinical Trial Services - CTS',
     'home.solutions.pcs': 'Patient Centric Services - PCS',
@@ -1629,7 +1629,7 @@ export const translations: Translations = {
     'home.solutions.svg.mobile.title2': 'inteligentes para cada',
     'home.solutions.svg.mobile.title3': 'etapa de la cadena',
     'home.solutions.svg.mobile.title4': 'de valor en salud',
-    'home.solutions.svg.mobile.desc1': 'Operamos en tres áreas complementarias, conectadas por nuestra plataforma propia DRS 360 y guiadas \npor un propósito común: hacer posibles los estudios clínicos y asegurar que cada tratamiento llegue a quien lo necesita.',
+    'home.solutions.svg.mobile.desc1': 'Operamos en tres áreas complementarias, conectadas por nuestra plataforma propia DRS 360 y guiadas por un propósito común: hacer posibles los estudios clínicos y asegurar que cada tratamiento llegue a quien lo necesita.',
 
     'home.solutions.svg.mobile.cta': 'VER MÁS',
     'home.solutions.cts': 'Clinical Trial Services - CTS',

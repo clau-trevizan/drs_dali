@@ -220,7 +220,7 @@ export const translations: Translations = {
     'contato.form.phone': 'Telefone',
     'contato.form.message': 'Mensagem',
     'contato.form.privacy': 'Li e concordo com a',
-    'contato.form.privacy.link': 'política de Privacidade',
+    'contato.form.privacy.link': 'Política de Privacidade',
     'contato.form.submit': 'Enviar',
     'contato.success.title': 'Mensagem enviada com sucesso!',
     'contato.success.message': 'Em breve entraremos em contato.',

@@ -313,8 +313,8 @@ const Index = () => {
                 <text className="botao" x="100" y="288" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.desc2')}</text>
                 <text className="botao" x="100" y="335" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.desc3')}</text>
                 <text className="botao" x="100" y="365" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.desc4')}</text>
-                <text className="botao" x="100" y="390" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.desc5')}</text>
-                <text className="botao" x="100" y="420" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.desc6')}</text>
+                <text className="botao" x="100" y="395" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.desc5')}</text>
+                <text className="botao" x="100" y="425" fontSize="20" fontWeight="900" fill="#000000">{t('home.solutions.svg.desc6')}</text>
                 <Link to="/solucoes">
                   <rect x="104" y="447.081" width="175" height="50" rx="10" fill="#274B41" style={{ cursor: 'pointer' }}/>
                   <path d="M143.112 465.807L148.645 471.294L148.691 471.337C148.876 471.52 148.984 471.762 149 472.048L148.999 472.145C148.986 472.371 148.899 472.588 148.728 472.782L148.664 472.848L143.112 478.354C142.701 478.762 142.037 478.762 141.627 478.354C141.213 477.945 141.213 477.279 141.627 476.869L145.46 473.067L130.052 473.068C129.472 473.068 129 472.599 129 472.02C129 471.44 129.472 470.972 130.052 470.972L145.336 470.971L141.627 467.292C141.213 466.883 141.213 466.217 141.627 465.807C142.037 465.4 142.701 465.4 143.112 465.807Z" fill="white"/>

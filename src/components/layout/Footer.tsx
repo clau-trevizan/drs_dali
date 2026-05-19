@@ -30,6 +30,10 @@ const footerData = {
       address: 'Rod. Anhanguera, s/nº – Km 15 – Warehouses 09-40\nVila Jaguara – São Paulo/SP – CEP: 05110-080',
     },
     {
+      name: 'Montevideo (UY)',
+      address: 'Lamas Brig. Gral. Diego 1353 - 901 - Montevideo (UY)',
+    },
+    {
       region: 'EUROPA',
       name: 'DRS International – Dublin (IE)',
       address: '15 - 17 Earlsfort Terrace, Saint Kevin\'s,\nDublin 2, D02 YX28, Irlanda',
@@ -258,7 +262,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                     {t('footer.addresses')}
                   </span>
                   {footerData.addresses.map((address) => (
-                    <div key={address.region} className="mb-4" style={{ color: '#FFF', fontSize: '14px', fontWeight: 400, lineHeight: '30px' }}>
+                    <div key={address.region} className="mb-4" style={{ color: '#FFF', fontSize: '14px', fontWeight: 400, lineHeight: '25px' }}>
                       <p className="font-semibold">{address.region}</p>
                       <p style={{ color: '#FFF' }}>{address.name}</p>
                       <p className="whitespace-pre-line" style={{ color: '#FFF', fontSize: '12px' }}>

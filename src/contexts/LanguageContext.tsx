@@ -113,7 +113,7 @@ export const translations: Translations = {
     'footer.community': 'Comunidade',
     'footer.social': 'Siga a DRS Group nas redes sociais',
     'footer.rights': '© 2026 DRS Group - Todos os direitos reservados',
-    'footer.privacy': 'Política de Qualidade',
+    'footer.privacy': 'Política de Privacidade',
     'footer.terms': 'Termos de Uso',
     'footer.cookies': 'Política de Cookies',
 
@@ -220,7 +220,7 @@ export const translations: Translations = {
     'contato.form.phone': 'Telefone',
     'contato.form.message': 'Mensagem',
     'contato.form.privacy': 'Li e concordo com a',
-    'contato.form.privacy.link': 'política de qualidade',
+    'contato.form.privacy.link': 'política de Privacidade',
     'contato.form.submit': 'Enviar',
     'contato.success.title': 'Mensagem enviada com sucesso!',
     'contato.success.message': 'Em breve entraremos em contato.',
@@ -274,7 +274,7 @@ export const translations: Translations = {
     'insights.share': 'Compartilhar',
 
     // Privacy Policy
-    'privacy.title': 'Política de Qualidade',
+    'privacy.title': 'Política de Privacidade',
 
     // WorldMap
     'worldmap.close': 'Fechar',
@@ -871,7 +871,7 @@ export const translations: Translations = {
     'footer.community': 'Community',
     'footer.social': 'Follow DRS Group on social media',
     'footer.rights': '© 2026 DRS Group - All rights reserved',
-    'footer.privacy': 'Quality Policy',
+    'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Use',
     'footer.cookies': 'Cookie Policy',
 
@@ -985,7 +985,7 @@ export const translations: Translations = {
     'contato.form.phone': 'Phone',
     'contato.form.message': 'Message',
     'contato.form.privacy': 'I have read and agree with the',
-    'contato.form.privacy.link': 'quality policy',
+    'contato.form.privacy.link': 'Privacy Policy',
     'contato.form.submit': 'Send',
     'contato.success.title': 'Message sent successfully!',
     'contato.success.message': 'We will contact you soon.',
@@ -1039,7 +1039,7 @@ export const translations: Translations = {
     'insights.share': 'Share',
 
     // Privacy Policy
-    'privacy.title': 'Quality Policy',
+    'privacy.title': 'Privacy Policy',
 
     // WorldMap
     'worldmap.close': 'Close',
@@ -1668,7 +1668,7 @@ export const translations: Translations = {
     'footer.community': 'Comunidade',
     'footer.social': 'Siga a DRS Group en las redes sociales',
     'footer.rights': '© 2026 DRS Group - Todos los derechos reservados',
-    'footer.privacy': 'Política de Calidad',
+    'footer.privacy': 'Política de Privacidad',
     'footer.terms': 'Términos de Uso',
     'footer.cookies': 'Política de Cookies',
 
@@ -1720,7 +1720,7 @@ export const translations: Translations = {
     'grupo.impact.card1.desc1': 'atendidos al año',
     'grupo.impact.card1.desc2': '',
 
-    'grupo.impact.card2.number': '+400',
+    'grupo.impact.card2.number': '+500',
     'grupo.impact.card2.title': 'protocolos',
     'grupo.impact.card2.desc1': 'gestionados: con apoyo en todas',
     'grupo.impact.card2.desc2': 'las fases',
@@ -1781,7 +1781,7 @@ export const translations: Translations = {
     'contato.form.phone': 'Teléfono',
     'contato.form.message': 'Mensaje',
     'contato.form.privacy': 'He leído y estoy de acuerdo con la',
-    'contato.form.privacy.link': 'política de Calidad',
+    'contato.form.privacy.link': 'Política de Privacidad',
     'contato.form.submit': 'Enviar',
     'contato.success.title': '¡Mensaje enviado con éxito!',
     'contato.success.message': 'Pronto nos comunicaremos con usted.',
@@ -1835,7 +1835,7 @@ export const translations: Translations = {
     'insights.share': 'Compartir',
 
     // Privacy Policy
-    'privacy.title': 'Política de Calidad',
+    'privacy.title': 'Política de Privacidad',
 
     // WorldMap
     'worldmap.close': 'Cerrar',

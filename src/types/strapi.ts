@@ -241,7 +241,44 @@ export interface InsightCategory {
   };
 }
 
+export type InsightBlock =
+  | {
+      __component: "shared.rich-text";
+      id: number;
+      body: string;
+    }
+  | {
+      __component: "shared.media";
+      id: number;
+      media?: {
+        url: string;
+        name?: string;
+        mime?: string;
+      } | null;
+    };
+
 export interface Insight {
+  id: number;
+  documentId?: string;
+  title: string;
+  slug: string | null;
+  description: string | null;
+  publishedAt: string;
+  locale?: string;
+
+  cover: { url: string } | null;
+
+  category: { id: number; name: string; slug: string } | null;
+  categories: { id: number; name: string; slug: string }[] | null;
+  authors: { id: number; name: string }[] | null;
+
+  blocks: InsightBlock[];
+
+  localizations?: any[];
+  attributes?: any;
+}
+
+  {/*export interface Insight {
   id: number;
   documentId?: string;
   title: string;
@@ -257,7 +294,7 @@ export interface Insight {
   localizations?: any[];
   // v4 compat
   attributes?: any;
-}
+}*/}
 
 export interface ContactPage {
   id: number;

@@ -61,9 +61,12 @@ function buildQuery(params: Record<string, unknown>): string {
 // Helper to get full image URL
 export function getStrapiMedia(url: string | undefined): string {
   if (!url) return '/placeholder.svg';
+
   if (url.startsWith('http')) return url;
-  return `${STRAPI_URL}${url}`;
+
+  return `${import.meta.env.VITE_STRAPI_URL}${url}`;
 }
+
 
 // API Functions
 
@@ -175,7 +178,9 @@ export async function getInsights(params?: {
     populate: {
       cover: true,
       categories: true,
-      blocks: true,
+      blocks: {
+    populate: '*',
+  },
       localizations: true,
       authors: true,
     },
@@ -196,7 +201,9 @@ export async function getInsight(slug: string, locale?: string): Promise<Insight
     populate: {
       cover: true,
       categories: true,
-      blocks: true,
+      blocks: {
+    populate: '*',
+  },
       localizations: true,
       authors: true,
     },

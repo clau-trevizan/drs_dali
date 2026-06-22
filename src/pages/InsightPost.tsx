@@ -55,6 +55,7 @@ export default function InsightPost() {
       </Layout>
     );
   }
+  console.log(import.meta.env.VITE_STRAPI_URL)
 
   // Strapi v5: data is flat (no .attributes wrapper)
   const postCategories = post.categories || [];
@@ -129,7 +130,7 @@ export default function InsightPost() {
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-start-3 lg:col-span-8">
               <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_img]:!rounded-none [&_img]:!mb-[5px] [&_img]:mt-8 [&_img]:w-full [&_img]:block [&_figcaption]:text-base [&_figcaption]:text-[#15AF97] [&_figcaption]:mt-0 [&_figcaption]:mb-8" style={{ color: '#000', fontSize: '18px', lineHeight: '1.8' }}>
-                <ReactMarkdown
+                {/*<ReactMarkdown
                   rehypePlugins={[rehypeRaw]}
                   components={{
                     p: ({ children, ...props }) => {
@@ -145,7 +146,48 @@ export default function InsightPost() {
                   }}
                 >
                   {content}
-                </ReactMarkdown>
+                </ReactMarkdown>*/}
+
+                {post.blocks?.map((block) => {
+                  switch (block.__component) {
+                    case "shared.rich-text":
+                      return (
+                        <div key={block.id} className="mb-6">
+                          <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+                            {block.body}
+                          </ReactMarkdown>
+                        </div>
+                      );
+
+                    case "shared.media": {
+                      const url = getStrapiMedia(block.file?.url);
+                      if (!url) return null;
+
+                      const isVideo = /\.(mp4|webm|ogg)$/i.test(url);
+                      const isImage = /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(url);
+
+                      return (
+                        <figure key={block.id} className="my-8">
+                          {isVideo ? (
+                            <video controls controlsList="nodownload nofullscreen noplaybackrate" disablePictureInPicture className="w-full">
+                              <source src={url} />
+                            </video>
+                          ) : isImage ? (
+                            <img src={url} className="w-full" />
+                          ) : (
+                            <a href={url} target="_blank" rel="noreferrer">
+                              Ver mídia
+                            </a>
+                          )}
+                        </figure>
+                      );
+                    }
+
+                    default:
+                      return null;
+                  }
+                })}
+
               </div>
             </div>
           </div>

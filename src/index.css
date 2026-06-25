@@ -1159,3 +1159,9 @@ html, body {
     left: calc(50% - 175px)!important;
 }
 }
+
+.prose video, .prose iframe {
+aspect-ratio: 16 / 9;
+width: 100%;
+height: auto;
+}

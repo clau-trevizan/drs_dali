@@ -55,7 +55,7 @@ export default function InsightPost() {
       </Layout>
     );
   }
-  console.log(import.meta.env.VITE_STRAPI_URL)
+
 
   // Strapi v5: data is flat (no .attributes wrapper)
   const postCategories = post.categories || [];
@@ -130,7 +130,7 @@ export default function InsightPost() {
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-start-3 lg:col-span-8">
               <div className="prose prose-lg max-w-none [&_p]:mb-6 [&_img]:!rounded-none [&_img]:!mb-[5px] [&_img]:mt-8 [&_img]:w-full [&_img]:block [&_figcaption]:text-base [&_figcaption]:text-[#15AF97] [&_figcaption]:mt-0 [&_figcaption]:mb-8" style={{ color: '#000', fontSize: '18px', lineHeight: '1.8' }}>
-                {/*<ReactMarkdown
+        {/*<ReactMarkdown
                   rehypePlugins={[rehypeRaw]}
                   components={{
                     p: ({ children, ...props }) => {
@@ -148,7 +148,7 @@ export default function InsightPost() {
                   {content}
                 </ReactMarkdown>*/}
 
-                {post.blocks?.map((block) => {
+      {post.blocks?.map((block) => {
                   switch (block.__component) {
                     case "shared.rich-text":
                       return (
@@ -187,8 +187,8 @@ export default function InsightPost() {
                       return null;
                   }
                 })}
-
-              </div>
+                
+            </div>
             </div>
           </div>
         </div>

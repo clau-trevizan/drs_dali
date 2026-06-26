@@ -278,23 +278,6 @@ export interface Insight {
   attributes?: any;
 }
 
-  {/*export interface Insight {
-  id: number;
-  documentId?: string;
-  title: string;
-  slug: string | null;
-  description: string | null;
-  publishedAt: string;
-  locale?: string;
-  cover: { url: string } | null;
-  category: { id: number; name: string; slug: string } | null;
-  categories: { id: number; name: string; slug: string }[] | null;
-  authors: { id: number; name: string }[] | null;
-  blocks: { __component: string; id: number; body: string }[];
-  localizations?: any[];
-  // v4 compat
-  attributes?: any;
-}*/}
 
 export interface ContactPage {
   id: number;

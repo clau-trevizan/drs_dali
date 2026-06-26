@@ -67,7 +67,6 @@ export function getStrapiMedia(url: string | undefined): string {
   return `${import.meta.env.VITE_STRAPI_URL}${url}`;
 }
 
-
 // API Functions
 
 export async function getGlobalSettings(): Promise<GlobalSettings> {
@@ -178,7 +177,7 @@ export async function getInsights(params?: {
     populate: {
       cover: true,
       categories: true,
-      blocks: {
+            blocks: {
     populate: '*',
   },
       localizations: true,
@@ -201,7 +200,7 @@ export async function getInsight(slug: string, locale?: string): Promise<Insight
     populate: {
       cover: true,
       categories: true,
-      blocks: {
+           blocks: {
     populate: '*',
   },
       localizations: true,

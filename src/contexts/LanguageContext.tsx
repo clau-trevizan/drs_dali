@@ -713,7 +713,7 @@ export const translations: Translations = {
     'pcs.sol1.dest1':'Melhoria na adesão terapêutica',
     'pcs.sol1.dest2':'Redução de abandono de tratamento',
     'pcs.sol1.dest3':'Acompanhamento estruturado da jornada do paciente',
-    
+
     'pcs.sol2.title': 'Serviços para consumidores e pacientes',
     'pcs.sol2.desc': 'Soluções especializadas para atendimento e suporte direto ao paciente, garantindo orientação, segurança e experiência qualificada.',
     'pcs.sol2.dif1':'Central de atendimento especializada ',
@@ -746,7 +746,7 @@ export const translations: Translations = {
     'pcs.sol4.dest1':'Comodidade e segurança para o paciente ',
     'pcs.sol4.dest2':'Garantia de integridade do medicamento ',
     'pcs.sol4.dest3':'Eficiência na última milha da entrega ',
-    
+
     'pcs.sol5.title': 'Montagem de Patient Kits',
     'pcs.sol5.desc': 'Montagem personalizada de kits terapêuticos para suporte ao tratamento e acompanhamento do paciente.',
     'pcs.sol5.dif1':'Customização conforme protocolo terapêutico ',
@@ -816,7 +816,7 @@ export const translations: Translations = {
     'tis.sol2.dif4': 'Conformidade com todas as normas regulatórias',
     'tis.sol2.dest1': 'Garantia de integridade térmica durante o transporte',
     'tis.sol2.dest2': 'Redução de custos e riscos operacionais',
-       
+
     'tis.sol3.title': 'Telemetria e Data Loggers',
     'tis.sol3.desc': 'Data Loggers que proporcionam monitoramento contínuo de temperatura, umidade, geolocalização, luminosidade e queda, garantindo visibilidade e controle em tempo real ao longo de toda a cadeia logística, por meio da plataforma Bip Track.',
     'tis.sol3.dif1': 'Data Loggers retornáveis com monitoramento em tempo real dos indicadores',
@@ -839,6 +839,8 @@ export const translations: Translations = {
     // Misc
     'saibamais': 'SAIBA MAIS',
     'fechar': 'FECHAR',
+    'diferenciais': 'Diferenciais',
+    'destaques': 'Destaques',
   },
   en: {
     // Header
@@ -876,7 +878,7 @@ export const translations: Translations = {
     'home.stats.card3.line1': 'Patients',
     'home.stats.card3.line2': 'Every',
     'home.stats.card3.line3': 'Year',
-    'home.stats.card3.desc1': 'We make a difference -', 
+    'home.stats.card3.desc1': 'We make a difference -',
     'home.stats.card3.desc2': 'bridging clinical research and',
     'home.stats.card3.desc3': 'transforming access to care.',
 
@@ -1716,6 +1718,8 @@ export const translations: Translations = {
     // Misc
     'saibamais': 'LEARN MORE',
     'fechar': 'CLOSE',
+    'diferenciais': 'Key Advantages',
+    'destaques': 'Highlights',
   },
   es: {
     // Header
@@ -1829,7 +1833,7 @@ export const translations: Translations = {
     'solucoes.cts.svg.subtitle2': 'mediante soluciones integradas.',
 
     'solucoes.cts.svg.desc1mob': 'Conectamos la investigación clínica con soluciones validadas, alto rendimiento y cumplimiento normativo internacional.\nGestionamos cada etapa con precisión, garantizando una logística segura, regulada y totalmente trazable.',
-    
+
     'solucoes.cts.svg.desc1': 'Conectamos la investigación clínica con soluciones validadas,',
     'solucoes.cts.svg.desc2': 'alto rendimiento y cumplimiento normativo internacional.',
     'solucoes.cts.svg.desc3': 'Gestionamos cada etapa con precisión, garantizando una',
@@ -2534,7 +2538,7 @@ export const translations: Translations = {
     'tis.svg4.desc4': 'embalajes listos para usar, gestión de ',
     'tis.svg4.desc5': 'retornables y servicios de maduración, ',
     'tis.svg4.desc6': 'almacenamiento, transporte y monitoreo.',
-    
+
     'tis.sol1.title': 'Embalajes Sostenibles',
     'tis.sol1.desc': 'Embalajes térmicos retornables y sostenibles, con control preciso de temperatura y trazabilidad total para garantizar la seguridad y el desempeño en toda la cadena fría.',
     'tis.sol1.dif1': 'Embalajes térmicos retornables',
@@ -2577,6 +2581,8 @@ export const translations: Translations = {
     // Misc
     'saibamais': 'VER MÁS',
     'fechar': 'CERRAR',
+    'diferenciais': 'Factores diferenciadores',
+    'destaques': 'Aspectos destacados',
   },
 };
 

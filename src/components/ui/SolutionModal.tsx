@@ -89,7 +89,7 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
         color: '#274B41'
       }}
       >
-      Diferenciais
+      {t(`diferenciais`)}
       </h3>
       <ul className="space-y-2">
       {data.diferenciais.map((item, index) => (
@@ -116,7 +116,7 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
         color: '#274B41'
       }}
       >
-      Destaques
+      {t(`destaques`)}
       </h3>
       <ul className="space-y-2">
       {data.destaques.map((item, index) => (

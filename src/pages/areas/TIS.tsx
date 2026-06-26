@@ -24,10 +24,22 @@ export default function TIS() {
   const [activeSolutionSlide, setActiveSolutionSlide] = useState(0);
 
   const solutionsData: SolutionModalData[] = [
-    { title: t('tis.sol1.title'), description: t('tis.sol1.desc'), diferenciais: [], destaques: [] },
-    { title: t('tis.sol2.title'), description: t('tis.sol2.desc'), diferenciais: [], destaques: [] },
-    { title: t('tis.sol3.title'), description: t('tis.sol3.desc'), diferenciais: [], destaques: [] },
-    { title: t('tis.sol4.title'), description: t('tis.sol4.desc'), diferenciais: [], destaques: [] }
+    { title: t('tis.sol1.title'), 
+      description: t('tis.sol1.desc'), 
+      diferenciais: [t('tis.sol1.dif1'), t('tis.sol1.dif2'), t('tis.sol1.dif3')],
+      destaques: [t('tis.sol1.dest1'), t('tis.sol1.dest2'), t('tis.sol1.dest3')]
+    },
+    { title: t('tis.sol2.title'), 
+      description: t('tis.sol2.desc'), 
+      diferenciais: [t('tis.sol2.dif1'), t('tis.sol2.dif2'), t('tis.sol2.dif3'), t('tis.sol2.dif4')],
+      destaques: [t('tis.sol2.dest1'), t('tis.sol2.dest2')]
+    },
+
+    { title: t('tis.sol3.title'), 
+      description: t('tis.sol3.desc'), 
+      diferenciais: [t('tis.sol3.dif1'), t('tis.sol3.dif2'), t('tis.sol3.dif3'), t('tis.sol3.dif4'), t('tis.sol3.dif5'), t('tis.sol3.dif6'), t('tis.sol3.dif7')],
+      destaques: [t('tis.sol3.dest1'), t('tis.sol3.dest2'), t('tis.sol3.dest3'), t('tis.sol3.dest4')]
+    }
   ];
 
   const openModal = (index: number) => {
@@ -80,7 +92,7 @@ export default function TIS() {
 
     {/* Desktop Grid */}
     <div className="hidden lg:grid grid-cols-3 gap-6 mt-8">
-    {[1,2,3,4].map((i) => (
+    {[1,2,3].map((i) => (
       <div key={i} className="col-span-1" style={{ marginTop: i === 2 ? '65px' : i === 3 ? '130px' : '0' }}>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
       <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
@@ -92,7 +104,8 @@ export default function TIS() {
       <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">{t(`tis.svg${i}.desc4`)}</text>
       <text className="botao" x="23" y="260" fontSize="20" fontWeight="400" fill="#008C79">{t(`tis.svg${i}.desc5`)}</text>
       <text className="botao" x="23" y="285" fontSize="20" fontWeight="400" fill="#008C79">{t(`tis.svg${i}.desc6`)}</text>
-
+      <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(i - 1)}/>
+      <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(i - 1)}>{t('saibamais')}</text>
 
 
       </svg>
@@ -103,7 +116,7 @@ export default function TIS() {
     {/* Mobile Carousel */}
     <div className="lg:hidden mt-8">
     <Swiper modules={[Navigation]} onSwiper={(swiper) => { solutionsSwiperRef.current = swiper; }} onSlideChange={(swiper) => setActiveSolutionSlide(swiper.activeIndex)} spaceBetween={16} slidesPerView={1} className="w-full">
-    {[0,1,2,3].map((i) => (
+    {[0,1,2].map((i) => (
       <SwiperSlide key={i}>
       <div className="px-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -116,6 +129,9 @@ export default function TIS() {
       <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">{t(`tis.svg${i+1}.desc4`)}</text>
       <text className="botao" x="23" y="260" fontSize="20" fontWeight="400" fill="#008C79">{t(`tis.svg${i+1}.desc5`)}</text>
       <text className="botao" x="23" y="285" fontSize="20" fontWeight="400" fill="#008C79">{t(`tis.svg${i+1}.desc6`)}</text>
+      <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(i)}/>
+      <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(i)}>{t('saibamais')}</text>
+
 
 
       </svg>

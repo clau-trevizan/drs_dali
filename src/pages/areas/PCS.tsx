@@ -24,12 +24,36 @@ export default function PCS() {
   const [activeSolutionSlide, setActiveSolutionSlide] = useState(0);
 
   const solutionsData: SolutionModalData[] = [
-    { title: t('pcs.sol1.title'), description: t('pcs.sol1.desc'), diferenciais: [], destaques: [] },
-    { title: t('pcs.sol2.title'), description: t('pcs.sol2.desc'), diferenciais: [], destaques: [] },
-    { title: t('pcs.sol3.title'), description: t('pcs.sol3.desc'), diferenciais: [], destaques: [] },
-    { title: t('pcs.sol4.title'), description: t('pcs.sol4.desc'), diferenciais: [], destaques: [] },
-    { title: t('pcs.sol5.title'), description: t('pcs.sol5.desc'), diferenciais: [], destaques: [] },
-    { title: t('pcs.sol6.title'), description: t('pcs.sol6.desc'), diferenciais: [], destaques: [] }
+    { title: t('pcs.sol1.title'), 
+      description: t('pcs.sol1.desc'), 
+      diferenciais: [t('pcs.sol1.dif1'), t('pcs.sol1.dif2'), t('pcs.sol1.dif3'), t('pcs.sol1.dif4'), t('pcs.sol1.dif5')],
+      destaques: [t('pcs.sol1.dest1'), t('pcs.sol1.dest2'), t('pcs.sol1.dest3')]
+    },
+    { title: t('pcs.sol2.title'), 
+      description: t('pcs.sol2.desc'), 
+      diferenciais: [t('pcs.sol2.dif1'), t('pcs.sol2.dif2'), t('pcs.sol2.dif3'), t('pcs.sol2.dif4'), t('pcs.sol2.dif5')],
+      destaques: [t('pcs.sol2.dest1'), t('pcs.sol2.dest2'), t('pcs.sol2.dest3')]
+    },
+    { title: t('pcs.sol3.title'), 
+      description: t('pcs.sol3.desc'), 
+      diferenciais: [t('pcs.sol3.dif1'), t('pcs.sol3.dif2'), t('pcs.sol3.dif3'), t('pcs.sol3.dif4'), t('pcs.sol3.dif5')],
+      destaques: [t('pcs.sol3.dest1'), t('pcs.sol3.dest2'), t('pcs.sol3.dest3')]
+    },
+    { title: t('pcs.sol4.title'), 
+      description: t('pcs.sol4.desc'), 
+      diferenciais: [t('pcs.sol4.dif1'), t('pcs.sol4.dif2'), t('pcs.sol4.dif3'), t('pcs.sol4.dif4'), t('pcs.sol4.dif5')],
+      destaques: [t('pcs.sol4.dest1'), t('pcs.sol4.dest2'), t('pcs.sol4.dest3')]
+    },
+    { title: t('pcs.sol5.title'), 
+      description: t('pcs.sol5.desc'), 
+      diferenciais: [t('pcs.sol5.dif1'), t('pcs.sol5.dif2'), t('pcs.sol5.dif3'), t('pcs.sol5.dif4'), t('pcs.sol5.dif5')],
+      destaques: [t('pcs.sol5.dest1'), t('pcs.sol5.dest2'), t('pcs.sol5.dest3')]
+    },
+    { title: t('pcs.sol6.title'), 
+      description: t('pcs.sol6.desc'), 
+      diferenciais: [t('pcs.sol6.dif1'), t('pcs.sol6.dif2'), t('pcs.sol6.dif3'), t('pcs.sol6.dif4'), t('pcs.sol6.dif5')],
+      destaques: [t('pcs.sol6.dest1'), t('pcs.sol6.dest2'), t('pcs.sol6.dest3')]
+    }
   ];
 
   const openModal = (index: number) => {
@@ -93,6 +117,10 @@ export default function PCS() {
                       <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 ? "210" : "175"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc2`)}</text>
                       <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 ? "235" : "200"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc3`)}</text>
                       <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 ? "260" : "225"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc4`)}</text>
+
+                      <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(i - 1)}/>
+                      <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(i - 1)}>{t('saibamais')}</text>
+
                     </svg>
                   </div>
                 ))}
@@ -113,8 +141,8 @@ export default function PCS() {
                           <text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc2`)}</text>
                           <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc3`)}</text>
                           <text className="botao" x="23" y="260" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc4`)}</text>
-
-
+                          <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(i)}/>
+                          <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(i)}>{t('saibamais')}</text>
                         </svg>
                       </div>
                     </SwiperSlide>

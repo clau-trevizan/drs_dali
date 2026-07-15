@@ -2303,8 +2303,8 @@ export const translations: Translations = {
 
     // CTS SVG text keys
     'cts.svg1.line1': 'Suministro de',
-    'cts.svg1.line2': 'medicamentos',
-    'cts.svg1.line3': 'de comparación',
+    'cts.svg1.line2': 'Medicamentos',
+    'cts.svg1.line3': 'de Comparación',
 
     'cts.svg1.desc1': 'Estrategias personalizadas para',
     'cts.svg1.desc2': 'cada proyecto, teniendo en cuenta',
@@ -2312,7 +2312,7 @@ export const translations: Translations = {
     'cts.svg1.desc4': 'regionales e internacionales.',
 
     'cts.svg2.line1': 'Servicio de',
-    'cts.svg2.line2': 'almacenamiento',
+    'cts.svg2.line2': 'Almacenamiento',
 
     'cts.svg2.desc1': 'Almacenamiento clínico y',
     'cts.svg2.desc2': 'logística con estándares',
@@ -2328,8 +2328,8 @@ export const translations: Translations = {
     'cts.svg3.desc3': '',
     'cts.svg3.desc4': '',
     'cts.svg4.line1': 'Embalaje,',
-    'cts.svg4.line2': 'etiquetado y',
-    'cts.svg4.line3': 'cegamiento',
+    'cts.svg4.line2': 'Etiquetado y',
+    'cts.svg4.line3': 'Cegamiento',
 
     'cts.svg4.desc1': 'Ofrecemos soluciones completas',
     'cts.svg4.desc2': 'en embalaje secundario,',
@@ -2337,7 +2337,7 @@ export const translations: Translations = {
     'cts.svg4.desc4': '',
 
     'cts.svg5.line1': 'Kits de',
-    'cts.svg5.line2': 'laboratorio',
+    'cts.svg5.line2': 'Laboratorio',
 
     'cts.svg5.desc1': 'Montaje de kits de',
     'cts.svg5.desc2': 'laboratorio y medicación',
@@ -2345,7 +2345,7 @@ export const translations: Translations = {
     'cts.svg5.desc4': '',
 
     'cts.svg6.line1': 'Transporte',
-    'cts.svg6.line2': 'especializado',
+    'cts.svg6.line2': 'Especializado',
 
     'cts.svg6.desc1': 'Transporte de medicamentos y',
     'cts.svg6.desc2': 'transporte biológico para soporte',

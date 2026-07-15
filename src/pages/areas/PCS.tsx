@@ -17,7 +17,7 @@ import 'swiper/css/navigation';
 import { useTranslation } from '@/hooks/useTranslation';
 
 export default function PCS() {
-  const { t } = useTranslation();
+  const { t, isSpanish } = useTranslation();
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedSolution, setSelectedSolution] = useState<SolutionModalData | null>(null);
   const solutionsSwiperRef = useRef<SwiperType | null>(null);
@@ -113,10 +113,10 @@ export default function PCS() {
                       <text className="titulos" x="23" y="72" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i}.line1`)}</text>
                       <text className="titulos" x="23" y="107" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i}.line2`)}</text>
                       {t(`pcs.svg${i}.line3`) !== `pcs.svg${i}.line3` && <text className="titulos" x="23" y="142" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i}.line3`)}</text>}
-                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 ? "185" : "150"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc1`)}</text>
-                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 ? "210" : "175"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc2`)}</text>
-                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 ? "235" : "200"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc3`)}</text>
-                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 ? "260" : "225"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc4`)}</text>
+                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 || (isSpanish && i === 5) ? "185" : "150"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc1`)}</text>
+                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 || (isSpanish && i === 5) ? "210" : "175"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc2`)}</text>
+                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 || (isSpanish && i === 5) ? "235" : "200"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc3`)}</text>
+                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 || (isSpanish && i === 5) ? "260" : "225"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc4`)}</text>
 
                       <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(i - 1)}/>
                       <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(i - 1)}>{t('saibamais')}</text>

@@ -772,7 +772,7 @@ export const translations: Translations = {
     // TIS SVG text keys
     'tis.svg1.line1': 'Cadeia fria e',
     'tis.svg1.line2': 'embalagens',
-    'tis.svg1.desc1': 'Reutilizáveis de',
+    'tis.svg1.desc1': 'Embalagens reutilizáveis de',
     'tis.svg1.desc2': 'alta performance para',
     'tis.svg1.desc3': 'transporte em temperatura',
     'tis.svg1.desc4': 'controlada.',
@@ -799,7 +799,7 @@ export const translations: Translations = {
 
 
     // TIS Solution Modal keys
-    'tis.sol1.title': 'Cadeia fria e embalagens sustentáveis',
+    'tis.sol1.title': 'Cadeia fria e embalagens reutilizáveis',
     'tis.sol1.desc': 'Soluções integradas de logística e cadeia fria, combinada com embalagens Shield Box de alta performance reutilizáveis, desenvolvidas para garantir estabilidade térmica e integridade de produtos sensíveis.',
     'tis.sol1.dif1': 'Embalagens Shield Box qualificadas de diferentes tamanhos e diferentes faixas de temperatura ',
     'tis.sol1.dif2': 'Book completo de protocolos e relatórios de qualificação de desempenho (inverno e verão)',
@@ -817,7 +817,7 @@ export const translations: Translations = {
     'tis.sol2.dest1': 'Garantia de integridade térmica durante o transporte',
     'tis.sol2.dest2': 'Redução de custos e riscos operacionais',
 
-    'tis.sol3.title': 'Telemetria e Data Loggers',
+    'tis.sol3.title': 'Telemetria',
     'tis.sol3.desc': 'Data Loggers que proporcionam monitoramento contínuo de temperatura, umidade, geolocalização, luminosidade e queda, garantindo visibilidade e controle em tempo real ao longo de toda a cadeia logística, por meio da plataforma Bip Track.',
     'tis.sol3.dif1': 'Data Loggers retornáveis com monitoramento em tempo real dos indicadores',
     'tis.sol3.dif2': 'Data Loggers Descartáveis” USB”',
@@ -1562,15 +1562,15 @@ export const translations: Translations = {
     'pcs.svg4.desc2': 'directly to the patient, with full',
     'pcs.svg4.desc3': 'traceability and rigorous quality control.',
     'pcs.svg4.desc4': '',
-    'pcs.svg5.line1': 'Assembling',
-    'pcs.svg5.line2': 'Patient Kits',
+    'pcs.svg5.line1': 'Patient',
+    'pcs.svg5.line2': 'Kit Assembly',
     'pcs.svg5.line3': '',
     'pcs.svg5.desc1': 'Creation of personalized patient kits,',
     'pcs.svg5.desc2': 'with security, precise guidelines and',
     'pcs.svg5.desc3': 'planned logistics.',
     'pcs.svg5.desc4': '',
     'pcs.svg6.line1': 'Specialized',
-    'pcs.svg6.line2': 'transport',
+    'pcs.svg6.line2': 'Transportation',
     'pcs.svg6.line3': '',
     'pcs.svg6.desc1': 'Medicines and biological materials are',
     'pcs.svg6.desc2': 'transported with technical rigor',
@@ -1588,7 +1588,7 @@ export const translations: Translations = {
     'pcs.sol1.dest2': 'Reduced treatment discontinuation rates',
     'pcs.sol1.dest3': 'Structured and well-managed patient journey',
 
-    'pcs.sol2.title': 'Services for consumers and patients',
+    'pcs.sol2.title': 'Consumer and Patient Services',
     'pcs.sol2.desc': 'Specialized solutions for direct patient support, ensuring proper guidance, safety, and a high-quality experience.',
     'pcs.sol2.dif1': 'Dedicated contact center',
     'pcs.sol2.dif2': 'Highly trained team for patient guidance and support',
@@ -1599,7 +1599,7 @@ export const translations: Translations = {
     'pcs.sol2.dest2': 'Standardized and traceable interactions',
     'pcs.sol2.dest3': 'Ongoing support throughout the entire treatment journey',
 
-    'pcs.sol3.title': 'Innovative therapies and high complexity',
+    'pcs.sol3.title': 'Innovative Therapies',
     'pcs.sol3.desc': 'Comprehensive logistical and care support for advanced and high-complexity therapies, ensuring control, safety, and treatment integrity.',
     'pcs.sol3.dif1': 'Operations tailored to sensitive and complex therapies',
     'pcs.sol3.dif2': 'Rigorous supply chain control and management of special conditions',
@@ -1610,7 +1610,7 @@ export const translations: Translations = {
     'pcs.sol3.dest2': 'Reduced operational and treatment-related risks',
     'pcs.sol3.dest3': 'Integrated management of the therapeutic journey',
 
-    'pcs.sol4.title': 'Direct-to-patient ',
+    'pcs.sol4.title': 'Direct-to-Patient',
     'pcs.sol4.desc': 'Direct delivery of medicines to patients, ensuring end-to-end security, traceability, and control.',
     'pcs.sol4.dif1': 'Specialized home-delivery logistics',
     'pcs.sol4.dif2': 'Continuous monitoring of transportation and product conditions',
@@ -1621,7 +1621,7 @@ export const translations: Translations = {
     'pcs.sol4.dest2': 'Guaranteed product quality and integrity',
     'pcs.sol4.dest3': 'Greater efficiency in last-mile delivery',
 
-    'pcs.sol5.title': 'Assembling Patient Kits',
+    'pcs.sol5.title': 'Patient Kit Assembly',
     'pcs.sol5.desc': 'Customized assembly of therapeutic kits designed to support treatment administration and patient follow-up.',
     'pcs.sol5.dif1': 'Full customization according to therapeutic protocols',
     'pcs.sol5.dif2': 'Integration of medicines, supplies, and medical devices',
@@ -1632,7 +1632,7 @@ export const translations: Translations = {
     'pcs.sol5.dest2': 'Faster treatment availability for patients',
     'pcs.sol5.dest3': 'Seamless integration between logistics operations and patient care',
 
-    'pcs.sol6.title': 'Specialized transport',
+    'pcs.sol6.title': 'Specialized Transportation',
     'pcs.sol6.desc': 'Dedicated transportation services for sensitive medicines, medical supplies, and biological samples, ensuring safety through strict control and continuous monitoring.',
     'pcs.sol6.dif1': 'Fully temperature-controlled logistics chain',
     'pcs.sol6.dif2': 'Real-time transport tracking and monitoring',
@@ -1695,7 +1695,7 @@ export const translations: Translations = {
     'tis.sol2.dest1': 'Guaranteed thermal integrity throughout the entire transportation process',
     'tis.sol2.dest2': 'Reduced operational costs and minimized shipping risks',
 
-    'tis.sol3.title': 'Telemetry Data Loggers',
+    'tis.sol3.title': 'Telemetry',
     'tis.sol3.desc': 'Advanced telemetry solutions with data loggers that enable continuous monitoring of temperature, humidity, geolocation, light exposure, and shock events — providing real-time visibility and control throughout the entire logistics chain via the Bip Track platform.',
     'tis.sol3.dif1': 'Returnable data loggers offering real-time monitoring of critical parameters',
     'tis.sol3.dif2': 'Single-use USB data loggers for one-way shipments',
@@ -2514,7 +2514,7 @@ export const translations: Translations = {
     'tis.svg1.desc6': '',
 
     'tis.svg2.line1': 'Transporte de',
-    'tis.svg2.line2': 'cadena fría',
+    'tis.svg2.line2': 'cadena de frío',
     'tis.svg2.desc1': 'Servicios especializados de transporte ',
     'tis.svg2.desc2': 'en cadena fría. Simplifique su logística ',
     'tis.svg2.desc3': 'integrando transporte, logística inversa, ',
@@ -2549,7 +2549,7 @@ export const translations: Translations = {
     'tis.sol1.dest2': 'Sostenibilidad mediante el uso de embalajes reutilizables con una vida útil promedio de hasta 5 años',
     'tis.sol1.dest3': 'Reducción de pérdidas de producto y riesgos de desviaciones de temperatura',
 
-    'tis.sol2.title': 'Transporte de cadena fría',
+    'tis.sol2.title': 'Transporte de cadena de frío',
     'tis.sol2.desc': 'Servicios logísticos especializados para productos sensibles a la temperatura, con estricto control térmico y trazabilidad de extremo a extremo.',
     'tis.sol2.dif1': 'Certificaciones nacionales e internacionales (operaciones con licencia IATA)',
     'tis.sol2.dif2': 'Transporte terrestre y aéreo en cumplimiento con todas las clases de productos',

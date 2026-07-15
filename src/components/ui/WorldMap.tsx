@@ -57,17 +57,17 @@ const cities: CityWithResponsive[] = [
       description: ''
     }
   },
-  //{
-    //name: 'Uruguai',
-    //position: {
-      //desktop: { x: '26.5vw', bottom: '7vw' },
-      //mobile: { x: '288px', bottom: '60px' }
-    //},
-    //info: {
-      //title: 'Montevideo (UY)',
-      //description: 'Lamas Brig. Gral. Diego 1353 - 901 - Montevideo (UY)'
-   // }
-  //},
+  {
+    name: 'Uruguai',
+    position: {
+      desktop: { x: '26.5vw', bottom: '7vw' },
+      mobile: { x: '288px', bottom: '60px' }
+    },
+    info: {
+      title: 'Montevideo (UY)',
+      description: 'Lamas Brig. Gral. Diego 1353 - 901 - Montevideo (UY)'
+    }
+  },
   {
     name: 'São Paulo',
     position: {

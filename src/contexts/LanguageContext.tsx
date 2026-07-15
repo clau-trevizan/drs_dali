@@ -1677,7 +1677,7 @@ export const translations: Translations = {
     'tis.svg4.desc5': 'storage, transportation and monitoring ',
     'tis.svg4.desc6': 'services.',
 
-    'tis.sol1.title': 'Sustainable Packaging',
+    'tis.sol1.title': 'Cold Chain & Reusable Packaging Solutions',
     'tis.sol1.desc': 'Integrated cold chain logistics solutions powered by high-performance, reusable Shield Box packaging systems — specifically designed to maintain thermal stability and ensure the integrity of temperature-sensitive products throughout the entire logistics process.',
     'tis.sol1.dif1': 'Qualified Shield Box packaging available in multiple sizes and temperature ranges',
     'tis.sol1.dif2': 'Comprehensive qualification protocols and performance reports, including summer and winter validation',
@@ -2458,7 +2458,7 @@ export const translations: Translations = {
     'pcs.sol2.dest2': 'Estandarización y trazabilidad de las interacciones',
     'pcs.sol2.dest3': 'Soporte continuo durante el tratamiento',
 
-    'pcs.sol3.title': 'Terapias innovadoras y alta complejidad',
+    'pcs.sol3.title': 'Terapias Innovadoras',
     'pcs.sol3.desc': 'Soporte logístico y asistencial para terapias avanzadas y de alta complejidad, garantizando control, seguridad e integridad del tratamiento.',
     'pcs.sol3.dif1': 'Operación adaptada a terapias sensibles y complejas',
     'pcs.sol3.dif2': 'Control estricto de la cadena de suministro y condiciones especiales',
@@ -2480,7 +2480,7 @@ export const translations: Translations = {
     'pcs.sol4.dest2': 'Garantía de integridad del medicamento',
     'pcs.sol4.dest3': 'Eficiencia en la última milla de entrega',
 
-    'pcs.sol5.title': 'Montaje de Patient Kits',
+    'pcs.sol5.title': 'Ensamble de Kits para Pacientes',
     'pcs.sol5.desc': 'Montaje personalizado de kits terapéuticos para soporte al tratamiento y seguimiento del paciente.',
     'pcs.sol5.dif1': 'Personalización según protocolo terapéutico',
     'pcs.sol5.dif2': 'Integración de medicamentos, insumos y dispositivos',

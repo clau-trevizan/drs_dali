@@ -114,6 +114,7 @@ export const translations: Translations = {
     'footer.social': 'Siga a DRS Group nas redes sociais',
     'footer.rights': '© 2026 DRS Group - Todos os direitos reservados',
     'footer.privacy': 'Política de Privacidade',
+    'footer.quality': 'Política de Qualidade',
     'footer.terms': 'Termos de Uso',
     'footer.cookies': 'Política de Cookies',
 
@@ -275,6 +276,9 @@ export const translations: Translations = {
 
     // Privacy Policy
     'privacy.title': 'Política de Privacidade',
+
+    // Quality Policy
+    'quality.title': 'Política de Qualidade',
 
     // WorldMap
     'worldmap.close': 'Fechar',
@@ -955,6 +959,7 @@ export const translations: Translations = {
     'footer.social': 'Follow DRS Group on social media',
     'footer.rights': '© 2026 DRS Group - All rights reserved',
     'footer.privacy': 'Privacy Policy',
+    'footer.quality': 'Quality Policy',
     'footer.terms': 'Terms of Use',
     'footer.cookies': 'Cookie Policy',
 
@@ -1123,6 +1128,9 @@ export const translations: Translations = {
 
     // Privacy Policy
     'privacy.title': 'Privacy Policy',
+
+    // Quality Policy
+    'quality.title': 'Quality Policy',
 
     // WorldMap
     'worldmap.close': 'Close',
@@ -1839,6 +1847,7 @@ export const translations: Translations = {
     'footer.social': 'Siga a DRS Group en las redes sociales',
     'footer.rights': '© 2026 DRS Group - Todos los derechos reservados',
     'footer.privacy': 'Política de Privacidad',
+    'footer.quality': 'Política de Qualidad',
     'footer.terms': 'Términos de Uso',
     'footer.cookies': 'Política de Cookies',
 
@@ -2006,6 +2015,9 @@ export const translations: Translations = {
 
     // Privacy Policy
     'privacy.title': 'Política de Privacidad',
+
+    // Quality Policy
+    'quality.title': 'Política de Qualidad',
 
     // WorldMap
     'worldmap.close': 'Cerrar',

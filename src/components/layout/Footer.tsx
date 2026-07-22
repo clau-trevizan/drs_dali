@@ -46,6 +46,7 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
 
   const legalLinks = [
     { label: t('footer.privacy'), href: '/politica-privacidade' },
+    { label: t('footer.quality'), href: '/politica-qualidade' },
     { label: t('footer.terms'), href: '/termos-uso' },
     { label: t('footer.cookies'), href: '/politica-cookies' },
   ];

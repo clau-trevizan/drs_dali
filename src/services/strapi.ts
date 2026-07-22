@@ -131,6 +131,15 @@ export async function getPrivacyPolicy(locale?: string): Promise<{ title: string
   return { title: response.data.Title, content: response.data.Texto };
 }
 
+export async function getQualityPolicy(locale?: string): Promise<{ title: string; content: string }> {
+  const strapiLocale = locale === 'en' ? 'en' : locale === 'es' ? 'es-ES' : 'pt-BR';
+  const query = buildQuery({ locale: strapiLocale });
+  const response = await fetchAPI<StrapiResponse<{ Title: string; Texto: string }>>(
+    `/politica-de-qualidade${query}`
+  );
+  return { title: response.data.Title, content: response.data.Texto };
+}
+
 export async function getTermsOfUse(locale?: string): Promise<{ title: string; content: string }> {
   const strapiLocale = locale === 'en' ? 'en' : locale === 'es' ? 'es-ES' : 'pt-BR';
   const query = buildQuery({ locale: strapiLocale });
@@ -250,6 +259,7 @@ export const strapiService = {
   getGroupPage,
   getContactPage,
   getPrivacyPolicy,
+  getQualityPolicy,
   getTermsOfUse,
   getCookiesPolicy,
   getInsights,

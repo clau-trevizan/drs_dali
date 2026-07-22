@@ -74,6 +74,15 @@ export function usePrivacyPolicy(locale?: string) {
   });
 }
 
+// Hook for Quality Policy
+export function useQualityPolicy(locale?: string) {
+  return useQuery({
+    queryKey: ['quality-policy', locale],
+    queryFn: () => strapiService.getQualityPolicy(locale),
+    staleTime: 1000 * 60 * 60,
+  });
+}
+
 // Hook for Terms of Use
 export function useTermsOfUse(locale?: string) {
   return useQuery({

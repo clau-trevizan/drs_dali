@@ -24,6 +24,7 @@ const Insights = lazy(() => import("./pages/Insights"));
 const InsightPost = lazy(() => import("./pages/InsightPost"));
 const Contato = lazy(() => import("./pages/Contato"));
 const PoliticaPrivacidade = lazy(() => import("./pages/PoliticaPrivacidade"));
+const PoliticaQualidade = lazy(() => import("./pages/PoliticaQualidade"));
 const TermosDeUso = lazy(() => import("./pages/TermosDeUso"));
 const PoliticaCookies = lazy(() => import("./pages/PoliticaCookies"));
 
@@ -70,6 +71,7 @@ const App = () => {
                 <Route path="/insights/:slug" element={<InsightPost />} />
                 <Route path="/contato" element={<Contato />} />
                 <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
+                <Route path="/politica-qualidade" element={<PoliticaQualidade />} />
                 <Route path="/termos-de-uso" element={<TermosDeUso />} />
                 <Route path="/termos-uso" element={<TermosDeUso />} />
                 <Route path="/politica-cookies" element={<PoliticaCookies />} />

@@ -837,7 +837,7 @@ export const translations: Translations = {
     'tis.sol3.title': 'Telemetria',
     'tis.sol3.desc': 'Dataloggers que proporcionam monitoramento contínuo de temperatura, umidade, geolocalização, luminosidade e queda, garantindo visibilidade e controle em tempo real ao longo de toda a cadeia logística, por meio da plataforma Bip Track.',
     'tis.sol3.dif1': 'Dataloggers retornáveis com monitoramento em tempo real dos indicadores',
-    'tis.sol3.dif2': 'Dataloggers Descartáveis “USB”',
+    'tis.sol3.dif2': 'Dataloggers descartáveis “USB”',
     'tis.sol3.dif3': 'Registro contínuo de temperatura de -200°C a +200°C',
     'tis.sol3.dif4': 'Alertas para desvios de temperatura e umidade',
     'tis.sol3.dif5': 'Integração com sistemas de rastreabilidade, tecnologia 4G com certificação ANATEL',

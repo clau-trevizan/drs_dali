@@ -53,6 +53,16 @@ export default function PCS() {
       description: t('pcs.sol6.desc'), 
       diferenciais: [t('pcs.sol6.dif1'), t('pcs.sol6.dif2'), t('pcs.sol6.dif3'), t('pcs.sol6.dif4'), t('pcs.sol6.dif5')],
       destaques: [t('pcs.sol6.dest1'), t('pcs.sol6.dest2'), t('pcs.sol6.dest3')]
+    },
+    { title: t('pcs.sol7.title'),
+      description: t('pcs.sol7.desc'),
+      diferenciais: [t('pcs.sol7.dif1'), t('pcs.sol7.dif2'), t('pcs.sol7.dif3'), t('pcs.sol7.dif4'), t('pcs.sol7.dif5'), t('pcs.sol7.dif6')],
+      destaques: [t('pcs.sol7.dest1'), t('pcs.sol7.dest2'), t('pcs.sol7.dest3')]
+    },
+    { title: t('pcs.sol8.title'),
+      description: t('pcs.sol8.desc'),
+      diferenciais: [t('pcs.sol8.dif1'), t('pcs.sol8.dif2'), t('pcs.sol8.dif3')],
+      destaques: [t('pcs.sol8.dest1'), t('pcs.sol8.dest2'), t('pcs.sol8.dest3')]
     }
   ];
 
@@ -104,9 +114,9 @@ export default function PCS() {
             <div className="col-span-12 lg:col-start-2 lg:col-span-10">
               <span style={{ color: '#274B41', fontSize: '20px', fontStyle: 'normal', fontWeight: 400, lineHeight: '40px', borderRadius: '30px', background: '#69C0AC', padding: '3px 30px', display: 'inline-block', textTransform: 'uppercase' }}>{t('pcs.solutions.tag')}</span>
 
-              {/* 6 Solution Blocks Grid - Desktop */}
+              {/* Solution Blocks Grid - Desktop */}
               <div className="hidden lg:grid grid-cols-3 gap-6 mt-8">
-                {[1,2,3,4,5,6].map((i) => (
+                {[1,2,3,4,5,6,7,8].map((i) => (
                   <div key={i} className="col-span-1" style={{ marginTop: i === 2 ? '65px' : i === 3 ? '130px' : i === 4 ? '-110px' : i === 5 ? '-45px' : i === 6 ? '20px' : '0' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
                       <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
@@ -117,6 +127,7 @@ export default function PCS() {
                       <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 || (isSpanish && i === 5) ? "210" : "175"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc2`)}</text>
                       <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 || (isSpanish && i === 5) ? "235" : "200"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc3`)}</text>
                       <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 || (isSpanish && i === 5) ? "260" : "225"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc4`)}</text>
+                      {(i === 7 || i === 8) && <text className="botao" x="23" y="250" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc5`)}</text>}
 
                       <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(i - 1)}/>
                       <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(i - 1)}>{t('saibamais')}</text>
@@ -129,7 +140,7 @@ export default function PCS() {
               {/* Mobile Carousel */}
               <div className="lg:hidden mt-8">
                 <Swiper modules={[Navigation]} onSwiper={(swiper) => { solutionsSwiperRef.current = swiper; }} onSlideChange={(swiper) => setActiveSolutionSlide(swiper.activeIndex)} spaceBetween={16} slidesPerView={1} className="w-full">
-                  {[0,1,2,3,4,5].map((i) => (
+                  {[0,1,2,3,4,5,6,7].map((i) => (
                     <SwiperSlide key={i}>
                       <div className="px-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
@@ -141,6 +152,7 @@ export default function PCS() {
                           <text className="botao" x="23" y="210" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc2`)}</text>
                           <text className="botao" x="23" y="235" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc3`)}</text>
                           <text className="botao" x="23" y="260" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc4`)}</text>
+                          {(i === 6 || i === 7) && <text className="botao" x="23" y="285" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i+1}.desc5`)}</text>}
                           <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(i)}/>
                           <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(i)}>{t('saibamais')}</text>
                         </svg>

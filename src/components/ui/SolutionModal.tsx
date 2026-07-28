@@ -8,6 +8,8 @@ import {
 import { useEffect } from "react";
 import { stopLenis, startLenis } from "@/components/ui/SmoothScroll";
 import { useTranslation } from '@/hooks/useTranslation';
+import { Hand, ChevronDown } from "lucide-react";
+import { ScrollHintWrap } from "@/components/ScrollHintWrap";
 
 export interface SolutionModalData {
   title: string;
@@ -26,6 +28,7 @@ interface SolutionModalProps {
 
 export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) {
   const { t } = useTranslation();
+  const [showHint, setShowHint] = React.useState(false);
 
   React.useEffect(() => {
     const body = document.body;
@@ -51,6 +54,22 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
     };
   }, []);
 
+  React.useEffect(() => {
+    if (!open) {
+      setShowHint(false);
+      return;
+    }
+
+    if (window.innerWidth <= 768) {
+      setShowHint(true);
+
+      const timer = setTimeout(() => {
+        setShowHint(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [open]);
 
   if (!data) return null;
 
@@ -65,7 +84,7 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
     >
     {/* Content area */}
     <div
-    className="p-6 pt-8 lg:p-10 lg:pt-8 relative"
+    className="p-6 pt-8 lg:p-10 lg:pt-8 relative mobile-h"
     style={{
       borderRadius: '30px',
       background: 'rgb(255, 255, 255)'
@@ -97,7 +116,7 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
     {data.title}
     </DialogTitle>
     </DialogHeader>
-    <div className="content-scroll overflow-y-auto" data-lenis-prevent>
+    <div className="content-scroll" data-lenis-prevent onScroll={() => setShowHint(false)}>
     <p
     className="mb-6"
     style={{
@@ -135,11 +154,13 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
 
         {data.image && data.imageAfter === index + 1 && (
           <li className="py-4">
+          <ScrollHintWrap>
           <img
           src={data.image}
           alt={data.title}
-          className="w-full rounded-lg"
+          className="w-full rounded-lg drs-chart-img"
           />
+          </ScrollHintWrap>
           </li>
         )}
         </React.Fragment>
@@ -176,15 +197,25 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
     )}
     {data.image && data.imageAfter == null && (
       <div className="mb-6">
+      <ScrollHintWrap>
       <img
       src={data.image}
       alt={data.title}
-      className="w-full rounded-lg"
+      className="w-full rounded-lg drs-chart-img"
       />
+      </ScrollHintWrap>
       </div>
     )}
     </div>
     </div>
+
+    {showHint && (
+      <div className="scroll-hint">
+        <Hand className="hint-hand" size={32} strokeWidth={1.8} />
+        <ChevronDown className="hint-arrow" size={22} />
+      </div>
+    )}
+
     </DialogContent>
     </Dialog>
   );

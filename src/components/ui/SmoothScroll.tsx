@@ -7,18 +7,17 @@ let lenisInstance: Lenis | null = null;
 export function getLenis() {
   return lenisInstance;
 }
-export function stopLenis() {
-  lenisInstance?.stop();
-}
-
-export function startLenis() {
-  lenisInstance?.start();
-}
 
 export function SmoothScroll() {
   const location = useLocation();
 
   useEffect(() => {
+    const isMobile = window.matchMedia("(max-width: 1024px)").matches;
+
+    if (isMobile) {
+      return;
+    }
+
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -32,20 +31,22 @@ export function SmoothScroll() {
 
     lenisInstance = lenis;
 
+    let animationFrame: number;
+
     function raf(time: number) {
       lenis.raf(time);
-      requestAnimationFrame(raf);
+      animationFrame = requestAnimationFrame(raf);
     }
 
-    requestAnimationFrame(raf);
+    animationFrame = requestAnimationFrame(raf);
 
     return () => {
+      cancelAnimationFrame(animationFrame);
       lenisInstance = null;
       lenis.destroy();
     };
   }, []);
 
-  // Scroll to top on route change
   useEffect(() => {
     if (lenisInstance) {
       lenisInstance.scrollTo(0, { immediate: true });

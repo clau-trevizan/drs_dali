@@ -7,6 +7,13 @@ let lenisInstance: Lenis | null = null;
 export function getLenis() {
   return lenisInstance;
 }
+export function stopLenis() {
+  lenisInstance?.stop();
+}
+
+export function startLenis() {
+  lenisInstance?.start();
+}
 
 export function SmoothScroll() {
   const location = useLocation();
@@ -18,6 +25,9 @@ export function SmoothScroll() {
       orientation: 'vertical',
       gestureOrientation: 'vertical',
       smoothWheel: true,
+      prevent: (node) => {
+        return node.closest('[data-lenis-prevent]') !== null;
+      },
     });
 
     lenisInstance = lenis;

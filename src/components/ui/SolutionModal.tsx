@@ -5,6 +5,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { useEffect } from "react";
+import { stopLenis, startLenis } from "@/components/ui/SmoothScroll";
 import { useTranslation } from '@/hooks/useTranslation';
 
 export interface SolutionModalData {
@@ -12,6 +14,8 @@ export interface SolutionModalData {
   description: string;
   diferenciais: string[];
   destaques: string[];
+  image?: string;
+  imageAfter?: number;
 }
 
 interface SolutionModalProps {
@@ -22,12 +26,38 @@ interface SolutionModalProps {
 
 export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) {
   const { t } = useTranslation();
+
+  React.useEffect(() => {
+    const body = document.body;
+    const html = document.documentElement;
+
+    const observer = new MutationObserver(() => {
+      const locked = body.getAttribute("data-scroll-locked") === "1";
+
+      if (locked) {
+        html.setAttribute("data-scroll-locked", "1");
+      } else {
+        html.removeAttribute("data-scroll-locked");
+      }
+    });
+
+    observer.observe(body, {
+      attributes: true,
+      attributeFilter: ["data-scroll-locked"],
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+
   if (!data) return null;
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
     <DialogContent
-    className="max-w-2xl p-0 overflow-hidden border-0"
+    className="max-w-2xl p-0 border-0"
     style={{
       background: 'none',
       borderRadius: '0'
@@ -67,7 +97,7 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
     {data.title}
     </DialogTitle>
     </DialogHeader>
-
+    <div className="content-scroll overflow-y-auto" data-lenis-prevent>
     <p
     className="mb-6"
     style={{
@@ -91,16 +121,28 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
       >
       {t(`diferenciais`)}
       </h3>
+
       <ul className="space-y-2">
       {data.diferenciais.map((item, index) => (
+        <React.Fragment key={index}>
         <li
-        key={index}
         className="flex items-start gap-2"
         style={{ fontSize: '15px', color: '#274B41' }}
         >
         <span>•</span>
         <span>{item}</span>
         </li>
+
+        {data.image && data.imageAfter === index + 1 && (
+          <li className="py-4">
+          <img
+          src={data.image}
+          alt={data.title}
+          className="w-full rounded-lg"
+          />
+          </li>
+        )}
+        </React.Fragment>
       ))}
       </ul>
       </div>
@@ -132,6 +174,16 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
       </ul>
       </div>
     )}
+    {data.image && data.imageAfter == null && (
+      <div className="mb-6">
+      <img
+      src={data.image}
+      alt={data.title}
+      className="w-full rounded-lg"
+      />
+      </div>
+    )}
+    </div>
     </div>
     </DialogContent>
     </Dialog>

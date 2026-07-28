@@ -24,20 +24,24 @@ export default function TIS() {
   const [activeSolutionSlide, setActiveSolutionSlide] = useState(0);
 
   const solutionsData: SolutionModalData[] = [
-    { title: t('tis.sol1.title'), 
-      description: t('tis.sol1.desc'), 
-      diferenciais: [t('tis.sol1.dif1'), t('tis.sol1.dif2'), t('tis.sol1.dif3')],
+    { title: t('tis.sol1.title'),
+      description: t('tis.sol1.desc'),
+      diferenciais: [t('tis.sol1.dif1'),t('tis.sol1.dif2'), t('tis.sol1.dif3')],
+      image: t('tis.sol1.image'),
+      imageAfter: 1, // mostra a imagem após o primeiro diferencial
       destaques: [t('tis.sol1.dest1'), t('tis.sol1.dest2'), t('tis.sol1.dest3')]
     },
-    { title: t('tis.sol2.title'), 
-      description: t('tis.sol2.desc'), 
+    { title: t('tis.sol2.title'),
+      description: t('tis.sol2.desc'),
       diferenciais: [t('tis.sol2.dif1'), t('tis.sol2.dif2'), t('tis.sol2.dif3'), t('tis.sol2.dif4')],
+      image: t('tis.sol2.image'),
       destaques: [t('tis.sol2.dest1'), t('tis.sol2.dest2')]
     },
 
-    { title: t('tis.sol3.title'), 
-      description: t('tis.sol3.desc'), 
+    { title: t('tis.sol3.title'),
+      description: t('tis.sol3.desc'),
       diferenciais: [t('tis.sol3.dif1'), t('tis.sol3.dif2'), t('tis.sol3.dif3'), t('tis.sol3.dif4'), t('tis.sol3.dif5'), t('tis.sol3.dif6'), t('tis.sol3.dif7')],
+      image: t('tis.sol3.image'),
       destaques: [t('tis.sol3.dest1'), t('tis.sol3.dest2'), t('tis.sol3.dest3'), t('tis.sol3.dest4')]
     }
   ];

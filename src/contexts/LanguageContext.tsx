@@ -861,6 +861,7 @@ export const translations: Translations = {
     'tis.sol1.dest1': 'Maior segurança no transporte, assegurando conformidade regulatória',
     'tis.sol1.dest2': 'Sustentabilidade com uso de embalagens reutilizáveis com média de 5 anos de uso',
     'tis.sol1.dest3': 'Redução de perdas e desvios de temperatura',
+    'tis.sol1.image': "/images/tis-sol1-img.jpg",
 
     'tis.sol2.title': 'Transporte de Cadeia Fria',
     'tis.sol2.desc': 'Logística especializada para transporte de produtos termossensíveis, com controle rigoroso de temperatura e rastreabilidade completa.',
@@ -870,6 +871,7 @@ export const translations: Translations = {
     'tis.sol2.dif4': 'Conformidade com todas as normas regulatórias',
     'tis.sol2.dest1': 'Garantia de integridade térmica durante o transporte',
     'tis.sol2.dest2': 'Redução de custos e riscos operacionais',
+    'tis.sol2.image': "/images/tis-sol2-img.jpg",
 
     'tis.sol3.title': 'Telemetria',
     'tis.sol3.desc': 'Dataloggers que proporcionam monitoramento contínuo de temperatura, umidade, geolocalização, luminosidade e queda, garantindo visibilidade e controle em tempo real ao longo de toda a cadeia logística, por meio da plataforma Bip Track.',
@@ -884,6 +886,7 @@ export const translations: Translations = {
     'tis.sol3.dest2': 'Resposta rápida a desvios',
     'tis.sol3.dest3': 'Maior controle e confiabilidade dos dados',
     'tis.sol3.dest4': 'Certificado de calibração atendendo a RDC 430',
+    'tis.sol3.image': "/images/tis-sol3-img.jpg",
 
 
     // Home Insights carousel
@@ -1728,7 +1731,7 @@ export const translations: Translations = {
     'pcs.sol7.dest1':'Enhanced convenience and safety for patients ',
     'pcs.sol7.dest2':'Reduced logistics and operational risks ',
     'pcs.sol7.dest3':'Complete end-to-end visibility and control of processes ',
-    
+
     'pcs.sol8.title': 'Specialized Storage and Distribution of Medical Supplies and Equipment',
     'pcs.sol8.desc': 'Description 8 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
     'pcs.sol8.dif1':'Specialized logistics for both home and healthcare facility deliveries',
@@ -1784,6 +1787,7 @@ export const translations: Translations = {
     'tis.sol1.dest1': 'Enhanced shipment safety and full compliance with regulatory standards',
     'tis.sol1.dest2': 'Sustainable packaging model with reusable containers offering an average lifecycle of up to 5 years',
     'tis.sol1.dest3': 'Minimized risks of product loss and temperature excursions',
+    'tis.sol1.image': "/images/tis-sol1-img-en.jpg",
 
     'tis.sol2.title': 'Cold chain transport',
     'tis.sol2.desc': 'Specialized logistics services for temperature-sensitive products, ensuring strict temperature control, regulatory compliance, and full traceability across every stage of transport.',
@@ -1793,6 +1797,7 @@ export const translations: Translations = {
     'tis.sol2.dif4': 'Comprehensive regulatory compliance across all transportation and handling processes',
     'tis.sol2.dest1': 'Guaranteed thermal integrity throughout the entire transportation process',
     'tis.sol2.dest2': 'Reduced operational costs and minimized shipping risks',
+    'tis.sol2.image': "/images/tis-sol2-img-en.jpg",
 
     'tis.sol3.title': 'Telemetry',
     'tis.sol3.desc': 'Advanced telemetry solutions with data loggers that enable continuous monitoring of temperature, humidity, geolocation, light exposure, and shock events — providing real-time visibility and control throughout the entire logistics chain via the Bip Track platform.',
@@ -1807,6 +1812,7 @@ export const translations: Translations = {
     'tis.sol3.dest2': 'Rapid detection and response to environmental deviations',
     'tis.sol3.dest3': 'Increased data accuracy, control, and reliability',
     'tis.sol3.dest4': 'Calibration certificates in full compliance with RDC 430 regulatory standards',
+    'tis.sol3.image': "/images/tis-sol3-img-en.jpg",
 
     'tis.sol4.title': 'Integrated Services',
     'tis.sol4.desc': 'You can count on our integrated cold chain management to make product distribution feasible, with ready-to-use packaging and returnable management and maturation, storage, transportation and monitoring services.',
@@ -2637,7 +2643,7 @@ export const translations: Translations = {
     'pcs.sol7.dest1':'Comodidad y seguridad para el paciente',
     'pcs.sol7.dest2':'Reducción de riesgos logísticos',
     'pcs.sol7.dest3':'Control integral de extremo a extremo de la operación',
-    
+
     'pcs.sol8.title': 'Almacenamiento y distribución especializada de insumos y equipos médicos',
     'pcs.sol8.desc': 'Descripción 8 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
     'pcs.sol8.dif1':'Logística especializada para entrega domiciliaria o a centros de salud',
@@ -2697,6 +2703,7 @@ export const translations: Translations = {
     'tis.sol1.dest1': 'Mayor seguridad en el transporte y cumplimiento regulatorio total',
     'tis.sol1.dest2': 'Sostenibilidad mediante el uso de embalajes reutilizables con una vida útil promedio de hasta 5 años',
     'tis.sol1.dest3': 'Reducción de pérdidas de producto y riesgos de desviaciones de temperatura',
+    'tis.sol1.image': "/images/tis-sol1-img-es.jpg",
 
     'tis.sol2.title': 'Transporte de Cadena de Frío',
     'tis.sol2.desc': 'Servicios logísticos especializados para productos sensibles a la temperatura, con estricto control térmico y trazabilidad de extremo a extremo.',
@@ -2706,6 +2713,7 @@ export const translations: Translations = {
     'tis.sol2.dif4': 'Cumplimiento total de normativas regulatorias',
     'tis.sol2.dest1': 'Integridad térmica garantizada durante todo el proceso de transporte',
     'tis.sol2.dest2': 'Reducción de costos operativos y minimización de riesgos',
+    'tis.sol2.image': "/images/tis-sol2-img-es.jpg",
 
     'tis.sol3.title': 'Telemetría',
     'tis.sol3.desc': 'Data loggers que permiten el monitoreo continuo de temperatura, humedad, geolocalización, exposición a luz y eventos de impacto, garantizando visibilidad y control en tiempo real a lo largo de toda la cadena logística a través de la plataforma Bip Track.',
@@ -2720,6 +2728,7 @@ export const translations: Translations = {
     'tis.sol3.dest2': 'Respuesta rápida ante desviaciones y excursiones térmicas',
     'tis.sol3.dest3': 'Mayor precisión, control y confiabilidad de los datos',
     'tis.sol3.dest4': 'Certificados de calibración en cumplimiento con la normativa RDC 430',
+    'tis.sol3.image': "/images/tis-sol3-img-es.jpg",
 
     'tis.sol4.title': 'Servicios Integrados',
     'tis.sol4.desc': 'Cuente con nuestra gestión integrada de la cadena fría para facilitar la distribución de sus productos, con embalajes listos para usar, gestión de retornables y servicios de maduración, almacenamiento, transporte y monitoreo.',

@@ -17,7 +17,7 @@ import 'swiper/css/navigation';
 import { useTranslation } from '@/hooks/useTranslation';
 
 export default function PCS() {
-  const { t, isSpanish } = useTranslation();
+  const { t } = useTranslation();
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedSolution, setSelectedSolution] = useState<SolutionModalData | null>(null);
   const solutionsSwiperRef = useRef<SwiperType | null>(null);
@@ -116,25 +116,31 @@ export default function PCS() {
 
               {/* Solution Blocks Grid - Desktop */}
               <div className="hidden lg:grid grid-cols-3 gap-6 mt-8">
-                {[1,2,3,4,5,6,7,8].map((i) => (
-                  <div key={i} className="col-span-1" style={{ marginTop: i === 2 ? '65px' : i === 3 ? '130px' : i === 4 ? '-110px' : i === 5 ? '-45px' : i === 6 ? '20px' : '0' }}>
+                {[1,2,3,4,5,6,7,8].map((i) => {
+                  const thirdTitleLine = t(`pcs.svg${i}.line3`);
+                  const hasThirdTitleLine = thirdTitleLine !== `pcs.svg${i}.line3` && thirdTitleLine.trim() !== '';
+                  const descriptionStartY = hasThirdTitleLine ? 185 : 150;
+
+                  return (
+                    <div key={i} className="col-span-1" style={{ marginTop: i === 2 ? '65px' : i === 3 ? '130px' : i === 4 ? '-110px' : i === 5 ? '-45px' : i === 6 ? '20px' : i === 7 ? '-86px' : i === 8 ? '-21px' : '0' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 422 379" fill="none">
                       <path d="M341.007 0.5C352.778 0.500198 362.317 10.0574 362.317 21.8457V48.5039C362.318 60.3575 371.912 69.9714 383.752 69.9717H399.392C411.264 69.9717 420.887 79.609 420.888 91.502V354.364C420.888 367.288 410.427 377.761 397.528 377.761H271.695C260.023 377.761 250.561 368.285 250.561 356.593V331.591H250.552C250.287 319.899 240.739 310.5 229 310.5H228.998L23.3887 311.499C10.7482 311.498 0.5 301.236 0.5 288.573V24.8965C0.500217 11.9732 10.9583 1.5 23.8594 1.5H23.8613L341.007 0.5Z" stroke="#274B41"/>
                       <text className="titulos" x="23" y="72" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i}.line1`)}</text>
                       <text className="titulos" x="23" y="107" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i}.line2`)}</text>
-                      {t(`pcs.svg${i}.line3`) !== `pcs.svg${i}.line3` && <text className="titulos" x="23" y="142" fontSize="35" fontWeight="900" fill="#274B41">{t(`pcs.svg${i}.line3`)}</text>}
-                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 || (isSpanish && i === 5) ? "185" : "150"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc1`)}</text>
-                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 || (isSpanish && i === 5) ? "210" : "175"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc2`)}</text>
-                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 || (isSpanish && i === 5) ? "235" : "200"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc3`)}</text>
-                      <text className="botao" x="23" y={i === 1 || i === 2 || i === 3 || (isSpanish && i === 5) ? "260" : "225"} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc4`)}</text>
-                      {(i === 7 || i === 8) && <text className="botao" x="23" y="250" fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc5`)}</text>}
+                      {hasThirdTitleLine && <text className="titulos" x="23" y="142" fontSize="35" fontWeight="900" fill="#274B41">{thirdTitleLine}</text>}
+                      <text className="botao" x="23" y={descriptionStartY} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc1`)}</text>
+                      <text className="botao" x="23" y={descriptionStartY + 25} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc2`)}</text>
+                      <text className="botao" x="23" y={descriptionStartY + 50} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc3`)}</text>
+                      <text className="botao" x="23" y={descriptionStartY + 75} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc4`)}</text>
+                      {(i === 7 || i === 8) && <text className="botao" x="23" y={descriptionStartY + 100} fontSize="20" fontWeight="400" fill="#008C79">{t(`pcs.svg${i}.desc5`)}</text>}
 
                       <rect x="269" y="325" width="135" height="41" rx="10" fill="#274B41" className="cursor-pointer hover:opacity-80" onClick={() => openModal(i - 1)}/>
                       <text className="botao cursor-pointer" x="291" y="352" fontSize="16" fontWeight="400" fill="#ffffff" onClick={() => openModal(i - 1)}>{t('saibamais')}</text>
 
                     </svg>
                   </div>
-                ))}
+                  );
+                })}
               </div>
 
               {/* Mobile Carousel */}

@@ -5,8 +5,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { useEffect } from "react";
-import { stopLenis, startLenis } from "@/components/ui/SmoothScroll";
+//import { useEffect } from "react";
+//import { stopLenis, startLenis } from "@/components/ui/SmoothScroll";
 import { useTranslation } from '@/hooks/useTranslation';
 import { Hand, ChevronDown } from "lucide-react";
 import { ScrollHintWrap } from "@/components/ScrollHintWrap";
@@ -76,7 +76,7 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
     <DialogContent
-    className="max-w-2xl p-0 border-0"
+    className="my-4 w-[calc(100%-2rem)] max-w-2xl border-0 p-0 sm:my-8 sm:w-full"
     style={{
       background: 'none',
       borderRadius: '0'
@@ -84,14 +84,14 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
     >
     {/* Content area */}
     <div
-    className="p-6 pt-8 lg:p-10 lg:pt-8 relative mobile-h"
+    className="mobile-h relative flex flex-col p-6 pt-4 lg:block lg:p-10 lg:pt-8"
     style={{
       borderRadius: '30px',
       background: 'rgb(255, 255, 255)'
     }}
     >
     {/* Close button - top right */}
-    <div className="absolute top-4 right-4 lg:top-6 lg:right-6">
+    <div className="flex justify-end lg:absolute lg:right-6 lg:top-6">
     <button
     onClick={() => onOpenChange(false)}
     className="px-4 py-2 text-white text-sm font-medium rounded-[10px] hover:opacity-80 transition-opacity"
@@ -103,7 +103,7 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
     </button>
     </div>
 
-    <DialogHeader className="mb-6 pr-24">
+    <DialogHeader className="mb-6 mt-3 pr-0 lg:mt-0 lg:pr-24">
     <DialogTitle
     className="text-left"
     style={{

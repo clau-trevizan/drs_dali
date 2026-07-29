@@ -1091,10 +1091,16 @@ html, body {
     font-size: 30px;
   }
   .mobile-h{
-    height: calc(100dvh - 75px);
+    height: calc(100dvh - 32px);
+    max-height: calc(100dvh - 32px);
   }
   .content-scroll {
-    height: calc(65dvh - 30px);
+    flex: 1 1 auto;
+    min-height: 0;
+    height: auto;
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   /* Hide scroll hint by default; mobile media query below enables it */

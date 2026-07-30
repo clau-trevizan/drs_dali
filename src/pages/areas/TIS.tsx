@@ -195,7 +195,12 @@ export default function TIS() {
     </div>
     </section>
 
-    <SolutionModal open={modalOpen} onOpenChange={setModalOpen} data={selectedSolution} />
+    <SolutionModal
+      open={modalOpen}
+      onOpenChange={setModalOpen}
+      data={selectedSolution}
+      wideOnDesktop
+    />
     </Layout>
   );
 }

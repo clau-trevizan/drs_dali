@@ -24,9 +24,10 @@ interface SolutionModalProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   data: SolutionModalData | null;
+  wideOnDesktop?: boolean;
 }
 
-export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) {
+export function SolutionModal({ open, onOpenChange, data, wideOnDesktop = false }: SolutionModalProps) {
   const { t } = useTranslation();
   const [showHint, setShowHint] = React.useState(false);
 
@@ -76,7 +77,9 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
     <DialogContent
-    className="my-4 w-[calc(100%-2rem)] max-w-2xl border-0 p-0 sm:my-8 sm:w-full"
+    className={`my-4 w-[calc(100%-2rem)] max-w-2xl border-0 p-0 sm:my-8 sm:w-full ${
+      wideOnDesktop ? 'lg:w-[calc(100%-4rem)] lg:!max-w-4xl' : ''
+    }`}
     style={{
       background: 'none',
       borderRadius: '0'
@@ -116,7 +119,11 @@ export function SolutionModal({ open, onOpenChange, data }: SolutionModalProps) 
     {data.title}
     </DialogTitle>
     </DialogHeader>
-    <div className="content-scroll" data-lenis-prevent onScroll={() => setShowHint(false)}>
+    <div
+    className={`content-scroll ${wideOnDesktop ? 'lg:!h-[430px]' : ''}`}
+    data-lenis-prevent
+    onScroll={() => setShowHint(false)}
+    >
     <p
     className="mb-6"
     style={{

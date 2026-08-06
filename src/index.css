@@ -1226,6 +1226,7 @@ html, body {
   .content-scroll {
     height: 340px;
   }
+
 }
 .content-scroll {
   overflow-y: auto;
@@ -1282,4 +1283,15 @@ html, body {
   .scroll-hint {
     display: none;
   }
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .h-auto{
+    height: auto;
+    }
+    .my-auto {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
 }

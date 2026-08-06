@@ -450,11 +450,11 @@ const Index = () => {
                         <div className="rounded-[24px] overflow-hidden flex flex-col md:flex-row" style={{ backgroundColor: '#69C0AC', minHeight: '320px' }}>
                           {/* Image */}
                           {coverUrl && (
-                            <div className="w-full md:w-1/2 h-[200px] md:h-auto p-4 md:p-5">
+                            <div className="w-full md:w-1/2 h-[200px] md:h-auto p-4 md:p-5 d-flex">
                               <img
                                 src={coverUrl}
                                 alt={insight.title}
-                                className="w-full h-full object-cover rounded-[16px]"
+                                className="w-full h-auto my-auto object-cover rounded-[16px]"
                               />
                             </div>
                           )}

@@ -147,8 +147,8 @@ export const translations: Translations = {
     'solucoes.tis.diff.title': 'Nossos diferenciais - TIS',
 
     // Grupo DRS
-    'grupo.hero.tag': 'DRS 360',
-    'grupo.hero.title': 'Somos referência em pesquisa clínica, tecnologia e inovação aplicadas à saúde',
+    'grupo.hero.tag': '',
+    'grupo.hero.title': 'Fazemos da ciência um caminho para transformar vidas',
     'grupo.text1': 'O Grupo DRS é um ecossistema integrado que impulsiona a evolução da saúde por meio de pesquisa clínica, armazenagem especializada, tecnologia avançada, programas de suporte ao paciente, soluções regulatórias e embalagens térmicas de alta performance.',
     'grupo.text2': 'Transformamos a jornada de medicamentos, dados e pessoas com precisão, governança e responsabilidade.',
     'grupo.text3': 'Com presença no Brasil, Argentina, Uruguai e Europa, operamos com uma infraestrutura que amplia nossa capacidade de inovação e assegura padrões internacionais de qualidade. Movemos produtos e entregamos confiança, rastreabilidade e adesão ao tratamento — gerando impacto real na vida dos pacientes.',
@@ -1039,8 +1039,8 @@ export const translations: Translations = {
     'solucoes.tis.diff.title': 'Our differentials - TIS',
 
     // Grupo DRS
-    'grupo.hero.tag': 'DRS GROUP',
-    'grupo.hero.title': 'We are the reference in clinical research, technology and innovation applied to healthcare',
+    'grupo.hero.tag': '',
+    'grupo.hero.title': 'Transforming life through science',
     'grupo.text1': 'DRS Group is an integrated ecosystem that drives the evolution of healthcare through clinical research, specialized storage, advanced technology, patient support programs, regulatory solutions and high-performance thermal packaging.',
     'grupo.text2': 'We transform the journey of medicines, data and people with precision, governance and responsibility.',
     'grupo.text3': 'With a presence in Brazil, Argentina, Uruguai and Europe, we operate with an infrastructure that expands our capacity for innovation and ensures international quality standards. We move products and deliver trust, traceability and adherence to treatment - generating real impact on patients’ lives.',
@@ -1965,8 +1965,8 @@ export const translations: Translations = {
     'solucoes.tis.diff.title': 'Nuestros diferenciales - TIS',
 
     // Grupo DRS
-    'grupo.hero.tag': 'DRS 360',
-    'grupo.hero.title': 'Somos líderes en investigación clínica, tecnología e innovación aplicada a la salud',
+    'grupo.hero.tag': '',
+    'grupo.hero.title': 'Hacemos de la ciencia un camino para transformar vidas',
     'grupo.text1': 'El Grupo DRS es un ecosistema integrado que impulsa la evolución del sector salud a través de la investigación clínica, el almacenamiento especializado, la tecnología avanzada, los programas de apoyo al paciente, las soluciones regulatorias y los envases térmicos de alto rendimiento. Transformamos el ciclo de vida de los medicamentos, los datos y las personas con precisión, gobernanza y responsabilidad.',
     'grupo.text2': 'Con presencia en Brasil, Argentina, Uruguai y Europa, operamos con una infraestructura que impulsa la innovación y garantiza estándares internacionales de calidad. Transportamos y gestionamos productos, generando confianza, trazabilidad y adherencia al tratamiento, con impacto real en la vida de los pacientes.',
     'grupo.text3': '',

@@ -1,6 +1,6 @@
 import { Layout } from '@/components/layout';
 import { ArrowIcon } from '@/components/ui/ArrowIcon';
-import imgGrupo from '/images/img-grupo-nova.png';
+import imgGrupo from '/images/img-grupo-nova-v2.png';
 import drs360Final from '@/assets/drs360-final-nova.png';
 import flutuante2 from '@/assets/flutuante2.svg';
 import flutuante3 from '@/assets/flutante3.svg';
@@ -43,13 +43,15 @@ export default function GrupoDRS() {
     {/* Section 1: Hero Section */}
     <section className="relative overflow-hidden bg-background">
     <div className="drs-container py-8 md:py-12">
-    <div className="flex flex-col lg:flex-row gap-0 items-stretch min-h-[300px] lg:min-h-[400px]">
-    <div className="relative w-full lg:w-1/2" style={{ position: 'relative', zIndex: 1 }}>
-    <img src={imgGrupo} alt="Grupo DRS" className="w-full h-full min-h-[200px] lg:min-h-[400px] object-cover rounded-t-[24px] lg:rounded-t-none lg:rounded-l-[32px] lg:rounded-tl-[40px] lg:rounded-bl-[40px]" />
+    <div className="flex flex-col lg:flex-row gap-0 items-stretch min-h-[300px]">
+    <div className="relative w-full lg:w-1/2 lg:min-w-0" style={{ position: 'relative', zIndex: 1 }}>
+    <img src={imgGrupo} alt="Grupo DRS" className="block w-full h-auto min-h-[200px] rounded-t-[24px] lg:rounded-t-none lg:rounded-l-[32px] lg:rounded-tl-[40px] lg:rounded-bl-[40px]" />
     </div>
-    <div className="relative w-full lg:w-1/2 flex flex-col justify-center overflow-hidden rounded-b-[24px] lg:rounded-b-none lg:rounded-r-[32px] lg:rounded-tr-[40px] lg:rounded-br-[40px] p-[1.5rem_1rem_4rem_2rem] lg:p-0 mt-[-50px] lg:mt-0 mobile-padding" style={{ backgroundColor: '#69C0AC' }}>
-    <div className="lg:ml-[-35px] lg:w-[calc(100%+35px)] lg:p-[5.5rem] mobile-padding-2">
+    <div className="relative w-full lg:w-1/2 lg:min-w-0 flex flex-col justify-center overflow-hidden rounded-b-[24px] lg:rounded-b-none lg:rounded-r-[32px] lg:rounded-tr-[40px] lg:rounded-br-[40px] p-[1.5rem_1rem_4rem_2rem] lg:p-0 mt-[-50px] lg:mt-0 mobile-padding" style={{ backgroundColor: '#69C0AC' }}>
+    <div className="inner-page-hero-content lg:ml-[-35px] lg:w-[calc(100%+35px)] lg:p-[5.5rem] mobile-padding-2">
+    {/*  
     <span className="text-[16px] lg:text-[20px]" style={{ color: '#000', fontStyle: 'normal', fontWeight: 400, lineHeight: '40px', textTransform: 'uppercase', borderRadius: '30px', border: '1px solid #000', padding: '0px 20px', display: 'inline-block', marginBottom: '1rem', width: 'fit-content', background: 'transparent' }}>{t('grupo.hero.tag')}</span>
+    */}
     <h1 className="text-[22px] md:text-[28px] lg:text-[35px] leading-[28px] md:leading-[34px] lg:leading-[40px]" style={{ color: '#000', fontWeight: 900 }}>{t('grupo.hero.title')}</h1>
     </div>
     </div>

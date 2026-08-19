@@ -1295,3 +1295,26 @@ html, body {
       margin-bottom: auto;
     }
 }
+
+/* Internal page heroes: scale content without making the text box taller than the image. */
+@media (min-width: 1024px) {
+  .inner-page-hero-content {
+    padding-block: clamp(1.5rem, 2vw, 4rem) !important;
+    padding-inline: clamp(2rem, 4vw, 5.5rem) !important;
+  }
+
+  .inner-page-hero-content h1 {
+    font-size: clamp(1.375rem, 2.2vw, 2.1875rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  .inner-page-hero-content p {
+    font-size: clamp(1rem, 1.25vw, 1.25rem) !important;
+    line-height: 1.25 !important;
+  }
+
+  .inner-page-hero-content span {
+    font-size: clamp(0.875rem, 1.25vw, 1.25rem) !important;
+    line-height: clamp(2rem, 2.5vw, 2.5rem) !important;
+  }
+}

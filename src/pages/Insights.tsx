@@ -6,6 +6,7 @@ import iconPageArrow from '@/assets/icon-page-arrow.svg';
 import { useTranslation } from '@/hooks/useTranslation';
 import { useInsights, useInsightCategories } from '@/hooks/useStrapi';
 import { getStrapiMedia } from '@/services/strapi';
+import type { InsightCategory } from '@/types/strapi';
 
 const CheckIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13" fill="none">
@@ -30,7 +31,7 @@ const PAGE_SIZE = 6;
 
 export default function Insights() {
   const [searchParams] = useSearchParams();
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [search, setSearch] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const { t, language } = useTranslation();
@@ -38,19 +39,19 @@ export default function Insights() {
   const strapiLocale = language === 'en' ? 'en' : language === 'es' ? 'es-ES' : 'pt-BR';
 
   const { data: categoriesData } = useInsightCategories(strapiLocale);
-  const categorySlugsMap = (categoriesData || []).reduce((acc: Record<string, string>, c: any) => {
+  const categorySlugsMap = (categoriesData || []).reduce((acc: Record<string, string>, c: InsightCategory) => {
     if (c?.name && c?.slug) acc[c.name] = c.slug;
     return acc;
   }, {} as Record<string, string>);
 
 
 
-  const selectedSlugs = selectedCategories.map(name => categorySlugsMap[name]).filter(Boolean);
+  const selectedSlug = selectedCategory ? categorySlugsMap[selectedCategory] : undefined;
 
   const { data: insightsData, isLoading } = useInsights({
     page: currentPage,
     pageSize: PAGE_SIZE,
-    categories: selectedSlugs.length > 0 ? selectedSlugs : undefined,
+    category: selectedSlug,
     search: search.trim() || undefined,
     locale: strapiLocale,
   });
@@ -59,9 +60,8 @@ export default function Insights() {
 
   useEffect(() => {
     const catParams = searchParams.getAll('cat');
-    if (catParams.length > 0) {
-      setSelectedCategories(catParams.filter(c => categories.includes(c)));
-    }
+    const validCategory = catParams.find(cat => categoriesData?.some(category => category.name === cat));
+    setSelectedCategory(validCategory || null);
   }, [searchParams, categoriesData]);
 
   const insights = insightsData?.data || [];
@@ -69,11 +69,7 @@ export default function Insights() {
 
   const handleCategoryToggle = (cat: string) => {
     setCurrentPage(1);
-    if (selectedCategories.includes(cat)) {
-      setSelectedCategories(selectedCategories.filter(c => c !== cat));
-    } else {
-      setSelectedCategories([...selectedCategories, cat]);
-    }
+    setSelectedCategory(currentCategory => currentCategory === cat ? null : cat);
   };
 
   const handleSearchChange = (value: string) => {
@@ -125,7 +121,7 @@ export default function Insights() {
                   {categories.map((cat) => (
                     <label key={cat} className="flex items-center gap-2 cursor-pointer" onClick={() => handleCategoryToggle(cat)}>
                       <span className="w-[18px] h-[13px] flex items-center justify-center flex-shrink-0">
-                        {selectedCategories.includes(cat) && <CheckIcon />}
+                        {selectedCategory === cat && <CheckIcon />}
                       </span>
                       <span style={{ color: '#274B41', fontSize: '16px', fontWeight: 400, lineHeight: '24px' }}>{cat}</span>
                     </label>

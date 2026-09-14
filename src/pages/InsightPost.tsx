@@ -77,11 +77,6 @@ export default function InsightPost() {
   const shareUrl = encodeURIComponent(currentUrl);
   const categoryParams = categoryName ? `cat=${encodeURIComponent(categoryName)}` : '';
 
-  const formattedDate = new Date(post.publishedAt).toLocaleDateString(
-    language === 'en' ? 'en-US' : language === 'es' ? 'es-ES' : 'pt-BR',
-    { day: '2-digit', month: 'long', year: 'numeric' }
-  );
-
   return (
     <Layout>
       {/* Section 1: Hero */}
@@ -114,10 +109,11 @@ export default function InsightPost() {
                     </a>
                   </div>
                 </div>
-                <div className="mt-4" style={{ color: '#000', fontSize: '16px', fontWeight: 400, lineHeight: '21px' }}>
-                  <span>{formattedDate}</span>
-                  {authorName && <span> - {language === 'pt' ? 'por' : language === 'es' ? 'por' : 'by'} {authorName}</span>}
-                </div>
+                {authorName && (
+                  <div className="mt-4" style={{ color: '#000', fontSize: '16px', fontWeight: 400, lineHeight: '21px' }}>
+                    <span>{language === 'pt' ? 'por' : language === 'es' ? 'por' : 'by'} {authorName}</span>
+                  </div>
+                )}
               </div>
             </div>
           </div>

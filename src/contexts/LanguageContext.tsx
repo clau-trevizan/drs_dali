@@ -1832,7 +1832,7 @@ export const translations: Translations = {
     'nav.solucoes': 'Soluciones',
     'nav.areas': 'Áreas de expertise',
     'nav.grupo': 'Grupo DRS',
-    'nav.insights': 'Ideas clave',
+    'nav.insights': 'Insights',
     'nav.contato': 'Contacto',
     'nav.portal': 'Portal 360 DRS',
 
@@ -1917,7 +1917,7 @@ export const translations: Translations = {
     'footer.cta.title.line2': 'con la solución ideal.',
     'footer.cta.button': 'Hable con nuestro equipo de ventas',
     'footer.contact': 'Contacto',
-    'footer.contact.email': 'E-mail',
+    'footer.contact.email': 'E-mail:',
     'footer.contact.commercial': 'Comercial:',
     'footer.contact.sac': 'SAC / Programa de soporte:',
     'footer.contact.careers': 'Trabaje con nosotros:',

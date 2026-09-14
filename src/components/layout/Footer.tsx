@@ -12,7 +12,7 @@ const footerData = {
     ],
   },
   contact: {
-    email: 'contato@drsgroup.com.br',
+    email: 'internationalbd@drsgroupglobal.com',
     phone: '+55 (11) 3198-9000',
     supportPhone: '+55 (11) 3198-9005',
     careersLink: 'https://vagasdrsgroup.gupy.io/',
@@ -318,7 +318,9 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                       backgroundColor: '#F39325',
                       fontSize: '14px',
                       fontWeight: 400,
-                      lineHeight: '40px',
+                      lineHeight: '20px',
+                      paddingTop: '10px',
+                      paddingBottom: '10px',
                       marginBottom: '16px'
                     }}
                   >
@@ -491,7 +493,9 @@ export const Footer = React.forwardRef<HTMLElement>((props, ref) => {
                 backgroundColor: '#F39325',
                 fontSize: '14px',
                 fontWeight: 400,
-                lineHeight: '40px',
+                lineHeight: '20px',
+                paddingTop: '10px',
+                paddingBottom: '10px',
                 marginBottom: '16px'
               }}
             >

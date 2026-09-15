@@ -238,9 +238,6 @@ export default function InsightPost() {
                             <div className="w-full h-full" style={{ background: 'linear-gradient(135deg, rgba(105,192,172,0.2), rgba(243,147,37,0.2))' }} />
                           )}
                         </div>
-                        <p style={{ color: '#012025', fontSize: '16px', fontWeight: 400, lineHeight: '21px', marginBottom: '8px' }}>
-                          {new Date(insight.publishedAt).toLocaleDateString(language === 'en' ? 'en-US' : language === 'es' ? 'es-ES' : 'pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
-                        </p>
                         <h3 className="group-hover:opacity-80 transition-opacity insight-card-title" style={{ color: '#000', fontSize: '20px', fontWeight: 700, lineHeight: '28.33px', letterSpacing: '0.55px', marginBottom: '12px' }}>{insight.title}</h3>
                         {iCategories.length > 0 && (
                           <div className="flex flex-wrap gap-2">

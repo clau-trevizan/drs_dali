@@ -140,10 +140,6 @@ export default function Insights() {
                     const insightCategories = insight.categories || (insight.category ? [insight.category] : []);
                     const coverUrl = insight.cover?.url;
                     const image = coverUrl ? getStrapiMedia(coverUrl) : undefined;
-                    const date = new Date(insight.publishedAt).toLocaleDateString(
-                      language === 'en' ? 'en-US' : language === 'es' ? 'es-ES' : 'pt-BR',
-                      { day: '2-digit', month: 'long', year: 'numeric' }
-                    );
                     return (
                       <Link key={insight.slug || insight.id} to={`/insights/${insight.slug}`} className="group block" style={{ marginBottom: '50px' }}>
                         <div className="aspect-video rounded-2xl overflow-hidden mb-4" style={{ backgroundColor: '#e5e5e5' }}>
@@ -153,7 +149,6 @@ export default function Insights() {
                             <div className="w-full h-full bg-gradient-to-br" style={{ background: 'linear-gradient(135deg, rgba(105,192,172,0.2), rgba(243,147,37,0.2))' }} />
                           )}
                         </div>
-                        <p style={{ color: '#012025', fontSize: '16px', fontWeight: 400, lineHeight: '21px', marginBottom: '8px' }}>{date}</p>
                         <h3 className="group-hover:opacity-80 transition-opacity insight-card-title" style={{ color: '#000', fontSize: '20px', fontWeight: 700, lineHeight: '28.33px', letterSpacing: '0.55px', marginBottom: '12px' }}>{insight.title}</h3>
                         {insightCategories.length > 0 && (
                           <div className="flex flex-wrap gap-2">

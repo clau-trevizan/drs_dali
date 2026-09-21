@@ -31,7 +31,7 @@ const PAGE_SIZE = 6;
 
 export default function Insights() {
   const [searchParams] = useSearchParams();
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [search, setSearch] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const { t, language } = useTranslation();
@@ -46,12 +46,12 @@ export default function Insights() {
 
 
 
-  const selectedSlug = selectedCategory ? categorySlugsMap[selectedCategory] : undefined;
+  const selectedSlugs = selectedCategories.map(cat => categorySlugsMap[cat]).filter(Boolean);
 
   const { data: insightsData, isLoading } = useInsights({
     page: currentPage,
     pageSize: PAGE_SIZE,
-    category: selectedSlug,
+    categories: selectedSlugs,
     search: search.trim() || undefined,
     locale: strapiLocale,
   });
@@ -60,8 +60,8 @@ export default function Insights() {
 
   useEffect(() => {
     const catParams = searchParams.getAll('cat');
-    const validCategory = catParams.find(cat => categoriesData?.some(category => category.name === cat));
-    setSelectedCategory(validCategory || null);
+    const validCategories = catParams.filter(cat => categoriesData?.some(category => category.name === cat));
+    setSelectedCategories([...new Set(validCategories)]);
   }, [searchParams, categoriesData]);
 
   const insights = insightsData?.data || [];
@@ -69,7 +69,11 @@ export default function Insights() {
 
   const handleCategoryToggle = (cat: string) => {
     setCurrentPage(1);
-    setSelectedCategory(currentCategory => currentCategory === cat ? null : cat);
+    setSelectedCategories(currentCategories =>
+      currentCategories.includes(cat)
+        ? currentCategories.filter(category => category !== cat)
+        : [...currentCategories, cat]
+    );
   };
 
   const handleSearchChange = (value: string) => {
@@ -121,7 +125,7 @@ export default function Insights() {
                   {categories.map((cat) => (
                     <label key={cat} className="flex items-center gap-2 cursor-pointer" onClick={() => handleCategoryToggle(cat)}>
                       <span className="w-[18px] h-[13px] flex items-center justify-center flex-shrink-0">
-                        {selectedCategory === cat && <CheckIcon />}
+                        {selectedCategories.includes(cat) && <CheckIcon />}
                       </span>
                       <span style={{ color: '#274B41', fontSize: '16px', fontWeight: 400, lineHeight: '24px' }}>{cat}</span>
                     </label>

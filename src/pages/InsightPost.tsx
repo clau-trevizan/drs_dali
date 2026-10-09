@@ -4,9 +4,7 @@ import rehypeRaw from 'rehype-raw';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { Layout } from '@/components/layout';
 import { ArrowIcon } from '@/components/ui/ArrowIcon';
-import iconX from '@/assets/icon-x.svg';
 import iconLinkedin from '@/assets/icon-linkedin.svg';
-import iconFacebook from '@/assets/icon-facebook.svg';
 import { useTranslation } from '@/hooks/useTranslation';
 import { useInsight, useInsights } from '@/hooks/useStrapi';
 import { getStrapiMedia } from '@/services/strapi';
@@ -98,14 +96,8 @@ export default function InsightPost() {
                   </div>
                   <div className="col-20 flex items-center gap-3">
                     <span style={{ color: '#000', fontSize: '14px', fontWeight: 400, width: '100%' }}>{t('insights.share')}</span>
-                    <a href={`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`} target="_blank" rel="noopener noreferrer">
-                      <img src={iconX} alt="X" className="h-[50px] w-auto" />
-                    </a>
                     <a href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${shareText}`} target="_blank" rel="noopener noreferrer">
                       <img src={iconLinkedin} alt="LinkedIn" className="h-[50px] w-auto" />
-                    </a>
-                    <a href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`} target="_blank" rel="noopener noreferrer">
-                      <img src={iconFacebook} alt="Facebook" className="h-[50px] w-auto" />
                     </a>
                   </div>
                 </div>
